@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class GameManager : MonoBehaviour
     private GameObject hallway;
     [SerializeField]
     private GameObject firstChamber;
+    [SerializeField]
+    private GameObject firstMask;
+
+    private string clickedBtnName;
+    private Vector3 currentMaskPosition;
 
     private Vector3 positionOnRightDoor = new Vector3(6f, 2.5f, 0);
     private Vector3 positionOnLeftDoor = new Vector3(-6f, 2.5f, 0);
@@ -27,6 +33,11 @@ public class GameManager : MonoBehaviour
         if (player.transform.position == positionOnRightDoor)
         {
             ChangeScene();
+        }
+        if (player.transform.position == currentMaskPosition)
+        {
+            //placer le mask dans l'inventaire
+            firstMask.SetActive(false); //pour l'instant on le désactive juste
         }
     }
 
@@ -50,11 +61,13 @@ public class GameManager : MonoBehaviour
         {
             hallway.SetActive(false);
             firstChamber.SetActive(true);
+            firstMask.SetActive(true);
         }
         else
         {
             hallway.SetActive(true);
             firstChamber.SetActive(false);
+            firstMask.SetActive(false);
         }
     }
 
@@ -62,5 +75,12 @@ public class GameManager : MonoBehaviour
     public IEnumerator ChangeSceneDelay()
     {
         yield return new WaitForSeconds(3.0f);
+    }
+
+    //quand on click sur un mask
+    public void GetMask()
+    {
+        currentMaskPosition = EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().maskPosition;
+        player.targetPosition = currentMaskPosition;
     }
 }
