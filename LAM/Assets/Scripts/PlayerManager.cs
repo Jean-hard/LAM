@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    private Vector2 targetPosition;
-    private float scaleFactor;
+    public Vector2 PLAYER_BASE_POS = new Vector2(0, 2);//à considérer comme une constante
+
+    [System.NonSerialized]
+    public Vector2 targetPosition;
+
+    //private float scaleFactor;
     private Vector2 positionOnRightDoor;
     private Vector2 positionOnLeftDoor;
 
@@ -15,8 +19,6 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         targetPosition = transform.position;
-        positionOnRightDoor = new Vector2(6f, 2.5f);
-        positionOnLeftDoor = new Vector2(-6f, 2.5f);
     }
 
     // Update is called once per frame
@@ -46,15 +48,5 @@ public class PlayerManager : MonoBehaviour
         Vector3 newScale = Vector3.MoveTowards(Vector3.one, Vector3.forward, dist/4);
         transform.localScale = newScale;
         */
-    }
-
-    public void MoveToRightDoor()
-    {
-        targetPosition = positionOnRightDoor;
-    }
-
-    public void MoveToLeftDoor()
-    {
-        targetPosition = positionOnLeftDoor;
     }
 }
