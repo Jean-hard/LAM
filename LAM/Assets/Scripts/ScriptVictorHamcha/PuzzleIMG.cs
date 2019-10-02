@@ -6,6 +6,7 @@ public class PuzzleIMG : MonoBehaviour
 {
     public List<GameObject> cut = new List<GameObject>();
     public List<GameObject> img = new List<GameObject>();
+    public List<GameObject> bloc = new List<GameObject>();
     public List<SpriteRenderer> trueimg = new List<SpriteRenderer>();
     private int slice = 0;
     float x = -11.71f;
@@ -45,7 +46,11 @@ public class PuzzleIMG : MonoBehaviour
             
             cut[i].transform.parent = img[i].transform;
             cut[i].transform.position = new Vector2(x, y);
+            bloc[i].transform.position = new Vector2(x, y);
+            img[i].transform.parent = bloc[i].transform;
+            bloc[i].transform.position = new Vector2(7.009999f,3.972f);
+            bloc[i].transform.localScale = new Vector2(0.7165048f, 0.7165048f);
         }
-        
+
     }
 }
