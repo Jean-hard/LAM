@@ -1,16 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-
     [SerializeField]
     private PlayerManager player;
     //[SerializeField]
     //private GameObject firstMask;
+    [SerializeField]
+    private GameObject firstMask;
     [SerializeField]
     private PlaneScript currentPlan;
     [SerializeField]
@@ -33,10 +33,18 @@ public class GameManager : MonoBehaviour
     //use to know the position to reach, to do action
     private Vector3 currentDestination;
 
+    private ScalePlayer scalePlayer;
+    
+  
+
     // Start is called before the first frame update
     void Start()
     {
         currentDestination = new Vector3(0f, 0f, 0f);
+        scalePlayer = player.gameObject.GetComponent<ScalePlayer>();
+        scalePlayer.sm = currentPlan.minscale;
+        scalePlayer.sp = currentPlan.propscale;
+        scalePlayer.sx = currentPlan.maxscale;
         //components = maskCollection.GetComponentsInChildren(typeof(Image), true);
 
         //for (int i = 0; i < components.Length; i++)
@@ -49,13 +57,18 @@ public class GameManager : MonoBehaviour
         //    {
         //        Destroy(child.gameObject);
         //    }
-            //newMask.transform.SetParent(maskCollection.transform.parent.transform); // met le masque dans le canvas
+        //newMask.transform.SetParent(maskCollection.transform.parent.transform); // met le masque dans le canvas
         //}
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if (player.transform.position == currentMaskPosition)
+        //{
+        //    //placer le mask dans l'inventaire
+        //    firstMask.SetActive(false); //pour l'instant on le désactive juste
+        //}
         //if (player.transform.position == currentMaskPosition)
         //{
         //    //placer le mask dans l'inventaire
@@ -117,7 +130,11 @@ public class GameManager : MonoBehaviour
         nextPlan.OnActive();//active new font
         currentPlan.OnDesactive();//desactive last font
         currentPlan = nextPlan;
+        scalePlayer.sm=currentPlan.minscale;
+        scalePlayer.sp = currentPlan.propscale;
+        scalePlayer.sx = currentPlan.maxscale;
         player.targetPosition = currentPlan.GetInitPlayerPos();
+
         player.gameObject.transform.position = currentPlan.GetInitPlayerPos();//position the player to the position initial in the current plan
         nextPlan = null;
     }

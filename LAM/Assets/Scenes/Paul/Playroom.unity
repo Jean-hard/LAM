@@ -203,7 +203,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6dbb6daa0f8f3f544bd75e50af66ae4a,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6896914559153605653, guid: b03f8ad3cd316cf4da45a7d3696478ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b03f8ad3cd316cf4da45a7d3696478ed, type: 3}
 --- !u!224 &39851058 stripped
 RectTransform:
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 624968918}
+  firstMask: {fileID: 0}
   currentPlan: {fileID: 1202384330}
   fadeScript: {fileID: 39851059}
   dialogueGUI: {fileID: 0}
@@ -629,6 +631,9 @@ MonoBehaviour:
   interElementTab:
   - {fileID: 1525982447}
   - {fileID: 1733577157}
+  minscale: 5
+  maxscale: 12
+  propscale: 24
 --- !u!1 &1390039274
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a445f1170c9844b9f627850b00d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sm: 0
+  sx: 0
+  sp: 0
   _scale: 0
 --- !u!1 &1843173369 stripped
 GameObject:
@@ -985,6 +993,9 @@ MonoBehaviour:
   initPlayerPos: {x: 0, y: 2}
   interElementTab:
   - {fileID: 2086763460}
+  minscale: 5
+  maxscale: 12
+  propscale: 36
 --- !u!4 &1843173371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7109007223913387648, guid: b03f8ad3cd316cf4da45a7d3696478ed,
@@ -1461,5 +1472,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6896914559153605653, guid: b03f8ad3cd316cf4da45a7d3696478ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b03f8ad3cd316cf4da45a7d3696478ed, type: 3}

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class ScalePlayer : MonoBehaviour
 {
-    
-    
+    private PlaneScript planescript;
+    public float sm;
+    public float sx;
+    public float sp;
     public float _scale;
-
+    private void Awake()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +22,8 @@ public class ScalePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Scale(0.2f, 0.6f, 2);
+        
+        Scale(sm, sx, sp);
     }
 
     public void Scale (float smin, float smax, float sprop) // fonction de scale du perso : smin = à la taille minimal du perso, smax la taille maximal, sprop de combiel il augment/perd en avancant

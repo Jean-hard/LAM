@@ -11,6 +11,10 @@ public class PlaneScript : MonoBehaviour
     private GameObject[] interElementTab;
     private GameObject actualPlane;
 
+
+    public float minscale;
+    public float maxscale;
+    public float propscale;
     // Start is called before the first frame update
     void Start()
     {
