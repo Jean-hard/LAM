@@ -12,10 +12,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject firstMask;
     [SerializeField]
+    private GameObject hallway;
+    [SerializeField]
+    private GameObject firstChamber;
+    [SerializeField]
     private PlaneScript currentPlan;
     [SerializeField]
     private FadeScript fadeScript;
-    private GameObject firstMask;
     [SerializeField]
     private GameObject secondMask;
     [SerializeField]
@@ -30,7 +33,7 @@ public class GameManager : MonoBehaviour
     Component[] components;
     //use to know the position to reach, to do action
     private Vector3 currentDestination;
-    
+
     [SerializeField]
     private GameObject dialogueGUI;
     [SerializeField]
@@ -96,7 +99,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("on change scene");
         StartCoroutine(ChangeSceneDelay());
-        player.targetPosition = player.PLAYER_BASE_POS;
+        player.targetPosition = player.playerBasePose;
 
         if (hallway.activeSelf)
         {
