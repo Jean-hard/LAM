@@ -372,7 +372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 624968918}
-  firstMask: {fileID: 0}
   currentPlan: {fileID: 1202384330}
   fadeScript: {fileID: 39851059}
   dialogueGUI: {fileID: 0}

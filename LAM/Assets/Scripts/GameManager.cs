@@ -9,73 +9,67 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private PlayerManager player;
-    [SerializeField]
-    private GameObject firstMask;
-    [SerializeField]
-    private GameObject hallway;
-    [SerializeField]
-    private GameObject firstChamber;
+    //[SerializeField]
+    //private GameObject firstMask;
     [SerializeField]
     private PlaneScript currentPlan;
     [SerializeField]
     private FadeScript fadeScript;
-    [SerializeField]
-    private GameObject secondMask;
-    [SerializeField]
-    private GameObject maskCollection;
-
-    private bool isMovingToDoor = false;
-    private PlaneScript nextPlan;
-    private Vector3 currentMaskPosition;
-
-    private Vector3 positionOnRightDoor = new Vector3(6f, 2.5f, 0);
-    private Vector3 positionOnLeftDoor = new Vector3(-6f, 2.5f, 0);
-    Component[] components;
-    //use to know the position to reach, to do action
-    private Vector3 currentDestination;
 
     [SerializeField]
     private GameObject dialogueGUI;
     [SerializeField]
     private GameObject dialogueButton;
+    //[SerializeField]
+    //private GameObject secondMask;
+    //[SerializeField]
+    //private GameObject maskCollection;
+
+    private bool isMovingToDoor = false;
+    private PlaneScript nextPlan;
+    //private Vector3 currentMaskPosition;
+
+    //Component[] components;
+    //use to know the position to reach, to do action
+    private Vector3 currentDestination;
 
     // Start is called before the first frame update
     void Start()
     {
         currentDestination = new Vector3(0f, 0f, 0f);
-        components = maskCollection.GetComponentsInChildren(typeof(Image), true);
+        //components = maskCollection.GetComponentsInChildren(typeof(Image), true);
 
-        for (int i = 0; i < components.Length; i++)
-        {
-            GameObject newMask = Instantiate(components[i].gameObject, new Vector2(80f * i + 50f, 700f), Quaternion.identity);
-            newMask.transform.localScale = 0.9f * newMask.transform.localScale;
-            newMask.SetActive(false);
-            Destroy(newMask.GetComponent<Button>()); // enlève le clic sur le masque
-            foreach (Transform child in newMask.transform) // enlève le texte "Button"
-            {
-                Destroy(child.gameObject);
-            }
-            newMask.transform.SetParent(maskCollection.transform.parent.transform); // met le masque dans le canvas
-        }
+        //for (int i = 0; i < components.Length; i++)
+        //{
+        //    GameObject newMask = Instantiate(components[i].gameObject, new Vector2(80f * i + 50f, 700f), Quaternion.identity);
+        //    newMask.transform.localScale = 0.9f * newMask.transform.localScale;
+        //    newMask.SetActive(false);
+        //    Destroy(newMask.GetComponent<Button>()); // enlève le clic sur le masque
+        //    foreach (Transform child in newMask.transform) // enlève le texte "Button"
+        //    {
+        //        Destroy(child.gameObject);
+        //    }
+            //newMask.transform.SetParent(maskCollection.transform.parent.transform); // met le masque dans le canvas
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position == currentMaskPosition)
-        {
-            //placer le mask dans l'inventaire
-            EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().SetIsFound(true);
-            EventSystem.current.currentSelectedGameObject.SetActive(false);
-            foreach (Component comp in maskCollection.transform.parent.GetComponentsInChildren(typeof(Image), true))
-            {
-                if (comp.gameObject.name == EventSystem.current.currentSelectedGameObject.name + "(Clone)")
-                {
-                    comp.gameObject.SetActive(true);
-                }
-            }
-            currentMaskPosition = new Vector3();
-        }
+        //if (player.transform.position == currentMaskPosition)
+        //{
+        //    //placer le mask dans l'inventaire
+        //    EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().SetIsFound(true);
+        //    EventSystem.current.currentSelectedGameObject.SetActive(false);
+        //    foreach (Component comp in maskCollection.transform.parent.GetComponentsInChildren(typeof(Image), true))
+        //    {
+        //        if (comp.gameObject.name == EventSystem.current.currentSelectedGameObject.name + "(Clone)")
+        //        {
+        //            comp.gameObject.SetActive(true);
+        //        }
+        //    }
+        //    currentMaskPosition = new Vector3();
+        //}
 
         if (player.transform.position == currentDestination && isMovingToDoor)
         {
@@ -101,20 +95,16 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ChangeSceneDelay());
         player.targetPosition = player.playerBasePose;
 
-        if (hallway.activeSelf)
-        {
-            hallway.SetActive(false);
-            firstChamber.SetActive(true);
-            firstMask.SetActive(true);
-            secondMask.SetActive(false);
-        }
-        else
-        {
-            hallway.SetActive(true);
-            firstChamber.SetActive(false);
-            firstMask.SetActive(false);
-            secondMask.SetActive(true);
-        }
+        //if (hallway.activeSelf)
+        //{
+        //    firstMask.SetActive(true);
+        //    secondMask.SetActive(false);
+        //}
+        //else
+        //{
+        //    firstMask.SetActive(false);
+        //    secondMask.SetActive(true);
+        //}
     }
 
     //ce délai sert à limiter les interactions juste après un changement de plan et à faire un changement stylé aussi (je le fais en anglais la prochaine fois)
@@ -133,11 +123,11 @@ public class GameManager : MonoBehaviour
     }
 
     //quand on click sur un mask
-    public void GetMask()
-    {
-        currentMaskPosition = EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().maskPosition;
-        player.targetPosition = currentMaskPosition;
-    }
+    //public void GetMask()
+    //{
+    //    currentMaskPosition = EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().maskPosition;
+    //    player.targetPosition = currentMaskPosition;
+    //}
 
     //lancer le dialogue
     public void DisplayDialogue()

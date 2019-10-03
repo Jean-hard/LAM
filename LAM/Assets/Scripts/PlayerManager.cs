@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
         }*/
         if (targetPosition != playerBasePose)
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        else
-            transform.position = playerBasePose;
+        //else
+        //    transform.position = playerBasePose;
     }
 }
