@@ -18,7 +18,7 @@ public class ScalePlayer : MonoBehaviour
     void Update()
     {
 
-        Scale(5, 12, 24);
+        Scale(0.2f, 0.6f, 2);
     }
 
     public void Scale (float smin, float smax, float sprop) // fonction de scale du perso : smin = à la taille minimal du perso, smax la taille maximal, sprop de combiel il augment/perd en avancant
