@@ -353,8 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 624968918}
-  hallway: {fileID: 1202384329}
-  firstChamber: {fileID: 1843173369}
   firstMask: {fileID: 0}
   currentPlan: {fileID: 1202384330}
 --- !u!4 &649415619
@@ -1165,12 +1163,12 @@ PrefabInstance:
     - target: {fileID: 4657017699261999653, guid: e83d07060efee1f41a661e2807af2b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.15
       objectReference: {fileID: 0}
     - target: {fileID: 4657017699261999653, guid: e83d07060efee1f41a661e2807af2b47,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 4657017699261999653, guid: e83d07060efee1f41a661e2807af2b47,
         type: 3}
