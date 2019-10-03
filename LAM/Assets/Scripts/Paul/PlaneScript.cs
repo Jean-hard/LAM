@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlaneScript : MonoBehaviour
 {
-
-    private GameObject actualPlane;
+    [SerializeField]
+    private Vector2 initPlayerPos;
 
     [SerializeField]
     private GameObject[] interElementTab;
+    private GameObject actualPlane;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +35,10 @@ public class PlaneScript : MonoBehaviour
         this.gameObject.SetActive(true);
         for (int i = 0; i < interElementTab.Length; i++)
             interElementTab[i].SetActive(true);
+    }
+
+    public Vector3 GetInitPlayerPos()
+    {
+        return initPlayerPos;
     }
 }

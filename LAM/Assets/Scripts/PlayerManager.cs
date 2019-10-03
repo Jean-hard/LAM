@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public Vector2 PLAYER_BASE_POS = new Vector2(0, 2);//à considérer comme une constante
+    public Vector2 playerBasePose = new Vector2(0, 2);//à considérer comme une constante
 
     [System.NonSerialized]
     public Vector2 targetPosition;
