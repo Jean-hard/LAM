@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
 
     //use to know the position to reach, to do action
     private Vector3 currentDestination;
+    
+    [SerializeField]
+    private GameObject dialogueGUI;
+    [SerializeField]
+    private GameObject dialogueButton;
 
     // Start is called before the first frame update
     void Start()
@@ -67,7 +72,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         fadeScript.FadeOut();
 
-        ////petit problème, on passe plusieur fois ici et no lo se WHY 
         nextPlan.OnActive();//active new font
         currentPlan.OnDesactive();//desactive last font
         currentPlan = nextPlan;
@@ -81,5 +85,13 @@ public class GameManager : MonoBehaviour
     {
         currentMaskPosition = EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().maskPosition;
         player.targetPosition = currentMaskPosition;
+    }
+
+    //lancer le dialogue
+    public void DisplayDialogue()
+    {
+        dialogueGUI.SetActive(true);
+        dialogueButton.SetActive(false);
+        Dialogue.Instance.StartDialogue();
     }
 }
