@@ -8,8 +8,7 @@ public class PlayerManager : MonoBehaviour
 
     [System.NonSerialized]
     public Vector2 targetPosition;
-
-    //private float scaleFactor;
+    
     private Vector2 positionOnRightDoor;
     private Vector2 positionOnLeftDoor;
 
@@ -23,16 +22,18 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //avance le perso en fonction de l'endroit du click
-        /*
-        if (Input.GetMouseButton(0))
-        {
-            mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        }*/
         if (targetPosition != playerBasePose)
+        {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        //else
-        //    transform.position = playerBasePose;
+
+            if(targetPosition.x > 0)
+            {
+                //this.GetComponent<Renderer>().
+            }
+            else
+            {
+
+            }
+        }
     }
 }
