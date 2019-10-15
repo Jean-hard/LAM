@@ -3,7 +3,9 @@ guid: e0585dcc37be11e46bfe80cedd273de0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - puzzlegame: {fileID: 8917853889294872397, guid: ff45c8684a46695489914c7a33403f43,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

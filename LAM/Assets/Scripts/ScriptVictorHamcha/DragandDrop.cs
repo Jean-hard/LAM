@@ -8,6 +8,8 @@ public class DragandDrop : MonoBehaviour
     public List<GameObject> pos = new List<GameObject>();//tous les emplacements de pièce
     public List<GameObject> piece = new List<GameObject>(); //toute les pièces du puzzle
     private bool[] bon;//bool pour savoir si la pièce est oau bonne emplacement 
+    public bool gameWin = false;
+    public GameObject puzzlegame; // jeux de puzzle entier
 
     private void Start()
     {
@@ -57,6 +59,12 @@ public class DragandDrop : MonoBehaviour
         }
     }
 
+    private IEnumerator SkipGameDelay()
+    {
+        yield return new WaitForSeconds(3.0f);
+        puzzlegame.SetActive(false);
+    }
+
     public void Win ()
     {
         for (int i = 0; i < 16; i++)// vérifie si la pièce est au bonne endoirt 
@@ -78,8 +86,9 @@ public class DragandDrop : MonoBehaviour
 
         }
         if (bon[0]&&bon[1]&&bon[2]&& bon[3] && bon[4] && bon[5]&& bon[6] && bon[7] && bon[8]&&bon[9] && bon[10] && bon[11]&& bon[12] && bon[13] && bon[14]&& bon[15])//si toutes les pièces sont au bons endroit
-                {
+        {
             Debug.Log("we win");
+            StartCoroutine(SkipGameDelay());
         }
     }
     private void OnTriggerStay(Collider other)
@@ -90,4 +99,5 @@ public class DragandDrop : MonoBehaviour
         
 
     }
+    
 }

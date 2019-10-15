@@ -14,16 +14,12 @@ public class PuzzleIMG : MonoBehaviour
     float y = 3.972f;
     public static int v;
 
-
     // Start is called before the first frame update
     void Start()
     {
         puzzlegame.SetActive(false);//le jeux est désactivé en début de partie
         Slice();//coupe les différentes pièce en début de partie
-        
     }
-
-    
 
     public void Slice ()
     {
