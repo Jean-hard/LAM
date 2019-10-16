@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class horlogeaiguille : MonoBehaviour
 {
-    private bool selected;
-    public float offset;
-    public float distance;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool selected; // boolen servant a savoir si l'aiguille est séléctioné
+    public float offset;//offset
+    
 
     void Update()
     {
         if (selected == true)// si l'aiguille est séléctioné
         {
             
-            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position; // *position de la souris
            
 
-            float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+            float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;// trouve l'angle de rotation que doit prendre l'aiguille par rapport à la souris 
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);// rotation de l'aiguille égal a l'angle trouvé au dessus + offset
 
         }
 

@@ -4,46 +4,51 @@ using UnityEngine;
 
 public class horlogemanager : MonoBehaviour
 {
-    public GameObject minute;
+
+    //position de l'aiguille minute + position des minutes sur l'horloge
+    public GameObject minute;//aiguille 
     public Transform minpos;
     public Transform posm;
-    private GameObject vv;
+    private GameObject vv;// les minutes sur l'horloge
 
+
+    // possition de l'aiguille heure sur l'horloge + des heures sur l'horloge
+    public GameObject heure;// aiguille
     public Transform heurepos; 
-    public GameObject heure;
     public Transform posh;
-    private GameObject hh;
+    private GameObject hh;// les heures sur l'orloge
 
 
-    private float distance;
-    private float distanceh;
+    private float distance;// distance entre aiguille minute et les minutes sur l'horloge
+    private float distanceh;//distance entre l'aiguille heure et les heures sur l'horloge
 
 
-    public List<GameObject> pointminute = new List<GameObject>();
-    public List<GameObject> pointheure = new List<GameObject>();
+    public List<GameObject> pointminute = new List<GameObject>();// list des poins minutes sur l'horloge 
+    public List<GameObject> pointheure = new List<GameObject>();// list des points heures sur l'horloge
 
 
-    private bool m;
-    private float mint;
-    private float minh;
+    private bool m;// bool pour verifier si on est à la bonnes minutes 
+    private float mint;// valeur minutes temps réel 
+    private float minh;//  valeur minutes temps horloge
 
-    private bool h;
-    private float heuret;
-    private float heureh;
+    private bool h;// bool pour verifier si on est à la bonnes heures 
+    private float heuret;// valeur heure temps réel
+    private float heureh;// valeur heure temps horloge 
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i=0; i<60;i++)
+        for (int i=0; i<60;i++)// place les 60 poins minutes sur l'horloge
         {
             
-            minpos.rotation= Quaternion.Euler(0f, 0f, -i*6+180);
-            Vector2 pipi = new Vector2(posm.position.x, posm.position.y);
-            vv = Instantiate(minute, pipi, Quaternion.identity);
-            pointminute.Add(vv);
+            minpos.rotation= Quaternion.Euler(0f, 0f, -i*6+180);// un point tout les 6° de l'angle
+            Vector2 pipi = new Vector2(posm.position.x, posm.position.y);// position du point sur l'horloge 
+            vv = Instantiate(minute, pipi, Quaternion.identity);// creer les petits points minutes 
+            pointminute.Add(vv);//ajoutes les points a la liste pointsminute
         }
 
-        for (int i = 0; i < 12; i++)
+
+        for (int i = 0; i < 12; i++)// la même chose qu'au dessus mais pour les heures
         {
 
             heurepos.rotation = Quaternion.Euler(0f, 0f, -i * 30 + 180);
@@ -57,16 +62,16 @@ public class horlogemanager : MonoBehaviour
     void Update()
     {
         
-        mint = System.DateTime.Now.Minute;
-        heuret = System.DateTime.Now.Hour;
+        mint = System.DateTime.Now.Minute;// valeur minute réel
+        heuret = System.DateTime.Now.Hour;// valeur heure réel
        
-        for (int i = 0; i < 60; i++)
+        for (int i = 0; i < 60; i++)// vérifie sur tout les éléments de la liste points minutes si l'aiguille est sur une minute et si c'est sur la bonne minute
         {
-            distance = Vector2.Distance(pointminute[i].transform.position, minute.transform.position);
-            if (distance <= 0.1)
+            distance = Vector2.Distance(pointminute[i].transform.position, minute.transform.position);// distanceentre un points de l'horloge minute et l'aiguille des minutes 
+            if (distance <= 0.1)// si distance entre l'aiguille et un points minute de l'horloge est inferieur à 0.1
             {
                 minh = i;
-                if (minh==mint)
+                if (minh==mint)//si aiguille sur la bonne minute 
                 {
                     m = true;
                 }
@@ -77,8 +82,8 @@ public class horlogemanager : MonoBehaviour
                 
             }
         }
-
-        for (int i = 0; i < 12; i++)
+        
+        for (int i = 0; i < 12; i++)//même chose qu'au dessus mais pour les heures
         {
             distanceh = Vector2.Distance(pointheure[i].transform.position, heure.transform.position);
             if (distanceh <= 0.1)
@@ -97,7 +102,7 @@ public class horlogemanager : MonoBehaviour
             }
         }
 
-        if (h&&m)
+        if (h&&m)// si même heure et minute sur l'horloge et le temps réel :
         {
             Debug.Log("youwin");
         }
