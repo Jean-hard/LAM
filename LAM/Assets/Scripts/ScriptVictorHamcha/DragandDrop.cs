@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DragandDrop : MonoBehaviour
 {
+    private SpriteRenderer _sprite;
     private bool selected;
     public List<GameObject> pos = new List<GameObject>();//tous les emplacements de pièce
     public List<GameObject> piece = new List<GameObject>(); //toute les pièces du puzzle
@@ -14,8 +15,8 @@ public class DragandDrop : MonoBehaviour
     private void Start()
     {
         bon = new bool[16];
-        
-        
+
+        _sprite = gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -23,6 +24,7 @@ public class DragandDrop : MonoBehaviour
         {
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector2(cursorPos.x, cursorPos.y);//la pèce prend la position de la souris
+            //_sprite.sortingOrder = 5;
             
         }
 
@@ -38,7 +40,7 @@ public class DragandDrop : MonoBehaviour
             if (distance<1)// si la distance entre la pièce et et l'amplacement est inferieur à 1 alors la pièce prend la position de l'amplacement comme si magnétisée et on vérifie si c'est la bonne pièce avec fonction win
             {
                 transform.position = pos[i].transform.position;
-                
+                //_sprite.sortingOrder = 1;
                 Win();
                     
             }
