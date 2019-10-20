@@ -17,11 +17,6 @@ public class Mask : MonoBehaviour
 
     void Update()
     {
-        if (this.isFound)
-        {
-            //placer l'icône du masque en bas à gauche
-
-        }
     }
 
     public void SetIsFound(bool b)

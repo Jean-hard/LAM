@@ -5,9 +5,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
-
-    public const int nbrItemMax = 10;
-    public GameObject[] itemList = new GameObject[nbrItemMax];
+    int rangMask = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,21 +19,35 @@ public class InventoryManager : MonoBehaviour
 
     }
 
-    public void AddItem(GameObject item)
+    public void AddMaskToList()
     {
-        Debug.Log("l'item " + item + " est ajouté à l'inventaire");
-        itemList[0] = item;
+        GameObject mask = EventSystem.current.currentSelectedGameObject;
+        GameObject newMask = Instantiate(mask, new Vector2(150f * rangMask++ + 100f, 950f), Quaternion.identity); //on crée une copie du masque cliqué qu'on place en haut à gauche de l'écran
+        newMask.transform.localScale = 1.2f * newMask.transform.localScale;
+        newMask.SetActive(true);
+        // Destroy(newMask.GetComponent<Button>()); // enlève le clic sur le masque
+        foreach (Transform child in newMask.transform) // enlève le texte "Button"
+        {
+            Destroy(child.gameObject);
+        }
+        newMask.transform.SetParent(GameObject.Find("Canvas").transform); // met le masque dans le canvas
     }
 
-    public bool IsInInventory(GameObject item)
-    { // check si l'item donné en paramètre est déjà dans l'inventaire ou non
-        int i = 0;
-        bool found = false;
-        while (!found && i < this.itemList.Length)
-        {
-            found = GameObject.ReferenceEquals(item, this.itemList[i]);
-            i++;
-        }
-        return found;
-    }
+    // public void AddItem(GameObject item)
+    // {
+    //     Debug.Log("l'item " + item + " est ajouté à l'inventaire");
+    //     itemList[0] = item;
+    // }
+
+    // public bool IsInInventory(GameObject item)
+    // { // check si l'item donné en paramètre est déjà dans l'inventaire ou non
+    //     int i = 0;
+    //     bool found = false;
+    //     while (!found && i < this.itemList.Length)
+    //     {
+    //         found = GameObject.ReferenceEquals(item, this.itemList[i]);
+    //         i++;
+    //     }
+    //     return found;
+    // }
 }
