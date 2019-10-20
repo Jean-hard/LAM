@@ -6,6 +6,7 @@ public class horlogeaiguille : MonoBehaviour
 {
     private bool selected; // boolen servant a savoir si l'aiguille est séléctioné
     public float offset;//offset
+    public float rotZ;
     
 
     void Update()
@@ -16,7 +17,7 @@ public class horlogeaiguille : MonoBehaviour
             Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position; // *position de la souris
            
 
-            float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;// trouve l'angle de rotation que doit prendre l'aiguille par rapport à la souris 
+            rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;// trouve l'angle de rotation que doit prendre l'aiguille par rapport à la souris 
             transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);// rotation de l'aiguille égal a l'angle trouvé au dessus + offset
 
         }
@@ -41,4 +42,9 @@ public class horlogeaiguille : MonoBehaviour
         }
         
     }
+
+
+    
+
+    
 }

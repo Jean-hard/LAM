@@ -322,6 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 90
+  rotZ: 0
 --- !u!1 &389659793
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 90
+  rotZ: 0
 --- !u!1 &1780208502
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,10 +809,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minute: {fileID: 24807408}
-  minpos: {fileID: 148245439}
+  minutePos: {fileID: 148245439}
   posm: {fileID: 24807409}
   heure: {fileID: 1877873988}
-  heurepos: {fileID: 1076630691}
+  heurePos: {fileID: 1076630691}
   posh: {fileID: 1877873989}
   pointminute: []
   pointheure: []
