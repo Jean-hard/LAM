@@ -34,7 +34,7 @@ public class DragandDrop : MonoBehaviour
            
         }
         
-        for (int i =0; i<16; i++)
+        for (int i =0; i<17; i++)
         {
             float distance = Vector2.Distance(pos[i].transform.position, gameObject.transform.position); // distance entre un amplacement et la pièce séléctioné 
             if (distance<1)// si la distance entre la pièce et et l'amplacement est inferieur à 1 alors la pièce prend la position de l'amplacement comme si magnétisée et on vérifie si c'est la bonne pièce avec fonction win
