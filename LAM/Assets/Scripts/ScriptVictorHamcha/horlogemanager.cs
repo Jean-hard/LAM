@@ -50,6 +50,7 @@ public class horlogemanager : MonoBehaviour
 
 
    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -136,7 +137,7 @@ public class horlogemanager : MonoBehaviour
         if (bonneHeure&&bonneMinute)// si même heure et minute sur l'horloge et le temps réel :
         {
             Debug.Log("youwin");
-            
+            horlogeaiguille.jeufini = true;
         }
         
 
