@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 148245439}
   - component: {fileID: 148245440}
   - component: {fileID: 148245441}
+  - component: {fileID: 148245442}
   m_Layer: 0
   m_Name: colliderminute
   m_TagString: Untagged
@@ -322,6 +323,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 90
+  rotZ: 0
+--- !u!95 &148245442
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148245438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f954fccc63e5f57448cbf2a8f20bdcd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &389659793
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +736,7 @@ GameObject:
   - component: {fileID: 1076630691}
   - component: {fileID: 1076630692}
   - component: {fileID: 1076630693}
+  - component: {fileID: 1076630694}
   m_Layer: 0
   m_Name: colliderheure
   m_TagString: Untagged
@@ -777,6 +799,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 90
+  rotZ: 0
+--- !u!95 &1076630694
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076630690}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd59ed04ab7bea949b5ac42b19a4d335, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1780208502
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,10 +849,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minute: {fileID: 24807408}
-  minpos: {fileID: 148245439}
+  minutePos: {fileID: 148245439}
   posm: {fileID: 24807409}
   heure: {fileID: 1877873988}
-  heurepos: {fileID: 1076630691}
+  heurePos: {fileID: 1076630691}
   posh: {fileID: 1877873989}
   pointminute: []
   pointheure: []

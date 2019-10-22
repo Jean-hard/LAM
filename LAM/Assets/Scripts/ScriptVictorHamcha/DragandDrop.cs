@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class DragandDrop : MonoBehaviour
 {
-    private SpriteRenderer _sprite;
+
     private bool selected;
     public List<GameObject> pos = new List<GameObject>();//tous les emplacements de pièce
     public List<GameObject> piece = new List<GameObject>(); //toute les pièces du puzzle
     private bool[] bon;//bool pour savoir si la pièce est oau bonne emplacement 
     public bool gameWin = false;
     public GameObject puzzlegame; // jeux de puzzle entier
-
     private void Start()
     {
         bon = new bool[16];
 
-        _sprite = gameObject.GetComponent<SpriteRenderer>();
+        
     }
     void Update()
     {
@@ -34,7 +33,7 @@ public class DragandDrop : MonoBehaviour
            
         }
         
-        for (int i =0; i<16; i++)
+        for (int i =0; i<17; i++)
         {
             float distance = Vector2.Distance(pos[i].transform.position, gameObject.transform.position); // distance entre un amplacement et la pièce séléctioné 
             if (distance<1)// si la distance entre la pièce et et l'amplacement est inferieur à 1 alors la pièce prend la position de l'amplacement comme si magnétisée et on vérifie si c'est la bonne pièce avec fonction win
@@ -54,10 +53,10 @@ public class DragandDrop : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))//si ma souris est sur la pièce et que j'appui sur clic droit alors la pièce est séléctioné
+        if(Input.GetKeyDown(KeyCode.Mouse0))  //si ma souris est sur la pièce et que j'appui sur clic droit alors la pièce est séléctioné
         {
             selected = true;
-
+            PuzzleIMG.activecollider += 1;
         }
     }
 

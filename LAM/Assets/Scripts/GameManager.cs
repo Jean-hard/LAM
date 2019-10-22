@@ -67,12 +67,6 @@ public class GameManager : MonoBehaviour
         //if (player.transform.position == currentMaskPosition)
         //{
         //    //placer le mask dans l'inventaire
-        //    firstMask.SetActive(false); //pour l'instant on le désactive juste
-        //}
-        //if (player.transform.position == currentMaskPosition)
-        //{
-        //    //placer le mask dans l'inventaire
-        //    EventSystem.current.currentSelectedGameObject.GetComponent<Mask>().SetIsFound(true);
         //    EventSystem.current.currentSelectedGameObject.SetActive(false);
         //    foreach (Component comp in maskCollection.transform.parent.GetComponentsInChildren(typeof(Image), true))
         //    {
