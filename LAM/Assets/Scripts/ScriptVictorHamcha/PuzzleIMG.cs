@@ -8,25 +8,28 @@ public class PuzzleIMG : MonoBehaviour
     public List<GameObject> cut = new List<GameObject>();// liste sprite mask qui coupe l'objet
     public List<GameObject> img = new List<GameObject>();// liste image coupé
     public List<GameObject> bloc = new List<GameObject>();// list des pièce entière
-    public List<GameObject> shuffleposition = new List<GameObject>();
+    public List<GameObject> shuffleposition = new List<GameObject>();//liste des pièce dans un ordre aléatoire
     public GameObject puzzlegame; // jeux de puzzle entier
     public GameObject btnplay;// bouton pour jouer au puzzle
     public GameObject btnplay2;// bouton pour jouer au puzzle
     private int slice = 0;                  
     float x = -11.71f;  
     float y = 3.972f;   
-    public static int v; 
+    private Collider2D piececollider;
+    public static int activecollider = 0;
                             
     // Start is called before the first frame update
     void Start()
     {
-       
+
+        
         puzzlegame.SetActive(false);//le jeux est désactivé en début de partie
-        shuffleposition= bloc.OrderBy(g => Random.value).ToList();
+        shuffleposition= bloc.OrderBy(g => Random.value).ToList();//nouvelle liste comprenant les pièce mais dans un ordre aléatoire
         Slice();//coupe les différentes pièce en début de partie
         for (int i = 0; i < 16; i++)
         {
             shuffleposition[i].transform.position = new Vector2(7.009999f, 3.972f); //positiones toutes les pièce au même endroit 
+            
         }
 
 
@@ -34,7 +37,9 @@ public class PuzzleIMG : MonoBehaviour
 
     public void Update()
     {
-        
+        piececollider = shuffleposition[activecollider].GetComponent<Collider2D>();//trouve le collider de la prochaine pièce de la liste
+        piececollider.enabled = true;// l'active (de base tout les collider sont désactivé)
+
     }
 
     public void Slice()
