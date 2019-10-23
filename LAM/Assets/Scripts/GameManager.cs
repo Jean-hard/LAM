@@ -56,10 +56,6 @@ public class GameManager : MonoBehaviour
     public void MoveToDoor(DoorScript targetDoor)
     {
         nextPlan = targetDoor.planeNextDoor;
-        /**
-         * ça va changer avec le remaniement de quand j'aurais le time
-         */
-        isPlayerOnNextPlan = true;
 
         //si le player est déjà présent sur la scène actuelle on le fait se déplacer
         if (isPlayerOnNextPlan == true)
@@ -69,7 +65,13 @@ public class GameManager : MonoBehaviour
             isMovingToDoor = true;
         }
         else
+        {
+            /**
+            * ça va changer avec le remaniement de quand j'aurais le time
+            */
+            isPlayerOnNextPlan = true;
             ChangeScene();
+        }
     }
 
     /**

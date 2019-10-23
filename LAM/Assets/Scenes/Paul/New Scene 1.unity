@@ -1484,7 +1484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: MoveToDoor
+        m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 445639726}
@@ -2117,7 +2117,6 @@ MonoBehaviour:
   - {fileID: 1628532513}
   - {fileID: 1696526266}
   - {fileID: 387673935}
-  isPlayerOnPlan: 1
   minscale: 0.8
   maxscale: 0.9
   propscale: 1
@@ -3289,7 +3288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: MoveToDoor
+        m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1159886544}
@@ -4872,7 +4871,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: MoveToDoor
+        m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1690092670}
@@ -5815,7 +5814,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: MoveToDoor
+        m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2046276387}
