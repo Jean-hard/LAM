@@ -19,6 +19,7 @@ public class InventoryManager : MonoBehaviour
 
     }
 
+    // pour activer le système d'inventaire, ajouter cette fonction au OnClick du bouton
     public void AddMaskToList()
     {
         GameObject mask = EventSystem.current.currentSelectedGameObject;
