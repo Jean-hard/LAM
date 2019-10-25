@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PeintureManager : MonoBehaviour
 {
@@ -23,12 +24,13 @@ public class PeintureManager : MonoBehaviour
     private int nbrcouleurmise = 0;//compteur du nombre de couleur de la pallette utilisé 
     private int feedbackcouleur = 0;//couleur de la fondue noire(0) si peinture raté blanche(0) si peinture réussi
 
-    public GameObject palettedecouleur; //les bouton palette de couleur
+    public Transform palettedecouleur; //les bouton palette de couleur
 
     private void Start()
     {
         
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +40,10 @@ public class PeintureManager : MonoBehaviour
 
             feedbackcouleur = 1;//mets la couleur de la fondue en blanc
             Debug.Log("youwin");
-            palettedecouleur.SetActive(false);//desactive les bouton de la pallette de couleur 
+            foreach (Transform paletteChild in palettedecouleur)
+            {
+                paletteChild.gameObject.GetComponent<Button>().interactable = false; //desactive le click des boutons de la pallette de couleur 
+            }
         }
         else
         {
