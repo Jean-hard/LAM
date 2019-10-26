@@ -10,25 +10,25 @@ public class Dialogue : MonoBehaviour
     public float typingSpeed;
     public GameObject continueButton;
 
-    public static Dialogue _instance;
-    public static Dialogue Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<Dialogue>();
+    //public static Dialogue _instance;
+    //public static Dialogue Instance
+    //{
+    //    get
+    //    {
+    //        if (_instance == null)
+    //        {
+    //            _instance = GameObject.FindObjectOfType<Dialogue>();
 
-                if (_instance == null)
-                {
-                    GameObject container = new GameObject("DialogueManager");
-                    _instance = container.AddComponent<Dialogue>();
-                }
-            }
+    //            if (_instance == null)
+    //            {
+    //                GameObject container = new GameObject("DialogueManager");
+    //                _instance = container.AddComponent<Dialogue>();
+    //            }
+    //        }
 
-            return _instance;
-        }
-    }
+    //        return _instance;
+    //    }
+    //}
 
     void Start()
     {

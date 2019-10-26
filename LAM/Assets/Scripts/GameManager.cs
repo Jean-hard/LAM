@@ -9,16 +9,16 @@ public class GameManager : MonoBehaviour
     private PlayerManager player;
 
     [SerializeField]
-    private GameObject firstMask;
-    [SerializeField]
     private PlaneScript currentPlan;
     [SerializeField]
     private FadeScript fadeScript;
 
+    //Dialogue
     [SerializeField]
     private GameObject dialogueGUI;
     [SerializeField]
     private GameObject dialogueButton;
+    private Dialogue currentDialogue;
 
     private bool isMovingToDoor = false;
     private PlaneScript nextPlan;
@@ -91,7 +91,10 @@ public class GameManager : MonoBehaviour
         ChangeScene();
     }
 
-    //a chaque changement de plan on placera le personnage à une position de base et on préparera un fade dans une coroutine
+    /**
+     * a chaque changement de plan on placera le personnage à une position de base et on préparera un fade dans une coroutine
+     * TODO : et on stop le dialogue
+     */
     public void ChangeScene()
     {
         Debug.Log("on change scene");
@@ -112,20 +115,57 @@ public class GameManager : MonoBehaviour
         nextPlan.OnActive();//active new font
         currentPlan.OnDesactive();//desactive last font
         currentPlan = nextPlan;
+
+        //Set player in the new scene
         scalePlayer.sm=currentPlan.minscale;
         scalePlayer.sp = currentPlan.propscale;
         scalePlayer.sx = currentPlan.maxscale;
         player.targetPosition = currentPlan.GetInitPlayerPos();
 
+        //on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
+        currentDialogue = currentPlan.GetInitialDialogue();
+        if (currentDialogue)
+            DisplayDialogue();            
+
         player.gameObject.transform.position = currentPlan.GetInitPlayerPos();//position the player to the position initial in the current plan
         nextPlan = null;
     }
 
-    //lancer le dialogue
+    /**
+     * On stock le dialogue visé et on le lance
+     */
+    public void InitDialogue(Dialogue targetDialogue)
+    {
+        currentDialogue = targetDialogue;
+        DisplayDialogue();
+    }
+    /**
+     * On active le canvas de dialogue et on stock le dialogue actuel.
+     * On pourra de ce fait accéder à la phrase suivante en passant par le gameManager.
+     */
     public void DisplayDialogue()
     {
-        dialogueGUI.SetActive(true);
-        dialogueButton.SetActive(false);
-        Dialogue.Instance.StartDialogue();
+        if (currentDialogue == null)
+            Debug.Log("il n'y a pas de dialogue stocké");
+        else
+        {
+            Debug.Log("display le dialogue");
+            dialogueGUI.SetActive(true);
+            dialogueButton.SetActive(false);
+
+            currentDialogue.StartDialogue();
+        }
+    }
+
+    //correspond au bouton "continuer" dans la scène
+    public void DisplayDialogueNextSentence()
+    {
+        currentDialogue.NextSentence();
     }
 }
+
+/**
+ * TODO : corriger bug de dialogueGUI qui se set active quand elle veut c'est relou
+ *  - faire en sorte que le lancement du jeu sur la scène principale se fasse bien par un changeScene
+ *  - préparer un système pour alterner entre seiji et interlocuteur.
+ */

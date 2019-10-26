@@ -11,6 +11,12 @@ public class PlaneScript : MonoBehaviour
     private GameObject[] interElementTab;
     private GameObject actualPlane;
 
+    /**
+     * On set un dialogue qui sera lancé la première fois qu'on entre dans un plan spécifique.
+     */
+    [SerializeField]
+    private Dialogue initialDialogue = null;
+    private bool dialogueUsed = false;
 
     public float minscale;
     public float maxscale;
@@ -45,4 +51,24 @@ public class PlaneScript : MonoBehaviour
     {
         return initPlayerPos;
     }
+
+    /**
+     * Si il y a un dialogue et qu'il n'a jamais été lancé,
+     * on retourne le dialogue en question.
+     */
+    public Dialogue GetInitialDialogue()
+    {
+        if (initialDialogue != null && dialogueUsed == false)
+        {
+            dialogueUsed = true;
+            return initialDialogue;
+        }
+        else
+            return null;
+    }
+
+    //public void DialogueUsed()
+    //{
+    //    dialogueUsed = true;
+    //}
 }

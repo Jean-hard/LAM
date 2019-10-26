@@ -288,6 +288,56 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8917853889355486863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &48948779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48948780}
+  - component: {fileID: 48948781}
+  m_Layer: 0
+  m_Name: DIA_INTRO_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &48948780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48948779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 450993233}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &48948781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48948779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1706687249}
+  sentences:
+  - "Quel est cet endroit ? O\xF9 suis-je ? Cela semblait d\xE9sert et pourtant il
+    est l\xE0 au fond \xE0 me fixer ... "
+  - "Peut-\xEAtre qu'il a les r\xE9ponses. Peut-\xEAtre qu'il sait ? "
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
 --- !u!1 &70579799 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8917853889423368408, guid: ff45c8684a46695489914c7a33403f43,
@@ -1539,7 +1589,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450993233}
-  - component: {fileID: 450993232}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -1547,24 +1596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &450993232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450993231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1706687249}
-  sentences:
-  - Salut gamin !
-  - Tu cherches la ligue Pokemon ?
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
 --- !u!4 &450993233
 Transform:
   m_ObjectHideFlags: 0
@@ -1575,7 +1606,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 163.10336, y: 58.96456, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1308604031}
+  - {fileID: 48948780}
+  - {fileID: 1058663133}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2117,6 +2151,7 @@ MonoBehaviour:
   - {fileID: 1628532513}
   - {fileID: 1696526266}
   - {fileID: 387673935}
+  initialDialogue: {fileID: 1058663134}
   minscale: 0.8
   maxscale: 0.9
   propscale: 1
@@ -2778,7 +2813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 439017443}
-  firstMask: {fileID: 0}
   currentPlan: {fileID: 1471270246}
   fadeScript: {fileID: 647650966}
   dialogueGUI: {fileID: 130146554}
@@ -3112,6 +3146,55 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8917853889355486863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1058663132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1058663133}
+  - component: {fileID: 1058663134}
+  m_Layer: 0
+  m_Name: DIA_SOLO_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1058663133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058663132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 450993233}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058663134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058663132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1706687249}
+  sentences:
+  - "Quel \xE9trange personnage ... il ressemble tellement \xE0 ce lieu ... "
+  - ' '
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
 --- !u!1 &1066323877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8917853889832704298, guid: ff45c8684a46695489914c7a33403f43,
@@ -3417,7 +3500,6 @@ MonoBehaviour:
   shuffleposition: []
   puzzlegame: {fileID: 530528706}
   btnplay: {fileID: 1225542100}
-  btnplay2: {fileID: 0}
 --- !u!4 &1221611787
 Transform:
   m_ObjectHideFlags: 0
@@ -3659,6 +3741,70 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8917853889355486863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308604029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308604031}
+  - component: {fileID: 1308604030}
+  m_Layer: 0
+  m_Name: DIA_AUBER_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1308604030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308604029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1706687249}
+  sentences:
+  - 'Bonjour voyageur, bienvenue entre ces murs. '
+  - "O\xF9 suis-je ?"
+  - "Et bien ? La m\xE9moire te fait-elle d\xE9faut autant que la politesse ?  Tu
+    es ici, chez moi. Dans mon auberge. "
+  - "Oh ... d\xE9sol\xE9 ... Puis-je dormir ici s'il vous plait ? "
+  - C'est une auberge, non ? On peut y dormir, y manger, y vivre, y changer.
+  - "J'aimerais m'y reposer ... J'ai froid et je suis fatigu\xE9. "
+  - "Patience donc, tout doit \xEAtre en ordre. Ta chambre, il faut la pr\xE9parer.
+    Pourquoi n'irais-tu pas t'amuser, visiter, observer toutes les parcelles de cette
+    auberge? Il fut un temps un artiste habitait une des chambres. Peintures et sculptures,
+    il a laiss\xE9 toutes ses oeuvres."
+  - "Sur le mur \xE0 ma gauche, se trouvent toutes les clefs. Celle de la culture
+    est la n\xB05. Son dernier tableau demeure inachev\xE9, laisse donc parler ta
+    cr\xE9ativit\xE9 et rapporte le moi. Une toile blanche est comme un oeuf. "
+  - 'Un oeuf ? '
+  - "Une id\xE9e encore \xE0 naitre. "
+  - 'Oh, je vois ... '
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+--- !u!4 &1308604031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308604029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 450993233}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1328880263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3976,8 +4122,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 450993232}
-        m_MethodName: NextSentence
+      - m_Target: {fileID: 922936693}
+        m_MethodName: DisplayDialogueNextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4144,11 +4290,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: DisplayDialogue
-        m_Mode: 1
+        m_MethodName: InitDialogue
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1308604030}
+          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6135,6 +6281,11 @@ PrefabInstance:
       propertyPath: propscale
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
+        type: 3}
+      propertyPath: initialDialogue
+      value: 
+      objectReference: {fileID: 48948781}
     - target: {fileID: 2650657580326858515, guid: 2f2139467161d7f40b3f2e675e3309e3,
         type: 3}
       propertyPath: m_LocalPosition.x
