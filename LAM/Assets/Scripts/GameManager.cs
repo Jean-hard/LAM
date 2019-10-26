@@ -99,6 +99,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("on change scene");
         StartCoroutine(ChangeSceneDelay());
+        if(currentDialogue)
+            currentDialogue.StopDialogue();
         player.targetPosition = player.playerBasePose;
     }
 
@@ -151,7 +153,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("display le dialogue");
             dialogueGUI.SetActive(true);
-            dialogueButton.SetActive(false);
 
             currentDialogue.StartDialogue();
         }

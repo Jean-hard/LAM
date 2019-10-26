@@ -4,76 +4,90 @@ using UnityEngine;
 using TMPro;
 public class Dialogue : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
+    /**
+     * On gére l'apparition des phrases
+     * en fonction de qui parle on modifie l'actuelle zone de texte utilisé.
+     */
+    public TextMeshProUGUI playerTextDisplay;
+    public TextMeshProUGUI otherTextDisplay;
+    private TextMeshProUGUI currentTextDisplay;
+
     public string[] sentences;
+    public SPEAKER[] speakers;
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
 
-    //public static Dialogue _instance;
-    //public static Dialogue Instance
-    //{
-    //    get
-    //    {
-    //        if (_instance == null)
-    //        {
-    //            _instance = GameObject.FindObjectOfType<Dialogue>();
-
-    //            if (_instance == null)
-    //            {
-    //                GameObject container = new GameObject("DialogueManager");
-    //                _instance = container.AddComponent<Dialogue>();
-    //            }
-    //        }
-
-    //        return _instance;
-    //    }
-    //}
+    public enum SPEAKER
+    {
+        PLAYER,
+        INNKEEPER,
+        CAT
+    }
 
     void Start()
     {
         //StartCoroutine(Type());
+        currentTextDisplay = playerTextDisplay;
     }
 
-    void Update()
-    {
-        if (textDisplay.text == sentences[index])
-        {
-            continueButton.SetActive(true);
-        }
-    }
-
-
-    IEnumerator Type () 
+    IEnumerator TypeSentence () 
     {
         foreach (char letter in sentences[index].ToCharArray())
         {
-            textDisplay.text += letter;
+            currentTextDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-       
-    }
-    
-
-    public void NextSentence()
-    {
-        continueButton.SetActive(false);
-        if (index<sentences.Length-1)
-        {
-            index++;
-            textDisplay.text = "";
-            StartCoroutine(Type());
-        }
-        else
-        {
-            textDisplay.text = "";
-            continueButton.SetActive(false);
-            textDisplay.gameObject.SetActive(false);
-        }
+        continueButton.SetActive(true);
     }
 
     public void StartDialogue()
     {
-        StartCoroutine(Type());
+        ShowText();
+        playerTextDisplay.gameObject.SetActive(true);
+        otherTextDisplay.gameObject.SetActive(true);
+    }
+
+    /**
+     * Reset le dialogue et desactive la UI de texte
+     */
+    public void StopDialogue()
+    {
+        index = 0;
+        playerTextDisplay.text = "";
+        playerTextDisplay.gameObject.SetActive(false);
+        otherTextDisplay.text = "";
+        otherTextDisplay.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
+    }
+
+    public void NextSentence()
+    {
+        index++;
+        continueButton.SetActive(false);
+
+        if (index < sentences.Length)
+            ShowText();
+        else
+        {
+            currentTextDisplay.text = "";
+            continueButton.SetActive(false);
+            playerTextDisplay.gameObject.SetActive(false);
+            otherTextDisplay.gameObject.SetActive(false);
+            index = 0;
+        }
+    }
+
+    private void ShowText()
+    {
+        //si cette phrase est dite par le player, la zone de texte est celle du bas sinon c'est celle du haut 
+        if (speakers[index] == SPEAKER.PLAYER)
+            currentTextDisplay = playerTextDisplay;
+        else
+            currentTextDisplay = otherTextDisplay;
+
+            currentTextDisplay.text = "";
+            StartCoroutine(TypeSentence());
+
     }
 }

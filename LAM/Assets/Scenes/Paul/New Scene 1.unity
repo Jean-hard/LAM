@@ -331,11 +331,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1706687249}
+  playerTextDisplay: {fileID: 1972611813}
+  otherTextDisplay: {fileID: 1706687249}
   sentences:
   - "Quel est cet endroit ? O\xF9 suis-je ? Cela semblait d\xE9sert et pourtant il
     est l\xE0 au fond \xE0 me fixer ... "
   - "Peut-\xEAtre qu'il a les r\xE9ponses. Peut-\xEAtre qu'il sait ? "
+  speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
 --- !u!1 &70579799 stripped
@@ -507,6 +509,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1706687251}
+  - {fileID: 1972611811}
   - {fileID: 1463298201}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -2046,7 +2049,7 @@ PrefabInstance:
     - target: {fileID: 7109007223913387662, guid: b03f8ad3cd316cf4da45a7d3696478ed,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7109007223913387662, guid: b03f8ad3cd316cf4da45a7d3696478ed,
         type: 3}
@@ -3189,10 +3192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1706687249}
+  playerTextDisplay: {fileID: 1972611813}
+  otherTextDisplay: {fileID: 1706687249}
   sentences:
   - "Quel \xE9trange personnage ... il ressemble tellement \xE0 ce lieu ... "
-  - ' '
+  speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
 --- !u!1 &1066323877 stripped
@@ -3770,7 +3774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1706687249}
+  playerTextDisplay: {fileID: 1972611813}
+  otherTextDisplay: {fileID: 1706687249}
   sentences:
   - 'Bonjour voyageur, bienvenue entre ces murs. '
   - "O\xF9 suis-je ?"
@@ -3789,6 +3794,7 @@ MonoBehaviour:
   - 'Un oeuf ? '
   - "Une id\xE9e encore \xE0 naitre. "
   - 'Oh, je vois ... '
+  speakers: 0100000000000000010000000000000001000000000000000100000001000000000000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
 --- !u!4 &1308604031
@@ -4072,12 +4078,12 @@ RectTransform:
   m_Children:
   - {fileID: 193315153}
   m_Father: {fileID: 130146558}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 699, y: -447}
-  m_SizeDelta: {x: 383.9, y: 130.4}
+  m_AnchorMin: {x: 0.76472914, y: 0.026777778}
+  m_AnchorMax: {x: 0.96468747, y: 0.14729631}
+  m_AnchoredPosition: {x: -1, y: -0.99957275}
+  m_SizeDelta: {x: -0.099975586, y: 0.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463298202
 MonoBehaviour:
@@ -5224,7 +5230,7 @@ GameObject:
   - component: {fileID: 1706687250}
   - component: {fileID: 1706687249}
   m_Layer: 5
-  m_Name: DialogueTEXT
+  m_Name: InterlocutorDialogueTEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5362,10 +5368,10 @@ RectTransform:
   m_Father: {fileID: 130146558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 960, y: 301.6}
-  m_SizeDelta: {x: 1920, y: 265}
+  m_AnchorMin: {x: 0, y: 0.659111}
+  m_AnchorMax: {x: 1, y: 0.8998888}
+  m_AnchoredPosition: {x: 0, y: -0.39996338}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1723228658
 GameObject:
@@ -5746,6 +5752,161 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorPosition: {x: 2, y: 7, z: 0}
   planeNextDoor: {fileID: 1328880265}
+--- !u!1 &1972611810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972611811}
+  - component: {fileID: 1972611812}
+  - component: {fileID: 1972611813}
+  m_Layer: 5
+  m_Name: SeijiDialogueTEXT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1972611811
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972611810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 130146558}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.19266665}
+  m_AnchorMax: {x: 1, y: 0.44444445}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 0, y: -7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1972611812
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972611810}
+  m_CullTransparentMesh: 0
+--- !u!114 &1972611813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972611810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 72.88
+  m_fontSizeBase: 72.88
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0.00012207031, z: -3.9922314, w: -2.1169434}
+  m_textInfo:
+    textComponent: {fileID: 1972611813}
+    characterCount: 0
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 0
+    linkCount: 0
+    lineCount: 0
+    pageCount: 0
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1974737080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8917853890740391479, guid: ff45c8684a46695489914c7a33403f43,
