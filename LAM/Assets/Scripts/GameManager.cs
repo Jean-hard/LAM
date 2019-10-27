@@ -105,10 +105,10 @@ public class GameManager : MonoBehaviour
         player.targetPosition = player.playerBasePose;
     }
 
-
+    //le lancement du jeu se fera prendant un fade qui enchainera sur le lancement du dialogue du plan de départ
     public IEnumerator StartSceneDelay()
     {
-        fadeScript.FadeIn();
+        //fadeScript.FadeIn();
         yield return new WaitForSeconds(1.5f);
         fadeScript.FadeOut();
 

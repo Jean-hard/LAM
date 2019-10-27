@@ -9,15 +9,29 @@ public class PeintureManager : MonoBehaviour
     private float bonnepeintureOpacité2 = 0;//opacité de la deuxième bonne peinture
     private float bonnepeintureOpacité3 = 0;//opacité de la troisième bonne peinrue
     private float fondueopacite = 0;//opacite de la fondue
-    public SpriteRenderer bonnepeinture1;//sprite de la première bonne peinture
-    public SpriteRenderer bonnepeinture2;//sprite de la deuxième bonne peinture
-    public SpriteRenderer bonnepeinture3;//sprite de la troidième bonne peinture
-    public GameObject badPeinture; //la peinture si on a pas entré les bonnes couleurs
-    public SpriteRenderer fondueSprite;//sprite de la fondue
-    public bool bonnereponses1;//quand on mets la bonnepeinture1 
-    public bool bonnereponses2;//quand on mets la bonne peinture 2
-    public bool bonnereponses3;//quand on mets la bonne peinture 3
+
+    /**
+     * Utile
+     */
+    [SerializeField]
+    private SFadeScript fadeScript;
+    private GameObject[] peintureTab = new GameObject[4];
+    public GameObject firstStep;//sprite de la première bonne peinture
+    public GameObject secondStep;//sprite de la deuxième bonne peinture
+    public GameObject finalGoodStep;//sprite de la troidième bonne peinture
+    public GameObject finalBadStep; //la peinture si on a pas entré les bonnes couleurs
+
+    private bool isColorsGood = true;
+    private int indexStep = 0;
+    /**
+     */
+
+    //public SpriteRenderer fondueSprite;//sprite de la fondue
+    public bool goodAnswer1;//quand on mets la bonnepeinture1 
+    public bool goodAnswer2;//quand on mets la bonne peinture 2
+    public bool goodAnswer3;//quand on mets la bonne peinture 3
     public bool activefondue;
+
     private Color opacity1;//couleur ou on change l'opacité de la peinture 1
     private Color opacity2;//couleur ou change l'opacité de la peinture 2
     private Color opacity3;// couleur ou on change l'opacité de la peintue 3
@@ -29,191 +43,256 @@ public class PeintureManager : MonoBehaviour
 
     private void Start()
     {
-        
+        peintureTab[0] = firstStep;
+        peintureTab[1] = secondStep;
+        peintureTab[2] = finalGoodStep;
+        peintureTab[3] = finalBadStep;
     }
 
+    /**
+     * tant que les bonnes couleurs sont entré, on affiche les différentes peintures.
+     * Si une couleurs entré était une mauvaise, la dernière peinture sera la BadPeinture
+     * Si toutes les bonnes couleurs on été entré, la good peinture sera révélé.
+     */
+    public void GoodColor()
+    {
+        if (indexStep == 2 && isColorsGood == false)
+        {
+            indexStep = 3;
+            StartCoroutine(ShowPeinture());
+        }
+        else
+        {
+            StartCoroutine(ShowPeinture());
+        }
+    }
+
+    //TODO : Finir les commentaires
+    public void BadColor()
+    {
+        isColorsGood = false;
+        if (indexStep == 2 && isColorsGood == false)
+        {
+            indexStep = 3;
+            StartCoroutine(ShowPeinture());
+        }
+        else
+        {
+            StartCoroutine(ShowPeinture());
+        }
+    }
+
+    public IEnumerator ShowPeinture()
+    {
+        fadeScript.FadeIn();
+        yield return new WaitForSeconds(1f);
+        peintureTab[indexStep].SetActive(true);
+        fadeScript.FadeOut();
+        //Win
+        if (indexStep == 2)
+        {
+            Debug.Log("WIN");
+        }
+        //Loose
+        if (indexStep == 3)
+        {
+            Debug.Log("Loose");
+            StartCoroutine(ResetPeinture());
+        }
+        indexStep++;
+    }
+
+    public IEnumerator ResetPeinture()
+    {
+        yield return new WaitForSeconds(3f);
+        for (int i = 0; i < peintureTab.Length; i++)
+            peintureTab[i].SetActive(false);
+        indexStep = 0;
+        isColorsGood = true;
+    }
+
+    #region OLD
     // Update is called once per frame
-    void Update()
-    {
-        if (bonnereponses1 && bonnereponses2 && bonnereponses3)// si on arrive à mettre les trois couleur alors gagné
-        {
+    //void Update()
+    //{
+    //    if (bonnereponses1 && bonnereponses2 && bonnereponses3)// si on arrive à mettre les trois couleur alors gagné
+    //    {
 
 
-            feedbackcouleur = 1;//mets la couleur de la fondue en blanc
-            Debug.Log("youwin");
-            foreach (Transform paletteChild in palettedecouleur)
-            {
-                paletteChild.gameObject.GetComponent<Button>().interactable = false; //desactive le click des boutons de la pallette de couleur 
-            }
-        }
-        else
-        {
-            feedbackcouleur = 0;//la couleur de la fondue est noire
-        }
-
-       
-        if(activefondue)
-        {
-            if (fondueopacite < 1) //si l'opacité est inferieur à 1
-                fondueopacite += 0.1f;//elle augmente de 0,1 par frame
-            if (fondueopacite >= 1)//pour que cela ne dépasse pas 1
-                fondueopacite = 1;
-        }
-        else
-        {
-            if (fondueopacite >= 0) //si l'opacité est supeireur ou egal à 1
-                fondueopacite -= 0.1f;//elle diminue de 0,1 par frame
-            if (fondueopacite <= 0)//pour que cela ne dépasse pas 0
-                fondueopacite = 0;
-        }
-
-        fondueopacity = fondueSprite.color = new Color(feedbackcouleur, feedbackcouleur, feedbackcouleur, fondueopacite);//couleur et opacité de la fondue
+    //        feedbackcouleur = 1;//mets la couleur de la fondue en blanc
+    //        Debug.Log("youwin");
+    //        foreach (Transform paletteChild in palettedecouleur)
+    //        {
+    //            paletteChild.gameObject.GetComponent<Button>().interactable = false; //desactive le click des boutons de la pallette de couleur 
+    //        }
+    //    }
+    //    else
+    //    {
+    //        feedbackcouleur = 0;//la couleur de la fondue est noire
+    //    }
 
 
-        if (bonnereponses1 && nbrcouleurmise>=3)//si on mets la bonne peinture alors
-        {
-            
-            if (bonnepeintureOpacité1 < 1) //si l'opacité est inferieur à 1
-                bonnepeintureOpacité1 += 0.1f;//elle augmente de 0,1 par frame
-            if (bonnepeintureOpacité1 >= 1)//pour que cela ne dépasse pas 1
-                bonnepeintureOpacité1 = 1f;//
-          
-        }
+    //    if(activefondue)
+    //    {
+    //        if (fondueopacite < 1) //si l'opacité est inferieur à 1
+    //            fondueopacite += 0.1f;//elle augmente de 0,1 par frame
+    //        if (fondueopacite >= 1)//pour que cela ne dépasse pas 1
+    //            fondueopacite = 1;
+    //    }
+    //    else
+    //    {
+    //        if (fondueopacite >= 0) //si l'opacité est supeireur ou egal à 1
+    //            fondueopacite -= 0.1f;//elle diminue de 0,1 par frame
+    //        if (fondueopacite <= 0)//pour que cela ne dépasse pas 0
+    //            fondueopacite = 0;
+    //    }
 
-        if (bonnereponses2 && nbrcouleurmise >= 3)//même chose que pour la bonne peinture 1 mais pour la 2
-        {
-            if (bonnepeintureOpacité2 < 1)
-                bonnepeintureOpacité2 += 0.1f;
-            if (bonnepeintureOpacité2 >= 1)
-                bonnepeintureOpacité2 = 1f;
-        }
-        if (bonnereponses3 && nbrcouleurmise >= 3)//même chose que pour la bonne peinture 1 mais pour la 3
-        {
-            if (bonnepeintureOpacité3 < 1)
-                bonnepeintureOpacité3 += 0.1f;
-
-            if (bonnepeintureOpacité3 >= 1)
-                bonnepeintureOpacité3 = 1;
-        }
+    //    fondueopacity = fondueSprite.color = new Color(feedbackcouleur, feedbackcouleur, feedbackcouleur, fondueopacite);//couleur et opacité de la fondue
 
 
-        opacity1 = bonnepeinture1.color = new Color(1, 1, 1, bonnepeintureOpacité1);//dis que la valeur de l'opacité est égal à la float bonneopacité1
-        opacity2 = bonnepeinture2.color = new Color(1, 1, 1, bonnepeintureOpacité2);//
-        opacity3 = bonnepeinture3.color = new Color(1, 1, 1, bonnepeintureOpacité3);//
+    //    if (bonnereponses1 && nbrcouleurmise>=3)//si on mets la bonne peinture alors
+    //    {
+
+    //        if (bonnepeintureOpacité1 < 1) //si l'opacité est inferieur à 1
+    //            bonnepeintureOpacité1 += 0.1f;//elle augmente de 0,1 par frame
+    //        if (bonnepeintureOpacité1 >= 1)//pour que cela ne dépasse pas 1
+    //            bonnepeintureOpacité1 = 1f;//
+
+    //    }
+
+    //    if (bonnereponses2 && nbrcouleurmise >= 3)//même chose que pour la bonne peinture 1 mais pour la 2
+    //    {
+    //        if (bonnepeintureOpacité2 < 1)
+    //            bonnepeintureOpacité2 += 0.1f;
+    //        if (bonnepeintureOpacité2 >= 1)
+    //            bonnepeintureOpacité2 = 1f;
+    //    }
+    //    if (bonnereponses3 && nbrcouleurmise >= 3)//même chose que pour la bonne peinture 1 mais pour la 3
+    //    {
+    //        if (bonnepeintureOpacité3 < 1)
+    //            bonnepeintureOpacité3 += 0.1f;
+
+    //        if (bonnepeintureOpacité3 >= 1)
+    //            bonnepeintureOpacité3 = 1;
+    //    }
 
 
-        
-        
-    }
+    //    opacity1 = bonnepeinture1.color = new Color(1, 1, 1, bonnepeintureOpacité1);//dis que la valeur de l'opacité est égal à la float bonneopacité1
+    //    opacity2 = bonnepeinture2.color = new Color(1, 1, 1, bonnepeintureOpacité2);//
+    //    opacity3 = bonnepeinture3.color = new Color(1, 1, 1, bonnepeintureOpacité3);//
 
 
 
 
-    IEnumerator Fondue()
-    {
-        yield return new WaitForSeconds(2f);
-        activefondue = true;//active la fondu de transparent vers le blanc
-        yield return new WaitForSeconds(0.5f);
-        activefondue = false;//active la fondu du blanc vers le transparent
-        
-    }
-
-    public void ActiveBonnepeinture1()//fonction du bouton de la première bonne peinture
-    {
-        nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
-        if ( nbrcouleurmise>=3)// si on clique sur trois couleur de la palette :
-        {
-
-            StartCoroutine(Fondue());//start la fondue
+    //}
 
 
-        }
-
-        bonnereponses1 = true;//dis que l'une des bonne couleur a été mise
-
-        if ((bonnereponses3 && !bonnereponses2 || bonnereponses2 && !bonnereponses3 || bonnereponses1 && !bonnereponses3 && !bonnereponses2) && nbrcouleurmise>=3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
-        {
-            badPeinture.SetActive(true);
-            bonnereponses1 = false;//arrete d'augmenter l'opacité
-            bonnereponses2 = false;//arrete d'augmenter l'opacité
-            bonnereponses3 = false;//arrete d'augmenter l'opacité
-            bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
-            bonnepeintureOpacité2 = 0;//
-            bonnepeintureOpacité3 = 0;//
-            nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
-        }
-        
-    }
-
-    public void ActiveBonnepeinture2()//fonction du bouton de la deuxième bonne peinture
-    {
-        nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
-        if (nbrcouleurmise>=3)// si on arrive à mettre les deux autres couleur bonne alors :
-        {
-
-            StartCoroutine(Fondue());
 
 
-        }
+    //IEnumerator Fondue()
+    //{
+    //    yield return new WaitForSeconds(2f);
+    //    activefondue = true;//active la fondu de transparent vers le blanc
+    //    yield return new WaitForSeconds(0.5f);
+    //    activefondue = false;//active la fondu du blanc vers le transparent
 
-        bonnereponses2 = true;//dis que l'une des bonne couleur a été mise
+    //}
 
-        if ((bonnereponses1 && !bonnereponses3 || bonnereponses3 && !bonnereponses1 || bonnereponses2 && !bonnereponses1 && !bonnereponses3) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
-        {
-            badPeinture.SetActive(true);
-            bonnereponses1 = false;//arrete d'augmenter l'opacité
-            bonnereponses2 = false;//arrete d'augmenter l'opacité
-            bonnereponses3 = false;//arrete d'augmenter l'opacité
-            bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
-            bonnepeintureOpacité2 = 0;//
-            bonnepeintureOpacité3 = 0;//
-            nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
-        }
-        
-    }
+    //public void ActiveBonnepeinture1()//fonction du bouton de la première bonne peinture
+    //{
+    //    nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
+    //    if ( nbrcouleurmise>=3)// si on clique sur trois couleur de la palette :
+    //    {
 
-    public void ActiveBonnepeinture3()//fonction du bouton de la troisième bonne peinture
-    {
-        nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
-        if (nbrcouleurmise>=3)// si on arrive à mettre les deux autres couleur bonne alors :
-        {
-            StartCoroutine(Fondue());
-        }
+    //        StartCoroutine(Fondue());//start la fondue
 
-        bonnereponses3 = true; //dis que l'une des bonne couleur a été mise
 
-        if ((bonnereponses1&&!bonnereponses2 || bonnereponses2&&!bonnereponses1|| bonnereponses3&& !bonnereponses1 && !bonnereponses2) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
-        {
-            badPeinture.SetActive(true);
-            bonnereponses1 = false;//arrete d'augmenter l'opacité
-            bonnereponses2 = false;//arrete d'augmenter l'opacité
-            bonnereponses3 = false;//arrete d'augmenter l'opacité
-            bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
-            bonnepeintureOpacité2 = 0;//
-            bonnepeintureOpacité3 = 0;//
-            nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
-        }
+    //    }
 
-        
-        
-    }
+    //    bonnereponses1 = true;//dis que l'une des bonne couleur a été mise
 
-    public void ActiveMauvaisepeinture()// fonctions des boutons de mauvaise peinture
-    {
-        nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
-        if (nbrcouleurmise>=3)
-        {
-            StartCoroutine(Fondue());
-            bonnereponses1 = false;//arrete d'augmenter l'opacité
-            bonnereponses2 = false;//arrete d'augmenter l'opacité
-            bonnereponses3 = false;//arrete d'augmenter l'opacité
-            bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
-            bonnepeintureOpacité2 = 0;//
-            bonnepeintureOpacité3 = 0;//
-            nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
-        }
-       
-    }
-    
+    //    if ((bonnereponses3 && !bonnereponses2 || bonnereponses2 && !bonnereponses3 || bonnereponses1 && !bonnereponses3 && !bonnereponses2) && nbrcouleurmise>=3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
+    //    {
+    //        badPeinture.SetActive(true);
+    //        bonnereponses1 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses2 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses3 = false;//arrete d'augmenter l'opacité
+    //        bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
+    //        bonnepeintureOpacité2 = 0;//
+    //        bonnepeintureOpacité3 = 0;//
+    //        nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
+    //    }
 
+    //}
+
+    //public void ActiveBonnepeinture2()//fonction du bouton de la deuxième bonne peinture
+    //{
+    //    nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
+    //    if (nbrcouleurmise>=3)// si on arrive à mettre les deux autres couleur bonne alors :
+    //    {
+
+    //        StartCoroutine(Fondue());
+
+
+    //    }
+
+    //    bonnereponses2 = true;//dis que l'une des bonne couleur a été mise
+
+    //    if ((bonnereponses1 && !bonnereponses3 || bonnereponses3 && !bonnereponses1 || bonnereponses2 && !bonnereponses1 && !bonnereponses3) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
+    //    {
+    //        badPeinture.SetActive(true);
+    //        bonnereponses1 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses2 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses3 = false;//arrete d'augmenter l'opacité
+    //        bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
+    //        bonnepeintureOpacité2 = 0;//
+    //        bonnepeintureOpacité3 = 0;//
+    //        nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
+    //    }
+
+    //}
+
+    //public void ActiveBonnepeinture3()//fonction du bouton de la troisième bonne peinture
+    //{
+    //    nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
+    //    if (nbrcouleurmise>=3)// si on arrive à mettre les deux autres couleur bonne alors :
+    //    {
+    //        StartCoroutine(Fondue());
+    //    }
+
+    //    bonnereponses3 = true; //dis que l'une des bonne couleur a été mise
+
+    //    if ((bonnereponses1&&!bonnereponses2 || bonnereponses2&&!bonnereponses1|| bonnereponses3&& !bonnereponses1 && !bonnereponses2) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
+    //    {
+    //        badPeinture.SetActive(true);
+    //        bonnereponses1 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses2 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses3 = false;//arrete d'augmenter l'opacité
+    //        bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
+    //        bonnepeintureOpacité2 = 0;//
+    //        bonnepeintureOpacité3 = 0;//
+    //        nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
+    //    }
+
+
+
+    //}
+
+    //public void ActiveMauvaisepeinture()// fonctions des boutons de mauvaise peinture
+    //{
+    //    nbrcouleurmise += 1;//rajoute 1 au compteur de couleur mise
+    //    if (nbrcouleurmise>=3)
+    //    {
+    //        StartCoroutine(Fondue());
+    //        bonnereponses1 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses2 = false;//arrete d'augmenter l'opacité
+    //        bonnereponses3 = false;//arrete d'augmenter l'opacité
+    //        bonnepeintureOpacité1 = 0;//mets l'opacité des bonnes peinture active à 0
+    //        bonnepeintureOpacité2 = 0;//
+    //        bonnepeintureOpacité3 = 0;//
+    //        nbrcouleurmise = 0;//remets le compteur de couleur mise a 0
+    //    }
+
+    //}
+    #endregion
 }
