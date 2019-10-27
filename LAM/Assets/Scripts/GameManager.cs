@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
     //Dialogue
     [SerializeField]
     private GameObject dialogueGUI;
-    [SerializeField]
-    private GameObject dialogueButton;
     private Dialogue currentDialogue;
 
     private bool isMovingToDoor = false;
@@ -100,8 +98,11 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("on change scene");
         StartCoroutine(ChangeSceneDelay());
-        if(currentDialogue)
+        if (currentDialogue)
+        {
             currentDialogue.StopDialogue();
+            dialogueGUI.SetActive(false);
+        }
         player.targetPosition = player.playerBasePose;
     }
 
