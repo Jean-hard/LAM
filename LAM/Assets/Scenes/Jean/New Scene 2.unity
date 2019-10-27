@@ -5205,7 +5205,7 @@ MonoBehaviour:
   goodAnswer2: 0
   goodAnswer3: 0
   activefondue: 0
-  palettedecouleur: {fileID: 729099139}
+  palettedecouleur: {fileID: 729099138}
 --- !u!4 &821819518
 Transform:
   m_ObjectHideFlags: 0
