@@ -12,6 +12,7 @@ public class PeintureManager : MonoBehaviour
     public SpriteRenderer bonnepeinture1;//sprite de la première bonne peinture
     public SpriteRenderer bonnepeinture2;//sprite de la deuxième bonne peinture
     public SpriteRenderer bonnepeinture3;//sprite de la troidième bonne peinture
+    public GameObject badPeinture; //la peinture si on a pas entré les bonnes couleurs
     public SpriteRenderer fondueSprite;//sprite de la fondue
     public bool bonnereponses1;//quand on mets la bonnepeinture1 
     public bool bonnereponses2;//quand on mets la bonne peinture 2
@@ -110,6 +111,7 @@ public class PeintureManager : MonoBehaviour
 
     IEnumerator Fondue()
     {
+        yield return new WaitForSeconds(2f);
         activefondue = true;//active la fondu de transparent vers le blanc
         yield return new WaitForSeconds(0.5f);
         activefondue = false;//active la fondu du blanc vers le transparent
@@ -131,6 +133,7 @@ public class PeintureManager : MonoBehaviour
 
         if ((bonnereponses3 && !bonnereponses2 || bonnereponses2 && !bonnereponses3 || bonnereponses1 && !bonnereponses3 && !bonnereponses2) && nbrcouleurmise>=3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
         {
+            badPeinture.SetActive(true);
             bonnereponses1 = false;//arrete d'augmenter l'opacité
             bonnereponses2 = false;//arrete d'augmenter l'opacité
             bonnereponses3 = false;//arrete d'augmenter l'opacité
@@ -157,6 +160,7 @@ public class PeintureManager : MonoBehaviour
 
         if ((bonnereponses1 && !bonnereponses3 || bonnereponses3 && !bonnereponses1 || bonnereponses2 && !bonnereponses1 && !bonnereponses3) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
         {
+            badPeinture.SetActive(true);
             bonnereponses1 = false;//arrete d'augmenter l'opacité
             bonnereponses2 = false;//arrete d'augmenter l'opacité
             bonnereponses3 = false;//arrete d'augmenter l'opacité
@@ -180,6 +184,7 @@ public class PeintureManager : MonoBehaviour
 
         if ((bonnereponses1&&!bonnereponses2 || bonnereponses2&&!bonnereponses1|| bonnereponses3&& !bonnereponses1 && !bonnereponses2) && nbrcouleurmise >= 3)// vérifie si quand on clique sur une des bonnes couleur au moment de la troisième couleur si au moins l'une d'elle est fausse
         {
+            badPeinture.SetActive(true);
             bonnereponses1 = false;//arrete d'augmenter l'opacité
             bonnereponses2 = false;//arrete d'augmenter l'opacité
             bonnereponses3 = false;//arrete d'augmenter l'opacité
