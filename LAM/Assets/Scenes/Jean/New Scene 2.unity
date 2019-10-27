@@ -546,7 +546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &104545401
 Transform:
   m_ObjectHideFlags: 0
@@ -558,10 +558,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1258549545}
-  - {fileID: 1111078445}
   - {fileID: 1450339412}
   - {fileID: 578548317}
+  - {fileID: 1258549545}
+  - {fileID: 1111078445}
   - {fileID: 818565743}
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -3304,7 +3304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578548317
 Transform:
   m_ObjectHideFlags: 0
@@ -3317,7 +3317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 104545401}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &578548318
 Animator:
@@ -3375,7 +3375,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: b1f6bff0d1399ef42ada260ea18853f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4983,6 +4983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 818565743}
   - component: {fileID: 818565744}
+  - component: {fileID: 818565745}
   m_Layer: 0
   m_Name: fondu
   m_TagString: Untagged
@@ -4998,8 +4999,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818565742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0.696, z: 0}
-  m_LocalScale: {x: 3.7682216, y: 2.799649, z: 2.5602582}
+  m_LocalPosition: {x: -0.4955, y: 0.706, z: 0}
+  m_LocalScale: {x: 3.8634808, y: 2.808048, z: 2.5602582}
   m_Children: []
   m_Father: {fileID: 104545401}
   m_RootOrder: 4
@@ -5041,7 +5042,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: c434946a122b9f249bd64256c8548441, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
@@ -5053,6 +5054,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &818565745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818565742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffe6d01d5e43574ba16906623584906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 4
 --- !u!1 &819162009
 GameObject:
   m_ObjectHideFlags: 0
@@ -5161,11 +5175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab72df3eaa4a434facecd6436886b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeScript: {fileID: 0}
-  firstStep: {fileID: 0}
-  secondStep: {fileID: 0}
-  finalGoodStep: {fileID: 0}
-  finalBadStep: {fileID: 0}
+  fadeScript: {fileID: 818565745}
+  firstStep: {fileID: 1450339411}
+  secondStep: {fileID: 578548316}
+  finalGoodStep: {fileID: 1258549544}
+  finalBadStep: {fileID: 1111078444}
   goodAnswer1: 0
   goodAnswer2: 0
   goodAnswer3: 0
@@ -5560,7 +5574,6 @@ MonoBehaviour:
   currentPlan: {fileID: 1471270246}
   fadeScript: {fileID: 647650966}
   dialogueGUI: {fileID: 130146554}
-  dialogueButton: {fileID: 1497692580}
 --- !u!4 &922936694
 Transform:
   m_ObjectHideFlags: 0
@@ -6122,7 +6135,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveBonnepeinture1
+        m_MethodName: GoodColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6356,7 +6369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1111078445
 Transform:
   m_ObjectHideFlags: 0
@@ -6369,7 +6382,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 104545401}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1111078446
 SpriteRenderer:
@@ -6408,7 +6421,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: f292503f928a4994cad43379915497fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6619,7 +6632,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveBonnepeinture3
+        m_MethodName: GoodColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7779,7 +7792,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveMauvaisepeinture
+        m_MethodName: BadColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8008,7 +8021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1258549545
 Transform:
   m_ObjectHideFlags: 0
@@ -8021,7 +8034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 104545401}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1258549546
 SpriteRenderer:
@@ -8060,7 +8073,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 47016f1889170554aa2f18b132933f04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8567,7 +8580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveMauvaisepeinture
+        m_MethodName: BadColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9263,7 +9276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1450339412
 Transform:
   m_ObjectHideFlags: 0
@@ -9276,7 +9289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 11733085}
   m_Children: []
   m_Father: {fileID: 104545401}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1450339413
 Animator:
@@ -9949,7 +9962,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveBonnepeinture2
+        m_MethodName: GoodColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11553,6 +11566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3518903162636655663, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12333,7 +12351,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 821819517}
-        m_MethodName: ActiveMauvaisepeinture
+        m_MethodName: BadColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
