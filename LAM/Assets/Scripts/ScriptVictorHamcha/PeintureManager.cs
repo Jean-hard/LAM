@@ -39,7 +39,7 @@ public class PeintureManager : MonoBehaviour
     private int nbrcouleurmise = 0;//compteur du nombre de couleur de la pallette utilisé 
     private int feedbackcouleur = 0;//couleur de la fondue noire(0) si peinture raté blanche(0) si peinture réussi
 
-    public Transform palettedecouleur; //les bouton palette de couleur
+    public GameObject palettedecouleur; //les bouton palette de couleur
 
     private void Start()
     {
@@ -92,6 +92,7 @@ public class PeintureManager : MonoBehaviour
         if (indexStep == 2)
         {
             Debug.Log("WIN");
+            palettedecouleur.SetActive(false);
         }
         //Loose
         if (indexStep == 3)
