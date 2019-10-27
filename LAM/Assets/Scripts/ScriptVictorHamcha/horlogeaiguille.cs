@@ -8,6 +8,7 @@ public class horlogeaiguille : MonoBehaviour
     public float offset;//offset
     public float rotZ;
     public static bool jeufini;
+    public static bool canChangeFont;
     private float rotationsave;
     private Collider2D collideraiguille;
 
@@ -51,6 +52,7 @@ public class horlogeaiguille : MonoBehaviour
         yield return new WaitForSeconds(2);
         transform.rotation = Quaternion.Euler(0f, 0f, 180);// aiguille positioné sur miniuit 
         jeufini = false;
+        canChangeFont = true;
     }
 
 

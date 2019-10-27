@@ -17,11 +17,11 @@ public class PuzzleIMG : MonoBehaviour
     private Collider2D piececollider;
     public static int activecollider = 0;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
-
-
         puzzlegame.SetActive(false);//le jeux est désactivé en début de partie
         shuffleposition = bloc.OrderBy(g => Random.value).ToList();//nouvelle liste comprenant les pièce mais dans un ordre aléatoire
         Slice();//coupe les différentes pièce en début de partie
@@ -34,11 +34,10 @@ public class PuzzleIMG : MonoBehaviour
 
     }
 
-    public void Update()
+    void Update()
     {
         piececollider = shuffleposition[activecollider].GetComponent<Collider2D>();//trouve le collider de la prochaine pièce de la liste
         piececollider.enabled = true;// l'active (de base tout les collider sont désactivé)
-
     }
 
     public void Slice()

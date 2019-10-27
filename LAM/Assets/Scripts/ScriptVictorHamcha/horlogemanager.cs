@@ -48,13 +48,14 @@ public class horlogemanager : MonoBehaviour
     private float heureReel;// valeur heure temps réel
     private float heureHorloge;// valeur heure temps horloge 
 
-
-   
+    public GameObject horlogePlan;
+    public Sprite fontHorlogeSucceed;
+    private SpriteRenderer fontHorloge;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        fontHorloge = horlogePlan.GetComponent<SpriteRenderer>();
 
         for (int i=0; i<60;i++)// place les 60 points minutes sur l'horloge
         {
@@ -138,10 +139,16 @@ public class horlogemanager : MonoBehaviour
         {
             Debug.Log("youwin");
             horlogeaiguille.jeufini = true;
+            
         }
         
+        if(horlogeaiguille.canChangeFont)
+        {
+            fontHorloge.sprite = fontHorlogeSucceed; //on applique le sprite avec le tiroir ouvert de l'horloge
+            horlogeaiguille.canChangeFont = false;
+        }
 
     }
 
-   
+
 }
