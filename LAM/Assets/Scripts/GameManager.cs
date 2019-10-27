@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
 
     private bool isPlayerOnNextPlan = true;
     
-  
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +38,8 @@ public class GameManager : MonoBehaviour
         scalePlayer.sm = currentPlan.minscale;
         scalePlayer.sp = currentPlan.propscale;
         scalePlayer.sx = currentPlan.maxscale;
+
+        StartCoroutine(StartSceneDelay());
     }
 
     // Update is called once per frame
@@ -104,13 +105,30 @@ public class GameManager : MonoBehaviour
         player.targetPosition = player.playerBasePose;
     }
 
+
+    public IEnumerator StartSceneDelay()
+    {
+        fadeScript.FadeIn();
+        yield return new WaitForSeconds(1.5f);
+        fadeScript.FadeOut();
+
+        //on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
+        currentDialogue = currentPlan.GetInitialDialogue();
+        if (currentDialogue)
+            DisplayDialogue();
+    }
+
     //ce délai sert à limiter les interactions juste après un changement de plan et à faire un changement stylé aussi (je le fais en anglais la prochaine fois)
     public IEnumerator ChangeSceneDelay()
     {
         fadeScript.FadeIn();
         yield return new WaitForSeconds(2.0f);
+        InitNewScene();
         fadeScript.FadeOut();
+    }
 
+    public void InitNewScene()
+    {
         //change en fonction du type de bouton(de fonction*) utilisé pour le changement de plan
         player.gameObject.SetActive(isPlayerOnNextPlan);
 
@@ -142,7 +160,7 @@ public class GameManager : MonoBehaviour
         DisplayDialogue();
     }
     /**
-     * On active le canvas de dialogue et on stock le dialogue actuel.
+     * On active le canvas de dialogue.
      * On pourra de ce fait accéder à la phrase suivante en passant par le gameManager.
      */
     public void DisplayDialogue()

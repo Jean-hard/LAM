@@ -5454,6 +5454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3518903162636655663, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5558,6 +5563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518903162636655658, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c3929ae3355a1c4fb62dd7250eb73d0, type: 3}
