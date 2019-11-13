@@ -36,8 +36,13 @@ public class PuzzleIMG : MonoBehaviour
 
     void Update()
     {
-        piececollider = shuffleposition[activecollider].GetComponent<Collider2D>();//trouve le collider de la prochaine pièce de la liste
-        piececollider.enabled = true;// l'active (de base tout les collider sont désactivé)
+        
+        if (activecollider < 16)
+        {
+            piececollider = shuffleposition[activecollider].GetComponent<Collider2D>();//trouve le collider de la prochaine pièce de la liste
+            piececollider.enabled = true;// l'active (de base tout les collider sont désactivé)
+            Debug.Log("activecollider: " + activecollider);
+        }
     }
 
     public void Slice()
