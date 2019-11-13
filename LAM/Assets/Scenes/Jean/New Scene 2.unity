@@ -3213,6 +3213,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorPosition: {x: 2, y: 7, z: 0}
   planeNextDoor: {fileID: 2110984072}
+--- !u!1 &574878660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574878661}
+  m_Layer: 0
+  m_Name: PuzzleGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574878661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574878660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1164955075}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576686280
 GameObject:
   m_ObjectHideFlags: 0
@@ -7192,15 +7223,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164955074}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.4099998, y: -0.865, z: -3.96875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 185192477}
   - {fileID: 1154213533}
   - {fileID: 250044490}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 574878661}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167441785
 GameObject:
@@ -8255,7 +8286,7 @@ PrefabInstance:
     - target: {fileID: 7958684576810629251, guid: 9f254ca1588b5a54b893531c1c373b66,
         type: 3}
       propertyPath: interElementTab.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7958684576810629251, guid: 9f254ca1588b5a54b893531c1c373b66,
         type: 3}
@@ -8291,7 +8322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: interElementTab.Array.data[2]
       value: 
-      objectReference: {fileID: 19311468}
+      objectReference: {fileID: 574878660}
     - target: {fileID: 7958684576810629251, guid: 9f254ca1588b5a54b893531c1c373b66,
         type: 3}
       propertyPath: interElementTab.Array.data[3]
