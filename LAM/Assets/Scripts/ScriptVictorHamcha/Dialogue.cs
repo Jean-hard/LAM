@@ -17,6 +17,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
+    public GameObject blockScreen;
 
     public enum SPEAKER
     {
@@ -46,6 +47,7 @@ public class Dialogue : MonoBehaviour
         ShowText();
         playerTextDisplay.gameObject.SetActive(true);
         otherTextDisplay.gameObject.SetActive(true);
+        blockScreen.gameObject.SetActive(true);
     }
 
     /**
@@ -59,6 +61,7 @@ public class Dialogue : MonoBehaviour
         otherTextDisplay.text = "";
         otherTextDisplay.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(false);
+        blockScreen.gameObject.SetActive(false);
     }
 
     public void NextSentence()
@@ -74,6 +77,7 @@ public class Dialogue : MonoBehaviour
             continueButton.SetActive(false);
             playerTextDisplay.gameObject.SetActive(false);
             otherTextDisplay.gameObject.SetActive(false);
+            blockScreen.SetActive(false);
             index = 0;
         }
     }
