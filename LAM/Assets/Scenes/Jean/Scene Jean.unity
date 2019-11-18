@@ -184,11 +184,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: ChangePlan
+        m_MethodName: ChangePlanWhithoutPlayer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 19311473}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 956974387}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -424,6 +435,7 @@ MonoBehaviour:
   speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &89147336
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +812,7 @@ RectTransform:
   m_Children:
   - {fileID: 1706687251}
   - {fileID: 745894023}
+  - {fileID: 929332795}
   - {fileID: 1463298201}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -2079,6 +2092,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &387063092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,6 +2226,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &387673938
 MonoBehaviour:
@@ -2796,8 +2831,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 445639726}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 1733259094}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2918,6 +2964,37 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!1 &466279924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466279925}
+  m_Layer: 0
+  m_Name: PuzzleGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &466279925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466279924}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1164955075}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475864608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,8 +3214,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 549081774}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 2110984072}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3213,37 +3301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorPosition: {x: 2, y: 7, z: 0}
   planeNextDoor: {fileID: 2110984072}
---- !u!1 &574878660
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 574878661}
-  m_Layer: 0
-  m_Name: PuzzleGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &574878661
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574878660}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1164955075}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576686280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,8 +3671,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 585119895}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 686284575}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4200,12 +4268,23 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 695501956}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 646002206}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &695501958
 MonoBehaviour:
@@ -4965,11 +5044,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922936693}
-        m_MethodName: ChangePlan
+        m_MethodName: ChangePlanWhithoutPlayer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 817885398}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 1733259094}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5643,6 +5733,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &929332794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929332795}
+  - component: {fileID: 929332797}
+  - component: {fileID: 929332796}
+  m_Layer: 5
+  m_Name: BlockScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &929332795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929332794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 130146558}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &929332796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929332794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3490098e563586c419d6135ac6ee20a1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &929332797
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929332794}
+  m_CullTransparentMesh: 0
 --- !u!1001 &956974386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5902,6 +6065,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &973699101
 MonoBehaviour:
@@ -6239,6 +6413,7 @@ MonoBehaviour:
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1084355710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6887,6 +7062,7 @@ MonoBehaviour:
   speakers: 0100000000000000010000000000000001000000000000000100000001000000000000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1142808624
 GameObject:
   m_ObjectHideFlags: 0
@@ -7157,8 +7333,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1159886544}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 956974387}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7230,7 +7417,7 @@ Transform:
   - {fileID: 185192477}
   - {fileID: 1154213533}
   - {fileID: 250044490}
-  m_Father: {fileID: 574878661}
+  m_Father: {fileID: 466279925}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167441785
@@ -7587,8 +7774,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1225542105}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 841107826}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8322,7 +8520,7 @@ PrefabInstance:
         type: 3}
       propertyPath: interElementTab.Array.data[2]
       value: 
-      objectReference: {fileID: 574878660}
+      objectReference: {fileID: 466279924}
     - target: {fileID: 7958684576810629251, guid: 9f254ca1588b5a54b893531c1c373b66,
         type: 3}
       propertyPath: interElementTab.Array.data[3]
@@ -9443,7 +9641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1463298201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9457,7 +9655,7 @@ RectTransform:
   m_Children:
   - {fileID: 193315153}
   m_Father: {fileID: 130146558}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10543,6 +10741,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1628532517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10765,6 +10974,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1651371968
 MonoBehaviour:
@@ -11121,8 +11341,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1690092670}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 1733259094}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11357,6 +11588,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1696526267}
           m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12344,8 +12586,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1932531547}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 1328880265}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12865,8 +13118,19 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2046276387}
-          m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 956974387}
+          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922936693}
+        m_MethodName: SetPlayerVisble
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
