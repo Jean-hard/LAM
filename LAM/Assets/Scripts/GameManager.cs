@@ -73,20 +73,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /**
-     * CETTE FONCTION EST TEMPORAIRE !!
-     * Il faudra changer le système de changement de scène pour garder de la logique dans nos action.
-     * Quand on change de plan on passe pas une porte,
-     * donc il ne devra plus y avoir de doorScript en paramètre.
-     */
-    public void ChangePlan(DoorScript targetDoor)
+    public void SetPlayerVisble(bool isVisible)
     {
-        nextPlan = targetDoor.planeNextDoor;
-        /**
-         * ça va changer avec le remaniement de quand j'aurais le time
-         */
-        isPlayerOnNextPlan = false;
+        isPlayerOnNextPlan = isVisible;
+    }
 
+    public void ChangePlan(PlaneScript theNextPlan)
+    {
+        nextPlan = theNextPlan;
+        //isPlayerOnNextPlan = true;
+        ChangeScene();
+    }
+
+    /**
+     * On change de plan et seiji ne sera pas visible dans celui ci
+     */
+    public void ChangePlanWhithoutPlayer(PlaneScript theNextPlan)
+    {
+        nextPlan = theNextPlan;
+        //isPlayerOnNextPlan = false;
         ChangeScene();
     }
 
