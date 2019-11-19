@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Scenes/Theo/Game 1.unity
     guid: db34530677f15e9458db177b5882ceed
   - enabled: 0
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Jean/New Scene 2.unity
     guid: d6ccc1ae67f997043a304ca696792acc
+  - enabled: 1
+    path: Assets/Scenes/Avancement/Game.unity
+    guid: 5d3aa264c4ed2854c97fd6343cbcd7d1
   m_configObjects: {}
