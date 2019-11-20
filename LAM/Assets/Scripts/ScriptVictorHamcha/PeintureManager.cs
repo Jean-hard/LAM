@@ -5,11 +5,6 @@ using UnityEngine.UI;
 
 public class PeintureManager : MonoBehaviour
 {
-    private float bonnepeintureOpacité1 = 0;//opacité de la première bonne peinture
-    private float bonnepeintureOpacité2 = 0;//opacité de la deuxième bonne peinture
-    private float bonnepeintureOpacité3 = 0;//opacité de la troisième bonne peinrue
-    private float fondueopacite = 0;//opacite de la fondue
-
     /**
      * Utile
      */
@@ -23,10 +18,7 @@ public class PeintureManager : MonoBehaviour
 
     private bool isColorsGood = true;
     private int indexStep = 0;
-    /**
-     */
-
-    //public SpriteRenderer fondueSprite;//sprite de la fondue
+    
     public bool goodAnswer1;//quand on mets la bonnepeinture1 
     public bool goodAnswer2;//quand on mets la bonne peinture 2
     public bool goodAnswer3;//quand on mets la bonne peinture 3
@@ -36,8 +28,6 @@ public class PeintureManager : MonoBehaviour
     private Color opacity2;//couleur ou change l'opacité de la peinture 2
     private Color opacity3;// couleur ou on change l'opacité de la peintue 3
     private Color fondueopacity;//couleur de la fondue
-    private int nbrcouleurmise = 0;//compteur du nombre de couleur de la pallette utilisé 
-    private int feedbackcouleur = 0;//couleur de la fondue noire(0) si peinture raté blanche(0) si peinture réussi
 
     public GameObject palettedecouleur; //les bouton palette de couleur
 
