@@ -13,15 +13,15 @@ public class PlatineController : MonoBehaviour
     public Transform brasTransform;
     public Slider slider;
 
-    public Vector2 limitesRotationZBras;
-    public Vector2 limitesSlider;
+    public Vector2 limitesRotationZBras; // les 2 valeurs d'angles entre lesquelles le bras de la platine est en position de victoire
+    public Vector2 limitesSlider; // les 2 valeurs du slider entre lesquelles le slider est en position de victoire
 
     // valeurs des différentes vitesses
     public float slowSpeed = 0.5f;
     public float normalSpeed = 1f;
     public float fastSpeed = 1.5f;
 
-    private float[] volumes;
+    private float[] volumes; // tableau des valeurs de volume disponibles 
     private Animator animator;
 
     // conditions de victoire : bras bien placé, volume activé, fréquence bien placée, vitesse slow

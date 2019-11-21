@@ -7,25 +7,24 @@ public class VolumeController : MonoBehaviour, IPointerDownHandler
 {
     public AudioSource audioSource;
     public Transform brasTransform;
-    public float[] tabVolumes = { 0.1f, 0.3f, 0.5f };
+    public float[] tabVolumes = { 0.1f, 0.3f, 0.5f }; // valeurs de volume
     public int position = 1;
 
-    private float[] tabPositions = { 45, 0, 315 };
+    private float[] tabPositions = { 45, 0, 315 }; // angles des 3 crans
 
-    private float angleVinyleMin = 272f;
+    private float angleVinyleMin = 272f; // les valeurs d'angles (z) du bras de la platine entre lesquelles il est placé sur le vinyle
     private float angleVinyleMax = 338f;
     private float zAngleBras;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.volume = tabVolumes[position];
+        audioSource.volume = tabVolumes[position]; // set le volume au début du jeu
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        // boutonVolumeSelected = true;
-
+        // le bouton change de cran
         if (position < 2)
         {
             position++;
@@ -36,13 +35,19 @@ public class VolumeController : MonoBehaviour, IPointerDownHandler
         }
         transform.rotation = Quaternion.Euler(0, 0, tabPositions[position]);
 
+        // le volume est changé seulement si le bras de la platine est sur le vinyle
         zAngleBras = brasTransform.eulerAngles.z;
-
         if (angleVinyleMin < zAngleBras && zAngleBras < angleVinyleMax)
         {
             audioSource.volume = tabVolumes[position];
         }
     }
+
+    // __________________________________
+
+    // version avec plusieurs crans de volume qu'on peut changer en restant appuyé sur le bouton
+
+    // __________________________________
 
     // public float boutonVolumeDiffAngle = -90f;
     // public int tailleCransBoutonVolume = 24;
