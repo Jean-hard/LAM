@@ -32,7 +32,7 @@ public class DragandDropEnquèteroom2 : MonoBehaviour
 
         }
 
-        for (int i = 0; i <= 2; i++)// vérifie pour toutes les pièce de la liste  
+        for (int i = 0; i <= 3; i++)// vérifie pour toutes les pièce de la liste  
         {
 
 
@@ -56,7 +56,7 @@ public class DragandDropEnquèteroom2 : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse0))//si on lève le click de la souris 
         {
 
-            for (int i = 0; i <= 2; i++)//vérifie pour chacun des slors 
+            for (int i = 0; i <= 3; i++)//vérifie pour chacun des slors 
             {
 
                 if (selected)
@@ -83,7 +83,7 @@ public class DragandDropEnquèteroom2 : MonoBehaviour
             droped = false;//droped devient faux  
         }
 
-        if (piececorrectpos[0] && piececorrectpos[1] && piececorrectpos[2])//si toutes les pièces sont au bonnes endroits 
+        if (piececorrectpos[0] && piececorrectpos[1] && piececorrectpos[2]&& piececorrectpos[3])//si toutes les pièces sont au bonnes endroits 
         {
             Debug.Log("youwin");
         }
