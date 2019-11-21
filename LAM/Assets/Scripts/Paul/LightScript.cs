@@ -21,6 +21,6 @@ public class LightScript : MonoBehaviour
     {
         float noise = Mathf.PerlinNoise(random, Time.time);
         currentlight.intensity = Mathf.Lerp(minIntensity, maxIntensity, noise);
-        Debug.Log(currentlight.intensity);
+        //Debug.Log(currentlight.intensity);
     }
 }
