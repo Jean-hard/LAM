@@ -1,0 +1,2095 @@
+fileFormatVersion: 2
+guid: a65106a70a1963b4b8a3da3b9387e9b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6184734743115137937
+    second: vinyleTourne_0
+  - first:
+      213: -5191222173456408249
+    second: vinyleTourne_1
+  - first:
+      213: -8852197746153682555
+    second: vinyleTourne_2
+  - first:
+      213: 82916422134727415
+    second: vinyleTourne_3
+  - first:
+      213: -9188614070482870220
+    second: vinyleTourne_4
+  - first:
+      213: 8628536207274540735
+    second: vinyleTourne_5
+  - first:
+      213: -2005039798810258998
+    second: vinyleTourne_6
+  - first:
+      213: -7863445106586625312
+    second: vinyleTourne_7
+  - first:
+      213: -2510868336595757085
+    second: vinyleTourne_8
+  - first:
+      213: 9044661857733297271
+    second: vinyleTourne_9
+  - first:
+      213: -7299062257311129681
+    second: vinyleTourne_10
+  - first:
+      213: 7708277719386768704
+    second: vinyleTourne_11
+  - first:
+      213: -303029452017883482
+    second: vinyleTourne_12
+  - first:
+      213: -3253618674092432611
+    second: vinyleTourne_13
+  - first:
+      213: -177026649881080145
+    second: vinyleTourne_14
+  - first:
+      213: 7724660508216972007
+    second: vinyleTourne_15
+  - first:
+      213: -2121339537868696409
+    second: vinyleTourne_16
+  - first:
+      213: 5730354683705695024
+    second: vinyleTourne_17
+  - first:
+      213: -8389497039221599251
+    second: vinyleTourne_18
+  - first:
+      213: -7145670171955739690
+    second: vinyleTourne_19
+  - first:
+      213: 4442054731424992607
+    second: vinyleTourne_20
+  - first:
+      213: 5863892772710509863
+    second: vinyleTourne_21
+  - first:
+      213: 4649127007793138523
+    second: vinyleTourne_22
+  - first:
+      213: -6861670999657726548
+    second: vinyleTourne_23
+  - first:
+      213: 2625315167520497340
+    second: vinyleTourne_24
+  - first:
+      213: 2822570720472679295
+    second: vinyleTourne_25
+  - first:
+      213: -1248516908477974701
+    second: vinyleTourne_26
+  - first:
+      213: 4409360703673841974
+    second: vinyleTourne_27
+  - first:
+      213: -3256567812949351190
+    second: vinyleTourne_28
+  - first:
+      213: -6785371444825543398
+    second: vinyleTourne_29
+  - first:
+      213: 4364241472314757454
+    second: vinyleTourne_30
+  - first:
+      213: -7052200161770505100
+    second: vinyleTourne_31
+  - first:
+      213: 2822220622450106131
+    second: vinyleTourne_32
+  - first:
+      213: 4967728168283200085
+    second: vinyleTourne_33
+  - first:
+      213: 200342269250452522
+    second: vinyleTourne_34
+  - first:
+      213: -4524270371504631241
+    second: vinyleTourne_35
+  - first:
+      213: -125250399693524165
+    second: vinyleTourne_36
+  - first:
+      213: -2445618524952018291
+    second: vinyleTourne_37
+  - first:
+      213: -7485553255583440184
+    second: vinyleTourne_38
+  - first:
+      213: 9189362977855528084
+    second: vinyleTourne_39
+  - first:
+      213: -7402038719427877187
+    second: vinyleTourne_40
+  - first:
+      213: 8713267118233597003
+    second: vinyleTourne_41
+  - first:
+      213: -7379199869003421349
+    second: vinyleTourne_42
+  - first:
+      213: 8690718979470978284
+    second: vinyleTourne_43
+  - first:
+      213: 2899017085774211841
+    second: vinyleTourne_44
+  - first:
+      213: -559721396560950971
+    second: vinyleTourne_45
+  - first:
+      213: 655273909076107890
+    second: vinyleTourne_46
+  - first:
+      213: 2796081279036806592
+    second: vinyleTourne_47
+  - first:
+      213: -5096840972678902189
+    second: vinyleTourne_48
+  - first:
+      213: -144097241541796045
+    second: vinyleTourne_49
+  - first:
+      213: 5171111558807439018
+    second: vinyleTourne_50
+  - first:
+      213: -6523754259091166904
+    second: vinyleTourne_51
+  - first:
+      213: 6690398372859994003
+    second: vinyleTourne_52
+  - first:
+      213: -4825730106745465265
+    second: vinyleTourne_53
+  - first:
+      213: 126268678232876766
+    second: vinyleTourne_54
+  - first:
+      213: -3864934113010488724
+    second: vinyleTourne_55
+  - first:
+      213: 8991683093011582557
+    second: vinyleTourne_56
+  - first:
+      213: -9163534759626831327
+    second: vinyleTourne_57
+  - first:
+      213: -6852065386615993431
+    second: vinyleTourne_58
+  - first:
+      213: 1914950912590491812
+    second: vinyleTourne_59
+  - first:
+      213: 4911603014812965466
+    second: vinyleTourne_60
+  - first:
+      213: -3937308050118389940
+    second: vinyleTourne_61
+  - first:
+      213: 6939084384718979335
+    second: vinyleTourne_62
+  - first:
+      213: 158896358076677731
+    second: vinyleTourne_63
+  - first:
+      213: -6961621216194217683
+    second: vinyleTourne_64
+  - first:
+      213: -3565138638695898736
+    second: vinyleTourne_65
+  - first:
+      213: 8977575211180997125
+    second: vinyleTourne_66
+  - first:
+      213: 9043316057838759898
+    second: vinyleTourne_67
+  - first:
+      213: 8097225195117218828
+    second: vinyleTourne_68
+  - first:
+      213: 6533669403576130720
+    second: vinyleTourne_69
+  - first:
+      213: -1689390134219259809
+    second: vinyleTourne_70
+  - first:
+      213: -1050782440277829835
+    second: vinyleTourne_71
+  - first:
+      213: 7081024050528640813
+    second: vinyleTourne_72
+  - first:
+      213: -3337007004031873850
+    second: vinyleTourne_73
+  - first:
+      213: -3006817261456463237
+    second: vinyleTourne_74
+  - first:
+      213: 7989465161948568272
+    second: vinyleTourne_75
+  - first:
+      213: -757135281949641703
+    second: vinyleTourne_76
+  - first:
+      213: -5401118152863041695
+    second: vinyleTourne_77
+  - first:
+      213: -3021627755224772551
+    second: vinyleTourne_78
+  - first:
+      213: -5630016099875742002
+    second: vinyleTourne_79
+  - first:
+      213: 2709017498979643968
+    second: vinyleTourne_80
+  - first:
+      213: -6145487958805578464
+    second: vinyleTourne_81
+  - first:
+      213: -7847663556663126050
+    second: vinyleTourne_82
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vinyleTourne_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 6473
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a060773603d427f47b9b9cbe00e4d3dc
+      internalID: 6184734743115137937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 6473
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b540fcf6fe80f419da60703e997587
+      internalID: -5191222173456408249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_2
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 6471
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdd7544414eb084b9ea8c28e8384568
+      internalID: -8852197746153682555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_3
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 6471
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ee1f0bbbae8a240bceb0e05377da86
+      internalID: 82916422134727415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_4
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 6472
+        width: 298
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d06957395fcf1245b958bafacd025c1
+      internalID: -9188614070482870220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 6071
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caffbea53257c554a882c8def3de93b3
+      internalID: 8628536207274540735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_6
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 6071
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb2eed82f5c3164e811daca97ee773e
+      internalID: -2005039798810258998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_7
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 6071
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41a9305b97888946983815b8144205a
+      internalID: -7863445106586625312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_8
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 6071
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15225ff4fe9f76a4db5d6016cf9beae5
+      internalID: -2510868336595757085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_9
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 6071
+        width: 298
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fb1c4a00dd0374c8cb2e3657d1a0a1
+      internalID: 9044661857733297271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 5673
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5e3399a70b6084f93a7de384df46b1
+      internalID: -7299062257311129681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_11
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 5670
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb4eb9b3516e7d4897c11fae76c9572
+      internalID: 7708277719386768704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_12
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 5670
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0348b40f4aace7641834e59f8b82d1eb
+      internalID: -303029452017883482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_13
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 5672
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d12a0183589da4698dcb2cc6d34e4e
+      internalID: -3253618674092432611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_14
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 5671
+        width: 301
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8616e15f85103fd4da411090e6c042bc
+      internalID: -177026649881080145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 5271
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cd13eef1d363f44be3e018ee065854
+      internalID: 7724660508216972007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 5271
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8eb2e01deb503458bfb6a080ce337a
+      internalID: -2121339537868696409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_17
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 5271
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b1faa88ec3f4e45a5ca923d1b5afbe
+      internalID: 5730354683705695024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_18
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 5271
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbe49de36ef6a848bc5a400248ea5d4
+      internalID: -8389497039221599251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_19
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 5271
+        width: 298
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d7a707de3bd0443990044a5678ddc0
+      internalID: -7145670171955739690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4873
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b15e85f70dd00a48aa6c24376a7bf65
+      internalID: 4442054731424992607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 4873
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614c4659ca50198428a288060f98ee7a
+      internalID: 5863892772710509863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_22
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 4873
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e597064e05d7a4aa0bf411a61853f5
+      internalID: 4649127007793138523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_23
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 4873
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0406298c09204340a8bfa0aea605574
+      internalID: -6861670999657726548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_24
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 4873
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c172e3a9e601be4b802518a9c02bc52
+      internalID: 2625315167520497340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4471
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063e3b7d3f3500749b0e857664fc09ab
+      internalID: 2822570720472679295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_26
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 4471
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372caf4596281c34a8b74fdeb155efa7
+      internalID: -1248516908477974701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 4471
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0efb9fbf32bf346baeecbf5ac13c12
+      internalID: 4409360703673841974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_28
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 4471
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fe9104455a7b449b7ef9c8eb961198
+      internalID: -3256567812949351190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_29
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 4471
+        width: 301
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963c52ed85cdd3645a12e54296a73b87
+      internalID: -6785371444825543398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_30
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4072
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e27b748d9a5784ab8d680156377169
+      internalID: 4364241472314757454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 4072
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa67eeb23193f40a8d8f8d8a67fb2b
+      internalID: -7052200161770505100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_32
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 4072
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4e3c851a45b19489bf8e6e076b208c
+      internalID: 2822220622450106131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_33
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 4072
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f9ab28c4fe7ab4b974c3da8d4ed200
+      internalID: 4967728168283200085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_34
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 4072
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a8407caa726fd459a01488a82021e2
+      internalID: 200342269250452522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3671
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a0b36153ab6b045bb54c92cf1271fb
+      internalID: -4524270371504631241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_36
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 3671
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e0967be574ae743b986300e42d7a57
+      internalID: -125250399693524165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_37
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 3671
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecb16d09c6bae84994ea6d27c7408ef
+      internalID: -2445618524952018291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_38
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 3671
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37499f7330937c649be760d3e4a2eddb
+      internalID: -7485553255583440184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_39
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 3671
+        width: 298
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172bbce80ce50be43b750957ccda5d44
+      internalID: 9189362977855528084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_40
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3272
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76b3434ae1ab3740bdf181a03cdabb7
+      internalID: -7402038719427877187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_41
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3272
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880fb6c56f866c44dbdd249de65b6de5
+      internalID: 8713267118233597003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_42
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 3272
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c726bf134827248abcaee80ac41bb4
+      internalID: -7379199869003421349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_43
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 3272
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3668de38d0b64d0428d913368e62af0a
+      internalID: 8690718979470978284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_44
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 3272
+        width: 298
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606862dddc7932247aceaba689d0ba73
+      internalID: 2899017085774211841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_45
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2871
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7182425d0555d2a4bb2f8de5b29711e2
+      internalID: -559721396560950971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_46
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2871
+        width: 298
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464c01e7d2cfa6c429be64743ac57ab4
+      internalID: 655273909076107890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_47
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 2870
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb5d29d4e46d9d45879cad23882f604
+      internalID: 2796081279036806592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_48
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 2871
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85771ee1baa1f70479fbcfce187f4604
+      internalID: -5096840972678902189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_49
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 2871
+        width: 298
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62072ee57fc012f4f975ea556982f33b
+      internalID: -144097241541796045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2472
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e83208c7ed044b448ed1513af5b6bb2
+      internalID: 5171111558807439018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_51
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2472
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f913fd533d94f42bc90b35b76be9cb
+      internalID: -6523754259091166904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_52
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 2472
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091f32cf494dfac4aa8a4ce34ac40f2b
+      internalID: 6690398372859994003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_53
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 2472
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3f90d3b3c99cb4ea086b2b12d260ed
+      internalID: -4825730106745465265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_54
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 2472
+        width: 301
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6f4a2966651db4999a7d58fd0bfff4
+      internalID: 126268678232876766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_55
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2070
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964b9fb1ac84ea54c9ca6167e70708c9
+      internalID: -3864934113010488724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_56
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2070
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5493ebf117b7eb940abb210e89b1a69b
+      internalID: 8991683093011582557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_57
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 2070
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae187653e3a6534d8f68eda19e7479c
+      internalID: -9163534759626831327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_58
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 2071
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a64ab7d78a0ee489c6ecc797772141
+      internalID: -6852065386615993431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_59
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 2070
+        width: 298
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c7f5d229b715b4b8b9f245e145ab9f
+      internalID: 1914950912590491812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_60
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1672
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca57bd07cce4b3408d51d8438b5c733
+      internalID: 4911603014812965466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_61
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1672
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6146a0991c42ae469b05f227349c6d6
+      internalID: -3937308050118389940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_62
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1672
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c93f6c576448f4ba019510d68d7e44
+      internalID: 6939084384718979335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_63
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1672
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1df4641608394c97840b1a08dd1e7
+      internalID: 158896358076677731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_64
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 1672
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e300b1744944194aa8a16323951d3b8
+      internalID: -6961621216194217683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_65
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1270
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc356fac564b094f911f482648c49cb
+      internalID: -3565138638695898736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_66
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1270
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c14182d3379b943b6ec3a252992e03
+      internalID: 8977575211180997125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_67
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1270
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7523d7d62e4a53c468339d271e84369a
+      internalID: 9043316057838759898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_68
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1270
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8f2dc2822e6e94dade53f09e654f58
+      internalID: 8097225195117218828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_69
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 1270
+        width: 301
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05404d4fd9c4ea448e94d0380cde4b0
+      internalID: 6533669403576130720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_70
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 872
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc86ebbfe0c43144b149d130ee7ff40
+      internalID: -1689390134219259809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_71
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 872
+        width: 299
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d181f4cc210e2a419f5f7fb049a7330
+      internalID: -1050782440277829835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_72
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 872
+        width: 299
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae2601b35171a64daa28d03b532fa79
+      internalID: 7081024050528640813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_73
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 872
+        width: 299
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07e71a756e74c0448433890bf8349c0
+      internalID: -3337007004031873850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_74
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 872
+        width: 298
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7d98196d39f494b8a26a12b2322f35
+      internalID: -3006817261456463237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_75
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 470
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da465e197af4f204b8f3ce2bc4b1eedd
+      internalID: 7989465161948568272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_76
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 470
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3df16a401982b4598d7318140b4ef6
+      internalID: -757135281949641703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_77
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 473
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c41ac69dde12c540b7a8960ec32a05d
+      internalID: -5401118152863041695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_78
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 470
+        width: 299
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c419ed4501bfdb14994e43fe6334951d
+      internalID: -3021627755224772551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_79
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 470
+        width: 298
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2da80dc07e0514daec8629fd847131
+      internalID: -5630016099875742002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_80
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 71
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005a2fbb5a137e04b9e93d2cf9f4a0cf
+      internalID: 2709017498979643968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_81
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 71
+        width: 299
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188a220a4c2d15843851515c8e0da48b
+      internalID: -6145487958805578464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vinyleTourne_82
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 71
+        width: 299
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb560fc83df29b4f966236579be480a
+      internalID: -7847663556663126050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
