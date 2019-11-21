@@ -3980,6 +3980,7 @@ MonoBehaviour:
   minscale: 0.8
   maxscale: 0.9
   propscale: 1
+  planeLightTab: []
 --- !u!224 &647650965 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
@@ -13978,56 +13979,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan(accueil)
       objectReference: {fileID: 0}
-    - target: {fileID: 2384041044570889014, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1651371964}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 387063088}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: initPlayerPos.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: maxscale
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: minscale
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: propscale
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078801105727444441, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: initialDialogue
-      value: 
-      objectReference: {fileID: 83919297}
     - target: {fileID: 2650657580326858515, guid: 2f2139467161d7f40b3f2e675e3309e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14083,27 +14034,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2650657580326858515, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650657580326858515, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650657580326858515, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 543790908192474591, guid: 2f2139467161d7f40b3f2e675e3309e3,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 442437872149f8842a1fd1e24faab445,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2139467161d7f40b3f2e675e3309e3, type: 3}
 --- !u!4 &1130951414985750623 stripped
