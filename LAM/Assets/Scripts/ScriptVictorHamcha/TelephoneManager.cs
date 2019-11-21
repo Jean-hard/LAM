@@ -28,6 +28,10 @@ public class TelephoneManager : MonoBehaviour
             {
                 goodnumber = true;
             }
+            else
+            {
+                numtel.Clear();
+            }
 
 
 

@@ -300,13 +300,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c55c23934315f41b518e19d386dc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: -256
-  rotZ: 0
-  roatmax: 297.8
+  offset: -265
+  rotZ: 272.62326
+  roatmax: 264
   roulette: {fileID: 1406774902}
   "num\xE9ro": 0
   ancre: {fileID: 870420544}
-  distance: 0
+  distance: 2.3395464
   smooth: 6
   rotationZ: 0
   returntopos: 0
