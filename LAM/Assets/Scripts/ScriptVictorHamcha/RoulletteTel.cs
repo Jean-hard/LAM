@@ -81,13 +81,13 @@ public class RoulletteTel : MonoBehaviour
             if (selected)// si c'etait le numéro selectioné 
             {
 
-                if (telephonemanager.numtel.Count <= telephonemanager.numteltaille && distance <= 0.2)// si le nombre de numéro fait est inferieur au nombre de numéro demandé et que la distance entre l'ancre et le numéro séléctioné est inferieur à 0.2 alor 
+                if (telephonemanager.numtel.Count < telephonemanager.numteltaille && distance <= 0.3)// si le nombre de numéro fait est inferieur au nombre de numéro demandé et que la distance entre l'ancre et le numéro séléctioné est inferieur à 0.2 alor 
                 {
                     telephonemanager.numtel.Add(numéro);// le numéro est ajouté a la liste du numéro à appelé 
 
                 }
 
-                if (telephonemanager.end == false && telephonemanager.goodnumber == true && distance <= 0.2)// si le joueur a bien tous les bon numéro et essaye de refaire un num alors  
+                if (telephonemanager.end == false && telephonemanager.goodnumber == true && distance <= 0.3)// si le joueur a bien tous les bon numéro et essaye de refaire un num alors  
                     telephonemanager.end = true;// le jeu est fini  
 
 
