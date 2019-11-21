@@ -18,9 +18,16 @@ public class PlaneScript : MonoBehaviour
     private Dialogue initialDialogue = null;
     private bool dialogueUsed = false;
 
+    /**
+     * ----TODO : à commenter
+     */
     public float minscale;
     public float maxscale;
     public float propscale;
+
+    [SerializeField]
+    private GameObject[] planeLightTab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,18 +40,31 @@ public class PlaneScript : MonoBehaviour
         
     }
 
+    /**
+     * Quand on désactive ce plan, on désactive tout les éléments interactifs qui y sont lié
+     * et on désactive toutes les lumières
+     */
     public void OnDesactive()
     {
         this.gameObject.SetActive(false);
         for (int i = 0; i < interElementTab.Length; i++)
             interElementTab[i].SetActive(false);
+
+        for (int i = 0; i < planeLightTab.Length; i++)
+            planeLightTab[i].SetActive(false);
     }
 
+    /**
+     * Quand on active ce plan, on réactive tout.
+     */
     public void OnActive()
     {
         this.gameObject.SetActive(true);
         for (int i = 0; i < interElementTab.Length; i++)
             interElementTab[i].SetActive(true);
+
+        for (int i = 0; i < planeLightTab.Length; i++)
+            planeLightTab[i].SetActive(true);
     }
 
     public Vector3 GetInitPlayerPos()
@@ -66,9 +86,4 @@ public class PlaneScript : MonoBehaviour
         else
             return null;
     }
-
-    //public void DialogueUsed()
-    //{
-    //    dialogueUsed = true;
-    //}
 }
