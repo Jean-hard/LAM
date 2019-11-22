@@ -10,7 +10,7 @@ public class VolumeController : MonoBehaviour, IPointerDownHandler
     public float[] tabVolumes = { 0.1f, 0.3f, 0.5f }; // valeurs de volume
     public int position = 1;
 
-    private float[] tabPositions = { 45, 0, 315 }; // angles des 3 crans
+    private float[] tabPositions = { 90, 0, 270 }; // angles des 3 crans
 
     private float angleVinyleMin = 272f; // les valeurs d'angles (z) du bras de la platine entre lesquelles il est placé sur le vinyle
     private float angleVinyleMax = 338f;

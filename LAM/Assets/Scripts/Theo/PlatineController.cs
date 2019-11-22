@@ -27,12 +27,23 @@ public class PlatineController : MonoBehaviour
     // conditions de victoire : bras bien placé, volume activé, fréquence bien placée, vitesse slow
     private bool conditionRemplie = false;
 
+    // Dialogue
+    [SerializeField]
+    private Dialogue myDialogue;
+    private bool dialogueDisplayed;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = vinyle.GetComponent<Animator>();
         // animator.enabled = false;
         volumes = GameObject.Find("VolumeKnob").GetComponent<VolumeController>().tabVolumes;
+
+        // le vinyle tourne disque est éteint à l'arrivée sur le plan
+        animator.enabled = false;
+        musique.Pause();
+        crackle.Pause();
+        bruitBlanc.Pause();
     }
 
     // Update is called once per frame
@@ -44,10 +55,20 @@ public class PlatineController : MonoBehaviour
         // Debug.Log(brasBienPlace);
 
         conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && animator.speed == slowSpeed && animator.enabled;
+        
 
-        if (conditionRemplie)
+        if (conditionRemplie && !dialogueDisplayed)
         {
-            Debug.Log("VICTOIRE");
+            GameManager.Instance.InitDialogue(myDialogue);
+            dialogueDisplayed = true;
+            //Debug.Log("VICTOIRE");
+        }
+
+        if(animator.enabled == false)
+        {
+            musique.Pause();
+            crackle.Pause();
+            bruitBlanc.Pause();
         }
     }
 
@@ -57,11 +78,15 @@ public class PlatineController : MonoBehaviour
         {
             animator.enabled = false;
             musique.Pause();
+            bruitBlanc.Pause();
+            crackle.Pause();
         }
         else
         {
             animator.enabled = true;
             musique.Play();
+            bruitBlanc.Play();
+            crackle.Play();
         }
     }
 

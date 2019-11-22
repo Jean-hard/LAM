@@ -26,7 +26,23 @@ public class GameManager : MonoBehaviour
     private ScalePlayer scalePlayer;
 
     private bool isPlayerOnNextPlan = true;
-    
+
+    // SINGLETON (provisoire) ---------------------------------------------
+    private static GameManager _instance;
+
+    public static GameManager Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }//--------------------------------------------------------------------
 
     // Start is called before the first frame update
     void Start()
