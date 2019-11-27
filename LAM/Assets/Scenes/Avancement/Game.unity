@@ -2153,7 +2153,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -2289,8 +2289,9 @@ Transform:
   - {fileID: 1255788739}
   - {fileID: 674823543}
   - {fileID: 1466007974}
+  - {fileID: 2000680629}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &168398791
 GameObject:
@@ -4000,7 +4001,7 @@ MonoBehaviour:
   end: 0
   goodnumber: 0
   numteltaille: 0
-  telephoneDialogue: {fileID: 0}
+  telephoneDialogue: {fileID: 1255788740}
 --- !u!212 &335106306
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4218,8 +4219,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &364761359
 AudioSource:
@@ -4349,8 +4350,8 @@ Transform:
   - {fileID: 200619211}
   - {fileID: 143134222}
   - {fileID: 143573173}
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375332379
 GameObject:
@@ -4472,8 +4473,8 @@ Transform:
   - {fileID: 511097103}
   - {fileID: 93032276}
   - {fileID: 1849401409}
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387063088
 GameObject:
@@ -6047,7 +6048,7 @@ MonoBehaviour:
   slowSpeed: 0.5
   normalSpeed: 1
   fastSpeed: 1.5
-  vinyleDialogue: {fileID: 0}
+  vinyleDialogue: {fileID: 1206570649}
 --- !u!1 &445639724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,8 +7102,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549081769
 GameObject:
@@ -12887,7 +12888,7 @@ Transform:
   - {fileID: 699846928}
   - {fileID: 717472484}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965423700
 GameObject:
@@ -15597,6 +15598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mirrorButton: {fileID: 143192516}
+  boardButton: {fileID: 1756707648}
+  boardDialogue: {fileID: 2000680630}
 --- !u!4 &1186905982
 Transform:
   m_ObjectHideFlags: 0
@@ -15607,9 +15610,15 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 370960116}
+  - {fileID: 1806365253}
+  - {fileID: 364761358}
+  - {fileID: 1924258225}
+  - {fileID: 379251548}
+  - {fileID: 547336490}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197048729
 GameObject:
@@ -16875,7 +16884,7 @@ PrefabInstance:
     - target: {fileID: 3969082664721925989, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3969082664721925995, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
@@ -22924,7 +22933,7 @@ PrefabInstance:
     - target: {fileID: 3518903162636655663, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
@@ -23119,8 +23128,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922936693}
-        m_MethodName: ChangePlan
+      - m_Target: {fileID: 1186905981}
+        m_MethodName: CheckGamesDone
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 751558193}
@@ -23407,12 +23416,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806365251}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.41, y: 1.77, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1811087427
 PrefabInstance:
@@ -24575,14 +24584,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924258224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.47, y: 5.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 649985035}
   - {fileID: 335106304}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1186905982}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932358881
 GameObject:
@@ -25343,6 +25352,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2000680628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000680629}
+  - component: {fileID: 2000680630}
+  m_Layer: 0
+  m_Name: DIA_TAB_02(provisoire)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2000680629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000680628}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2000680630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000680628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Je devrais peut-\xEAtre finir la chambre d'abord..."
+  speakers: 00000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &2000842368
 GameObject:
   m_ObjectHideFlags: 0

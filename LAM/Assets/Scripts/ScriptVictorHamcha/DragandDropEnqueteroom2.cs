@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class DragandDropEnqueteroom2 : MonoBehaviour
 {
-    /**
-     * bool to check if all the enigma in the room has been done succesfully
-     */
-    public static bool vinyleDone = false;
-    public static bool telephoneDone = false;
-    public static bool tiroirDone = false;
+
 
     private bool selected;// es-ce que la pièce est séléctioné 
     public List<Transform> slots = new List<Transform>();//slots ou drop les images 

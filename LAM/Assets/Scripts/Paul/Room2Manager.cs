@@ -11,12 +11,17 @@ public class Room2Manager : MonoBehaviour
     [SerializeField]
     private GameObject mirrorButton;
 
+    [SerializeField]
+    private GameObject boardButton;
+
+    [SerializeField]
+    private Dialogue boardDialogue;
     /**
      * bool to check if all the enigma in the room has been done succesfully
      */
     public static bool vinyleDone = false;
     public static bool telephoneDone = false;
-    public static bool tiroirDone = false;// à modifier
+    public static bool deadBodyEnigmaDone = false;// à modifier
 
     /**
      * check if the right drawer has been open
@@ -46,6 +51,21 @@ public class Room2Manager : MonoBehaviour
     //TEMPORAIRE
     public void ClickOnMirror()
     {
-        Debug.Log("ON ATTEND LE L'IMAGE POUR LE MIROIR !");
+        Debug.Log("ON ATTEND L'IMAGE POUR LE MIROIR !");
+        //TEMPORAIRE, devra être appelé à la vraie résolution de l'énigme
+        deadBodyEnigmaDone = true;
+    }
+
+    public void CheckGamesDone(PlaneScript BoardPlan)
+    {
+        Debug.Log("vinyle: " + vinyleDone + ", telephone: " + telephoneDone + ", deadEnigma: " + deadBodyEnigmaDone);
+        if (vinyleDone && telephoneDone && deadBodyEnigmaDone)
+        {
+            GameManager.Instance.ChangePlan(BoardPlan);
+        }
+        else
+        {
+            GameManager.Instance.InitDialogue(boardDialogue);
+        }
     }
 }

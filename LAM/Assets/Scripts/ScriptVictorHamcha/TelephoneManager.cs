@@ -42,7 +42,7 @@ public class TelephoneManager : MonoBehaviour
             GameManager.Instance.InitDialogue(telephoneDialogue);
             goodnumber = false;
             numtel = new List<int>();
-            DragandDropEnqueteroom2.telephoneDone = true;
+            Room2Manager.telephoneDone = true;
         }
     }
 }

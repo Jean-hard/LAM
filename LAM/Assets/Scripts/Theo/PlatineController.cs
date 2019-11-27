@@ -61,7 +61,7 @@ public class PlatineController : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(vinyleDialogue);
             dialogueDisplayed = true;
-            DragandDropEnqueteroom2.vinyleDone = true;
+            Room2Manager.vinyleDone = true;
             //Debug.Log("VICTOIRE");
         }
 
