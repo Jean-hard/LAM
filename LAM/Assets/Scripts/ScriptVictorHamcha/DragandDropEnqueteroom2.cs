@@ -7,14 +7,14 @@ public class DragandDropEnqueteroom2 : MonoBehaviour
 
 
     private bool selected;// es-ce que la pièce est séléctioné 
-    public List<Transform> slots = new List<Transform>();//slots ou drop les images 
     [SerializeField]
     private float distance;//distance entre la pièce séléctioné et les slots 
     private SpriteRenderer _sprite;//spriterenderer de l'image 
     private Vector3 initialposition;//valeur de la position initial de la pièce 
     private bool droped;//vérifie si la pièce a été drop dans un des slots 
-    public List<GameObject> goodpiece = new List<GameObject>();//est-ce que la pièce fait partie des bonnes pièce 
-    public List<bool> piececorrectpos = new List<bool>();//vérifie si la piece est a la bonne position 
+    
+    private EnqueteManager enqueteManager;
+    
 
     public static bool enigmeFinished;
 
@@ -22,6 +22,7 @@ public class DragandDropEnqueteroom2 : MonoBehaviour
     // Start is called before the first frame update 
     void Start()
     {
+        enqueteManager = GetComponentInParent<EnqueteManager>();//enquetemanager parent de toutes les images a draganddrop
         _sprite = GetComponent<SpriteRenderer>();//récupère le sprite de la pièce 
         StartCoroutine(waitforinitialisation());//laisse le temps au pièce de se placer  
     }
@@ -39,15 +40,15 @@ public class DragandDropEnqueteroom2 : MonoBehaviour
 
         for (int i = 0; i <= 3; i++)// vérifie pour toutes les pièce de la liste  
         {
-            float distgoodnumber = Vector2.Distance(goodpiece[i].transform.position, slots[i].position);//distance entre une bonne pièce et et le slots de la même index 
+            float distgoodnumber = Vector2.Distance(enqueteManager.goodpiece[i].transform.position, enqueteManager.slots[i].transform.position);//distance entre une bonne pièce et et le slots de la même index 
 
-            if (distgoodnumber == 0)//si la pièce est dans le bon slot alors  
+            if (distgoodnumber ==0)//si la pièce est dans le bon slot alors  
             {
-                piececorrectpos[i] = true;// le booléen le vérifiant devient true 
+                enqueteManager.piececorrectpos[i] = true;// le booléen le vérifiant devient true 
             }
             else
             {
-                piececorrectpos[i] = false;//le bouleen est faux  
+                enqueteManager.piececorrectpos[i] = false;//le bouleen est faux  
             }
 
         }
@@ -58,11 +59,11 @@ public class DragandDropEnqueteroom2 : MonoBehaviour
             {
                 if (selected)
                 {
-                    distance = Vector2.Distance(transform.position, slots[i].position);// la distance entre la pièce que l'on a dans la main et les slots 
+                    distance = Vector2.Distance(transform.position, enqueteManager.slots[i].position);// la distance entre la pièce que l'on a dans la main et les slots 
 
                     if (distance <= 1)//si la pièce est prets de l'un des slots alors 
                     {
-                        transform.position = slots[i].position;//la pièce prend la position du slot en question 
+                        transform.position = enqueteManager.slots[i].position;//la pièce prend la position du slot en question 
                         droped = true;//dropped devient true 
 
                     }
@@ -79,12 +80,7 @@ public class DragandDropEnqueteroom2 : MonoBehaviour
             droped = false;//droped devient faux  
         }
 
-        if (piececorrectpos[0] && piececorrectpos[1] && piececorrectpos[2] && piececorrectpos[3])//si toutes les pièces sont au bonnes endroits 
-        {
-            enigmeFinished = true;
-            Debug.Log("youwin");
-            
-        }
+       
 
     }
 
