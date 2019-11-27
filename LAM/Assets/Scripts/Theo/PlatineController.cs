@@ -29,7 +29,7 @@ public class PlatineController : MonoBehaviour
 
     // Dialogue
     [SerializeField]
-    private Dialogue myDialogue;
+    private Dialogue vinyleDialogue;
     private bool dialogueDisplayed;
 
     // Start is called before the first frame update
@@ -59,8 +59,9 @@ public class PlatineController : MonoBehaviour
 
         if (conditionRemplie && !dialogueDisplayed)
         {
-            GameManager.Instance.InitDialogue(myDialogue);
+            GameManager.Instance.InitDialogue(vinyleDialogue);
             dialogueDisplayed = true;
+            DragandDropEnqueteroom2.vinyleDone = true;
             //Debug.Log("VICTOIRE");
         }
 

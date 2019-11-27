@@ -11,7 +11,7 @@ public class TelephoneManager : MonoBehaviour
     public int numteltaille;
 
     [SerializeField]
-    private Dialogue myDialogue;
+    private Dialogue telephoneDialogue;
 
     // Start is called before the first frame update 
     void Start()
@@ -39,9 +39,10 @@ public class TelephoneManager : MonoBehaviour
         if (goodnumber)// si le jeu est finie et que le joueur a essayé une autre action alors  
         {
             Debug.Log("youwin");
-            GameManager.Instance.InitDialogue(myDialogue);
+            GameManager.Instance.InitDialogue(telephoneDialogue);
             goodnumber = false;
             numtel = new List<int>();
+            DragandDropEnqueteroom2.telephoneDone = true;
         }
     }
 }

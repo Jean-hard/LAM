@@ -298,7 +298,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -470,7 +470,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -721,7 +721,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1025,7 +1025,7 @@ Transform:
   - {fileID: 1111078445}
   - {fileID: 818565743}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &105475095
 PrefabInstance:
@@ -1496,7 +1496,7 @@ RectTransform:
   - {fileID: 929332795}
   - {fileID: 1463298201}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1568,7 +1568,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -1702,7 +1701,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1881,6 +1880,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &143192516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143192517}
+  - component: {fileID: 143192520}
+  - component: {fileID: 143192519}
+  - component: {fileID: 143192518}
+  m_Layer: 5
+  m_Name: Mirror
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &143192517
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143192516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 935241291}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.80222917, y: 0.35511115}
+  m_AnchorMax: {x: 1, y: 0.60722226}
+  m_AnchoredPosition: {x: -1.9000244, y: -3.399994}
+  m_SizeDelta: {x: 3.9000244, y: 11.099976}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &143192518
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143192516}
+  m_CullTransparentMesh: 0
+--- !u!114 &143192519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143192516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1186905981}
+        m_MethodName: ClickOnMirror
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &143192520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143192516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &143573172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2153,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -2161,6 +2288,7 @@ Transform:
   - {fileID: 1206570648}
   - {fileID: 1255788739}
   - {fileID: 674823543}
+  - {fileID: 1466007974}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2461,7 +2589,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3872,7 +4000,7 @@ MonoBehaviour:
   end: 0
   goodnumber: 0
   numteltaille: 0
-  myDialogue: {fileID: 1255788740}
+  telephoneDialogue: {fileID: 0}
 --- !u!212 &335106306
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4078,7 +4206,7 @@ MonoBehaviour:
   slowSpeed: 0.5
   normalSpeed: 1
   fastSpeed: 1.5
-  myDialogue: {fileID: 0}
+  vinyleDialogue: {fileID: 0}
 --- !u!4 &364761358
 Transform:
   m_ObjectHideFlags: 0
@@ -4091,7 +4219,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &364761359
 AudioSource:
@@ -4212,7 +4340,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370960115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4222,7 +4350,7 @@ Transform:
   - {fileID: 143134222}
   - {fileID: 143573173}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375332379
 GameObject:
@@ -4455,7 +4583,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4566,7 +4694,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -4897,7 +5024,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -5163,7 +5289,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5921,7 +6047,7 @@ MonoBehaviour:
   slowSpeed: 0.5
   normalSpeed: 1
   fastSpeed: 1.5
-  myDialogue: {fileID: 1206570649}
+  vinyleDialogue: {fileID: 0}
 --- !u!1 &445639724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,7 +6156,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6976,7 +7102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549081769
 GameObject:
@@ -7053,8 +7179,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 821819517}
+        m_MethodName: OeufIsVisited
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7326,7 +7463,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7615,7 +7752,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7750,7 +7887,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7844,7 +7981,7 @@ Transform:
   m_Children:
   - {fileID: 36489637}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &624343354
 GameObject:
@@ -7911,7 +8048,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -8450,7 +8586,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8589,8 +8725,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1186905981}
+        m_MethodName: EnigmaDrawerOpened
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8848,7 +8995,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9483,7 +9630,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9613,7 +9760,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -10272,7 +10418,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10533,7 +10679,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10726,6 +10872,8 @@ MonoBehaviour:
   goodAnswer3: 0
   activefondue: 0
   palettedecouleur: {fileID: 729099138}
+  peintureDialogue: {fileID: 1466007975}
+  peinturePlan: {fileID: 1274454855}
 --- !u!4 &821819518
 Transform:
   m_ObjectHideFlags: 0
@@ -10738,7 +10886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &829847299
 GameObject:
@@ -11406,7 +11554,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12176,7 +12324,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -12436,7 +12583,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -12513,6 +12659,7 @@ RectTransform:
   - {fileID: 182829814}
   - {fileID: 655728225}
   - {fileID: 670776206}
+  - {fileID: 143192517}
   m_Father: {fileID: 590344753}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12663,7 +12810,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -12741,7 +12887,7 @@ Transform:
   - {fileID: 699846928}
   - {fileID: 717472484}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965423700
 GameObject:
@@ -12906,7 +13052,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14866,7 +15012,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15084,7 +15230,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -15222,7 +15367,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15376,7 +15521,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15422,6 +15567,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179070675}
   m_CullTransparentMesh: 0
+--- !u!1 &1186905980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186905982}
+  - component: {fileID: 1186905981}
+  m_Layer: 0
+  m_Name: Room2Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1186905981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186905980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62838fedcd7852c4c9be1055772616ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mirrorButton: {fileID: 143192516}
+--- !u!4 &1186905982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186905980}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197048729
 GameObject:
   m_ObjectHideFlags: 0
@@ -15487,7 +15676,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -15924,7 +16112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223859324
 GameObject:
@@ -15975,7 +16163,6 @@ GameObject:
   - component: {fileID: 1225542104}
   - component: {fileID: 1225542103}
   - component: {fileID: 1225542102}
-  - component: {fileID: 1225542105}
   m_Layer: 5
   m_Name: Chevalet
   m_TagString: Untagged
@@ -16045,19 +16232,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922936693}
-        m_MethodName: ChangePlan
-        m_Mode: 2
+      - m_Target: {fileID: 821819517}
+        m_MethodName: CheckGamesDone
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1274454855}
-          m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16103,20 +16290,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225542100}
   m_CullTransparentMesh: 0
---- !u!114 &1225542105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225542100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbcd1fa1efb75c43a48edeec687bacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorPosition: {x: 0, y: 5, z: 0}
-  planeNextDoor: {fileID: 1274454855}
 --- !u!1 &1227348474
 GameObject:
   m_ObjectHideFlags: 0
@@ -16503,7 +16676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243206216
 GameObject:
@@ -16570,7 +16743,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -16699,6 +16871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre2_view1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969082664721925989, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3969082664721925995, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
@@ -17061,7 +17238,7 @@ Transform:
   - {fileID: 1284944712}
   - {fileID: 1645315005}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278383679
 GameObject:
@@ -17171,7 +17348,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18243,7 +18420,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18427,7 +18604,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18661,7 +18838,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18915,7 +19092,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18923,7 +19100,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1461529507
 MonoBehaviour:
@@ -19182,6 +19359,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1466007973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466007974}
+  - component: {fileID: 1466007975}
+  m_Layer: 0
+  m_Name: DIA_PEINT_01(provisoire)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466007974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466007973}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466007975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466007973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Je devrais peut-\xEAtre finir la chambre d'abord..."
+  speakers: 00000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1490795638
 GameObject:
   m_ObjectHideFlags: 0
@@ -20297,7 +20525,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20719,7 +20947,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -21021,7 +21248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 6, y: 2.5, z: 0}
-  planeNextDoor: {fileID: 1246197471}
+  planeNextDoor: {fileID: 325116256}
 --- !u!114 &1628532516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21077,7 +21304,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21296,7 +21523,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21450,7 +21677,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21853,7 +22080,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21932,7 +22159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: -6, y: 2.5, z: 0}
-  planeNextDoor: {fileID: 325116256}
+  planeNextDoor: {fileID: 1246197471}
 --- !u!114 &1696526268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21988,7 +22215,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22355,7 +22582,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22697,7 +22924,7 @@ PrefabInstance:
     - target: {fileID: 3518903162636655663, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
@@ -22904,7 +23131,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23085,7 +23312,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -23381,7 +23607,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23438,6 +23664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre2_view1_bureau)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182740224798173847, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8182740224798173849, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
@@ -23619,36 +23850,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1854923332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1854923333}
-  m_Layer: 0
-  m_Name: Doors
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1854923333
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854923332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.571157, y: -0.08558373, z: -638.7741}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855596885
 GameObject:
   m_ObjectHideFlags: 0
@@ -23793,7 +23994,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -24322,7 +24522,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -24383,7 +24582,7 @@ Transform:
   - {fileID: 649985035}
   - {fileID: 335106304}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932358881
 GameObject:
@@ -24571,7 +24770,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25343,7 +25542,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25603,7 +25802,6 @@ MonoBehaviour:
   - {fileID: 944857648}
   - {fileID: 1243206216}
   - {fileID: 1915824165}
-  gameWin: 0
   puzzlegame: {fileID: 36489636}
   canChangeFont: 0
   puzzlePlan: {fileID: 0}
@@ -25756,7 +25954,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26069,7 +26267,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisble
+        m_MethodName: SetPlayerVisible
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26126,6 +26324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre1_view2_horloge)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146851431278495612, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7146851431278495602, guid: a21b010f42e6ddc4a87ab266766853c8,
         type: 3}
@@ -26548,7 +26751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &14182374712039187 stripped
 Transform:
@@ -26567,6 +26770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre2_view1_tiroir) (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905255526248652323, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3905255526248652333, guid: 8f3ba22f025b4c447802ab317a90a305,
         type: 3}
@@ -26670,6 +26878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre2_view1_tiroir) (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212292214950922576, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 212292214950922590, guid: be2c5e264f7f4b044933031cafa73de0,
         type: 3}
@@ -26984,6 +27197,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan(chambre2_view1_tiroir) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1991351293337457784, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8722055297678426867, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
         type: 3}
       propertyPath: interElementTab.Array.size
@@ -27117,6 +27335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan(chambre2_view1_tiroir) (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5799113373040094429, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5799113373040094419, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27201,6 +27424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plan(chambre2_view1_tiroir) (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389817604669489774, guid: ff398a8bb7103f44994b301353eb0022,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8206081720494314725, guid: ff398a8bb7103f44994b301353eb0022,
         type: 3}

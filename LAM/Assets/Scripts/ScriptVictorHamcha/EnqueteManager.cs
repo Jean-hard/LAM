@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class EnqèteManager : MonoBehaviour
+public class EnqueteManager : MonoBehaviour
 {
     public List<GameObject> imagetodrag = new List<GameObject>();//les images qu'il faut drag 
     public List<GameObject> imagetodragrandomized = new List<GameObject>();//les images qu'il faut drag mélangées 
@@ -37,7 +37,7 @@ public class EnqèteManager : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
-        if (DragandDropEnquèteroom2.enigmeFinished && !dialogueDisplayed)
+        if (DragandDropEnqueteroom2.enigmeFinished && !dialogueDisplayed)
         {
             GameManager.Instance.InitDialogue(myDialogue);
             dialogueDisplayed = true;

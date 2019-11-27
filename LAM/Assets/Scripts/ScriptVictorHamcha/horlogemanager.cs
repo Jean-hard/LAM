@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class horlogemanager : MonoBehaviour
 {
+    public static bool horlogeGameFinished; //variable utilisée seulement pour le horlogeaiguille.cs qui lancera la coroutine d'anim des aiguilles
 
     //position de l'aiguille minute + position des minutes sur l'horloge
     public GameObject minute;//aiguille 
@@ -135,11 +136,13 @@ public class horlogemanager : MonoBehaviour
            
         }
 
-        if (bonneHeure&&bonneMinute)// si même heure et minute sur l'horloge et le temps réel :
+        if (bonneHeure && bonneMinute)// si même heure et minute sur l'horloge et le temps réel :
         {
-            Debug.Log("youwin");
-            horlogeaiguille.jeufini = true;
-            
+            Debug.Log("horloge game win");
+            horlogeGameFinished = true;
+            bonneHeure = false;
+            bonneMinute = false;
+            PeintureManager.horlogeDone = true;
         }
         
         if(horlogeaiguille.canChangeFont)
@@ -147,8 +150,5 @@ public class horlogemanager : MonoBehaviour
             fontHorloge.sprite = fontHorlogeSucceed; //on applique le sprite avec le tiroir ouvert de l'horloge
             horlogeaiguille.canChangeFont = false;
         }
-
     }
-
-
 }

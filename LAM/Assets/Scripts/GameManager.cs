@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetPlayerVisble(bool isVisible)
+    public void SetPlayerVisible(bool isVisible)
     {
         isPlayerOnNextPlan = isVisible;
     }

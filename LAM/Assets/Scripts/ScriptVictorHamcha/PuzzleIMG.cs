@@ -30,8 +30,6 @@ public class PuzzleIMG : MonoBehaviour
             shuffleposition[i].transform.position = new Vector2(7.009999f, 3.972f); //positiones toutes les pièce au même endroit 
 
         }
-
-
     }
 
     void Update()
