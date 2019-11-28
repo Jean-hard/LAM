@@ -55,7 +55,10 @@ public class horlogeaiguille : MonoBehaviour
         canChangeFont = true;
     }
 
+    public void ActiveAnimAiguille()
+    {
 
+    }
 
     private void OnMouseOver()
     {

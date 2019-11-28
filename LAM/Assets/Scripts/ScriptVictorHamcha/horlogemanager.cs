@@ -6,6 +6,7 @@ public class horlogemanager : MonoBehaviour
 {
     public static bool horlogeGameFinished; //variable utilisée seulement pour le horlogeaiguille.cs qui lancera la coroutine d'anim des aiguilles
 
+    public Transform pointMinuteEtHeureHolder;
     //position de l'aiguille minute + position des minutes sur l'horloge
     public GameObject minute;//aiguille 
     /**
@@ -71,7 +72,9 @@ public class horlogemanager : MonoBehaviour
              * pareil pour vv
              */
             pointsMinute = Instantiate(minute, positionpointminute, Quaternion.identity);// creer les petits points minutes 
+            pointsMinute.transform.parent = pointMinuteEtHeureHolder;//donne comme parents aux points : pointMinuteEtHeureHolder
             pointminute.Add(pointsMinute);//ajoutes les points a la liste pointsminute
+           
         }
 
 
@@ -87,6 +90,7 @@ public class horlogemanager : MonoBehaviour
              * pareil vv
              */
              pointsHeure = Instantiate(heure, positionpointHeure, Quaternion.identity);
+            pointsHeure.transform.parent = pointMinuteEtHeureHolder;//donne comme parents aux points : pointMinuteEtHeureHolder
             pointheure.Add(pointsHeure);
         }
     }
