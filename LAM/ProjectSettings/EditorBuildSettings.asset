@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Theo/Game 1.unity
+    path: Assets/Scenes/Theo/Gameperso.unity
     guid: db34530677f15e9458db177b5882ceed
   - enabled: 0
     path: Assets/Scenes/Theo/Menu.unity
