@@ -7,40 +7,29 @@ public class BureauManager : MonoBehaviour
     public GameObject[] documentsTab = new GameObject[5];  // Tableau de documents que l'on peut parcourir
     public GameObject documents;    // GameObject ayant en enfant les documents
     private int currentDocIndex;    // Index du document en cours de lecture
-
-    public GameObject docGUI;   // GameObject ayant en enfant les boutons lorsque les docs sont affichés
-    public GameObject telButton;
-    public GameObject backButton;
-    public GameObject documentsButton;
-
+    private bool isOnFirstDoc;
     // boutons document précédent ou suivant
     public GameObject nextDocButton;
     public GameObject previousDocButton;
-        
+
+    void Update()
+    {
+        if (currentDocIndex == 0 && !isOnFirstDoc)
+        {
+            previousDocButton.SetActive(false);
+            isOnFirstDoc = true;
+        }
+    }
     // On ouvre la GUI des documents
     public void ShowDocuments()
     {
         documents.SetActive(true);
-        telButton.SetActive(false);
-        backButton.SetActive(false);
-        documentsButton.SetActive(false);
-        docGUI.SetActive(true);
-    }
-
-    // On retourne à la vue du bureau en désaffichant la GUI des documents
-    public void HideDocuments()
-    {
-        documents.SetActive(false);
-        telButton.SetActive(true);
-        backButton.SetActive(true);
-        documentsButton.SetActive(true);
-        docGUI.SetActive(false);
     }
 
     // Lorsqu'on clique sur le bouton 'suivant'
     public void ShowNextDocument()
     {
-        if(currentDocIndex < documentsTab.Length - 1)
+        if(currentDocIndex < documentsTab.Length - 1)   //si ce n'est pas le dernier document
         {
             previousDocButton.SetActive(true);  // on laisse le bouton previous affiché
             documentsTab[currentDocIndex].SetActive(false); // on désaffiche le document actuel
@@ -56,7 +45,7 @@ public class BureauManager : MonoBehaviour
     // Lorsqu'on clique sur le bouton 'précédent'
     public void ShowPreviousDocument()
     {
-        if (currentDocIndex > 0)
+        if (currentDocIndex > 0)    //si ce n'est pas le premier document
         {
             nextDocButton.SetActive(true);  // on laisse le bouton next affiché
             documentsTab[currentDocIndex].SetActive(false); // on désaffiche le document actuel
