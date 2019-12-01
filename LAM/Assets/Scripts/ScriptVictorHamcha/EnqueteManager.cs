@@ -7,11 +7,14 @@ public class EnqueteManager : MonoBehaviour
 {
     public List<GameObject> imagetodrag = new List<GameObject>();//les images qu'il faut drag 
     public List<GameObject> imagetodragrandomized = new List<GameObject>();//les images qu'il faut drag mélangées 
+    public List<GameObject> goodpiece = new List<GameObject>();//est-ce que la pièce fait partie des bonnes pièce 
+    public List<Transform> slots = new List<Transform>();//slots ou drop les images 
+    public List<bool> piececorrectpos = new List<bool>();//vérifie si la piece est a la bonne position 
     public float x;//positon en X des pièces
     public float y;//position en Y des pièces
     public float z;     // Position en Z des pièces
     private int nbrdecare = 0;// nbr de pièces par colonne 
-
+    private bool enigmeFinished;
     //Dialogue
     [SerializeField]
     private Dialogue myDialogue;
@@ -37,7 +40,15 @@ public class EnqueteManager : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
-        if (DragandDropEnqueteroom2.enigmeFinished && !dialogueDisplayed)
+
+        if (piececorrectpos[0] && piececorrectpos[1] && piececorrectpos[2] && piececorrectpos[3])//si toutes les pièces sont au bonnes endroits 
+        {
+            enigmeFinished = true;
+            Debug.Log("youwin");
+
+        }
+
+        if (enigmeFinished && !dialogueDisplayed)
         {
             GameManager.Instance.InitDialogue(myDialogue);
             dialogueDisplayed = true;

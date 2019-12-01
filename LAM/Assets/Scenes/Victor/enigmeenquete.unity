@@ -528,12 +528,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425311357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425311360
 MonoBehaviour:
@@ -547,18 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &425311361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -569,7 +558,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -660,12 +649,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450324611}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &450324614
 MonoBehaviour:
@@ -679,18 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &450324615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -701,7 +679,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -955,12 +933,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798195300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &798195303
 MonoBehaviour:
@@ -974,18 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &798195304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -996,7 +963,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1318,6 +1285,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1313752552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313752554}
+  m_Layer: 0
+  m_Name: alldraganddrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313752554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313752552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328089126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,12 +1390,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328089126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1328089129
 MonoBehaviour:
@@ -1412,18 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &1328089130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1434,7 +1420,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1490,8 +1476,21 @@ MonoBehaviour:
   - {fileID: 1655924786}
   - {fileID: 450324611}
   imagetodragrandomized: []
+  goodpiece:
+  - {fileID: 1328089126}
+  - {fileID: 1824030398}
+  - {fileID: 2038734495}
+  - {fileID: 1467429161}
+  slots:
+  - {fileID: 293573726}
+  - {fileID: 1153297027}
+  - {fileID: 8149913}
+  - {fileID: 479473183}
+  piececorrectpos: 00000000
   x: -6.41
   y: 0.8
+  z: 0
+  myDialogue: {fileID: 0}
 --- !u!4 &1365793412
 Transform:
   m_ObjectHideFlags: 0
@@ -1500,11 +1499,20 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365793410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6915691, y: -0.37801242, z: -0.30508786}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1328089128}
+  - {fileID: 1824030400}
+  - {fileID: 2038734497}
+  - {fileID: 1467429165}
+  - {fileID: 425311359}
+  - {fileID: 798195302}
+  - {fileID: 1886334441}
+  - {fileID: 1655924788}
+  - {fileID: 450324613}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467429161
 GameObject:
@@ -1535,7 +1543,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1563,18 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!212 &1467429164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1631,12 +1628,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467429161}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655924786
 GameObject:
@@ -1713,12 +1710,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655924786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1655924789
 MonoBehaviour:
@@ -1732,18 +1729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &1655924790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1754,7 +1740,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1845,12 +1831,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824030398}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1824030401
 MonoBehaviour:
@@ -1864,18 +1850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &1824030402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1886,7 +1861,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1977,12 +1952,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886334439}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1886334442
 MonoBehaviour:
@@ -1996,18 +1971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &1886334443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2018,7 +1982,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2109,12 +2073,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038734495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 0.8, z: -0.30508786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.41, y: 0.79999995, z: -0.30508786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1365793412}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2038734498
 MonoBehaviour:
@@ -2128,18 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a92e52cf96af146b6deda8e45af580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 293573726}
-  - {fileID: 1153297027}
-  - {fileID: 8149913}
-  - {fileID: 479473183}
   distance: 0
-  goodpiece:
-  - {fileID: 1328089126}
-  - {fileID: 1824030398}
-  - {fileID: 2038734495}
-  - {fileID: 1467429161}
-  piececorrectpos: 00000000
 --- !u!61 &2038734499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2150,7 +2103,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
