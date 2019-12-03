@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class VolumeController : MonoBehaviour, IPointerDownHandler
 {
-    public AudioSource audioSource;
+    public AudioSource musique;
     public Transform brasTransform;
     public float[] tabVolumes = { 0.1f, 0.3f, 0.5f }; // valeurs de volume
     public int position = 1;
@@ -19,7 +19,7 @@ public class VolumeController : MonoBehaviour, IPointerDownHandler
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.volume = tabVolumes[position]; // set le volume au début du jeu
+        musique.volume = tabVolumes[position]; // set le volume au début du jeu
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -39,7 +39,7 @@ public class VolumeController : MonoBehaviour, IPointerDownHandler
         zAngleBras = brasTransform.eulerAngles.z;
         if (angleVinyleMin < zAngleBras && zAngleBras < angleVinyleMax)
         {
-            audioSource.volume = tabVolumes[position];
+            musique.volume = tabVolumes[position];
         }
     }
 

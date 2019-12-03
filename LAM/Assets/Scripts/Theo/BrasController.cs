@@ -8,17 +8,11 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public float diffAngle = 100f;
     public AudioSource musique;
     public AudioSource bruit;
-    public VolumeController boutonVolume;
+    public VinyleManager manager;
+    public float angleVinyleMin = 272f;
+    public float angleVinyleMax = 348f;
 
-    private float angleVinyleMin = 272f;
-    private float angleVinyleMax = 338f;
     private bool selected = false;
-
-    void Start()
-    {
-        musique.volume = 0f; // le bras n'est pas sur le vinyle au début donc on ne joue pas la musique 
-        bruit.Pause();
-    }
 
     // Update is called once per frame
     void Update()
@@ -36,7 +30,6 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void OnPointerDown(PointerEventData eventData)
     {// la musique s'arrête quand on soulève le bras
         musique.volume = 0f;
-        bruit.Pause();
         selected = true;
     }
 
@@ -48,6 +41,7 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         if (angleVinyleMin < zAngle && zAngle < angleVinyleMax) // si le bras est sur le vinyle
         {
+            Debug.Log("placé");
             float setTime; // le timer auquel la musique se lance dépend de la position du bras
             if (angleVinyleMax - 5f < zAngle && zAngle < angleVinyleMax)
             {
@@ -60,8 +54,7 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
                 setTime = ((angleVinyleMax - zAngle)) * musique.clip.length / (angleVinyleMax - angleVinyleMin);
             }
             musique.time = setTime;
-            musique.volume = boutonVolume.tabVolumes[boutonVolume.position]; // on remet le volume car le bras est désormais sur le vinyle
-            bruit.Play();
+            musique.volume = manager.tabVolumeValeurs[manager.volumePosition]; // on remet le volume car le bras est désormais sur le vinyle
         }
     }
 }
