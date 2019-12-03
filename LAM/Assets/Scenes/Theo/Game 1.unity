@@ -6002,19 +6002,19 @@ MonoBehaviour:
   slowSpeed: 0.5
   normalSpeed: 1
   fastSpeed: 1.5
-  volumePosition: 1
+  volumePosition: 0
   volumeBruitBlancInitial: 0.3
-  limitesSlider: {x: 0.6, y: 0.9}
   zoneVictoireBras: {x: 276, y: 286}
+  limitesSlider: {x: 0.6, y: 0.9}
   bonneValeurBruitBlanc: 0.7
   boutonVolume: {fileID: 1210365600}
   bras: {fileID: 1326590261}
   animator: {fileID: 829847303}
   slider: {fileID: 1227348475}
   tabVolumeValeurs:
-  - 0.1
+  - 0
   - 0.3
-  - 0.5
+  - 0.6
   myDialogue: {fileID: 0}
 --- !u!1 &445639724
 GameObject:
@@ -7041,10 +7041,6 @@ MonoBehaviour:
   - {fileID: 699846927}
   - {fileID: 717472482}
   documents: {fileID: 957547297}
-  docGUI: {fileID: 194878419}
-  telButton: {fileID: 28680430}
-  backButton: {fileID: 1176417519}
-  documentsButton: {fileID: 325110212}
   nextDocButton: {fileID: 1875125922}
   previousDocButton: {fileID: 123370130}
 --- !u!4 &547336490
@@ -23294,24 +23290,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011381a9195a6c74aaea319270c712ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetodrag:
-  - {fileID: 1599085433}
-  - {fileID: 1099052567}
-  - {fileID: 261040099}
-  - {fileID: 410007133}
-  - {fileID: 1682408069}
-  - {fileID: 422082895}
-  - {fileID: 1554366890}
-  - {fileID: 511097102}
-  - {fileID: 93032275}
-  imagetodragrandomized: []
-  goodpiece: []
+  imagesList: []
+  imagesListRandomized: []
+  goodImagesList: []
   slots: []
-  piececorrectpos: 
+  pieceCorrectPos: 
   x: -6
   y: 6.8
   z: -6
-  myDialogue: {fileID: 674823544}
+  enqueteDoneDialogue: {fileID: 0}
 --- !u!4 &1806365253
 Transform:
   m_ObjectHideFlags: 0

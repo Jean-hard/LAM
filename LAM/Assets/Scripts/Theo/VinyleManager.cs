@@ -17,8 +17,8 @@ public class VinyleManager : MonoBehaviour
     public float fastSpeed = 1.5f;
     public int volumePosition = 0;
     public float volumeBruitBlancInitial = 0.3f;
-    public Vector2 limitesSlider = new Vector2(0.6f, 0.9f); // les 2 valeurs du slider entre lesquelles le slider est en position de victoire
     public Vector2 zoneVictoireBras = new Vector2(276f, 286f);
+    public Vector2 limitesSlider = new Vector2(0.6f, 0.9f); // les 2 valeurs du slider entre lesquelles le slider est en position de victoire
 
     public float bonneValeurBruitBlanc = 0.7f;
     public GameObject boutonVolume;
@@ -48,6 +48,7 @@ public class VinyleManager : MonoBehaviour
 
         animator.enabled = false; // le vinyle tourne disque est éteint à l'arrivée sur le plan
         musique.volume = 0f; // set le volume au début du jeu
+        bruitBlanc.Pause();
         bruitBlanc.volume = volumeBruitBlancInitial;
     }
 
