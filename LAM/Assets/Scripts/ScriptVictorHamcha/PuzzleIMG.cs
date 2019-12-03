@@ -17,8 +17,6 @@ public class PuzzleIMG : MonoBehaviour
     private Collider2D piececollider;
     public static int activecollider = 0;
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,14 +25,12 @@ public class PuzzleIMG : MonoBehaviour
         Slice();//coupe les différentes pièce en début de partie
         for (int i = 0; i < 16; i++)
         {
-            shuffleposition[i].transform.position = new Vector2(7.009999f, 3.972f); //positiones toutes les pièce au même endroit 
-
+            shuffleposition[i].transform.position = new Vector2(7.009999f, 3.972f); //positiones toutes les pièce au même endroit
         }
     }
 
     void Update()
     {
-        
         if (activecollider < 16)
         {
             piececollider = shuffleposition[activecollider].GetComponent<Collider2D>();//trouve le collider de la prochaine pièce de la liste
@@ -46,8 +42,6 @@ public class PuzzleIMG : MonoBehaviour
     {
         for (int i = 0; i < 16; i++)
         {
-
-
             if (slice < 4)// vérifie si il y a moins de 4 pièce sur une ligne 
             {
                 x += 4.68f;// va à l'enplacement suivant 
