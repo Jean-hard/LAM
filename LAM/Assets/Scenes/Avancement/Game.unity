@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af2d7c8fe3feb4e89e300d8c57bc91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 829847300}
+  musique: {fileID: 0}
   brasTransform: {fileID: 1326590262}
   tabVolumes:
   - 0
@@ -15770,7 +15770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af2d7c8fe3feb4e89e300d8c57bc91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 829847300}
+  musique: {fileID: 0}
   brasTransform: {fileID: 1326590262}
   tabVolumes:
   - 0
@@ -17656,7 +17656,9 @@ MonoBehaviour:
   diffAngle: 100
   musique: {fileID: 829847300}
   bruit: {fileID: 913417163}
-  boutonVolume: {fileID: 1210365602}
+  manager: {fileID: 0}
+  angleVinyleMin: 272
+  angleVinyleMax: 348
 --- !u!114 &1326590264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19873,7 +19875,9 @@ MonoBehaviour:
   diffAngle: 100
   musique: {fileID: 829847300}
   bruit: {fileID: 913417163}
-  boutonVolume: {fileID: 1210365602}
+  manager: {fileID: 0}
+  angleVinyleMin: 272
+  angleVinyleMax: 348
 --- !u!1 &1525728839
 GameObject:
   m_ObjectHideFlags: 0
@@ -23458,7 +23462,7 @@ MonoBehaviour:
   imagesListRandomized: []
   goodImagesList: []
   slots: []
-  piececorrectpos: 
+  pieceCorrectPos: 
   x: -6
   y: 6.8
   z: -6
@@ -26381,6 +26385,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1277021063}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21b010f42e6ddc4a87ab266766853c8, type: 3}
 --- !u!4 &2087752321 stripped
@@ -26407,6 +26416,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2087752320}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2087752324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087752323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984b5e0da36007e409198dd0dceb4255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2099595591
 GameObject:
   m_ObjectHideFlags: 0
