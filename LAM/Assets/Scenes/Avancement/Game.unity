@@ -17897,7 +17897,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   angleVinyleMin: 272
   angleVinyleMax: 348
---- !u!1 &1519849422
+--- !u!1 &1525728839
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20924,7 +20924,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1805505401
+--- !u!114 &1806365252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806365251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011381a9195a6c74aaea319270c712ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagesList: []
+  imagesListRandomized: []
+  goodImagesList: []
+  slots: []
+  pieceCorrectPos: 
+  x: -6
+  y: 6.8
+  z: -6
+  enqueteDoneDialogue: {fileID: 0}
+--- !u!4 &1806365253
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23195,6 +23216,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1277021063}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21b010f42e6ddc4a87ab266766853c8, type: 3}
 --- !u!4 &2087752321 stripped
@@ -23221,7 +23247,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2087752320}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2090226751
+--- !u!114 &2087752324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087752323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984b5e0da36007e409198dd0dceb4255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2099595591
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
