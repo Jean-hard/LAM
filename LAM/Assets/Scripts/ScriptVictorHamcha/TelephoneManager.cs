@@ -9,7 +9,7 @@ public class TelephoneManager : MonoBehaviour
     public bool end;// action du jeu fini + une nouvelle action faite par le joueur alors ...(demandé par les GD 
     public bool goodnumber; //quand tous les numéros mis par le joeur sont bon alors ... 
     public int numteltaille;
-    public AudioSource telSound;
+    public AudioSource telSound;// son apres le jeux du tel
 
     [SerializeField]
     private Dialogue telephoneDialogue;
@@ -41,8 +41,8 @@ public class TelephoneManager : MonoBehaviour
         {
             Debug.Log("youwin");
             GameManager.Instance.InitDialogue(telephoneDialogue);
-            Vibration.Vibrate(2000);
-            telSound.Play();
+            Vibration.Vibrate(2000);//vibrations de 2 secondes codes trouvé sur internet nommé vibration reutilisable pour faire des vibrations sur android
+            telSound.Play();//lance le son du tel
             goodnumber = false;
             numtel = new List<int>();
             Room2Manager.telephoneDone = true;
@@ -50,7 +50,7 @@ public class TelephoneManager : MonoBehaviour
         }
     }
 
-    public void lanceappel()
+    public void lanceappel()// si le joueur quitte le mini jeu apres avoir mis le bon num
     {
         if (goodnumber && !end)
             end = true;
