@@ -13,7 +13,7 @@ public class MoveImagesTableau : MonoBehaviour
     private bool imageInSlot;  // image déposée dans un slot ?
 
     private SpriteRenderer imageSprite;
-    private float distImageSlot;    // distance entre l'image sélectionné et un slot
+    private float distImageSlot;    // distance entre l'image sélectionnée et un slot
     private Vector2 initialPosition;    // position initiale de l'image
 
     // Start is called before the first frame update
@@ -41,7 +41,7 @@ public class MoveImagesTableau : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Mouse0)) // si on relâche l'image 
         {
-            for (int i = 0; i <= 3; i++)    // vérifie pour chacun des slots 
+            for (int i = 0; i < TableauMgr.Instance.imagesSlots.Count; i++)    // vérifie pour chacun des 3 slots 
             {
                 if (!imageInSlot)
                 {

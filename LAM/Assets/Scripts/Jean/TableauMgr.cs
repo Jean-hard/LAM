@@ -23,7 +23,7 @@ public class TableauMgr : MonoBehaviour
 
     // Dialogue
     [SerializeField]
-    private Dialogue tableauWinDialogue;
+    private Dialogue tableauDoneDialogue;
     private bool finalDialogueDisplayed;
 
     // SINGLETON du TableauMgr pour récup ses valeurs partout
@@ -58,7 +58,7 @@ public class TableauMgr : MonoBehaviour
     {
         if (tableauGameDone && !finalDialogueDisplayed)
         {
-            GameManager.Instance.InitDialogue(tableauWinDialogue);
+            GameManager.Instance.InitDialogue(tableauDoneDialogue); // on affiche le dialogue d'énigme réussie
             finalDialogueDisplayed = true;
         }
     }
@@ -81,16 +81,17 @@ public class TableauMgr : MonoBehaviour
         }
     }
 
+    // fonction appelée lorsqu'un pièce est placée dans un slot
     public void CheckSlotsDone(int slotIndex)
     {
         imageInGoodSlot[slotIndex] = true;
 
-        for (int j = 0; j <= 3; j++)
+        for (int j = 0; j <= 3; j++)   // on regarde si tous les éléments de la liste de booléens sont true
         {
             if(!imageInGoodSlot[j])
-                return;
+                return;                // on sort de la fonction si on rencontre un false dans la liste
         }
 
-        tableauGameDone = true;
+        tableauGameDone = true;  // devient true si tous les booleens sont à true, et donc si toutes les images sont dans leurs slots respectifs
     }
 }
