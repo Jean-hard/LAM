@@ -146,7 +146,7 @@ public class horlogemanager : MonoBehaviour
             horlogeGameFinished = true;
             bonneHeure = false;
             bonneMinute = false;
-            PeintureManager.horlogeDone = true;
+            Room1Manager.horlogeDone = true;
         }
         
         if(horlogeaiguille.canChangeFont)

@@ -56,17 +56,6 @@ public class DragandDrop : MonoBehaviour
         {
             puzzlePlan.GetComponent<SpriteRenderer>().sprite = fontPuzzleDone; //on applique le sprite avec morceau de papier recollé sur le mur
         }
-
-
-        /**
-         *       FOR DEBUG en attendant que le puzzle soit réparer
-         */
-        if(Input.GetKeyDown("e"))
-        {
-            Debug.Log("tameresalepute");
-            PeintureManager.puzzleDone = true;
-        }
-        
     }
 
     
@@ -111,7 +100,6 @@ public class DragandDrop : MonoBehaviour
         if (bon[0] && bon[1] &&bon[2] && bon[3] && bon[4] && bon[5] && bon[6] && bon[7] && bon[8] && bon[9] && bon[10] && bon[11] && bon[12] && bon[13] && bon[14] && bon[15])//si toutes les pièces sont au bons endroit
         {
             canChangeFont = true;
-            PeintureManager.puzzleDone = true;
             Debug.Log("we win");
             StartCoroutine(SkipGameDelay());
         }

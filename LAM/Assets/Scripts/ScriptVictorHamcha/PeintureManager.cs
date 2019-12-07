@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class PeintureManager : MonoBehaviour
 {
-    public static bool puzzleDone;
-    public static bool horlogeDone;
-    public static bool oeufVisited;
     /**
      * Utile
      */
@@ -33,12 +30,6 @@ public class PeintureManager : MonoBehaviour
     private Color fondueopacity;//couleur de la fondue
 
     public GameObject palettedecouleur; //les bouton palette de couleur
-
-    [SerializeField]
-    private Dialogue peintureDialogue;
-
-    [SerializeField]
-    private PlaneScript peinturePlan;
 
     private void Start()
     {
@@ -109,23 +100,5 @@ public class PeintureManager : MonoBehaviour
             peintureTab[i].SetActive(false);
         indexStep = 0;
         isColorsGood = true;
-    }
-
-    public void OeufIsVisited()
-    {
-        oeufVisited = true;
-    }
-
-    public void CheckGamesDone()
-    {
-        Debug.Log("Oeuf: " + oeufVisited + ", horloge: " + horlogeDone + ", puzzle: " + puzzleDone);
-        if (horlogeDone && puzzleDone && oeufVisited)
-        {
-            GameManager.Instance.ChangePlan(peinturePlan);
-        }
-        else
-        {
-            GameManager.Instance.InitDialogue(peintureDialogue);
-        }
     }
 }
