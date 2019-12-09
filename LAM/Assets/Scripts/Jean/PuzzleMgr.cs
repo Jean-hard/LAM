@@ -81,8 +81,8 @@ public class PuzzleMgr : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(puzzleDoneDialogue);  // on affiche le dialogue d'énigme réussie
             finalDialogueDisplayed = true;
-
-            puzzlePlan.GetComponent<SpriteRenderer>().sprite = fontPuzzleDone; //on applique le nouveau sprite avec le trou dans la tapisserie rempli
+            Room1Manager.puzzleDone = true; // on dit au room1manager que l'énigme est validée
+            puzzlePlan.GetComponent<SpriteRenderer>().sprite = fontPuzzleDone; // on applique le nouveau sprite avec le trou dans la tapisserie rempli
             
             StartCoroutine(TimeAfterPuzzleDone()); // coroutine à la fin de laquelle le jeu va se désactiver
         }

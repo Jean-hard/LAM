@@ -37,7 +37,7 @@ public class VinyleManager : MonoBehaviour
 
     // Dialogue
     [SerializeField]
-    private Dialogue myDialogue;
+    private Dialogue vinyleWinDialogue;
     private bool dialogueDisplayed;
 
     // Start is called before the first frame update
@@ -62,7 +62,7 @@ public class VinyleManager : MonoBehaviour
 
         if (conditionRemplie && !dialogueDisplayed)
         {
-            GameManager.Instance.InitDialogue(myDialogue);
+            GameManager.Instance.InitDialogue(vinyleWinDialogue);
             dialogueDisplayed = true;
             Debug.Log("VICTOIRE");
         }
