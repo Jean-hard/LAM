@@ -83,6 +83,7 @@ public class PeintureManager : MonoBehaviour
         {
             Debug.Log("WIN");
             palettedecouleur.SetActive(false);
+
         }
         //Loose
         if (indexStep == 3)

@@ -29,6 +29,23 @@ public class Room2Manager : MonoBehaviour
     public static bool tiroirOpened = false;
 
 
+    // SINGLETON ---------------------------------------------
+    private static Room2Manager _instance;
+
+    public static Room2Manager Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }//--------------------------------------------------------------------
+
     // Start is called before the first frame update
     void Start()
     {
