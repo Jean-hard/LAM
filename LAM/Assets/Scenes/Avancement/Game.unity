@@ -552,61 +552,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51993010}
   m_CullTransparentMesh: 0
---- !u!1 &83919295
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 83919296}
-  - component: {fileID: 83919297}
-  m_Layer: 0
-  m_Name: SOLO_SEIJI_HALL_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &83919296
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83919295}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &83919297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83919295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
-  sentences:
-  - "Tout para\xEEt si \xE9trange. Qu\u2019est-ce que je fais ici ?"
-  - "Comment\u2026 comment suis-je arriv\xE9 l\xE0 ? Je me rappelle plus\u2026 "
-  - "Enfin... Non\u2026 Tout me semble confus. "
-  - "C\u2019est comme si\u2026 et si je lui demandais\u2009? "
-  - "Il doit forc\xE9ment savoir quelque chose\u2026"
-  speakers: 0000000000000000000000000000000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
-  blockScreen: {fileID: 929332794}
 --- !u!1 &104545400
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +673,7 @@ PrefabInstance:
         type: 3}
       propertyPath: initialDialogue
       value: 
-      objectReference: {fileID: 1075010077}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11afd41527115ad4ba0f50ce9b717665, type: 3}
 --- !u!4 &105475096 stripped
@@ -888,6 +833,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &111247736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111247737}
+  - component: {fileID: 111247738}
+  m_Layer: 0
+  m_Name: DIA_ROOM_01_SOLO_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &111247737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111247736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111247738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111247736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Mais, qu\u2019est-ce que c'est que\u2026 Un peintre, voil\xE0 pourquoi l\u2019aubergiste
+    parlait d\u2019admirateurs \u2026"
+  - "Impressionnant \u2026 Quoique, non \u2026 Ce n\u2019est pas le mot qui me vient
+    en premier. Cet artiste doit \xEAtre un peu d\xE9rang\xE9, je ne vois pas d\u2019autres
+    explications."
+  - "Tout semble d\xE9cal\xE9, inqui\xE9tant. Inqui\xE9tant, oui c\u2019est \xE7a\u2009!
+    Je n'aimerais pas \xEAtre dans sa t\xEAte."
+  - "Je ne sais pas quels souvenirs l\u2019Aubergiste pense que je peux retrouver,
+    ic mais ils risquent d\u2019\xEAtre tortur\xE9s."
+  speakers: 00000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &130146554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1576,7 @@ PrefabInstance:
         type: 3}
       propertyPath: initialDialogue
       value: 
-      objectReference: {fileID: 83919297}
+      objectReference: {fileID: 0}
     - target: {fileID: 1768554271192226861, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: minIntensity
@@ -1750,9 +1754,23 @@ Transform:
   m_LocalPosition: {x: 163.10336, y: 58.96456, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 83919296}
-  - {fileID: 1136512695}
-  - {fileID: 1075010076}
+  - {fileID: 1222373737}
+  - {fileID: 492494887}
+  - {fileID: 733274169}
+  - {fileID: 1699445510}
+  - {fileID: 1461822287}
+  - {fileID: 831932517}
+  - {fileID: 909776178}
+  - {fileID: 1345787548}
+  - {fileID: 1344748007}
+  - {fileID: 1572505687}
+  - {fileID: 1671581229}
+  - {fileID: 711367552}
+  - {fileID: 111247737}
+  - {fileID: 1061324137}
+  - {fileID: 1358758268}
+  - {fileID: 1385957796}
+  - {fileID: 218830440}
   - {fileID: 1206570648}
   - {fileID: 1255788739}
   - {fileID: 674823543}
@@ -2318,6 +2336,110 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1161630125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &218830439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218830440}
+  - component: {fileID: 218830441}
+  m_Layer: 0
+  m_Name: DIA_CINE_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218830440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218830439}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218830441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218830439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Quel est ce bruit calme et r\xE9gulier ? Ou-suis-je ? Je me sens lourd."
+  - "Je peux \xE0 peine remuer les bras, comme si mes v\xEAtements \xE9taient coul\xE9s
+    dans la pierre."
+  - "Je suis allong\xE9. Une brise chuchotte \xE0 mes oreilles et caresse d\xE9licatement
+    mon visage."
+  - "J\u2019ouvre les yeux. Une multitude d'\xE9toiles constelle une nuit noire."
+  - "Un ciel est si \xE9toil\xE9 que je peux voir distinctement autour de moi."
+  - "Je tourne la t\xEAte. Du sable \xE0 perte de vue. Une plage."
+  - "Je m'asseois. Devant moi, la mer s'\xE9tend sans obstacles jusqu'\xE0 l'horizon."
+  - "La surface de l'eau refl\xE8te le ciel tel un miroir."
+  - "Mon esprit est embrouill\xE9. Comment suis-je arriv\xE9 l\xE0 ? Depuis combien
+    de temps suis-je ici ?"
+  - "Je panique, regarde \xE0 droite, \xE0 gauche en qu\xEAte d'un indice. Je me rel\xE8ve,
+    les jambes tremblantes."
+  - 'Je crie : "He oh ! Y''a quelqu''un?" Personne.'
+  - Les larmes me montent aux yeux.
+  - Non, ne pleure pas, calme toi. Concentre toi sur maintenant.
+  - "Le calme revient. Je dois trouver un refuge, me s\xE9cher. Me r\xE9chauffer."
+  - Allez, en route !
+  - Je me mets en route. Je marche et longe la plage un long moment sans croiser de
+    trace humaine.
+  - "Je perds espoir quand tout \xE0 coup, je vois un rayon de lumi\xE8re transpercer
+    fugacement la nuit."
+  - "Qu'est-ce que c'\xE9tait, une \xE9toile filante ?"
+  - "Je continue quand le faisceau r\xE9apparait. Il d\xE9crit une parabole, avant
+    de disparaitre \xE0 nouveau."
+  - "Bien s\xFBr, un phare !"
+  - "Je souffle de soulagement. L'\xEEle est habit\xE9e !"
+  - "J'acc\xE9l\xE8re et cours en direction de la lumi\xE8re. Plus je me rapproche,
+    plus le rayon se fait puissant."
+  - "Le phare ne doit plus \xEAtre loin."
+  - "Soudain, un b\xE2timent apparait au sommet d'une falaise. Le phare se dresse
+    dans la nuit, majestueux."
+  - "J'acc\xE9l\xE8re, tombe et me rel\xE8ve. Enfin, je l'atteins."
+  - 'Il y a une porte. Je la rejoins et tambourine dessus. '
+  - "J'attends longtemps sans r\xE9ponse, quand la porte s'ouvre sur un homme."
+  - "Ag\xE9, il porte un caban d'officier, un pantalon marron et de grandes bottes
+    noires."
+  - "Une \xE9paisse barbe blanche lui mange le visage tandis qu'une casquette lui
+    masque son cr\xE2ne chauve."
+  - "Sans un mot, il m'invite \xE0 entrer. Il a l'air triste."
+  - "A l'int\xE9rieur, le vieil homme ouvre une fen\xEAtre et pose une bougie sur
+    le rebord."
+  - "Il y reste un moment, immobile, puis quitte la pi\xE8ce. J'en profite pour examiner
+    les lieux."
+  - "La pi\xE8ce est fonctionnelle et les murs nus,  si ce n'est quelques masques."
+  - "Le mobilier est constitu\xE9 de meuble et d\u2019ustensile pour cuisiner. Il
+    descend et retourne \xE0 la fen\xEAtre."
+  - "Mes yeux se ferment, je sens quelque chose gliss\xE9 dans ma poche."
+  - "Soudain, quelqu\u2019un frappe \xE0 la porte. Le gardien ouvre \xE0 un homme
+    et me pointe du doigt en souriant."
+  - "Il va m\u2019aider. J\u2019attrape sa main et regarde le gardien du phare agiter
+    la main doucement."
+  - "Dans ma poche, un mot : \u201CPartir\u201D."
+  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &223178265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,6 +4657,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491568722}
   m_CullTransparentMesh: 0
+--- !u!1 &492494886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492494887}
+  - component: {fileID: 492494888}
+  m_Layer: 0
+  m_Name: DIA_AUBER_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492494887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492494886}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492494888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492494886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - Tiens, mais que nous rapporte le vent du large ?
+  - "Bonsoir, mon gar\xE7on. Mais... tu es tremp\xE9 et crott\xE9 !"
+  - "Tu t\u2019es roul\xE9 dans la boue\u2009?"
+  - "Non, je me suis r\xE9veill\xE9 comme \xE7a. Je\u2026 je ne me rappelle plus."
+  - "Ah oui? Int\xE9ressant..."
+  - "O\xF9 suis-je\u2009? "
+  - "Ca ne se voit pas\u2009? Les tables derri\xE8re toi, les jeux de cl\xE9 dans
+    mon dos et mon costume\u2026"
+  - "Je vais t'aider. G\xE9n\xE9ralement, on s'y restaure, ou on y dort, ou les deux."
+  - 'Une auberge ?  '
+  - "Tu vois, tu n'as pas perdu toute la m\xE9moire."
+  - "Alors, est-ce que l\u2019une de ces activit\xE9s t\u2019int\xE9resse\u2009?"
+  - Oui, j'ai tellement froid et faim !
+  - " Mais \u2026 Je n\u2019ai pas d\u2019argent."
+  - "Mmm\u2026 mmm\u2026"
+  - "Un enfant priv\xE9 de m\xE9moire, frigorifi\xE9 et affam\xE9, pourrais-je me
+    regarder dans un miroir si je le laissais repartir ?"
+  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a."
+  - "Vraiment\u2009? Merci\u2009! "
+  - "J\u2019en ai une qui vient justement de se lib\xE9rer."
+  - "Le dernier client est parti il y a peu. Tr\xE8s peu \u2026"
+  - "Peut-\xEAtre l\u2019as-tu crois\xE9\u2009?"
+  - 'Je ne crois pas... '
+  - "Tant pis. Par contre, elle n\u2019est pas encore pr\xEAte. "
+  - "C\u2019est pas grave, je vais attendre \xE0 une table."
+  - "J\u2019ai une meilleure id\xE9e."
+  - "Il y a une toile inachev\xE9e dans une chambre l\xE0-haut."
+  - "Ram\xE8ne-l\xE0 moi en attendant."
+  - "Bien s\xFBr\u2009!"
+  - "Tiens voil\xE0 la cl\xE9. C'est la premi\xE8re porte \xE0 droite en sortant de
+    l'escalier."
+  - "Et qui sait, peut-\xEAtre que tu y retrouvera ta m\xE9moire."
+  - 'Son occupant n''a pas son pareil pour faire remonter les souvenirs chez ses admirateurs. '
+  - Si vous le dites...
+  speakers: 01000000010000000100000000000000010000000000000001000000010000000000000001000000010000000000000000000000010000000100000001000000000000000100000001000000010000000000000001000000000000000100000001000000010000000000000001000000010000000100000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &493557562
 GameObject:
   m_ObjectHideFlags: 0
@@ -7080,7 +7286,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 5
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &674823544
 MonoBehaviour:
@@ -7616,6 +7822,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &711367551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711367552}
+  - component: {fileID: 711367553}
+  m_Layer: 0
+  m_Name: DIA_SOLO_04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &711367552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711367551}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711367553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711367551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Alors c'est \xE7a. Eux et moi. Nous sommes ici, sur cette \xEEle."
+  - C'est ainsi, non ? Il le sait maintenant, lui, au loin.
+  speakers: 0000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &717472482
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,6 +8349,86 @@ RectTransform:
   m_AnchoredPosition: {x: -1.0999756, y: 0.099975586}
   m_SizeDelta: {x: 2.1999512, y: 0.2000122}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &733274168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733274169}
+  - component: {fileID: 733274170}
+  m_Layer: 0
+  m_Name: DIA_AUBER_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733274169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733274168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733274170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733274168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Tenez, c\u2019est bien ce que vous m\u2019avez demand\xE9\u2009?"
+  - Parfait. Elle est belle, n'est-ce pas ?
+  - "Euh \u2026"
+  - "C\u2019est un peu court comme analyse artistique. D\xE9veloppe un peu."
+  - "Je \u2026. C\u2019est int\xE9ressant."
+  - "Mais encore. Qu'est-ce que \xE7a t\u2019inspire ?"
+  - "Au d\xE9but, j\u2019ai senti comme une impression de rejet. Une hostilit\xE9
+    qui me mettait mal \xE0 l\u2019aise \u2026"
+  - "Int\xE9ressant ..."
+  - "Mais apr\xE8s, il y\u2019a un effet hypnotisant. Plus on le regarde, plus on
+    se sent attir\xE9 vers l\u2019int\xE9rieur."
+  - "Il me semble que le peintre veut nous dire quelque chose \u2026"
+  - Nous dire quoi?
+  - "Quelque chose sur nous, ou sur moi. C\u2019est comme s'il me parlait. Que la
+    r\xE9ponse \xE9tait en moi, masqu\xE9e par un \xE9pais brouillard."
+  - "Plus je la regardais, plus je me sentais comme prisonnier dans la toile\u2026
+    une toile d\u2019araign\xE9e."
+  - "Voil\xE0 qui est mieux\u2009! Tu peux te reconvertir en critique d\u2019Art \xE0
+    l'avenir."
+  - "En quoi\u2009?"
+  - "Peu importe. Tu as vu juste. C\u2019est pour \xE7a que je veux cette \u0153uvre."
+  - "Tiens, tu as m\xE9rit\xE9 la cl\xE9 de ta chambre."
+  - "Merci, mais \u2026"
+  - Quoi encore ?
+  - "Pouvez-vous me dire o\xF9 nous sommes\u2009? L'endroit, pas votre auberge."
+  - "Je me souviens plus de comment je suis arriv\xE9 ici."
+  - "Bien s\xFBr\u2026 Je suis en quelque sorte le gardien de l'\xEEle."
+  - "Rien ne m\u2019\xE9chappe, car tout le monde passe un moment ou un autre par
+    mon auberge."
+  - "Comme tu l'as dit justement, je me tiens au centre de la toile d'araign\xE9e."
+  speakers: 000000000100000000000000010000000000000001000000000000000100000000000000000000000100000000000000000000000100000000000000010000000100000000000000010000000000000000000000010000000100000001000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &745894022
 GameObject:
   m_ObjectHideFlags: 0
@@ -9187,6 +9525,69 @@ Transform:
   m_Father: {fileID: 1009658652}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &831932516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 831932517}
+  - component: {fileID: 831932518}
+  m_Layer: 0
+  m_Name: DIA_AUBER_05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &831932517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831932516}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831932518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831932516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - De retour ?! Enfin !
+  - L'homme dans la chambre ... Vous saviez ? Il est ?
+  - "Il est quoi ? Il n'est plus l\xE0 oui."
+  - "Non ! Il est mort ! Quelqu'un l'a tu\xE9 !"
+  - "Pourquoi vous m'avez envoy\xE9 dans sa chambre ?"
+  - C'est lui que vous vouliez que je trouve ?
+  - "Allons, Seiji. Pourquoi t'\xE9nerves-tu ?"
+  - "Mais, il est mort ! Il logeait dans votre auberge ! Je devais trouver quoi l\xE0-bas
+    ?!"
+  - Du calme. Il logeait ici, oui. Et il est mort, oui.
+  - "Mais qui l'a tu\xE9 ? Pourquoi vous ne r\xE9agissez pas ?"
+  - Tu es un enfant malin, je crois que tu le sais.
+  - "Qui est l'assassin, \xE0 ton avis ?"
+  speakers: 010000000000000001000000000000000000000000000000010000000000000001000000000000000100000001000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &842305956
 GameObject:
   m_ObjectHideFlags: 0
@@ -9216,7 +9617,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 8
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &842305958
 MonoBehaviour:
@@ -9933,6 +10334,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &909776177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909776178}
+  - component: {fileID: 909776179}
+  m_Layer: 0
+  m_Name: DIA_AUBER_06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909776178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909776177}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909776179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909776177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Calm\xE9 et ob\xE9issant. Un ange. Tes souvenirs reviennent ?"
+  - "Oui. Ils sont l\xE0. Dans mon cr\xE2ne."
+  - Je le vois bien. Tu sais donc qu'ils sont encore incomplets.
+  - Oui ... je les sens encore vide parfois.
+  speakers: 01000000000000000100000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &910379905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11722,7 +12177,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1075010075
+--- !u!1 &1061324136
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11730,36 +12185,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1075010076}
-  - component: {fileID: 1075010077}
+  - component: {fileID: 1061324137}
+  - component: {fileID: 1061324138}
   m_Layer: 0
-  m_Name: DIA_SOLO_01
+  m_Name: DIA_ROOM_01_SOLO_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1075010076
+--- !u!4 &1061324137
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075010075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1061324136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 2
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1075010077
+--- !u!114 &1061324138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075010075}
+  m_GameObject: {fileID: 1061324136}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
@@ -11768,8 +12223,18 @@ MonoBehaviour:
   playerTextDisplay: {fileID: 745894024}
   otherTextDisplay: {fileID: 1706687249}
   sentences:
-  - "Quel \xE9trange personnage ... il ressemble tellement \xE0 ce lieu ... "
-  speakers: 00000000
+  - "Qu\u2019est-ce que c\u2019est que \u2026 Par tous les kamis de l\u2019Oc\xE9an,
+    o\xF9 est-ce qu\u2019il va trouver tout \xE7a\u2009?"
+  - "On dirait tout droit sorti d\u2019un cauchemar. Cette peinture est si \u2026
+    angoissante."
+  - "\xC7a me rend mal \xE0 l\u2019aise. Quelque chose en \xE9mane de \u2026 terrible."
+  - "Et pourtant, je dois admettre qu\u2019il a quelque chose \u2026 d\u2019intrigant
+    \u2026 Ce qu\u2019on appelle la \xAB\u2009vision de l\u2019artiste\u2009\xBB peut-\xEAtre
+    ?"
+  - "Ne tra\xEEnons pas et rapportons \xE7a \xE0 l\u2019aubergiste."
+  - "Je me demande bien pourquoi il le veut. \xC0 moins qu'il s'agisse du paiement
+    du peintre pour la chambre\u2009?"
+  speakers: 000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -12486,88 +12951,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136223294}
   m_CullTransparentMesh: 0
---- !u!1 &1136512694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1136512695}
-  - component: {fileID: 1136512696}
-  m_Layer: 0
-  m_Name: DIA_AUBER_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1136512695
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136512694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1136512696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136512694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
-  sentences:
-  - "Tiens, tiens, mais que m\u2019apporte le vent du large. "
-  - "Bonsoir, jeune homme. Dis donc, tu es tout crott\xE9 et mouill\xE9. "
-  - "Tu t\u2019es roul\xE9 dans la boue\u2009? "
-  - "Non, enfin\u2026 je me suis r\xE9veill\xE9 comme \xE7a. Je\u2026 Je sais plus\u2026"
-  - "Allons bon\u2026 "
-  - "O\xF9 suis-je\u2009? "
-  - "Int\xE9ressant\u2026 Ca ne se voit pas\u2009? Les tables, les cl\xE9s, mon costume\u2026 "
-  - "Tu es dans mon auberge. G\xE9n\xE9ralement, on y dort et on s\u2019y r\xE9chauffe
-    en mangeant."
-  - "L\u2019une ou l\u2019autre de ces activit\xE9s t\u2019int\xE9resse\u2009?"
-  - "Oui\u2026 J\u2019ai tellement froid\u2026 Mais\u2026 Je n\u2019ai rien sur moi.
-    Je n\u2019ai pas d\u2019argent."
-  - "Mmm\u2026 mmm\u2026 Un pauvre enfant qui a perdu la m\xE9moire,"
-  - " je ne peux pas te laisser repartir dans cet \xE9tat."
-  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a\u2026 "
-  - "Vraiment\u2009? Merci\u2009! "
-  - "J\u2019en ai une qui s\u2019est justement lib\xE9r\xE9e."
-  - "Le dernier client est parti il y a peu. Tr\xE8s peu\u2026"
-  - "Peut-\xEAtre l\u2019as-tu crois\xE9\u2009? "
-  - Je ne crois pas...
-  - "Tant pis. Mais elle n\u2019est pas encore pr\xEAte."
-  - "C\u2019est pas grave, je vais attendre \xE0 une table. "
-  - "J\u2019ai une meilleure id\xE9e. "
-  - "J\u2019ai oubli\xE9 de descendre une photo dans la premi\xE8re chambre de droite,
-    \xE0 l\u2019\xE9tage. "
-  - "Et si tu me le ramenais en attendant\u2009? "
-  - "Bien s\xFBr\u2009!"
-  - "Tiens voil\xE0 la cl\xE9. Qui sait, peut-\xEAtre que \xE7a t\u2019aidera \xE0
-    retrouver ta m\xE9moire. "
-  - "L\u2019occupant n\u2019avait pas son pareil pour faire remonter les souvenirs
-    chez ses admirateurs. "
-  - "Tr\xE8s bien..."
-  speakers: 010000000100000001000000000000000100000000000000010000000100000001000000000000000100000001000000010000000000000001000000010000000100000000000000010000000000000001000000010000000100000000000000010000000100000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
-  blockScreen: {fileID: 929332794}
 --- !u!1 &1152262304
 GameObject:
   m_ObjectHideFlags: 0
@@ -13517,7 +13900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 3
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1206570649
 MonoBehaviour:
@@ -13536,6 +13919,60 @@ MonoBehaviour:
   sentences:
   - '* Un long cri de chute qui se termine par un choc retentit dans la chambre *'
   speakers: 00000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
+--- !u!1 &1222373736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222373737}
+  - component: {fileID: 1222373738}
+  m_Layer: 0
+  m_Name: SOLO_SEIJI_HALL_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1222373737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222373736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1222373738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222373736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Tout para\xEEt si \xE9trange. Qu\u2019est-ce que je fais ici ?"
+  - "Comment\u2026 suis-je arriv\xE9 ici ? Tout me semble confus."
+  - "C\u2019est comme si\u2026 Rien..."
+  - "Et si je lui demandais\u2009? Il doit forc\xE9ment savoir quelque chose\u2026 "
+  speakers: 00000000000000000000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -14494,7 +14931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 4
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1255788740
 MonoBehaviour:
@@ -15400,6 +15837,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1344748006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344748007}
+  - component: {fileID: 1344748008}
+  m_Layer: 0
+  m_Name: DIA_SOLO_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1344748007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344748006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344748008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344748006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Il est gentil, mais un peu \xE9trange. C\u2019est comme si ses mots avaient un
+    double sens."
+  - "Et cet endroit, on dirait que\u2026 c'est comme si..."
+  - "Rhaa\u2009! Pourquoi je n'arrive \xE0 me souvenir de rien\u2009? Je dois \xEAtre
+    plus \xE9puis\xE9 que j'imagine \u2026"
+  - "Arr\xEAte de te torturer, l\u2019aubergiste a raison:  plus on cherche, moins
+    \xE7a vient \u2026"
+  - En attendant, allons lui chercher sa peinture.
+  - "O\xF9 est-ce qu\u2019il a dit que c\u2019\xE9tait\u2009? Ah oui, la premi\xE8re
+    porte \xE0 droite \u2026"
+  - "\xC9trange, comme d\xE9co. Pas tr\xE8s accueillant pour une auberge."
+  speakers: 00000000000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
+--- !u!1 &1345787547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345787548}
+  - component: {fileID: 1345787549}
+  m_Layer: 0
+  m_Name: DIA_AUBER_07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345787548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345787547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345787549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345787547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Ne fais pas cette t\xEAte, r\xE9jouis toi. Tu l'attendais et elle aussi !"
+  - Maman ?
+  - "Mais non gros b\xEAta ! Ta chambre enfin, elle se trouve au fond du couloir !"
+  - Dors-y bien. La nuit est aussi sombre qu'elle porte conseil !
+  speakers: 01000000000000000100000001000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1347855084
 GameObject:
   m_ObjectHideFlags: 0
@@ -15855,6 +16407,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1358758267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358758268}
+  - component: {fileID: 1358758269}
+  m_Layer: 0
+  m_Name: DIA_AFTER_CINE_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358758268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358758267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358758269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358758267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Qu'est ce qu'il s'est pass\xE9 ? J'\xE9tais l\xE0-bas, et maintenant ... ici."
+  - "Je me sens bizarre. J'ai retrouv\xE9 une partie de ma m\xE9moire et au lieu de
+    me rassurer, \xE7a me fait peur."
+  - "Pourquoi moi ?! Je ne suis qu'un enfant ... Je ne devrais pas \xEAtre sur cette
+    \xEEle, et le bateau, il n'aurait pas d\xFB couler !"
+  - Pourquoi personne ne m'aide, ils n'aiment pas les enfants ? Il n'y a que l'aubergiste
+    ...
+  - "Fichue m\xE9moire. Mais peut-\xEAtre que je ne devrais pas me rappeler."
+  - "C'est de sa faute \xE0 lui, l\xE0 bas. Pourtant il a l'air gentil. Je n'arrive
+    plus \xE0 penser."
+  speakers: 000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1364167911
 GameObject:
   m_ObjectHideFlags: 0
@@ -16024,6 +16636,136 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365034384}
   m_CullTransparentMesh: 0
+--- !u!1 &1385957795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385957796}
+  - component: {fileID: 1385957797}
+  m_Layer: 0
+  m_Name: DIA_CINE_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1385957796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385957795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385957797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385957795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "J\u2019entends le tonnerre r\xE9sonner. La temp\xEAte approche."
+  - Pour le moment, c'est une simple averse... les gouttelettes ruissellent sur mon
+    visage.
+  - "C\u2019est agr\xE9able."
+  - "L\u2019\xE9quipage se pr\xE9pare, nous avons l\u2019habitude. Les changements
+    m\xE9t\xE9o sont fr\xE9quentes dans cette mer."
+  - "Depuis sa cabine, le capitaine veut les pr\xE9visions m\xE9t\xE9o. Pour une raison
+    inconnue, l\u2019appel radio ne passe pas."
+  - "\xC7a n\u2019a pas l\u2019air de l\u2019inqui\xE9ter et semble confiant quant
+    \xE0 sa capacit\xE9 de manoeuvrer."
+  - Il me regarde, me dit de faire de mon mieux pour aider les autres.
+  - Je veux me rendre utile !
+  - "Je cours sur le  pont, je demande au ma\xEEtre d\u2019\xE9quipage comment participer
+    aux t\xE2ches."
+  - "C\u2019est ce qu\u2019aurait fait mon p\xE8re."
+  - "La temp\xEAte commence \xE0 se faire sentir. Le bateau tangue de plus en plus."
+  - "Les vagues puissantes cognent la coque. L\u2019orage gronde au-dessus de nos
+    t\xEAtes."
+  - "Des \xE9clairs aveuglants d\xE9chirent les nuages."
+  - "En un rien de temps, le ciel passe d\u2019un gris paisible \xE0 un noir de t\xE9n\xE8bres.
+    On dirait que les \xE9l\xE9ments s'unissent contre nous."
+  - "Malgr\xE9 la violence de la houle, l\u2019\xE9quipage reste calme. Seul le rythme
+    de leur manoeuvre trahit la mise en alerte."
+  - "Le cambusier m\u2019a donn\xE9 pour t\xE2che de faire l'inventaire des vivres,
+    dans les soutes."
+  - "Je ne veux pas ... Je veux aider l'\xE9quipage, pas \xEAtre prot\xE9g\xE9."
+  - "Je d\xE9cide de retourner sur le pont."
+  - "Je n\u2019ai jamais vu \xE7a. La mer se d\xE9chaine autour de nous."
+  - "Des murs d'eau bondissent vers le ciel, comme pour prendre leur \xE9lan avant
+    de se jeter sur le bateau."
+  - "La pluie me gifle le visage. Le n\u2019entends plus rien, tout n\u2019est que
+    vacarme."
+  - Le tonnerre claque, les vagues rugissent avant de frapper la coque avec fureur.
+  - "Le bateau tangue trop, beaucoup trop. Je me cogne contre tout, comme une bille
+    sur une pente savonn\xE9e."
+  - "M\xEAme les marins les plus agu\xE9rris peinent \xE0 garder l\u2019\xE9quilibre."
+  - "L'un d'eux crie \xE0 son compagnon que \xE7a y est, c'est elle, la temp\xEAte
+    du si\xE8cle. Il n'a pas le temps de terminer."
+  - "Tout \xE0 coup, je me sens l\xE9viter. Je flotte ?"
+  - "Non, c'est le bateau qui vole au dessus des flots, jet\xE9 comme un f\xE9tu de
+    paille."
+  - "On flotte en apesanteur des secondes qui durent une \xE9ternit\xE9. Puis d'un
+    coup, on r\xE9att\xE9rit."
+  - "Le choc est violent. Je tombe et roule jusqu'au bastinguage, \xE0 deux doigts
+    de basculer par dessus bord."
+  - Je m'accorche comme je peux. Enfin, le bateau retrouve son assiette.
+  - "Je vois le capitaine sortir de la cabine, effar\xE9. Je lis dans ses yeux la
+    peur."
+  - "Soudain, une vague nous percute de plein fouet. J'ai \xE0 peine le temps de m'accrocher
+    \xE0 une corde qu'elle noie le pont."
+  - "Quand l'eau s'\xE9coule en ressac, le capitaine a disparu, emport\xE9. Je l\xE8ve
+    les yeux vers la cabine."
+  - "Personne n\u2019est aux commandes!  Nous sommes perdus."
+  - "Je me rel\xE8ve p\xE9niblement et me dirige vers la cabine."
+  - "J'avance en me tenant \xE0 tout ce que je peux. Enfin, je l'atteins."
+  - "La barre de gouvernail tourne \xE0 toute vitesse, folle. Je la saisis, et m'y
+    suspends de tout mon poids."
+  - Elle se cabre, comme un cheval sauvage. Enfin, la barre se calme.
+  - Je la maintiens droite, dans l'axe. J'exulte. Je me sens puissant. Je dirige le
+    navire !
+  - "Je souris presque quand soudain une ombre recouvre l'avant du navire. Je l\xE8ve
+    les yeux."
+  - Elle se dresse devant nous, immense. Une vague haute comme une falaise.
+  - "Je veux barrer pour l\u2019\xE9viter, et pourtant, je suis paralys\xE9. Le choc,
+    violent, assourdissant."
+  - L'eau recouvre tout et percute la cabine. Un voile noir m'enveloppe.
+  - "De longues secondes s'\xE9gr\xE8nent. Un brouhaha diffus."
+  - J'ouvre les yeux, je suis dans l'eau.
+  - "Je remonte \xE0 la surface comme une bouteille dans un nuage de bulles."
+  - "J'\xE9merge \xE0 la surface et aspire l'air \xE0 pleins poumons. Le bateau sombre,
+    renvers\xE9 sur le c\xF4t\xE9."
+  - "Sur la mer d\xE9chain\xE9e, les marins l\xE8vent leur bras, impuissants."
+  - La houle est trop forte. Je vais me noyer.
+  - Je sombre ...
+  - "Des cris d'oiseau. Le caqu\xEAtement des mouettes d\xE9chirent le voile noir."
+  - "J\u2019ouvre p\xE9niblement les yeux. Ou suis-je ?"
+  - Du sable, partout, sous moi, dans ma bouche. Je tousse, je crache de l'eau.
+  - "L'air frais m'apaise. Je rel\xE8ve la t\xEAte."
+  - "Des d\xE9bris de bois, vestiges de notre navire, jonchent la plage de sable noir."
+  - Je suis vivant ... Vivant et seul.
+  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1414761087
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,6 +18040,76 @@ RectTransform:
   m_AnchoredPosition: {x: -95, y: -0.5}
   m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1461822286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461822287}
+  - component: {fileID: 1461822288}
+  m_Layer: 0
+  m_Name: DIA_AUBER_04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461822287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461822286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1461822288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461822286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "A pr\xE9sent voil\xE0 que tu nous fais un caprice, alors que je t'offre le g\xEEte
+    et le couvert !"
+  - Je ...
+  - "Reprends-toi, mon gar\xE7on. C'est difficile, je sais, mais tu dois pers\xE9verer."
+  - "En plus, ta chambre n'est toujours pas pr\xEAte."
+  - "Tu veux qu'un vieil homme ce soit donn\xE9 tout ce mal mal pour rien ?"
+  - Non, excusez-moi.
+  - "J'aime mieux \xE7a. J'ai encore besoin de toi."
+  - Dans la chambre d'en face, celle de gauche, vivait un client. Un homme assez curieux,
+    un peu comme toi.
+  - Comme moi ?
+  - "Oh oui. Il passait son temps \xE0 chercher des r\xE9ponses. Avant de partir,
+    cet homme m'a dit \xEAtre  \xE0 la recherche de quelque chose."
+  - "Quelque chose de tr\xE8s important. J'aimerais que tu te rendes dans sa chambre
+    et que tu me trouves ce qu'il cherchait."
+  - Retrouver ce qu'il cherchait ? Ca n'a pas de sens ...
+  - "Tu vois, tu recommences avec tes questions sans int\xE9r\xEAt ! Vas-y au lieu
+    de cogiter ici."
+  - "Qui sait, en cherchant pour moi, tu trouveras peut-\xEAtre des r\xE9ponses pour
+    toi ..."
+  speakers: 0100000000000000010000000100000001000000000000000100000001000000000000000100000001000000000000000100000001000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1463298200
 GameObject:
   m_ObjectHideFlags: 0
@@ -17456,7 +18268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 6
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1466007975
 MonoBehaviour:
@@ -17698,7 +18510,7 @@ MonoBehaviour:
         m_MethodName: InitDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1136512696}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -18628,6 +19440,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1572505686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572505687}
+  - component: {fileID: 1572505688}
+  m_Layer: 0
+  m_Name: DIA_SOLO_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572505687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572505686}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572505688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572505686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Il est gentil cet aubergiste mais comment suis-je cens\xE9 trouver quelque chose
+    qu'il ne sait pas ? "
+  - "Je ne l'appr\xE9cie plus tellement. On dirait qu'il veut m'aider, mais \xE0 chaque
+    fois, il pose une nouvelle condition ..."
+  - "Quand va-t-il s'arr\xEAter? Je dois le faire, ce ne serait pas juste sinon ..."
+  - "Que va-t-il penser ? (pensif) Si je lui ram\xE8ne, peut-\xEAtre qu'il sera satisfait
+    et que je pourrais m'en aller..."
+  speakers: 00000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1580730568
 GameObject:
   m_ObjectHideFlags: 0
@@ -19395,6 +20264,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1671581228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671581229}
+  - component: {fileID: 1671581230}
+  m_Layer: 0
+  m_Name: DIA_SOLO_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1671581229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671581228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1671581230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671581228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Mais ... C'est ... Lui ... Le d\xE9tective ... celui qui habite ici ... Il est
+    mort ?! On l'a... tu\xE9."
+  - "L'aubergiste, le savait-il ?! Pourquoi il m'a envoy\xE9 ici ?"
+  - "Je n'aurais pas d\xFB. Je ne devrais m\xEAme pas \xEAtre sur celle \xEEle."
+  - Pourquoi moi ?
+  speakers: 00000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1683330654
 GameObject:
   m_ObjectHideFlags: 0
@@ -19823,6 +20747,64 @@ RectTransform:
   m_AnchoredPosition: {x: 131.65002, y: 0}
   m_SizeDelta: {x: 263.30005, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1699445509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699445510}
+  - component: {fileID: 1699445511}
+  m_Layer: 0
+  m_Name: DIA_AUBER_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1699445510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699445509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699445511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699445509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTextDisplay: {fileID: 745894024}
+  otherTextDisplay: {fileID: 1706687249}
+  sentences:
+  - "Allons , s\xE8che tes larmes. N'\xE9tait-ce pas ce que tu voulais, assouvir ta
+    curiosit\xE9 ?"
+  - 'Je ne comprendrais jamais ce besoin si futile : savoir, savoir ...'
+  - Je ne veux plus me rappeler  ! C'est trop .... trop effrayant. Je vais juste attendre
+    !
+  - "Comment \xE7a, tu abandonnes ?! Pas question, mon gar\xE7on. Oh que non !"
+  - S'il vous plait ... Je veux seulement dormir. Vous aviez promis. Donnez moi ma
+    chambre.
+  speakers: 0100000001000000000000000100000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
 --- !u!1 &1699779106
 GameObject:
   m_ObjectHideFlags: 0
@@ -20432,7 +21414,7 @@ PrefabInstance:
         type: 3}
       propertyPath: initialDialogue
       value: 
-      objectReference: {fileID: 1136512696}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f894ed1ad2e7c745b550760497bf796, type: 3}
 --- !u!4 &1736141053 stripped
@@ -22649,7 +23631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 7
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2000680630
 MonoBehaviour:

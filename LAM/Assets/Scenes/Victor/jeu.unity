@@ -8607,7 +8607,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4f6a5571417d9e9488b5c6891db5ea0e,
+      objectReference: {fileID: 21300000, guid: c68992504a8e6194cb9650c6374fddde,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e83d07060efee1f41a661e2807af2b47, type: 3}
@@ -8645,6 +8645,25 @@ MonoBehaviour:
   sx: 0
   sp: 0
   _scale: 0
+--- !u!95 &602216384
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602216382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6c0f499cfc5a804aa29daa687fedce3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &606870463
 GameObject:
   m_ObjectHideFlags: 0
@@ -10316,8 +10335,6 @@ MonoBehaviour:
   goodAnswer3: 0
   activefondue: 0
   palettedecouleur: {fileID: 104255369}
-  peintureDialogue: {fileID: 1103876261}
-  peinturePlan: {fileID: 927254440}
 --- !u!4 &762127390
 Transform:
   m_ObjectHideFlags: 0
@@ -12961,18 +12978,6 @@ PrefabInstance:
       objectReference: {fileID: 175593700}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9214206bba530184ea0c3b6ce11d7d8a, type: 3}
---- !u!114 &927254440 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-    type: 3}
-  m_PrefabInstance: {fileID: 927254439}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &927254441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8566674085408274042, guid: 9214206bba530184ea0c3b6ce11d7d8a,
@@ -14746,6 +14751,51 @@ RectTransform:
   m_AnchoredPosition: {x: -1.9000244, y: -3.399994}
   m_SizeDelta: {x: 3.9000244, y: 11.099976}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1067289702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067289704}
+  - component: {fileID: 1067289703}
+  m_Layer: 0
+  m_Name: AnimManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1067289703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067289702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488bcde0fbbf4cc4f9a8b0a19dd2ccc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seijiAnimator: {fileID: 602216384}
+  playerManager: {fileID: 0}
+--- !u!4 &1067289704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067289702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8642846, y: 6.265766, z: -0.36132812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1081473178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20390,6 +20440,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1067289703}
+        m_MethodName: AnimationSeiji
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: animSeijiDeDos
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1499018155
@@ -27603,6 +27664,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1067289703}
+        m_MethodName: AnimationSeiji
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: animSeijiDeDos
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2133429698
