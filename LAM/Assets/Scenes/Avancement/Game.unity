@@ -2180,6 +2180,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aubergisteTalkDialogue: {fileID: 1598948502}
+  AubergisteDiaTab:
+  - {fileID: 492494888}
+  - {fileID: 733274170}
+  - {fileID: 1699445511}
+  - {fileID: 1461822288}
+  - {fileID: 831932518}
+  - {fileID: 909776179}
+  - {fileID: 1345787549}
 --- !u!4 &222556024
 Transform:
   m_ObjectHideFlags: 0
@@ -17780,12 +17788,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922936693}
-        m_MethodName: InitDialogue
-        m_Mode: 2
+      - m_Target: {fileID: 222556023}
+        m_MethodName: LaunchAubergisteDia
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18891,7 +18899,7 @@ MonoBehaviour:
   playerTextDisplay: {fileID: 745894024}
   otherTextDisplay: {fileID: 1706687249}
   sentences:
-  - "le roi des f\xE9e me bloque le chemin"
+  - "Je dois d'abord parler \xE0 l'aubergiste"
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
