@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: fa64412eaab3f824cb571834014995c1
+guid: 133c38e3d0138d84893888612b1a2efd
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9083362998159298969
-    second: speed_0
-  - first:
-      213: -1147970266885841832
-    second: speed_1
-  - first:
-      213: 6854108260796969877
-    second: speed_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -49,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.21527778, y: 0.5048725}
+  spritePivot: {x: 0.4989376, y: 0.5070765}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 6, y: 0, z: 55, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -117,70 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: speed_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d9acf86b2c163438e3f4c3a0f55fa5
-      internalID: -9083362998159298969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: speed_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 3
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 563649fa6896b32478cb7b42401c0091
-      internalID: -1147970266885841832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: speed_2
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 2
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cefc8bc61074e340a668d1873f90fe1
-      internalID: 6854108260796969877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
