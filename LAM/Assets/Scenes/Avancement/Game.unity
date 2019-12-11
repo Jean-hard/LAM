@@ -881,6 +881,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &130146554
 GameObject:
@@ -2140,6 +2141,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &222556022
 GameObject:
@@ -4411,6 +4413,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &493557562
 GameObject:
@@ -6745,6 +6748,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &684485854
 GameObject:
@@ -7312,6 +7316,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &717472482
 GameObject:
@@ -7868,6 +7873,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1001 &751558191
 PrefabInstance:
@@ -8872,6 +8878,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &842305956
 GameObject:
@@ -8924,6 +8931,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1001 &858909797
 PrefabInstance:
@@ -9680,6 +9688,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &910379905
 GameObject:
@@ -11495,6 +11504,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1089655354
 GameObject:
@@ -13314,6 +13324,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1222373736
 GameObject:
@@ -13369,6 +13380,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1222722336
 GameObject:
@@ -14355,6 +14367,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1258549544
 GameObject:
@@ -15299,6 +15312,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1345787547
 GameObject:
@@ -15354,6 +15368,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1347855084
 GameObject:
@@ -15870,6 +15885,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1364167911
 GameObject:
@@ -16170,6 +16186,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1414761087
 GameObject:
@@ -17671,6 +17688,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1463298200
 GameObject:
@@ -17852,6 +17870,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1494057329
 GameObject:
@@ -18960,6 +18979,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1580730568
 GameObject:
@@ -19185,6 +19205,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1602315169
 GameObject:
@@ -19852,6 +19873,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1683330654
 GameObject:
@@ -20339,6 +20361,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &1699779106
 GameObject:
@@ -23113,6 +23136,7 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
 --- !u!1 &2000842368
 GameObject:
@@ -24248,7 +24272,6 @@ MonoBehaviour:
   - {fileID: 1628532513}
   - {fileID: 1696526266}
   - {fileID: 1179070675}
-  initialDialogue: {fileID: 0}
   minscale: 0.8
   maxscale: 0.9
   propscale: 1

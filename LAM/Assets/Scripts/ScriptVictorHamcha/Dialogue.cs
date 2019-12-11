@@ -78,8 +78,6 @@ public class Dialogue : MonoBehaviour
             currentTextDisplay.text = "";
             continueButton.SetActive(false);
             skipTextButton.SetActive(false);
-            playerTextDisplay.gameObject.SetActive(false);
-            otherTextDisplay.gameObject.SetActive(false);
             currentTextDisplay.gameObject.SetActive(false);
             blockScreen.SetActive(false);
             textBox.SetActive(false);
