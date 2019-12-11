@@ -5,15 +5,25 @@ using UnityEngine;
 public class AccueilCouloirManager : MonoBehaviour
 {
     public static bool aubergisteTalkDone;
+    public static bool soloTalk01Ready = true;
+    public static bool soloTalk02Ready = false;
+
+
 
     [SerializeField]
     private Dialogue aubergisteTalkDialogue;
 
     [SerializeField]
-    private Dialogue[] AubergisteDiaTab;
+    private Dialogue[] aubergisteDiaTab;
     private int indexAubergisteDia = 0;
 
+    [SerializeField]
+    private Dialogue[] couloirDiaTab;
+    private int indexCouloirDia = 0;
+
     private Dialogue currentAubergisteDia;
+    private Dialogue currentCouloirDia;
+
 
     // SINGLETON ---------------------------------------------
     private static AccueilCouloirManager _instance;
@@ -34,7 +44,8 @@ public class AccueilCouloirManager : MonoBehaviour
 
     public void Start()
     {
-        currentAubergisteDia = AubergisteDiaTab[0];
+        currentAubergisteDia = aubergisteDiaTab[0];
+        currentCouloirDia = couloirDiaTab[0];
     }
 
     public void LaunchAubergisteDia()
@@ -59,7 +70,24 @@ public class AccueilCouloirManager : MonoBehaviour
     public void UpdateAubergisteDia()
     {
         indexAubergisteDia++;
-        currentAubergisteDia = AubergisteDiaTab[indexAubergisteDia];
+        currentAubergisteDia = aubergisteDiaTab[indexAubergisteDia];
     }
 
+    public void ShowCouloirDia()
+    {
+        //si le premier dialogue solo n'a pas été fait lorsque qu'on arrive à l'étage
+        if (soloTalk01Ready == true)
+        {
+            GameManager.Instance.InitDialogue(currentCouloirDia);
+            soloTalk01Ready = false;
+        }
+        //si éléments nécessaire sont prêt pour le second dialogue à l'étage
+        if (soloTalk02Ready == true)
+        {
+            indexCouloirDia++;
+            currentCouloirDia = couloirDiaTab[indexCouloirDia];
+            GameManager.Instance.InitDialogue(currentCouloirDia);
+            soloTalk02Ready = false;
+        }
+    }
 }

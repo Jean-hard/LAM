@@ -674,7 +674,8 @@ PrefabInstance:
       propertyPath: initialDialogue
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 11afd41527115ad4ba0f50ce9b717665, type: 3}
 --- !u!4 &105475096 stripped
 Transform:
@@ -682,18 +683,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 105475095}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &105475097 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
-    type: 3}
-  m_PrefabInstance: {fileID: 105475095}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &108212673
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +881,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &130146554
 GameObject:
@@ -2151,6 +2141,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &222556022
 GameObject:
@@ -2182,7 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aubergisteTalkDialogue: {fileID: 1598948502}
-  AubergisteDiaTab:
+  aubergisteDiaTab:
   - {fileID: 492494888}
   - {fileID: 733274170}
   - {fileID: 1699445511}
@@ -2190,6 +2181,9 @@ MonoBehaviour:
   - {fileID: 831932518}
   - {fileID: 909776179}
   - {fileID: 1345787549}
+  couloirDiaTab:
+  - {fileID: 1344748008}
+  - {fileID: 1572505688}
 --- !u!4 &222556024
 Transform:
   m_ObjectHideFlags: 0
@@ -4389,6 +4383,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &493557562
 GameObject:
@@ -5410,7 +5405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &590344753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6646,6 +6641,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &684485854
 GameObject:
@@ -6880,7 +6876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 105475097}
+  planeNextDoor: {fileID: 0}
 --- !u!114 &695501957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6928,7 +6924,7 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 105475097}
+          m_ObjectArgument: {fileID: 2137547549}
           m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7213,6 +7209,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &717472482
 GameObject:
@@ -7769,6 +7766,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &745894022
 GameObject:
@@ -8929,6 +8927,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &842305956
 GameObject:
@@ -8981,6 +8980,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1001 &858909797
 PrefabInstance:
@@ -9737,6 +9737,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &910379905
 GameObject:
@@ -11507,6 +11508,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1089655354
 GameObject:
@@ -11814,6 +11816,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1113368947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
+    type: 3}
+  m_PrefabInstance: {fileID: 105475095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1113774075
 GameObject:
   m_ObjectHideFlags: 0
@@ -12253,7 +12261,7 @@ RectTransform:
   m_Children:
   - {fileID: 1449698480}
   m_Father: {fileID: 130146558}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13320,6 +13328,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1222373736
 GameObject:
@@ -13375,6 +13384,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1222722336
 GameObject:
@@ -14361,6 +14371,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1258549544
 GameObject:
@@ -15305,6 +15316,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1345787547
 GameObject:
@@ -15360,6 +15372,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1347855084
 GameObject:
@@ -15876,6 +15889,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1364167911
 GameObject:
@@ -16176,6 +16190,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1414761087
 GameObject:
@@ -17377,7 +17392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 105475097}
+  planeNextDoor: {fileID: 0}
 --- !u!114 &1461529506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17425,7 +17440,7 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 105475097}
+          m_ObjectArgument: {fileID: 2137547549}
           m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -17677,6 +17692,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1463298200
 GameObject:
@@ -17858,6 +17874,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1494057329
 GameObject:
@@ -18966,6 +18983,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1580730568
 GameObject:
@@ -19191,6 +19209,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1602315169
 GameObject:
@@ -19376,6 +19395,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628532513}
   m_CullTransparentMesh: 0
+--- !u!1 &1632899202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
+    type: 3}
+  m_PrefabInstance: {fileID: 105475095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1645315004
 GameObject:
   m_ObjectHideFlags: 0
@@ -19647,7 +19672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 4, y: 3.3, z: 0}
-  planeNextDoor: {fileID: 105475097}
+  planeNextDoor: {fileID: 2137547549}
 --- !u!114 &1651371967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19841,6 +19866,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1683330654
 GameObject:
@@ -20328,6 +20354,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &1699779106
 GameObject:
@@ -23102,6 +23129,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2143702530}
   skipTextButton: {fileID: 1147074952}
 --- !u!1 &2000842368
 GameObject:
@@ -24141,6 +24169,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &2137547548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1242427430207778653, guid: 11afd41527115ad4ba0f50ce9b717665,
+    type: 3}
+  m_PrefabInstance: {fileID: 105475095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2137547549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137547548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3c30884b382224085903fc6343bac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPlayerPos: {x: 0, y: 1.5}
+  interElementTab:
+  - {fileID: 1628532513}
+  - {fileID: 1696526266}
+  - {fileID: 1179070675}
+  initialDialogue: {fileID: 0}
+  minscale: 0.8
+  maxscale: 0.9
+  propscale: 1
+  planeLightTab:
+  - {fileID: 1632899202}
+  - {fileID: 1113368947}
 --- !u!1 &2139583429
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,13 +12,6 @@ public class PlaneScript : MonoBehaviour
     private GameObject actualPlane;
 
     /**
-     * On set un dialogue qui sera lancé la première fois qu'on entre dans un plan spécifique.
-     */
-    [SerializeField]
-    private Dialogue initialDialogue = null;
-    private bool dialogueUsed = false;
-
-    /**
      * ----TODO : à commenter
      */
     public float minscale;
@@ -57,7 +50,7 @@ public class PlaneScript : MonoBehaviour
     /**
      * Quand on active ce plan, on réactive tout.
      */
-    public void OnActive()
+    public virtual void OnActive()
     {
         this.gameObject.SetActive(true);
         for (int i = 0; i < interElementTab.Length; i++)
@@ -70,20 +63,5 @@ public class PlaneScript : MonoBehaviour
     public Vector3 GetInitPlayerPos()
     {
         return initPlayerPos;
-    }
-
-    /**
-     * Si il y a un dialogue et qu'il n'a jamais été lancé,
-     * on retourne le dialogue en question.
-     */
-    public Dialogue GetInitialDialogue()
-    {
-        if (initialDialogue != null && dialogueUsed == false)
-        {
-            dialogueUsed = true;
-            return initialDialogue;
-        }
-        else
-            return null;
     }
 }

@@ -134,10 +134,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         fadeScript.FadeOut();
 
-        //on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
-        currentDialogue = currentPlan.GetInitialDialogue();
-        if (currentDialogue)
-            DisplayDialogue();
+        ////on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
+        //currentDialogue = currentPlan.GetInitialDialogue();
+        //if (currentDialogue)
+        //    DisplayDialogue();
     }
 
     //ce délai sert à limiter les interactions juste après un changement de plan et à faire un changement stylé aussi (je le fais en anglais la prochaine fois)
@@ -163,11 +163,6 @@ public class GameManager : MonoBehaviour
         scalePlayer.sp = currentPlan.propscale;
         scalePlayer.sx = currentPlan.maxscale;
         player.targetPosition = currentPlan.GetInitPlayerPos();
-
-        //on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
-        currentDialogue = currentPlan.GetInitialDialogue();
-        if (currentDialogue)
-            DisplayDialogue();            
 
         player.gameObject.transform.position = currentPlan.GetInitPlayerPos();//position the player to the position initial in the current plan
         nextPlan = null;
