@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get { return _instance; } }
 
+    // Animation --------------------
+    private AnimScript animManager;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour
     {
         currentDestination = new Vector3(0f, 0f, 0f);
         scalePlayer = player.gameObject.GetComponent<ScalePlayer>();
+        animManager = FindObjectOfType<AnimScript>();
         scalePlayer.sm = currentPlan.minscale;
         scalePlayer.sp = currentPlan.propscale;
         scalePlayer.sx = currentPlan.maxscale;
@@ -78,12 +82,14 @@ public class GameManager : MonoBehaviour
             currentDestination = targetDoor.doorPosition;
             player.targetPosition = targetDoor.doorPosition;
             isMovingToDoor = true;
+            animManager.lancerAnim = true;//on lance l'anim
         }
         else
         {
             /**
             * ça va changer avec le remaniement de quand j'aurais le time
             */
+            animManager.lancerAnim = false;//on ne lance pas d'anim
             isPlayerOnNextPlan = true;
             ChangeScene();
         }
