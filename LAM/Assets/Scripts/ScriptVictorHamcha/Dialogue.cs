@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class Dialogue : MonoBehaviour
 {
     /**
      * On gére l'apparition des phrases
      * en fonction de qui parle on modifie l'actuelle zone de texte utilisé.
      */
-    public TextMeshProUGUI playerTextDisplay;
-    public TextMeshProUGUI otherTextDisplay;
-    private TextMeshProUGUI currentTextDisplay;
+    public TextMeshProUGUI currentTextDisplay;
 
     public string[] sentences;
     public SPEAKER[] speakers;
@@ -19,18 +19,13 @@ public class Dialogue : MonoBehaviour
     public GameObject continueButton;
     public GameObject blockScreen;
     public GameObject textBox;
+    public Text speakerName;
 
     public enum SPEAKER
     {
         PLAYER,
         INNKEEPER,
         CAT
-    }
-
-    void Start()
-    {
-        //StartCoroutine(Type());
-        currentTextDisplay = playerTextDisplay;
     }
 
     IEnumerator TypeSentence () 
@@ -46,10 +41,10 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue()
     {
         ShowText();
-        playerTextDisplay.gameObject.SetActive(true);
-        otherTextDisplay.gameObject.SetActive(true);
+        currentTextDisplay.gameObject.SetActive(true);
         blockScreen.gameObject.SetActive(true);
         textBox.SetActive(true);
+        speakerName.gameObject.SetActive(true);
     }
 
     /**
@@ -58,13 +53,12 @@ public class Dialogue : MonoBehaviour
     public void StopDialogue()
     {
         index = 0;
-        playerTextDisplay.text = "";
-        playerTextDisplay.gameObject.SetActive(false);
-        otherTextDisplay.text = "";
-        otherTextDisplay.gameObject.SetActive(false);
+        currentTextDisplay.text = "";
+        currentTextDisplay.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(false);
         blockScreen.gameObject.SetActive(false);
         textBox.SetActive(false);
+        speakerName.gameObject.SetActive(false);
     }
 
     public void NextSentence()
@@ -78,23 +72,25 @@ public class Dialogue : MonoBehaviour
         {
             currentTextDisplay.text = "";
             continueButton.SetActive(false);
-            playerTextDisplay.gameObject.SetActive(false);
-            otherTextDisplay.gameObject.SetActive(false);
+            currentTextDisplay.gameObject.SetActive(false);
             blockScreen.SetActive(false);
             textBox.SetActive(false);
+            speakerName.gameObject.SetActive(false);
             index = 0;
         }
     }
 
     private void ShowText()
     {
-        //si cette phrase est dite par le player, la zone de texte est celle du bas sinon c'est celle du haut 
+        //on affiche le nom de celui qui parle
         if (speakers[index] == SPEAKER.PLAYER)
-            currentTextDisplay = playerTextDisplay;
+            speakerName.text = "Seiji";
+        else if (speakers[index] == SPEAKER.INNKEEPER)
+            speakerName.text = "Aubergiste";
         else
-            currentTextDisplay = otherTextDisplay;
+            speakerName.text = "Chat";
 
-            currentTextDisplay.text = "";
+        currentTextDisplay.text = "";
             StartCoroutine(TypeSentence());
 
     }
