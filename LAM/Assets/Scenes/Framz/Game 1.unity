@@ -1345,6 +1345,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &120050723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,7 +2050,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -3019,6 +3020,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &223178265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,16 +4491,16 @@ MonoBehaviour:
     BloomSoftness: 0.5
   VisualizeBloom: 0
   LensDirtTexture: {fileID: 2800000, guid: a4fed32d8ef3a744a9fb4ea31840e8e3, type: 3}
-  LensDirtIntensity: 0.12
+  LensDirtIntensity: 0.1
   ChromaticAberration: 1
-  ChromaticAberrationPrecise: 0
-  ChromaticAberrationOffset: 1
+  ChromaticAberrationPrecise: 1
+  ChromaticAberrationOffset: 1.22
   SCurveIntensity: 0.5
   LensCurvatureEnabled: 1
   LensCurvaturePower: 1
   LensCurvaturePrecise: 0
-  FilmGrainIntensity: 0.5
-  FilmGrainTiling: 3.91
+  FilmGrainIntensity: 0.1
+  FilmGrainTiling: 2
   VignettingIntensity: 1
   DOFEnabled: 0
   BlurCOCTexture: 1
@@ -5678,6 +5680,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &493557562
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,6 +8526,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &684485854
 GameObject:
   m_ObjectHideFlags: 0
@@ -9089,6 +9093,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &717472482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9644,6 +9649,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &745894022
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +9821,7 @@ PrefabInstance:
     - target: {fileID: 6628122068245902258, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6628122068245902268, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
@@ -11230,6 +11236,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &842305956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11281,6 +11288,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1001 &858909797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12137,6 +12145,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &910379905
 GameObject:
   m_ObjectHideFlags: 0
@@ -14078,6 +14087,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1089655354
 GameObject:
   m_ObjectHideFlags: 0
@@ -16135,6 +16145,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1222373736
 GameObject:
   m_ObjectHideFlags: 0
@@ -16189,6 +16200,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1222722336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17179,6 +17191,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1258549544
 GameObject:
   m_ObjectHideFlags: 0
@@ -18287,6 +18300,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1345787547
 GameObject:
   m_ObjectHideFlags: 0
@@ -18341,6 +18355,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1347855084
 GameObject:
   m_ObjectHideFlags: 0
@@ -18856,6 +18871,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1364167911
 GameObject:
   m_ObjectHideFlags: 0
@@ -19246,6 +19262,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1414761087
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,6 +20607,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1463298200
 GameObject:
   m_ObjectHideFlags: 0
@@ -20770,6 +20788,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1494057329
 GameObject:
   m_ObjectHideFlags: 0
@@ -22068,6 +22087,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1580730568
 GameObject:
   m_ObjectHideFlags: 0
@@ -22890,6 +22910,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1683330654
 GameObject:
   m_ObjectHideFlags: 0
@@ -23376,6 +23397,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &1699779106
 GameObject:
   m_ObjectHideFlags: 0
@@ -26427,6 +26449,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
+  textBox: {fileID: 0}
 --- !u!1 &2000842368
 GameObject:
   m_ObjectHideFlags: 0

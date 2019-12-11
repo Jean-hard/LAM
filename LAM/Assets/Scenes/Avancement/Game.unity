@@ -3461,16 +3461,16 @@ MonoBehaviour:
     BloomSoftness: 0.5
   VisualizeBloom: 0
   LensDirtTexture: {fileID: 2800000, guid: a4fed32d8ef3a744a9fb4ea31840e8e3, type: 3}
-  LensDirtIntensity: 0.12
+  LensDirtIntensity: 0.1
   ChromaticAberration: 1
   ChromaticAberrationPrecise: 0
-  ChromaticAberrationOffset: 1
+  ChromaticAberrationOffset: 1.22
   SCurveIntensity: 0.5
   LensCurvatureEnabled: 1
   LensCurvaturePower: 1
   LensCurvaturePrecise: 0
-  FilmGrainIntensity: 0.5
-  FilmGrainTiling: 3.91
+  FilmGrainIntensity: 0.1
+  FilmGrainTiling: 2
   VignettingIntensity: 1
   DOFEnabled: 0
   BlurCOCTexture: 1
@@ -5408,7 +5408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &590344753
 RectTransform:
   m_ObjectHideFlags: 0
