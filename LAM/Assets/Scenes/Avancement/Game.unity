@@ -1366,20 +1366,9 @@ PrefabInstance:
       propertyPath: maxIntensity
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5855064752358870472, guid: 1801d822c4fb80f44b4c2a3f9d14482a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1801d822c4fb80f44b4c2a3f9d14482a, type: 3}
---- !u!114 &150742531 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5855064752358870472, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
-    type: 3}
-  m_PrefabInstance: {fileID: 150742530}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &150742532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
@@ -1534,10 +1523,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1222373737}
+  - {fileID: 509746294}
   - {fileID: 492494887}
   - {fileID: 733274169}
   - {fileID: 1699445510}
-  - {fileID: 1461822287}
   - {fileID: 831932517}
   - {fileID: 909776178}
   - {fileID: 1345787548}
@@ -2177,10 +2166,13 @@ MonoBehaviour:
   - {fileID: 492494888}
   - {fileID: 733274170}
   - {fileID: 1699445511}
-  - {fileID: 1461822288}
   - {fileID: 831932518}
   - {fileID: 909776179}
   - {fileID: 1345787549}
+  accueilDiaTab:
+  - {fileID: 1222373738}
+  - {fileID: 509746295}
+  - {fileID: 1358758269}
   couloirDiaTab:
   - {fileID: 1344748008}
   - {fileID: 1572505688}
@@ -2567,7 +2559,8 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[3]
       value: 
       objectReference: {fileID: 695501955}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3696556b79564d54989356eeac9e1ebe, type: 3}
 --- !u!4 &325116255 stripped
 Transform:
@@ -2575,18 +2568,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 325116254}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &325116256 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-    type: 3}
-  m_PrefabInstance: {fileID: 325116254}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &327433884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2812,6 +2793,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &347177946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
+    type: 3}
+  m_PrefabInstance: {fileID: 150742530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &347177947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347177946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70314cebac523b44d8eac9a72f0946fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPlayerPos: {x: 0, y: 2}
+  interElementTab:
+  - {fileID: 387063088}
+  - {fileID: 1651371964}
+  minscale: 0.3
+  maxscale: 0.8
+  propscale: 1.4
+  planeLightTab:
+  - {fileID: 1313098272}
+--- !u!1 &347412467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4952377497877467514, guid: 3696556b79564d54989356eeac9e1ebe,
+    type: 3}
+  m_PrefabInstance: {fileID: 325116254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &357937216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,7 +3939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 325116256}
+  planeNextDoor: {fileID: 1151549379}
 --- !u!114 &445639727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3973,7 +3987,7 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 325116256}
+          m_ObjectArgument: {fileID: 1151549379}
           m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4027,6 +4041,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445639724}
   m_CullTransparentMesh: 0
+--- !u!1 &456023684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
+    type: 3}
+  m_PrefabInstance: {fileID: 325116254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &461715934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4358,7 +4378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &492494888
 MonoBehaviour:
@@ -4543,6 +4563,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493557562}
   m_CullTransparentMesh: 0
+--- !u!1 &509746293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509746294}
+  - component: {fileID: 509746295}
+  m_Layer: 0
+  m_Name: SOLO_SEIJI_HALL_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509746294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509746293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509746295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509746293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTextDisplay: {fileID: 1969325701}
+  sentences:
+  - "Il est gentil, quoiqu'un peu \xE9trange."
+  - "C\u2019est comme si ses paroles avaient un double sens."
+  - "Et cet endroit, on dirait que\u2026 "
+  - 'c''est comme si je... '
+  - "Rha, pourquoi je ne me rappelle de rien\u2009?"
+  - "Arr\xEAte de te torturer, l\u2019aubergiste a raison, plus on cherche, moins
+    \xE7a vient\u2026"
+  - Allons lui chercher sa peinture.
+  speakers: 00000000000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
+  speakerName: {fileID: 655325357}
 --- !u!1 &510914499
 GameObject:
   m_ObjectHideFlags: 0
@@ -7822,7 +7902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &733274170
 MonoBehaviour:
@@ -8600,7 +8680,7 @@ MonoBehaviour:
         m_MethodName: ChangePlanWhithoutPlayer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 325116256}
+          m_ObjectArgument: {fileID: 1151549379}
           m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8667,7 +8747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: -5, y: 5, z: 0}
-  planeNextDoor: {fileID: 325116256}
+  planeNextDoor: {fileID: 1151549379}
 --- !u!1 &818565742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,7 +9307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 150742531}
+  planeNextDoor: {fileID: 347177947}
 --- !u!114 &860522849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10033,7 +10113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 439017443}
-  currentPlan: {fileID: 150742531}
+  currentPlan: {fileID: 347177947}
   fadeScript: {fileID: 647650966}
   dialogueGUI: {fileID: 130146554}
 --- !u!4 &922936694
@@ -11121,6 +11201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739cf8c29a194ba4ebc6bb38f495a9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room1DiaTab:
+  - {fileID: 111247738}
+  - {fileID: 1061324138}
   peintureDialogue: {fileID: 2000680630}
 --- !u!4 &1009658652
 Transform:
@@ -12354,6 +12437,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147074952}
   m_CullTransparentMesh: 0
+--- !u!1 &1151549378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2743296353084836922, guid: 3696556b79564d54989356eeac9e1ebe,
+    type: 3}
+  m_PrefabInstance: {fileID: 325116254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1151549379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151549378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f943f5d2b18cfeb4b88e04638ac3770d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initPlayerPos: {x: 0, y: 2}
+  interElementTab:
+  - {fileID: 19311468}
+  - {fileID: 1225542100}
+  - {fileID: 549081769}
+  - {fileID: 695501955}
+  minscale: 0.8
+  maxscale: 0.9
+  propscale: 1
+  planeLightTab:
+  - {fileID: 347412467}
+  - {fileID: 456023684}
 --- !u!1 &1152262304
 GameObject:
   m_ObjectHideFlags: 0
@@ -13008,7 +13121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 150742531}
+  planeNextDoor: {fileID: 347177947}
 --- !u!114 &1179070678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15089,6 +15202,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
+--- !u!1 &1313098272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1768554271192226832, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
+    type: 3}
+  m_PrefabInstance: {fileID: 150742530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320180373
 GameObject:
   m_ObjectHideFlags: 0
@@ -17618,78 +17737,6 @@ RectTransform:
   m_AnchoredPosition: {x: -95, y: -0.5}
   m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1461822286
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1461822287}
-  - component: {fileID: 1461822288}
-  m_Layer: 0
-  m_Name: DIA_AUBER_04
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1461822287
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461822286}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1461822288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461822286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTextDisplay: {fileID: 1969325701}
-  sentences:
-  - "A pr\xE9sent voil\xE0 que tu nous fais un caprice, alors que je t'offre le g\xEEte
-    et le couvert !"
-  - Je ...
-  - "Reprends-toi, mon gar\xE7on. C'est difficile, je sais, mais tu dois pers\xE9verer."
-  - "En plus, ta chambre n'est toujours pas pr\xEAte."
-  - "Tu veux qu'un vieil homme ce soit donn\xE9 tout ce mal mal pour rien ?"
-  - Non, excusez-moi.
-  - "J'aime mieux \xE7a. J'ai encore besoin de toi."
-  - Dans la chambre d'en face, celle de gauche, vivait un client. Un homme assez curieux,
-    un peu comme toi.
-  - Comme moi ?
-  - "Oh oui. Il passait son temps \xE0 chercher des r\xE9ponses. Avant de partir,
-    cet homme m'a dit \xEAtre  \xE0 la recherche de quelque chose."
-  - "Quelque chose de tr\xE8s important. J'aimerais que tu te rendes dans sa chambre
-    et que tu me trouves ce qu'il cherchait."
-  - Retrouver ce qu'il cherchait ? Ca n'a pas de sens ...
-  - "Tu vois, tu recommences avec tes questions sans int\xE9r\xEAt ! Vas-y au lieu
-    de cogiter ici."
-  - "Qui sait, en cherchant pour moi, tu trouveras peut-\xEAtre des r\xE9ponses pour
-    toi ..."
-  speakers: 0100000000000000010000000100000001000000000000000100000001000000000000000100000001000000000000000100000001000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
-  blockScreen: {fileID: 929332794}
-  textBox: {fileID: 2009367186}
-  skipTextButton: {fileID: 1147074952}
-  speakerName: {fileID: 655325357}
 --- !u!1 &1463298200
 GameObject:
   m_ObjectHideFlags: 0
@@ -18044,7 +18091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: -0.5, z: 0}
-  planeNextDoor: {fileID: 150742531}
+  planeNextDoor: {fileID: 0}
 --- !u!114 &1497692583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19289,7 +19336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 6, y: 2.5, z: 0}
-  planeNextDoor: {fileID: 325116256}
+  planeNextDoor: {fileID: 1151549379}
 --- !u!114 &1628532516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20047,7 +20094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPosition: {x: 0, y: 1, z: 0}
-  planeNextDoor: {fileID: 325116256}
+  planeNextDoor: {fileID: 1151549379}
 --- !u!114 &1690092671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20095,7 +20142,7 @@ MonoBehaviour:
         m_MethodName: ChangePlan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 325116256}
+          m_ObjectArgument: {fileID: 1151549379}
           m_ObjectArgumentAssemblyTypeName: PlaneScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -20332,7 +20379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699445511
 MonoBehaviour:
@@ -20356,7 +20403,27 @@ MonoBehaviour:
   - "Comment \xE7a, tu abandonnes ?! Pas question, mon gar\xE7on. Oh que non !"
   - S'il vous plait ... Je veux seulement dormir. Vous aviez promis. Donnez moi ma
     chambre.
-  speakers: 0100000001000000000000000100000000000000
+  - "A pr\xE9sent voil\xE0 que tu nous fais un caprice, alors que je t'offre le g\xEEte
+    et le couvert !"
+  - Je ...
+  - "Reprends-toi, mon gar\xE7on. C'est difficile, je sais, mais tu dois pers\xE9verer."
+  - "En plus, ta chambre n'est toujours pas pr\xEAte."
+  - "Tu veux qu'un vieil homme ce soit donn\xE9 tout ce mal mal pour rien ?"
+  - Non, excusez-moi.
+  - "J'aime mieux \xE7a. J'ai encore besoin de toi."
+  - Dans la chambre d'en face, celle de gauche, vivait un client. Un homme assez curieux,
+    un peu comme toi.
+  - Comme moi ?
+  - "Oh oui. Il passait son temps \xE0 chercher des r\xE9ponses. Avant de partir,
+    cet homme m'a dit \xEAtre  \xE0 la recherche de quelque chose."
+  - "Quelque chose de tr\xE8s important. J'aimerais que tu te rendes dans sa chambre
+    et que tu me trouves ce qu'il cherchait."
+  - Retrouver ce qu'il cherchait ? Ca n'a pas de sens ...
+  - "Tu vois, tu recommences avec tes questions sans int\xE9r\xEAt ! Vas-y au lieu
+    de cogiter ici."
+  - "Qui sait, en cherchant pour moi, tu trouveras peut-\xEAtre des r\xE9ponses pour
+    toi ..."
+  speakers: 01000000010000000000000001000000000000000100000000000000010000000100000001000000000000000100000001000000000000000100000001000000000000000100000001000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
