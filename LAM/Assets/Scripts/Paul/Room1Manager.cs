@@ -7,7 +7,6 @@ public class Room1Manager : MonoBehaviour
     /**
      * bool to check if all the enigma in the room has been done succesfully
      */
-    public static bool room1EnigmaDone;
 
     public static bool puzzleDone;
     public static bool horlogeDone;
@@ -49,5 +48,10 @@ public class Room1Manager : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(peintureDialogue);
         }
+    }
+
+    public void RoomEnigmaDone()
+    {
+        //AccueilCouloirManager.Instance.
     }
 }

@@ -198,6 +198,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StopDialogue()
+    {
+        currentDialogue.StopDialogue();
+    }
+
     //correspond au bouton "continuer" dans la scène
     public void DisplayDialogueNextSentence()
     {
