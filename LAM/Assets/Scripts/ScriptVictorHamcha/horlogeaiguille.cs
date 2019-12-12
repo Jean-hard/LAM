@@ -12,6 +12,7 @@ public class horlogeaiguille : MonoBehaviour
     private float rotationsave;
     private Collider2D collideraiguille;
     private float timerTime = 3;
+    public bool turnLeft;
     private void Start()
     {
         collideraiguille = GetComponent<Collider2D>();
@@ -40,7 +41,10 @@ public class horlogeaiguille : MonoBehaviour
             if (timerTime>0)
             {
                 timerTime -= Time.deltaTime;
-                rotationsave += 10;
+                if (turnLeft)
+                    rotationsave += 3;
+                else
+                    rotationsave -= 5;
                 transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset + rotationsave);// rotation commence a la dernière position de l'aiguille et augmente en continue
 
             }
