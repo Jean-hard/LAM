@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e130c0dfc0bdd9943ab119e5dbaaed16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6516aba1f5426cb4e8238d51485fe790, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,6 @@ MonoBehaviour:
   initPlayerPos: {x: 0, y: 2}
   interElementTab:
   - {fileID: 0}
-  initialDialogue: {fileID: 0}
   minscale: 0.8
   maxscale: 0.9
   propscale: 1
