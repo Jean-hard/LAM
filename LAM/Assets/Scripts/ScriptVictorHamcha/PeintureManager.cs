@@ -29,6 +29,7 @@ public class PeintureManager : MonoBehaviour
     private GameObject colorChoosed;    // couleur choisie par le joueur
 
     private bool colorSelected;
+    private bool chevaletGameDone;
  
     private bool choosedBadColor;
     private int indexStep = 0;
@@ -53,16 +54,18 @@ public class PeintureManager : MonoBehaviour
         {
             colorNameText[i].SetActive(false);
         }
-
-        currentButtonClicked = EventSystem.current.currentSelectedGameObject;   // on récup le tag du bouton clické
-        for (int i = 0; i < colorNameText.Length; ++i)
+        if (!chevaletGameDone)
         {
-            // si le tag du bouton clické est le même qu'un des noms de couleur
-            if (currentButtonClicked.CompareTag(colorNameText[i].tag))      
+            currentButtonClicked = EventSystem.current.currentSelectedGameObject;   // on récup le tag du bouton clické
+            for (int i = 0; i < colorNameText.Length; ++i)
             {
-                colorChoosed = colorNameText[i];
-                colorNameText[i].SetActive(true);   // on active le nom de la couleur clickée
-                colorSelected = true;
+                // si le tag du bouton clické est le même qu'un des noms de couleur
+                if (currentButtonClicked.CompareTag(colorNameText[i].tag))
+                {
+                    colorChoosed = colorNameText[i];
+                    colorNameText[i].SetActive(true);   // on active le nom de la couleur clickée
+                    colorSelected = true;
+                }
             }
         }
     }
@@ -104,7 +107,9 @@ public class PeintureManager : MonoBehaviour
         // Win
         if (indexStep == 2)
         {
+            chevaletGameDone = true;
             paletteCouleur.SetActive(false);
+            toileButton.SetActive(false);
         }
 
         // Loose
