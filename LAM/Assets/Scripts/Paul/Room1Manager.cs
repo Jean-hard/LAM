@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class Room1Manager : MonoBehaviour
 {
+    public static bool soloTalkRoom11Ready = true;
+    public static bool soloTalkRoom12Ready = false;
+
     /**
      * bool to check if all the enigma in the room has been done succesfully
      */
-    public static bool room1EnigmaDone;
-
     public static bool puzzleDone;
     public static bool horlogeDone;
     public static bool oeufVisited;
 
     [SerializeField]
+    private Dialogue[] room1DiaTab;
+    private int indexRoomDia = 0;
+
+    [SerializeField]
     private Dialogue peintureDialogue;
+
+    private Dialogue currentRoom1Dia;
 
     // SINGLETON ---------------------------------------------
     private static Room1Manager _instance;
@@ -33,6 +40,11 @@ public class Room1Manager : MonoBehaviour
         }
     }//--------------------------------------------------------------------
 
+    public void Start()
+    {
+        currentRoom1Dia = room1DiaTab[indexRoomDia];
+    }
+
     public void OeufIsVisited()
     {
         oeufVisited = true;
@@ -48,6 +60,26 @@ public class Room1Manager : MonoBehaviour
         else
         {
             GameManager.Instance.InitDialogue(peintureDialogue);
+        }
+    }
+
+    public void ShowRoom1Dia()
+    {
+        if (soloTalkRoom11Ready == true)
+        {
+            GameManager.Instance.InitDialogue(currentRoom1Dia);
+            soloTalkRoom11Ready = false;
+        }
+
+        ////////////////////attendre que jean est finie pour placé DIA_ROOM_01_SOLO_02
+        if (soloTalkRoom12Ready == true)
+        {
+            indexRoomDia++;
+            currentRoom1Dia = room1DiaTab[indexRoomDia];
+            GameManager.Instance.InitDialogue(currentRoom1Dia);
+            soloTalkRoom12Ready = false;
+            //débloque le dialogue DIA_AUBER_02
+            AccueilCouloirManager.Instance.UpdateAubergisteDia();
         }
     }
 }

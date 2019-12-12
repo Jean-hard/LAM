@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
     public GameObject continueButton;
     public GameObject blockScreen;
     public GameObject textBox;
+    public GameObject skipTextButton;
     public Text speakerName;
 
     public enum SPEAKER
@@ -36,6 +37,7 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         continueButton.SetActive(true);
+        skipTextButton.SetActive(true);
     }
 
     public void StartDialogue()
@@ -44,6 +46,7 @@ public class Dialogue : MonoBehaviour
         currentTextDisplay.gameObject.SetActive(true);
         blockScreen.gameObject.SetActive(true);
         textBox.SetActive(true);
+        skipTextButton.SetActive(true);
         speakerName.gameObject.SetActive(true);
     }
 
@@ -58,6 +61,7 @@ public class Dialogue : MonoBehaviour
         continueButton.gameObject.SetActive(false);
         blockScreen.gameObject.SetActive(false);
         textBox.SetActive(false);
+        skipTextButton.SetActive(false);
         speakerName.gameObject.SetActive(false);
     }
 
@@ -65,6 +69,7 @@ public class Dialogue : MonoBehaviour
     {
         index++;
         continueButton.SetActive(false);
+        skipTextButton.SetActive(false);
 
         if (index < sentences.Length)
             ShowText();
@@ -72,6 +77,7 @@ public class Dialogue : MonoBehaviour
         {
             currentTextDisplay.text = "";
             continueButton.SetActive(false);
+            skipTextButton.SetActive(false);
             currentTextDisplay.gameObject.SetActive(false);
             blockScreen.SetActive(false);
             textBox.SetActive(false);

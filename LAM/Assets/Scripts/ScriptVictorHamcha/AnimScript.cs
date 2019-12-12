@@ -5,8 +5,8 @@ using UnityEngine;
 public class AnimScript : MonoBehaviour
 {
     public Animator seijiAnimator;//animator du personnage seiji
-    public PlayerManager playerManager;
-    
+    private PlayerManager playerManager;
+    public bool lancerAnim;
     private void Start()
     {
         playerManager = FindObjectOfType<PlayerManager>();
@@ -18,13 +18,18 @@ public class AnimScript : MonoBehaviour
         {
             AnimationSeiji("animIDLE");
         }
+        
     }
 
 
     public void AnimationSeiji(string animName)//fonction qu'on met au bouton avec le quelle on veut que t'elle anim se lance (marche pour toutes les anim de seji qu'on aura)
     {
+        if (lancerAnim)
         seijiAnimator.SetTrigger(animName);
+        else
+            seijiAnimator.SetTrigger("animIDLE");
+
     }
 
-    
+
 }
