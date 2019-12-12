@@ -972,6 +972,16 @@ PrefabInstance:
       propertyPath: initialDialogue
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8328766829543993706, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1001,16 +1011,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8328766829311563191, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
@@ -1329,8 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Mais, qu\u2019est-ce que c'est que\u2026 Un peintre, voil\xE0 pourquoi l\u2019aubergiste
     parlait d\u2019admirateurs \u2026"
@@ -1346,6 +1345,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &120050723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -2122,16 +2123,6 @@ PrefabInstance:
       propertyPath: initialDialogue
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1768554271192226861, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
-        type: 3}
-      propertyPath: minIntensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1768554271192226861, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
-        type: 3}
-      propertyPath: maxIntensity
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1768554271192226863, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2166,6 +2157,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BounceIntensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768554271192226861, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
+        type: 3}
+      propertyPath: minIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768554271192226861, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
+        type: 3}
+      propertyPath: maxIntensity
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1801d822c4fb80f44b4c2a3f9d14482a, type: 3}
@@ -2959,8 +2960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Quel est ce bruit calme et r\xE9gulier ? Ou-suis-je ? Je me sens lourd."
   - "Je peux \xE0 peine remuer les bras, comme si mes v\xEAtements \xE9taient coul\xE9s
@@ -3021,6 +3021,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &223178265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3408,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 19311468}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1225542100}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 549081769}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 695501955}
     - target: {fileID: 2743296353084836916, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3461,26 +3483,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+    - target: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 19311468}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1225542100}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 549081769}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
-      objectReference: {fileID: 695501955}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4952377496327316186, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -3530,11 +3537,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4952377496327316185, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
@@ -5639,8 +5641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - Tiens, mais que nous rapporte le vent du large ?
   - "Bonsoir, mon gar\xE7on. Mais... tu es tremp\xE9 et crott\xE9 !"
@@ -5681,6 +5682,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &493557562
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,8 +8521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - Je comprends enfin... C'est atroce.
   speakers: 00000000
@@ -8527,6 +8529,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &684485854
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,8 +9088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Alors c'est \xE7a. Eux et moi. Nous sommes ici, sur cette \xEEle."
   - C'est ainsi, non ? Il le sait maintenant, lui, au loin.
@@ -9094,6 +9097,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &717472482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9612,8 +9617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Tenez, c\u2019est bien ce que vous m\u2019avez demand\xE9\u2009?"
   - Parfait. Elle est belle, n'est-ce pas ?
@@ -9650,6 +9654,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &745894022
 GameObject:
   m_ObjectHideFlags: 0
@@ -11150,15 +11156,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScript: {fileID: 818565745}
+  colorButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  colorNameText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   firstStep: {fileID: 1450339411}
   secondStep: {fileID: 578548316}
   finalGoodStep: {fileID: 1258549544}
   finalBadStep: {fileID: 1111078444}
-  goodAnswer1: 0
-  goodAnswer2: 0
-  goodAnswer3: 0
-  activefondue: 0
-  palettedecouleur: {fileID: 729099138}
+  paletteCouleur: {fileID: 0}
+  toileButton: {fileID: 0}
 --- !u!4 &821819518
 Transform:
   m_ObjectHideFlags: 0
@@ -11216,8 +11233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - De retour ?! Enfin !
   - L'homme dans la chambre ... Vous saviez ? Il est ?
@@ -11237,6 +11253,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &842305956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11280,8 +11298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - Hmmmm... Sang...
   speakers: 00000000
@@ -11289,6 +11306,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1001 &858909797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12134,8 +12153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Calm\xE9 et ob\xE9issant. Un ange. Tes souvenirs reviennent ?"
   - "Oui. Ils sont l\xE0. Dans mon cr\xE2ne."
@@ -12146,6 +12164,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &910379905
 GameObject:
   m_ObjectHideFlags: 0
@@ -13623,6 +13643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739cf8c29a194ba4ebc6bb38f495a9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room1DiaTab: []
   peintureDialogue: {fileID: 2000680630}
 --- !u!4 &1009658652
 Transform:
@@ -14175,8 +14196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Qu\u2019est-ce que c\u2019est que \u2026 Par tous les kamis de l\u2019Oc\xE9an,
     o\xF9 est-ce qu\u2019il va trouver tout \xE7a\u2009?"
@@ -14194,6 +14214,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1089655354
 GameObject:
   m_ObjectHideFlags: 0
@@ -15350,6 +15372,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1159886542}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1347855084}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2359678264682087547, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15404,26 +15446,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1159886542}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1347855084}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3199222535227401655, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
@@ -16243,8 +16265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - '* Un long cri de chute qui se termine par un choc retentit dans la chambre *'
   speakers: 00000000
@@ -16252,6 +16273,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1222373736
 GameObject:
   m_ObjectHideFlags: 0
@@ -16295,8 +16318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Tout para\xEEt si \xE9trange. Qu\u2019est-ce que je fais ici ?"
   - "Comment\u2026 suis-je arriv\xE9 ici ? Tout me semble confus."
@@ -16307,6 +16329,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1222722336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17138,6 +17162,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1461529503}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1646493785}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 182829813}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 655728224}
     - target: {fileID: 3969082664721925995, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17193,26 +17237,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1461529503}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1646493785}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 182829813}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
-      objectReference: {fileID: 655728224}
     - target: {fileID: 3969082664721925988, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_Sprite
@@ -17287,8 +17311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "* Un son \xE9trange \xE9mane du t\xE9l\xE9phone... *"
   - "Si quelqu'un m'entend, c'est que je suis d\xE9j\xE0 mort."
@@ -17298,6 +17321,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1258549544
 GameObject:
   m_ObjectHideFlags: 0
@@ -18388,8 +18413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Il est gentil, mais un peu \xE9trange. C\u2019est comme si ses mots avaient un
     double sens."
@@ -18407,6 +18431,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1345787547
 GameObject:
   m_ObjectHideFlags: 0
@@ -18450,8 +18476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Ne fais pas cette t\xEAte, r\xE9jouis toi. Tu l'attendais et elle aussi !"
   - Maman ?
@@ -18462,6 +18487,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1347855084
 GameObject:
   m_ObjectHideFlags: 0
@@ -18960,8 +18987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Qu'est ce qu'il s'est pass\xE9 ? J'\xE9tais l\xE0-bas, et maintenant ... ici."
   - "Je me sens bizarre. J'ai retrouv\xE9 une partie de ma m\xE9moire et au lieu de
@@ -18978,6 +19004,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1364167911
 GameObject:
   m_ObjectHideFlags: 0
@@ -19281,8 +19309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "J\u2019entends le tonnerre r\xE9sonner. La temp\xEAte approche."
   - Pour le moment, c'est une simple averse... les gouttelettes ruissellent sur mon
@@ -19369,6 +19396,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1414761087
 GameObject:
   m_ObjectHideFlags: 0
@@ -20686,8 +20715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "A pr\xE9sent voil\xE0 que tu nous fais un caprice, alors que je t'offre le g\xEEte
     et le couvert !"
@@ -20714,6 +20742,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1463298200
 GameObject:
   m_ObjectHideFlags: 0
@@ -20886,8 +20916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Je devrais peut-\xEAtre finir la chambre d'abord..."
   speakers: 00000000
@@ -20895,6 +20924,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1494057329
 GameObject:
   m_ObjectHideFlags: 0
@@ -22179,8 +22210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Il est gentil cet aubergiste mais comment suis-je cens\xE9 trouver quelque chose
     qu'il ne sait pas ? "
@@ -22194,6 +22224,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1580730568
 GameObject:
   m_ObjectHideFlags: 0
@@ -23004,8 +23036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Mais ... C'est ... Lui ... Le d\xE9tective ... celui qui habite ici ... Il est
     mort ?! On l'a... tu\xE9."
@@ -23017,6 +23048,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1683330654
 GameObject:
   m_ObjectHideFlags: 0
@@ -23488,8 +23521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Allons , s\xE8che tes larmes. N'\xE9tait-ce pas ce que tu voulais, assouvir ta
     curiosit\xE9 ?"
@@ -23504,6 +23536,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &1699779106
 GameObject:
   m_ObjectHideFlags: 0
@@ -24083,6 +24117,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.93
       objectReference: {fileID: 0}
+    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1497692580}
+    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 860522846}
+    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
+      propertyPath: initialDialogue
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7287666206923005829, guid: 4f894ed1ad2e7c745b550760497bf796,
         type: 3}
       propertyPath: m_Sprite
@@ -24099,21 +24148,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cd566901eb1beec42a668d6348bf7316, type: 2}
-    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1497692580}
-    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 860522846}
-    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
-        type: 3}
-      propertyPath: initialDialogue
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f894ed1ad2e7c745b550760497bf796, type: 3}
 --- !u!4 &1736141053 stripped
@@ -24972,6 +25006,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 28680430}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1176417519}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 325110212}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8182740224798173849, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25026,31 +25085,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 28680430}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1176417519}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 325110212}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8182740224798173846, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
@@ -26547,8 +26581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTextDisplay: {fileID: 745894024}
-  otherTextDisplay: {fileID: 1706687249}
+  currentTextDisplay: {fileID: 0}
   sentences:
   - "Je devrais peut-\xEAtre finir la chambre d'abord..."
   speakers: 00000000
@@ -26556,6 +26589,8 @@ MonoBehaviour:
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
   textBox: {fileID: 0}
+  skipTextButton: {fileID: 0}
+  speakerName: {fileID: 0}
 --- !u!1 &2000842368
 GameObject:
   m_ObjectHideFlags: 0
@@ -27851,6 +27886,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 612285268}
     - target: {fileID: 3905255526248652333, guid: 8f3ba22f025b4c447802ab317a90a305,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27917,16 +27962,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f1d93fb5f755d4d4c9baf6585eb41467, type: 2}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 612285268}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3ba22f025b4c447802ab317a90a305, type: 3}
 --- !u!114 &1895474825590938955 stripped
@@ -28019,6 +28054,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 415406018}
     - target: {fileID: 212292214950922577, guid: be2c5e264f7f4b044933031cafa73de0,
         type: 3}
       propertyPath: m_Sprite
@@ -28030,16 +28075,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: de5729a15f47db644ae0c7b13458c5f8, type: 2}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 415406018}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2c5e264f7f4b044933031cafa73de0, type: 3}
 --- !u!1001 &3004784731293210431
@@ -28114,6 +28149,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 730449125}
     - target: {fileID: 9062648554905411477, guid: a32528bb7371b674a8086f9b9709104b,
         type: 3}
       propertyPath: m_Sprite
@@ -28125,16 +28170,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 67e35f7b5a3ef4e429f499270c991d1c, type: 2}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 730449125}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a32528bb7371b674a8086f9b9709104b, type: 3}
 --- !u!4 &3175047958058380149 stripped
@@ -28158,7 +28193,7 @@ PrefabInstance:
     - target: {fileID: 3760790128044849562, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3760790128044849556, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
         type: 3}
@@ -28215,17 +28250,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 341241c6c3542f24983aa9ab9dcf0189,
-        type: 3}
-    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dc505edf2c2278149b0c239c3233649d, type: 2}
     - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
         type: 3}
       propertyPath: interElementTab.Array.size
@@ -28241,6 +28265,17 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1924258224}
+    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 341241c6c3542f24983aa9ab9dcf0189,
+        type: 3}
+    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dc505edf2c2278149b0c239c3233649d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a16b1bd3d9c38842868a7c3a1e0f332, type: 3}
 --- !u!114 &3747945388886257288 stripped
@@ -28561,6 +28596,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 791229157}
     - target: {fileID: 5799113373040094419, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28616,16 +28661,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 791229157}
     - target: {fileID: 5799113373040094428, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_Sprite
