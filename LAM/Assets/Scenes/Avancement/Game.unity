@@ -10598,7 +10598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 439017443}
-  currentPlan: {fileID: 0}
+  currentPlan: {fileID: 65221648}
   fadeScript: {fileID: 647650966}
   dialogueGUI: {fileID: 130146554}
 --- !u!4 &922936694
