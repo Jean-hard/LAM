@@ -54,6 +54,7 @@ public class horlogemanager : MonoBehaviour
     public Sprite fontHorlogeSucceed;
     private SpriteRenderer fontHorloge;
 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -149,6 +150,8 @@ public class horlogemanager : MonoBehaviour
             Room1Manager.horlogeDone = true;
         }
         
+        
+
         if(horlogeaiguille.canChangeFont)
         {
             fontHorloge.sprite = fontHorlogeSucceed; //on applique le sprite avec le tiroir ouvert de l'horloge
