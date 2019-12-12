@@ -15,6 +15,7 @@ public class VinyleManager : MonoBehaviour
     public float slowSpeed = 0.5f;
     public float normalSpeed = 1f;
     public float fastSpeed = 1.5f;
+    public float vitesseBaseVinyle = 120f;
     public int volumePosition = 0;
     public float volumeBruitBlancInitial = 0.3f;
     public Vector2 zoneVictoireBras = new Vector2(276f, 286f);
@@ -24,7 +25,8 @@ public class VinyleManager : MonoBehaviour
     public GameObject boutonVolume;
 
     public GameObject bras;
-    public Animator animator;
+    public GameObject vinyle;
+    private bool vinyleTourne = false;
     public Slider slider;
 
     public float[] tabVolumeValeurs = { 0.1f, 0.3f, 0.5f }; // valeurs de volume
@@ -46,11 +48,14 @@ public class VinyleManager : MonoBehaviour
         angleVinyleMin = bras.GetComponent<BrasController>().angleVinyleMin;
         angleVinyleMax = bras.GetComponent<BrasController>().angleVinyleMax;
 
-        animator.enabled = false; // le vinyle tourne disque est éteint à l'arrivée sur le plan
+        // animator.enabled = false; // le vinyle tourne disque est éteint à l'arrivée sur le plan
         musique.volume = 0f; // set le volume au début du jeu
         bruitBlanc.Pause();
         bruitBlanc.volume = volumeBruitBlancInitial;
     }
+
+    enum Vitesses { SLOW, NORMAL, FAST };
+    private Vitesses vitesseVinyle;
 
     // Update is called once per frame
     void Update()
@@ -58,7 +63,8 @@ public class VinyleManager : MonoBehaviour
         bool brasBienPlace = zoneVictoireBras.x < bras.transform.eulerAngles.z && bras.transform.eulerAngles.z < zoneVictoireBras.y;
         bool freqBienPlace = limitesSlider.x < slider.value && slider.value < limitesSlider.y;
         bool volumeAuMax = musique.volume == tabVolumeValeurs[tabVolumeValeurs.Length - 1];
-        conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && animator.speed == slowSpeed && animator.enabled;
+        conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && vinyleTourne && vitesseVinyle == Vitesses.SLOW;
+        // conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && animator.speed == slowSpeed && animator.enabled;
 
         if (conditionRemplie && !dialogueDisplayed)
         {
@@ -67,11 +73,15 @@ public class VinyleManager : MonoBehaviour
             Debug.Log("VICTOIRE");
         }
 
-        if (animator.enabled == false)
+        if (!vinyleTourne)
         {
             musique.Pause();
             bruitBlanc.Pause();
             craquement.Pause();
+        }
+        else
+        {
+            DonneVitesse();
         }
     }
 
@@ -109,16 +119,18 @@ public class VinyleManager : MonoBehaviour
 
     public void StartStop()
     {
-        if (animator.enabled == true)
+        if (vinyleTourne)
         {
-            animator.enabled = false;
+            vinyleTourne = false;
+            // animator.enabled = false;
             musique.Pause();
             bruitBlanc.Pause();
             craquement.Pause();
         }
         else
         {
-            animator.enabled = true;
+            // animator.enabled = true;
+            vinyleTourne = true;
             musique.Play();
             bruitBlanc.Play();
             craquement.Play();
@@ -129,19 +141,38 @@ public class VinyleManager : MonoBehaviour
 
     public void SpeedSlow()
     {
-        animator.speed = slowSpeed;
+        vitesseVinyle = Vitesses.SLOW;
+        // animator.speed = slowSpeed;
         musique.pitch = slowSpeed;
     }
 
     public void SpeedNormal()
     {
-        animator.speed = normalSpeed;
+        vitesseVinyle = Vitesses.NORMAL;
+        // animator.speed = normalSpeed;
         musique.pitch = normalSpeed;
     }
 
     public void SpeedFast()
     {
-        animator.speed = fastSpeed;
+        vitesseVinyle = Vitesses.FAST;
+        // animator.speed = fastSpeed;
         musique.pitch = fastSpeed;
+    }
+
+    private void DonneVitesse()
+    {
+        switch (vitesseVinyle)
+        {
+            case Vitesses.SLOW:
+                vinyle.transform.Rotate(0, 0, -slowSpeed * vitesseBaseVinyle * Time.deltaTime);
+                break;
+            case Vitesses.NORMAL:
+                vinyle.transform.Rotate(0, 0, -normalSpeed * vitesseBaseVinyle * Time.deltaTime);
+                break;
+            case Vitesses.FAST:
+                vinyle.transform.Rotate(0, 0, -fastSpeed * vitesseBaseVinyle * Time.deltaTime);
+                break;
+        }
     }
 }
