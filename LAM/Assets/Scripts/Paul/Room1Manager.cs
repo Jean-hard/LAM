@@ -71,7 +71,7 @@ public class Room1Manager : MonoBehaviour
             soloTalkRoom11Ready = false;
         }
 
-        ////////////////////attendre que jean est finie pour placé DIA_ROOM_01_SOLO_02
+        ///passe a true à la résolution de l'énigme de la chambre 1
         if (soloTalkRoom12Ready == true)
         {
             indexRoomDia++;
