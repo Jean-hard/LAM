@@ -10,6 +10,7 @@ public class AccueilCouloirManager : MonoBehaviour
     public static bool soloTalk01Ready = true; //pour SOLO DIA 01
     public static bool soloTalk02Ready = false; //pour SOLO DIA 02
 
+    //dans l'accueil
     public static bool introTalkReady = true; //SOLO_SEIJI_HALL_01
     public static bool accueilTalk1Ready = false; //SOLO_SEIJI_HALL_02
     public static bool accueilTalk2Ready = false; //DIA_AFTER_CINE_01

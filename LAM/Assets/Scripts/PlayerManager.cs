@@ -25,15 +25,6 @@ public class PlayerManager : MonoBehaviour
         if (targetPosition != playerBasePose)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
-            if(targetPosition.x > 0)
-            {
-                //this.GetComponent<Renderer>().
-            }
-            else
-            {
-
-            }
         }
     }
 }
