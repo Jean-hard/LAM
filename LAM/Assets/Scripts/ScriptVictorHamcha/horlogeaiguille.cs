@@ -11,7 +11,7 @@ public class horlogeaiguille : MonoBehaviour
     public float rotZ;
     private float rotationsave;
     private Collider2D collideraiguille;
-
+    private float timerTime = 3;
     private void Start()
     {
         collideraiguille = GetComponent<Collider2D>();
@@ -37,28 +37,33 @@ public class horlogeaiguille : MonoBehaviour
         {
             collideraiguille.enabled = false;
             selected = false;
+            if (timerTime>0)
+            {
+                timerTime -= Time.deltaTime;
+                rotationsave += 10;
+                transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset + rotationsave);// rotation commence a la dernière position de l'aiguille et augmente en continue
+
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 180);// aiguille positioné sur miniuit 
+                canChangeFont = true;
+                horlogemanager.horlogeGameFinished = false;
+                timerTime = 0;
+            }
+
+            
             //rotationsave+=15;
             //transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset+ rotationsave);// rotation de l'aiguille égal a l'angle trouvé au dessus + offset
-            StartCoroutine(Animaiguille());
-            horlogemanager.horlogeGameFinished = false;
+
+           
         }
     }
 
 
-    IEnumerator Animaiguille()
-    {
-        yield return new WaitForSeconds(2);
-        rotationsave += 30;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset + rotationsave);// rotation commence a la dernière position de l'aiguille et augmente en continue
-        yield return new WaitForSeconds(2);
-        transform.rotation = Quaternion.Euler(0f, 0f, 180);// aiguille positioné sur miniuit 
-        canChangeFont = true;
-    }
+   
 
-    public void ActiveAnimAiguille()
-    {
-
-    }
+    
 
     private void OnMouseOver()
     {
