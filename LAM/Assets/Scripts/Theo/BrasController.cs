@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public float diffAngle = 100f;
+    public float diffAngle = 120f;
     public AudioSource musique;
     public AudioSource bruit;
     public VinyleManager manager;
