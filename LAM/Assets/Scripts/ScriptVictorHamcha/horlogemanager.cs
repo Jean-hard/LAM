@@ -54,6 +54,8 @@ public class horlogemanager : MonoBehaviour
     public Sprite fontHorlogeSucceed;
     private SpriteRenderer fontHorloge;
 
+    public GameObject petitPapierBtn;
+    public GameObject papierZoomedBtn;
     
     // Start is called before the first frame update
     void Start()
@@ -62,35 +64,23 @@ public class horlogemanager : MonoBehaviour
 
         for (int i=0; i<60;i++)// place les 60 points minutes sur l'horloge
         {
-            
             minutePos.rotation= Quaternion.Euler(0f, 0f, -i*6+180);// un point tout les 6° de l'angle
-            /**
-             * pipi.... PIPI ?! IMPOSSIBLE !!!
-             * les noms doivent signifier la fonction de la variable, même si elle est temporaire comme ici
-             */
+
             Vector2 positionpointminute = new Vector2(posm.position.x, posm.position.y);// position du point sur l'horloge 
-            /**
-             * pareil pour vv
-             */
+
             pointsMinute = Instantiate(minute, positionpointminute, Quaternion.identity);// creer les petits points minutes 
             pointsMinute.transform.parent = pointMinuteEtHeureHolder;//donne comme parents aux points : pointMinuteEtHeureHolder
             pointminute.Add(pointsMinute);//ajoutes les points a la liste pointsminute
-           
         }
 
 
         for (int i = 0; i < 12; i++)// la même chose qu'au dessus mais pour les heures
         {
-
             heurePos.rotation = Quaternion.Euler(0f, 0f, -i * 30 + 180);
-            /**
-             * HIHI ?! Pareil faut le changer
-             */
+
             Vector2 positionpointHeure = new Vector2(posh.position.x, posh.position.y);
-            /**
-             * pareil vv
-             */
-             pointsHeure = Instantiate(heure, positionpointHeure, Quaternion.identity);
+
+            pointsHeure = Instantiate(heure, positionpointHeure, Quaternion.identity);
             pointsHeure.transform.parent = pointMinuteEtHeureHolder;//donne comme parents aux points : pointMinuteEtHeureHolder
             pointheure.Add(pointsHeure);
         }
@@ -99,7 +89,6 @@ public class horlogemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         minuteReel = System.DateTime.Now.Minute;// valeur minute réel
         heureReel = System.DateTime.Now.Hour;// valeur heure réel
        
@@ -117,7 +106,6 @@ public class horlogemanager : MonoBehaviour
                 {
                     bonneMinute = false;
                 }
-                
             }
         }
         
@@ -136,26 +124,34 @@ public class horlogemanager : MonoBehaviour
                 {
                     bonneHeure = false;
                 }
-
             }
-           
         }
 
         if (bonneHeure && bonneMinute)// si même heure et minute sur l'horloge et le temps réel :
         {
-            Debug.Log("horloge game win");
             horlogeGameFinished = true;
             bonneHeure = false;
             bonneMinute = false;
             Room1Manager.horlogeDone = true;
         }
-        
-        
 
         if(horlogeaiguille.canChangeFont)
         {
             fontHorloge.sprite = fontHorlogeSucceed; //on applique le sprite avec le tiroir ouvert de l'horloge
             horlogeaiguille.canChangeFont = false;
+            petitPapierBtn.SetActive(true);
         }
+    }
+
+    public void ZoomOnPapier()
+    {
+        papierZoomedBtn.SetActive(true);
+        petitPapierBtn.SetActive(false);
+    }
+
+    public void DezoomPapier()
+    {
+        papierZoomedBtn.SetActive(false);
+        petitPapierBtn.SetActive(true);
     }
 }

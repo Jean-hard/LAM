@@ -422,9 +422,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8722055297678426867, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722055297678426867, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 2067105218}
+    - target: {fileID: 8722055297678426867, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1652094840}
     - target: {fileID: 1991351293337457782, guid: f4cf42ac9b27ec74da8f4f9f2326c086,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2903,6 +2913,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 445639724}
@@ -2931,6 +2946,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[5]
       value: 
       objectReference: {fileID: 2073725698}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1862234042}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1652938626}
     - target: {fileID: 8566674085408274037, guid: 9214206bba530184ea0c3b6ce11d7d8a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3170,8 +3195,8 @@ MonoBehaviour:
   maxscale: 0.9
   propscale: 1
   planeLightTab:
-  - {fileID: 1846717910}
-  - {fileID: 348538961}
+  - {fileID: 693693176}
+  - {fileID: 973068008}
 --- !u!1 &302758636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,6 +3304,43 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &323217246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323217247}
+  m_Layer: 5
+  m_Name: PapierBtns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &323217247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323217246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 938386219}
+  - {fileID: 2026733071}
+  m_Father: {fileID: 2017719945}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &325110212
 GameObject:
@@ -3529,12 +3591,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &348538961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005678687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &357937216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,6 +3943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9038167464492230498, guid: a4cf437cb51b51445b629217837842c0,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038167464492230498, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1756707648}
@@ -3920,6 +3981,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[6]
       value: 
       objectReference: {fileID: 662644773}
+    - target: {fileID: 9038167464492230498, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 612513945}
+    - target: {fileID: 9038167464492230498, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1872963380}
     - target: {fileID: 2289588978657423848, guid: a4cf437cb51b51445b629217837842c0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4285,9 +4356,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6ccb43bea4a2e0b46a6612df1563a518, type: 2}
     - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1278383679}
+    - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 994099270}
+    - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 187652082}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a16b1bd3d9c38842868a7c3a1e0f332, type: 3}
 --- !u!4 &408581444 stripped
@@ -7817,9 +7903,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8206081720494314725, guid: ff398a8bb7103f44994b301353eb0022,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206081720494314725, guid: ff398a8bb7103f44994b301353eb0022,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 137075688}
+    - target: {fileID: 8206081720494314725, guid: ff398a8bb7103f44994b301353eb0022,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1193419457}
     - target: {fileID: 1389817604669489760, guid: ff398a8bb7103f44994b301353eb0022,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8793,9 +8889,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 791229157}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 489707535}
     - target: {fileID: 5799113373040094428, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9703,6 +9809,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4069307239742057710, guid: d44b1e9587bccfb49a2d643ba42be8ef,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069307239742057710, guid: d44b1e9587bccfb49a2d643ba42be8ef,
+        type: 3}
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 965643885}
@@ -9711,6 +9822,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1418187291}
+    - target: {fileID: 4069307239742057710, guid: d44b1e9587bccfb49a2d643ba42be8ef,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1953250304}
     - target: {fileID: 6544101036482312804, guid: d44b1e9587bccfb49a2d643ba42be8ef,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11230,6 +11346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1159886542}
@@ -11238,6 +11359,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1347855084}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1052800805}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 403016814}
     - target: {fileID: 3199222535227401649, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
       propertyPath: m_IsActive
@@ -11664,9 +11795,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 415406018}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 288051084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2c5e264f7f4b044933031cafa73de0, type: 3}
 --- !u!4 &913303958 stripped
@@ -11947,6 +12088,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &938386218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938386219}
+  - component: {fileID: 938386222}
+  - component: {fileID: 938386221}
+  - component: {fileID: 938386220}
+  m_Layer: 5
+  m_Name: ZoomOnPapierBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &938386219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938386218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 323217247}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -400}
+  m_SizeDelta: {x: 384.7, y: 207.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &938386220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938386218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 938386221}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2146761910}
+        m_MethodName: ZoomOnPapier
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &938386221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938386218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &938386222
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938386218}
+  m_CullTransparentMesh: 0
 --- !u!1 &949847805
 GameObject:
   m_ObjectHideFlags: 0
@@ -12964,6 +13233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4246420067510788250, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246420067510788250, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 910452359}
@@ -12972,6 +13246,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1050949504}
+    - target: {fileID: 4246420067510788250, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1731964283}
     - target: {fileID: 6360794519567939088, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15343,6 +15622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan(chambre1_view2_horloge_done)
       objectReference: {fileID: 0}
+    - target: {fileID: 5703282712702055790, guid: 2d3f6d13a44a7064ea90cc97088a9677,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5703282712702055776, guid: 2d3f6d13a44a7064ea90cc97088a9677,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15400,6 +15684,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3282672295095591909, guid: 2d3f6d13a44a7064ea90cc97088a9677,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282672295095591909, guid: 2d3f6d13a44a7064ea90cc97088a9677,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282672295095591909, guid: 2d3f6d13a44a7064ea90cc97088a9677,
+        type: 3}
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1277021063}
@@ -15408,6 +15702,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 2046276385}
+    - target: {fileID: 3282672295095591909, guid: 2d3f6d13a44a7064ea90cc97088a9677,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1294247952}
+    - target: {fileID: 3282672295095591909, guid: 2d3f6d13a44a7064ea90cc97088a9677,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 938386218}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3f6d13a44a7064ea90cc97088a9677, type: 3}
 --- !u!4 &1176453463 stripped
@@ -17585,6 +17889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1439177732}
@@ -17593,6 +17902,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 872294015}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 553037974}
     - target: {fileID: 6628122068245902259, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17772,9 +18086,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 730449125}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1048848087}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a32528bb7371b674a8086f9b9709104b, type: 3}
 --- !u!4 &1325819362 stripped
@@ -18418,12 +18742,6 @@ MonoBehaviour:
   textBox: {fileID: 2009367186}
   skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
---- !u!1 &1360660773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4952377497877467514, guid: 3696556b79564d54989356eeac9e1ebe,
-    type: 3}
-  m_PrefabInstance: {fileID: 2010135219}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1364167911
 GameObject:
   m_ObjectHideFlags: 0
@@ -19657,6 +19975,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f4a19a279734df3419ccfd77fc66939c, type: 2}
     - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1497692580}
@@ -19665,6 +19988,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 860522846}
+    - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1888133748}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f894ed1ad2e7c745b550760497bf796, type: 3}
 --- !u!4 &1447423999 stripped
@@ -20910,9 +21238,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4328761, y: 0.356}
-  m_AnchorMax: {x: 0.62075114, y: 0.648}
-  m_AnchoredPosition: {x: -0.66600037, y: -2.157}
-  m_SizeDelta: {x: 3.600006, y: 0.69999695}
+  m_AnchorMax: {x: 0.6256042, y: 0.869}
+  m_AnchoredPosition: {x: -5.1660004, y: -2.5}
+  m_SizeDelta: {x: -5.3999996, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497692583
 MonoBehaviour:
@@ -21525,6 +21853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 817885393}
@@ -21538,6 +21871,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[2]
       value: 
       objectReference: {fileID: 585119890}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1007336369}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1571761098}
     - target: {fileID: 2430119715775055879, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
         type: 3}
       propertyPath: m_IsActive
@@ -22603,6 +22946,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 28680430}
@@ -22616,6 +22964,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[2]
       value: 
       objectReference: {fileID: 325110212}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1098848848}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 238372442}
     - target: {fileID: 8182740224798173846, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23733,9 +24091,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 612285268}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 2135817500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3ba22f025b4c447802ab317a90a305, type: 3}
 --- !u!4 &1691770307 stripped
@@ -24450,7 +24818,8 @@ MonoBehaviour:
   maxscale: 0.8
   propscale: 1.4
   planeLightTab:
-  - {fileID: 1930721807}
+  - {fileID: 1975724648}
+  - {fileID: 538785677}
 --- !u!1001 &1742024961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25086,12 +25455,6 @@ Transform:
   m_Father: {fileID: 406677777}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1846717910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005678687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1852059023
 GameObject:
   m_ObjectHideFlags: 0
@@ -25795,8 +26158,8 @@ MonoBehaviour:
   maxscale: 0.9
   propscale: 1
   planeLightTab:
-  - {fileID: 1360660773}
-  - {fileID: 2118543325}
+  - {fileID: 1565656488}
+  - {fileID: 1919937323}
 --- !u!1 &1911088879
 GameObject:
   m_ObjectHideFlags: 0
@@ -26274,6 +26637,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 2046276385}
@@ -26282,6 +26655,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1277021063}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1688898592}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 323217246}
     - target: {fileID: 7146851431278495613, guid: a21b010f42e6ddc4a87ab266766853c8,
         type: 3}
       propertyPath: m_Sprite
@@ -26308,12 +26691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1930721807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1768554271192226832, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
-    type: 3}
-  m_PrefabInstance: {fileID: 65221646}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1932531542
 GameObject:
   m_ObjectHideFlags: 0
@@ -26935,6 +27312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3698103989329805243, guid: 8489f48475fa71c4b910dfa8d784a405,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698103989329805243, guid: 8489f48475fa71c4b910dfa8d784a405,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 974157698}
@@ -26953,6 +27335,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[3]
       value: 
       objectReference: {fileID: 957547297}
+    - target: {fileID: 3698103989329805243, guid: 8489f48475fa71c4b910dfa8d784a405,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 851636186}
+    - target: {fileID: 3698103989329805243, guid: 8489f48475fa71c4b910dfa8d784a405,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1461114708}
     - target: {fileID: 5907044424948263230, guid: 8489f48475fa71c4b910dfa8d784a405,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27597,6 +27989,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2046276386}
+  - {fileID: 323217247}
   m_Father: {fileID: 590344753}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27743,6 +28136,134 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026174869}
+  m_CullTransparentMesh: 0
+--- !u!1 &2026733070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026733071}
+  - component: {fileID: 2026733074}
+  - component: {fileID: 2026733073}
+  - component: {fileID: 2026733072}
+  m_Layer: 5
+  m_Name: ZoomedPapierBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2026733071
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026733070}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 323217247}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1221.9, y: 522.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2026733072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026733070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2026733073}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2146761910}
+        m_MethodName: DezoomPapier
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2026733073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026733070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f390095bbb4daef46ba1c7d6fa9eca7e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2026733074
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026733070}
   m_CullTransparentMesh: 0
 --- !u!1 &2031888751
 GameObject:
@@ -28529,9 +29050,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1690092668}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 572146801}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 572146801}
     - target: {fileID: 6211402123050359553, guid: 18717b2b5f6546040b8e94cf8f29f725,
         type: 3}
       propertyPath: m_IsActive
@@ -28562,12 +29098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2118543325 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
-    type: 3}
-  m_PrefabInstance: {fileID: 2010135219}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2130727146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28647,6 +29177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
       propertyPath: interElementTab.Array.data[0]
       value: 
       objectReference: {fileID: 1461529503}
@@ -28670,6 +29205,16 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[4]
       value: 
       objectReference: {fileID: 143192516}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1446831089}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 46356732}
     - target: {fileID: 3969082664721925988, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28897,7 +29442,9 @@ MonoBehaviour:
   pointminute: []
   pointheure: []
   horlogePlan: {fileID: 491291208}
-  fontHorlogeSucceed: {fileID: 21300000, guid: d3e4059c22e0c6a409af10d7f3a10497, type: 3}
+  fontHorlogeSucceed: {fileID: 21300000, guid: 07b2f32a89fd18d408c243a012131c16, type: 3}
+  petitPapierBtn: {fileID: 938386218}
+  papierZoomedBtn: {fileID: 2026733070}
 --- !u!4 &2146761911
 Transform:
   m_ObjectHideFlags: 0

@@ -110,6 +110,8 @@ public class PeintureManager : MonoBehaviour
             chevaletGameDone = true;
             paletteCouleur.SetActive(false);
             toileButton.SetActive(false);
+            // pour DIA_ROOM_01_SOLO_02 (flow)
+            Room1Manager.soloTalkRoom12Ready = true;
         }
 
         // Loose
