@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &5071075411491943753
 Transform:
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4880991104309952876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 638.7741}
-  m_LocalScale: {x: 2.7892702, y: 2.7892702, z: 2.7892702}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5020847e6984f0745abc488582b74517, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b267d6b2fcd95844a38502272bceb42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2653347563098017667
@@ -97,7 +97,6 @@ MonoBehaviour:
   interElementTab:
   - {fileID: 0}
   - {fileID: 0}
-  initialDialogue: {fileID: 0}
   minscale: 1.2
   maxscale: 1.2
   propscale: 1.2

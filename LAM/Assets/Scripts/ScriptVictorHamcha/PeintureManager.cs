@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Linq;
 
 public class PeintureManager : MonoBehaviour
 {
@@ -10,26 +12,27 @@ public class PeintureManager : MonoBehaviour
      */
     [SerializeField]
     private SFadeScript fadeScript;
+
+    public Button[] colorButtons = new Button[6];   // tableau des boutons couleur de la palette
+    public GameObject[] colorNameText = new GameObject[6];    // tableau contenant tous les gameobjects de noms de couleurs qui vont s'afficher
+
+    private string[] badColorTagsList = {"Coquelicot","Taupe","Ocean"}; // tableau de tags correspondant aux mauvaises couleurs
     private GameObject[] peintureTab = new GameObject[4];
-    public GameObject firstStep;//sprite de la première bonne peinture
-    public GameObject secondStep;//sprite de la deuxième bonne peinture
-    public GameObject finalGoodStep;//sprite de la troidième bonne peinture
-    public GameObject finalBadStep; //la peinture si on a pas entré les bonnes couleurs
+    public GameObject firstStep;    // sprite de la première bonne peinture
+    public GameObject secondStep;   // sprite de la deuxième bonne peinture
+    public GameObject finalGoodStep;    // sprite de la troisième bonne peinture
+    public GameObject finalBadStep;     // sprite de la mauvaise peinture si on a pas entré les bonnes couleurs
+    public GameObject paletteCouleur;     // gameObject contenant les boutons couleurs
+    public GameObject toileButton;      // toile sur laquelle on va clicker pour appliquer une "couleur"
+    private GameObject currentButtonClicked;
 
-    private bool isColorsGood = true;
+    private GameObject colorChoosed;    // couleur choisie par le joueur
+
+    private bool colorSelected;
+    private bool chevaletGameDone;
+ 
+    private bool choosedBadColor;
     private int indexStep = 0;
-    
-    public bool goodAnswer1;//quand on mets la bonne peinture 1 
-    public bool goodAnswer2;//quand on mets la bonne peinture 2
-    public bool goodAnswer3;//quand on mets la bonne peinture 3
-    public bool activefondue;
-
-    private Color opacity1;//couleur ou on change l'opacité de la peinture 1
-    private Color opacity2;//couleur ou change l'opacité de la peinture 2
-    private Color opacity3;// couleur ou on change l'opacité de la peintue 3
-    private Color fondueopacity;//couleur de la fondue
-
-    public GameObject palettedecouleur; //les bouton palette de couleur
 
     private void Start()
     {
@@ -37,61 +40,89 @@ public class PeintureManager : MonoBehaviour
         peintureTab[1] = secondStep;
         peintureTab[2] = finalGoodStep;
         peintureTab[3] = finalBadStep;
-    }
 
-    /**
-     * tant que les bonnes couleurs sont entré, on affiche les différentes peintures.
-     * Si une couleurs entré était une mauvaise, la dernière peinture sera la BadPeinture
-     * Si toutes les bonnes couleurs on été entré, la good peinture sera révélé.
-     */
-    public void GoodColor()
-    {
-        if (indexStep == 2 && isColorsGood == false)
+        for (int i = 0; i < colorNameText.Length; i++)
         {
-            indexStep = 3;
-            StartCoroutine(ShowPeinture());
-        }
-        else
-        {
-            StartCoroutine(ShowPeinture());
+            colorNameText[i].SetActive(false);
         }
     }
 
-    //TODO : Finir les commentaires
-    public void BadColor()
+    // appelée quand on clicke sur une couleur pour afficher son nom
+    public void DisplayColorName()
     {
-        isColorsGood = false;
-        if (indexStep == 2 && isColorsGood == false)
+        for (int i = 0; i < colorNameText.Length; i++)      // on passe tous les textes à false pour pas qu'ils se chevauchent
         {
-            indexStep = 3;
-            StartCoroutine(ShowPeinture());
+            colorNameText[i].SetActive(false);
         }
-        else
+        if (!chevaletGameDone)
         {
-            StartCoroutine(ShowPeinture());
+            currentButtonClicked = EventSystem.current.currentSelectedGameObject;   // on récup le tag du bouton clické
+            for (int i = 0; i < colorNameText.Length; ++i)
+            {
+                // si le tag du bouton clické est le même qu'un des noms de couleur
+                if (currentButtonClicked.CompareTag(colorNameText[i].tag))
+                {
+                    colorChoosed = colorNameText[i];
+                    colorNameText[i].SetActive(true);   // on active le nom de la couleur clickée
+                    colorSelected = true;
+                }
+            }
         }
     }
 
-    public IEnumerator ShowPeinture()
+    public void CheckColorChoosed()
     {
+        if (colorSelected)   // si on a bien choisi une couleur
+        {
+            for (int i = 0; i < colorNameText.Length; i++)
+            {
+                colorNameText[i].SetActive(false);
+            }
+
+            if (indexStep == 2 && choosedBadColor)      // si on a choisi une mauvaise couleur parmi les 3, indexstep passe à 3 --> défaite
+            {
+                indexStep = 3;
+                DisplayPaintLayer();
+            }
+            else
+            {
+                DisplayPaintLayer();
+            }
+
+            indexStep++;
+            colorSelected = false;
+        }
+    }
+
+    public void DisplayPaintLayer()
+    {
+        if (badColorTagsList.Contains(colorChoosed.tag))    // si la peinture qu'on applique fait partie de la liste des mauvaises couleurs
+            choosedBadColor = true;     // on sait maintenant que sur les 3 couleurs choisies, le joueur en a au moins une de fausse
+
         fadeScript.FadeIn();
-        yield return new WaitForSeconds(1f);
+        StartCoroutine(WaitForDisplayLayer());
         peintureTab[indexStep].SetActive(true);
         fadeScript.FadeOut();
-        //Win
+
+        // Win
         if (indexStep == 2)
         {
-            Debug.Log("WIN");
-            palettedecouleur.SetActive(false);
-
+            chevaletGameDone = true;
+            paletteCouleur.SetActive(false);
+            toileButton.SetActive(false);
         }
-        //Loose
+
+        // Loose
         if (indexStep == 3)
         {
-            Debug.Log("Loose");
             StartCoroutine(ResetPeinture());
         }
-        indexStep++;
+    }
+
+    // affiche la peinture
+    public IEnumerator WaitForDisplayLayer()
+    {
+        yield return new WaitForSeconds(1f);
     }
 
     public IEnumerator ResetPeinture()
@@ -100,6 +131,6 @@ public class PeintureManager : MonoBehaviour
         for (int i = 0; i < peintureTab.Length; i++)
             peintureTab[i].SetActive(false);
         indexStep = 0;
-        isColorsGood = true;
+        choosedBadColor = false;
     }
 }
