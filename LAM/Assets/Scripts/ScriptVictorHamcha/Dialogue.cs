@@ -26,7 +26,8 @@ public class Dialogue : MonoBehaviour
     {
         PLAYER,
         INNKEEPER,
-        CAT
+        CAT,
+        NULL
     }
 
     IEnumerator TypeSentence () 
@@ -103,8 +104,10 @@ public class Dialogue : MonoBehaviour
                 speakerName.text = "Seiji";
             else if (speakers[index] == SPEAKER.INNKEEPER)
                 speakerName.text = "Aubergiste";
-            else
+            else if (speakers[index] == SPEAKER.CAT)
                 speakerName.text = "Chat";
+            else
+                speakerName.text = "";
         }
         currentTextDisplay.text = "";
             StartCoroutine(TypeSentence());
