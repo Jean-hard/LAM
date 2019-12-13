@@ -1521,7 +1521,7 @@ MonoBehaviour:
     un peintre."
   - "Incroyable, il y en a partout ! Je n\u2019ai jamais autant d\u2019\u0153uvres
     de toute ma vie."
-  - "oyons voir  de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
+  - "voyons voir  de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
   - "Mince, il devait \xEAtre d\xE9rang\xE9 pour repr\xE9senter de telles horreurs."
   - "Je n\u2019aimerais pas \xEAtre dans sa t\xEAte."
   - "Je ne sais pas quels souvenirs l\u2019Aubergiste  pense que je peux retrouver
@@ -2054,7 +2054,7 @@ Transform:
   - {fileID: 1222373737}
   - {fileID: 509746294}
   - {fileID: 492494887}
-  - {fileID: 733274169}
+  - {fileID: 1931728270}
   - {fileID: 1699445510}
   - {fileID: 831932517}
   - {fileID: 909776178}
@@ -2066,7 +2066,7 @@ Transform:
   - {fileID: 111247737}
   - {fileID: 1061324137}
   - {fileID: 1358758268}
-  - {fileID: 1385957796}
+  - {fileID: 1210756715}
   - {fileID: 218830440}
   - {fileID: 1206570648}
   - {fileID: 1255788739}
@@ -2076,7 +2076,7 @@ Transform:
   - {fileID: 842305957}
   - {fileID: 1598948501}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174625801
 GameObject:
@@ -2778,7 +2778,7 @@ MonoBehaviour:
   aubergisteTalkDialogue: {fileID: 1598948502}
   aubergisteDiaTab:
   - {fileID: 492494888}
-  - {fileID: 733274170}
+  - {fileID: 1931728269}
   - {fileID: 1699445511}
   - {fileID: 831932518}
   - {fileID: 909776179}
@@ -2786,10 +2786,10 @@ MonoBehaviour:
   accueilDiaTab:
   - {fileID: 1222373738}
   - {fileID: 509746295}
-  - {fileID: 1358758269}
   couloirDiaTab:
   - {fileID: 1344748008}
   - {fileID: 1572505688}
+  afterCinematiqueDia01: {fileID: 1358758269}
 --- !u!4 &222556024
 Transform:
   m_ObjectHideFlags: 0
@@ -2802,7 +2802,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223178265
 GameObject:
@@ -4349,11 +4349,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6ccb43bea4a2e0b46a6612df1563a518, type: 2}
     - target: {fileID: 6240096641620356881, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
         type: 3}
       propertyPath: planeLightTab.Array.size
@@ -4384,6 +4379,11 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[1]
       value: 
       objectReference: {fileID: 1924258224}
+    - target: {fileID: 3760790128044849563, guid: 5a16b1bd3d9c38842868a7c3a1e0f332,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ccb43bea4a2e0b46a6612df1563a518, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a16b1bd3d9c38842868a7c3a1e0f332, type: 3}
 --- !u!4 &408581444 stripped
@@ -7061,6 +7061,7 @@ RectTransform:
   - {fileID: 880554361}
   - {fileID: 1223859325}
   - {fileID: 647650965}
+  - {fileID: 776457172}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8837,6 +8838,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 791229157}
+    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 489707535}
     - target: {fileID: 5799113373040094419, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8892,26 +8913,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 791229157}
-    - target: {fileID: 3662220915330955862, guid: f68425c241ef9e24cbb4b3326425295e,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 489707535}
     - target: {fileID: 5799113373040094428, guid: f68425c241ef9e24cbb4b3326425295e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9574,92 +9575,321 @@ RectTransform:
   m_AnchoredPosition: {x: -1.0999756, y: 0.099975586}
   m_SizeDelta: {x: 2.1999512, y: 0.2000122}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &733274168
-GameObject:
+--- !u!1001 &772725520
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 733274169}
-  - component: {fileID: 733274170}
-  m_Layer: 0
-  m_Name: DIA_AUBER_02
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &733274169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733274168}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &733274170
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7856224139017991258, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Name
+      value: CINEMATIQUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: cinematiqueDiaTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1210756716}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39a9c30995a2ac44e9168c31a9d7f707, type: 3}
+--- !u!114 &772725521 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733274168}
+  m_GameObject: {fileID: 772725527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Script: {fileID: 11500000, guid: 794ef5bae663356458caa475ea1f2ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTextDisplay: {fileID: 1969325701}
-  sentences:
-  - "Tenez, c\u2019est bien le tableau que vous vouliez ?"
-  - Parfait. Elle est belle, pas vrai ?
-  - "Euh \u2026"
-  - "C\u2019est court comme analyse artistique, d\xE9veloppe un peu."
-  - "C\u2019est ... int\xE9ressant."
-  - "Mais encore. Qu\u2019est-ce que \xE7a t\u2019inspire ?"
-  - "Au d\xE9but, j\u2019ai senti comme une sensation de rejet."
-  - "Une hostilit\xE9 qui se d\xE9gageait et me mettait mal \xE0 l\u2019aise."
-  - Continue.
-  - "Mais apr\xE8s, la peinture a eu comme un effet... hypnotisant."
-  - "C\u2019est \xE7a. Plus je  la regardais, plus je me sentais comme attir\xE9 \xE0
-    l\u2019int\xE9rieur."
-  - Plus je la regardais, plus je me sentais prisonnier.
-  - "C\u2019est comme si le peintre voulait nous dire quelque chose ... quelque chose
-    sur moi."
-  - Et que voulait-il te dire ?
-  - "Que la r\xE9ponse \xE0 ce que je cherchais \xE9tait en moi."
-  - "Qu\u2019elle \xE9tait prisonni\xE8re de mon esprit, quelque part, dans ma t\xEAte
-    !"
-  - "Voil\xE0 qui est mieux\u2009! Tu pourrais faire critique d\u2019art."
-  - Quoi ?
-  - Peu importe, tu as vu juste.
-  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si...
-    puissante."
-  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes."
-  - "Je veux dire l\u2019endroit, pas votre auberge. Je me souviens plus comment je
-    suis arriv\xE9 ici."
-  - "Bien s\xFBr. Je suis en quelque sorte le gardien de l\u2019\xEEle."
-  - "Rien ne m\u2019\xE9chappe, car  tout le monde passe par mon auberge."
-  - "Ou, si tu pr\xE9f\xE8res, toi qui sembles \xEAtre un marin, je guette et vois
-    tout ce qui se passe du haut de ma vigie ..."
-  - Vigie ? Mais pourquoi il me parle de vigie ?
-  - 'Vigie, vigie ... vig ... '
-  - "Qu\u2019est-ce qui m\u2019arrive, je me sens bizarre..."
-  speakers: 00000000010000000000000001000000000000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000010000000000000001000000010000000000000000000000010000000100000001000000000000000100000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
-  blockScreen: {fileID: 929332794}
-  textBox: {fileID: 2009367186}
-  skipTextButton: {fileID: 1147074952}
-  speakerName: {fileID: 655325357}
+--- !u!1 &772725522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7856224137621242557, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &772725523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7856224137332381162, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &772725524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7856224138047187105, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &772725525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7856224137133207519, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &772725526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7856224138460807379, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &772725527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7856224139017991258, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+    type: 3}
+  m_PrefabInstance: {fileID: 772725520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &776457170
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 590344753}
+    m_Modifications:
+    - target: {fileID: 1467020538768279508, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_Name
+      value: FadeCinematiqueScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f463ab1b7d3ddcc489b1ac325bff81cc, type: 3}
+--- !u!114 &776457171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1467020538768279510, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 776457170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &776457172 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1467020538768279511, guid: f463ab1b7d3ddcc489b1ac325bff81cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 776457170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &783741947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11299,6 +11529,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1159886542}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1347855084}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1052800805}
+    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 403016814}
     - target: {fileID: 2359678264682087547, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11354,31 +11609,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1159886542}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1347855084}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1052800805}
-    - target: {fileID: 4762282305737528062, guid: 967f1ef643793ff4b8fae7a19715a02e,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 403016814}
     - target: {fileID: 3199222535227401649, guid: 967f1ef643793ff4b8fae7a19715a02e,
         type: 3}
       propertyPath: m_IsActive
@@ -11793,11 +12023,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212292214950922577, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d2643f280fd808a44b18c0b10f17622f, type: 2}
     - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
         type: 3}
       propertyPath: interElementTab.Array.size
@@ -11818,6 +12043,11 @@ PrefabInstance:
       propertyPath: planeLightTab.Array.data[0]
       value: 
       objectReference: {fileID: 288051084}
+    - target: {fileID: 212292214950922577, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d2643f280fd808a44b18c0b10f17622f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2c5e264f7f4b044933031cafa73de0, type: 3}
 --- !u!4 &913303958 stripped
@@ -11907,9 +12137,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 439017443}
+  startPlan: {fileID: 1732962603}
   currentPlan: {fileID: 1732962603}
   fadeScript: {fileID: 647650966}
+  cinematiqueFade: {fileID: 776457171}
   dialogueGUI: {fileID: 130146554}
+  CinematiqueGUI: {fileID: 772725527}
 --- !u!4 &922936694
 Transform:
   m_ObjectHideFlags: 0
@@ -13132,7 +13365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996390585
 GameObject:
@@ -13303,6 +13536,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1628532513}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1696526266}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1179070675}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1628532513}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1696526266}
+    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1179070675}
     - target: {fileID: 1242427430207778643, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13358,36 +13621,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1628532513}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1696526266}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 1179070675}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1628532513}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1696526266}
-    - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 1179070675}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8328766829311563080, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13443,16 +13686,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa3760ac9ee0e294bbb6af9718ca6774, type: 2}
-    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8328766829311563191, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_Type
@@ -13653,7 +13886,7 @@ Transform:
   - {fileID: 821819518}
   - {fileID: 104545401}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1019962881
 GameObject:
@@ -15971,7 +16204,7 @@ Transform:
   - {fileID: 512406337}
   - {fileID: 872294016}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1190023984
 GameObject:
@@ -16267,6 +16500,139 @@ MonoBehaviour:
   textBox: {fileID: 2009367186}
   skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
+--- !u!1 &1210756714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1210756715}
+  - component: {fileID: 1210756716}
+  m_Layer: 0
+  m_Name: DIA_CINE_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210756715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210756714}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210756716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210756714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830971d49e6b15649b018640add52cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTextDisplay: {fileID: 772725526}
+  sentences:
+  - "J\u2019entends le tonnerre r\xE9sonner. La temp\xEAte approche."
+  - Pour le moment, c'est une simple averse... les gouttelettes ruissellent sur mon
+    visage.
+  - "C\u2019est agr\xE9able."
+  - "L\u2019\xE9quipage se pr\xE9pare, nous avons l\u2019habitude. Les changements
+    m\xE9t\xE9o sont fr\xE9quentes dans cette mer."
+  - "Depuis sa cabine, le capitaine veut les pr\xE9visions m\xE9t\xE9o. Pour une raison
+    inconnue, l\u2019appel radio ne passe pas."
+  - "\xC7a n\u2019a pas l\u2019air de l\u2019inqui\xE9ter et semble confiant quant
+    \xE0 sa capacit\xE9 de manoeuvrer."
+  - Il me regarde, me dit de faire de mon mieux pour aider les autres.
+  - Je veux me rendre utile !
+  - "Je cours sur le  pont, je demande au ma\xEEtre d\u2019\xE9quipage comment participer
+    aux t\xE2ches."
+  - "C\u2019est ce qu\u2019aurait fait mon p\xE8re."
+  - "La temp\xEAte commence \xE0 se faire sentir. Le bateau tangue de plus en plus."
+  - "Les vagues puissantes cognent la coque. L\u2019orage gronde au-dessus de nos
+    t\xEAtes."
+  - "Des \xE9clairs aveuglants d\xE9chirent les nuages."
+  - "En un rien de temps, le ciel passe d\u2019un gris paisible \xE0 un noir de t\xE9n\xE8bres.
+    On dirait que les \xE9l\xE9ments s'unissent contre nous."
+  - "Malgr\xE9 la violence de la houle, l\u2019\xE9quipage reste calme. Seul le rythme
+    de leur manoeuvre trahit la mise en alerte."
+  - "Le cambusier m\u2019a donn\xE9 pour t\xE2che de faire l'inventaire des vivres,
+    dans les soutes."
+  - "Je ne veux pas ... Je veux aider l'\xE9quipage, pas \xEAtre prot\xE9g\xE9."
+  - "Je d\xE9cide de retourner sur le pont."
+  - "Je n\u2019ai jamais vu \xE7a. La mer se d\xE9chaine autour de nous."
+  - "Des murs d'eau bondissent vers le ciel, comme pour prendre leur \xE9lan avant
+    de se jeter sur le bateau."
+  - "La pluie me gifle le visage. Le n\u2019entends plus rien, tout n\u2019est que
+    vacarme."
+  - Le tonnerre claque, les vagues rugissent avant de frapper la coque avec fureur.
+  - "Le bateau tangue trop, beaucoup trop. Je me cogne contre tout, comme une bille
+    sur une pente savonn\xE9e."
+  - "M\xEAme les marins les plus agu\xE9rris peinent \xE0 garder l\u2019\xE9quilibre."
+  - "L'un d'eux crie \xE0 son compagnon que \xE7a y est, c'est elle, la temp\xEAte
+    du si\xE8cle. Il n'a pas le temps de terminer."
+  - "Tout \xE0 coup, je me sens l\xE9viter. Je flotte ?"
+  - "Non, c'est le bateau qui vole au dessus des flots, jet\xE9 comme un f\xE9tu de
+    paille."
+  - "On flotte en apesanteur des secondes qui durent une \xE9ternit\xE9. Puis d'un
+    coup, on r\xE9att\xE9rit."
+  - "Le choc est violent. Je tombe et roule jusqu'au bastinguage, \xE0 deux doigts
+    de basculer par dessus bord."
+  - Je m'accorche comme je peux. Enfin, le bateau retrouve son assiette.
+  - "Je vois le capitaine sortir de la cabine, effar\xE9. Je lis dans ses yeux la
+    peur."
+  - "Soudain, une vague nous percute de plein fouet. J'ai \xE0 peine le temps de m'accrocher
+    \xE0 une corde qu'elle noie le pont."
+  - "Quand l'eau s'\xE9coule en ressac, le capitaine a disparu, emport\xE9. Je l\xE8ve
+    les yeux vers la cabine."
+  - "Personne n\u2019est aux commandes!  Nous sommes perdus."
+  - "Je me rel\xE8ve p\xE9niblement et me dirige vers la cabine."
+  - "J'avance en me tenant \xE0 tout ce que je peux. Enfin, je l'atteins."
+  - "La barre de gouvernail tourne \xE0 toute vitesse, folle. Je la saisis, et m'y
+    suspends de tout mon poids."
+  - Elle se cabre, comme un cheval sauvage. Enfin, la barre se calme.
+  - Je la maintiens droite, dans l'axe. J'exulte. Je me sens puissant. Je dirige le
+    navire !
+  - "Je souris presque quand soudain une ombre recouvre l'avant du navire. Je l\xE8ve
+    les yeux."
+  - Elle se dresse devant nous, immense. Une vague haute comme une falaise.
+  - "Je veux barrer pour l\u2019\xE9viter, et pourtant, je suis paralys\xE9. Le choc,
+    violent, assourdissant."
+  - L'eau recouvre tout et percute la cabine. Un voile noir m'enveloppe.
+  - "De longues secondes s'\xE9gr\xE8nent. Un brouhaha diffus."
+  - J'ouvre les yeux, je suis dans l'eau.
+  - "Je remonte \xE0 la surface comme une bouteille dans un nuage de bulles."
+  - "J'\xE9merge \xE0 la surface et aspire l'air \xE0 pleins poumons. Le bateau sombre,
+    renvers\xE9 sur le c\xF4t\xE9."
+  - "Sur la mer d\xE9chain\xE9e, les marins l\xE8vent leur bras, impuissants."
+  - La houle est trop forte. Je vais me noyer.
+  - Je sombre ...
+  - "Des cris d'oiseau. Le caqu\xEAtement des mouettes d\xE9chirent le voile noir."
+  - "J\u2019ouvre p\xE9niblement les yeux. Ou suis-je ?"
+  - Du sable, partout, sous moi, dans ma bouche. Je tousse, je crache de l'eau.
+  - "L'air frais m'apaise. Je rel\xE8ve la t\xEAte."
+  - "Des d\xE9bris de bois, vestiges de notre navire, jonchent la plage de sable noir."
+  - Je suis vivant ... Vivant et seul.
+  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 772725525}
+  blockScreen: {fileID: 772725524}
+  textBox: {fileID: 772725523}
+  skipTextButton: {fileID: 772725522}
+  speakerName: {fileID: 0}
+  cinematiqueScript: {fileID: 772725521}
 --- !u!1 &1222373736
 GameObject:
   m_ObjectHideFlags: 0
@@ -18084,11 +18450,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9062648554905411477, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b67cb5ec555df144496fed3f14f0c33e, type: 2}
     - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
         type: 3}
       propertyPath: interElementTab.Array.size
@@ -18109,6 +18470,11 @@ PrefabInstance:
       propertyPath: planeLightTab.Array.data[0]
       value: 
       objectReference: {fileID: 1048848087}
+    - target: {fileID: 9062648554905411477, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b67cb5ec555df144496fed3f14f0c33e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a32528bb7371b674a8086f9b9709104b, type: 3}
 --- !u!4 &1325819362 stripped
@@ -18921,138 +19287,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365034384}
   m_CullTransparentMesh: 0
---- !u!1 &1385957795
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1385957796}
-  - component: {fileID: 1385957797}
-  m_Layer: 0
-  m_Name: DIA_CINE_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1385957796
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385957795}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1385957797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385957795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTextDisplay: {fileID: 1969325701}
-  sentences:
-  - "J\u2019entends le tonnerre r\xE9sonner. La temp\xEAte approche."
-  - Pour le moment, c'est une simple averse... les gouttelettes ruissellent sur mon
-    visage.
-  - "C\u2019est agr\xE9able."
-  - "L\u2019\xE9quipage se pr\xE9pare, nous avons l\u2019habitude. Les changements
-    m\xE9t\xE9o sont fr\xE9quentes dans cette mer."
-  - "Depuis sa cabine, le capitaine veut les pr\xE9visions m\xE9t\xE9o. Pour une raison
-    inconnue, l\u2019appel radio ne passe pas."
-  - "\xC7a n\u2019a pas l\u2019air de l\u2019inqui\xE9ter et semble confiant quant
-    \xE0 sa capacit\xE9 de manoeuvrer."
-  - Il me regarde, me dit de faire de mon mieux pour aider les autres.
-  - Je veux me rendre utile !
-  - "Je cours sur le  pont, je demande au ma\xEEtre d\u2019\xE9quipage comment participer
-    aux t\xE2ches."
-  - "C\u2019est ce qu\u2019aurait fait mon p\xE8re."
-  - "La temp\xEAte commence \xE0 se faire sentir. Le bateau tangue de plus en plus."
-  - "Les vagues puissantes cognent la coque. L\u2019orage gronde au-dessus de nos
-    t\xEAtes."
-  - "Des \xE9clairs aveuglants d\xE9chirent les nuages."
-  - "En un rien de temps, le ciel passe d\u2019un gris paisible \xE0 un noir de t\xE9n\xE8bres.
-    On dirait que les \xE9l\xE9ments s'unissent contre nous."
-  - "Malgr\xE9 la violence de la houle, l\u2019\xE9quipage reste calme. Seul le rythme
-    de leur manoeuvre trahit la mise en alerte."
-  - "Le cambusier m\u2019a donn\xE9 pour t\xE2che de faire l'inventaire des vivres,
-    dans les soutes."
-  - "Je ne veux pas ... Je veux aider l'\xE9quipage, pas \xEAtre prot\xE9g\xE9."
-  - "Je d\xE9cide de retourner sur le pont."
-  - "Je n\u2019ai jamais vu \xE7a. La mer se d\xE9chaine autour de nous."
-  - "Des murs d'eau bondissent vers le ciel, comme pour prendre leur \xE9lan avant
-    de se jeter sur le bateau."
-  - "La pluie me gifle le visage. Le n\u2019entends plus rien, tout n\u2019est que
-    vacarme."
-  - Le tonnerre claque, les vagues rugissent avant de frapper la coque avec fureur.
-  - "Le bateau tangue trop, beaucoup trop. Je me cogne contre tout, comme une bille
-    sur une pente savonn\xE9e."
-  - "M\xEAme les marins les plus agu\xE9rris peinent \xE0 garder l\u2019\xE9quilibre."
-  - "L'un d'eux crie \xE0 son compagnon que \xE7a y est, c'est elle, la temp\xEAte
-    du si\xE8cle. Il n'a pas le temps de terminer."
-  - "Tout \xE0 coup, je me sens l\xE9viter. Je flotte ?"
-  - "Non, c'est le bateau qui vole au dessus des flots, jet\xE9 comme un f\xE9tu de
-    paille."
-  - "On flotte en apesanteur des secondes qui durent une \xE9ternit\xE9. Puis d'un
-    coup, on r\xE9att\xE9rit."
-  - "Le choc est violent. Je tombe et roule jusqu'au bastinguage, \xE0 deux doigts
-    de basculer par dessus bord."
-  - Je m'accorche comme je peux. Enfin, le bateau retrouve son assiette.
-  - "Je vois le capitaine sortir de la cabine, effar\xE9. Je lis dans ses yeux la
-    peur."
-  - "Soudain, une vague nous percute de plein fouet. J'ai \xE0 peine le temps de m'accrocher
-    \xE0 une corde qu'elle noie le pont."
-  - "Quand l'eau s'\xE9coule en ressac, le capitaine a disparu, emport\xE9. Je l\xE8ve
-    les yeux vers la cabine."
-  - "Personne n\u2019est aux commandes!  Nous sommes perdus."
-  - "Je me rel\xE8ve p\xE9niblement et me dirige vers la cabine."
-  - "J'avance en me tenant \xE0 tout ce que je peux. Enfin, je l'atteins."
-  - "La barre de gouvernail tourne \xE0 toute vitesse, folle. Je la saisis, et m'y
-    suspends de tout mon poids."
-  - Elle se cabre, comme un cheval sauvage. Enfin, la barre se calme.
-  - Je la maintiens droite, dans l'axe. J'exulte. Je me sens puissant. Je dirige le
-    navire !
-  - "Je souris presque quand soudain une ombre recouvre l'avant du navire. Je l\xE8ve
-    les yeux."
-  - Elle se dresse devant nous, immense. Une vague haute comme une falaise.
-  - "Je veux barrer pour l\u2019\xE9viter, et pourtant, je suis paralys\xE9. Le choc,
-    violent, assourdissant."
-  - L'eau recouvre tout et percute la cabine. Un voile noir m'enveloppe.
-  - "De longues secondes s'\xE9gr\xE8nent. Un brouhaha diffus."
-  - J'ouvre les yeux, je suis dans l'eau.
-  - "Je remonte \xE0 la surface comme une bouteille dans un nuage de bulles."
-  - "J'\xE9merge \xE0 la surface et aspire l'air \xE0 pleins poumons. Le bateau sombre,
-    renvers\xE9 sur le c\xF4t\xE9."
-  - "Sur la mer d\xE9chain\xE9e, les marins l\xE8vent leur bras, impuissants."
-  - La houle est trop forte. Je vais me noyer.
-  - Je sombre ...
-  - "Des cris d'oiseau. Le caqu\xEAtement des mouettes d\xE9chirent le voile noir."
-  - "J\u2019ouvre p\xE9niblement les yeux. Ou suis-je ?"
-  - Du sable, partout, sous moi, dans ma bouche. Je tousse, je crache de l'eau.
-  - "L'air frais m'apaise. Je rel\xE8ve la t\xEAte."
-  - "Des d\xE9bris de bois, vestiges de notre navire, jonchent la plage de sable noir."
-  - Je suis vivant ... Vivant et seul.
-  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 1463298200}
-  blockScreen: {fileID: 929332794}
-  textBox: {fileID: 2009367186}
-  skipTextButton: {fileID: 1147074952}
-  speakerName: {fileID: 655325357}
 --- !u!1 &1414761087
 GameObject:
   m_ObjectHideFlags: 0
@@ -19978,11 +20212,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7287666206923005829, guid: 4f894ed1ad2e7c745b550760497bf796,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f4a19a279734df3419ccfd77fc66939c, type: 2}
     - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
         type: 3}
       propertyPath: planeLightTab.Array.size
@@ -20003,6 +20232,11 @@ PrefabInstance:
       propertyPath: planeLightTab.Array.data[0]
       value: 
       objectReference: {fileID: 1888133748}
+    - target: {fileID: 7287666206923005829, guid: 4f894ed1ad2e7c745b550760497bf796,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4a19a279734df3419ccfd77fc66939c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f894ed1ad2e7c745b550760497bf796, type: 3}
 --- !u!4 &1447423999 stripped
@@ -21806,6 +22040,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 817885393}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1932531542}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 585119890}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1007336369}
+    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1571761098}
     - target: {fileID: 3270506213555092997, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21861,36 +22125,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 817885393}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1932531542}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 585119890}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1007336369}
-    - target: {fileID: 5749804202761365632, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1571761098}
     - target: {fileID: 2430119715775055879, guid: 6dfa655cdf6ed50408a8c7c70130f56f,
         type: 3}
       propertyPath: m_IsActive
@@ -22894,6 +23128,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 28680430}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1176417519}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 325110212}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1098848848}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 238372442}
     - target: {fileID: 8182740224798173849, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22949,41 +23218,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 28680430}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1176417519}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 325110212}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1098848848}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 238372442}
     - target: {fileID: 8182740224798173846, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -24034,6 +24268,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 612285268}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 2135817500}
     - target: {fileID: 3905255526248652333, guid: 8f3ba22f025b4c447802ab317a90a305,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24094,26 +24348,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3efe8781dddb5124c955a16930d253a2, type: 2}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 612285268}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 2135817500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3ba22f025b4c447802ab317a90a305, type: 3}
 --- !u!4 &1691770307 stripped
@@ -26701,6 +26935,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1931728268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931728270}
+  - component: {fileID: 1931728269}
+  m_Layer: 0
+  m_Name: DIA_AUBER_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1931728269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931728268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df6fbcacebbbdd4cb59cf0e357c2af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTextDisplay: {fileID: 1969325701}
+  sentences:
+  - "Tenez, c\u2019est bien le tableau que vous vouliez ?"
+  - Parfait. Elle est belle, pas vrai ?
+  - "Euh \u2026"
+  - "C\u2019est court comme analyse artistique, d\xE9veloppe un peu."
+  - "C\u2019est ... int\xE9ressant."
+  - "Mais encore. Qu\u2019est-ce que \xE7a t\u2019inspire ?"
+  - "Au d\xE9but, j\u2019ai senti comme une sensation de rejet."
+  - "Une hostilit\xE9 qui se d\xE9gageait et me mettait mal \xE0 l\u2019aise."
+  - Continue.
+  - "Mais apr\xE8s, la peinture a eu comme un effet... hypnotisant."
+  - "C\u2019est \xE7a. Plus je  la regardais, plus je me sentais comme attir\xE9 \xE0
+    l\u2019int\xE9rieur."
+  - Plus je la regardais, plus je me sentais prisonnier.
+  - "C\u2019est comme si le peintre voulait nous dire quelque chose ... quelque chose
+    sur moi."
+  - Et que voulait-il te dire ?
+  - "Que la r\xE9ponse \xE0 ce que je cherchais \xE9tait en moi."
+  - "Qu\u2019elle \xE9tait prisonni\xE8re de mon esprit, quelque part, dans ma t\xEAte
+    !"
+  - "Voil\xE0 qui est mieux\u2009! Tu pourrais faire critique d\u2019art."
+  - Quoi ?
+  - Peu importe, tu as vu juste.
+  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si...
+    puissante."
+  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes."
+  - "Je veux dire l\u2019endroit, pas votre auberge. Je me souviens plus comment je
+    suis arriv\xE9 ici."
+  - "Bien s\xFBr. Je suis en quelque sorte le gardien de l\u2019\xEEle."
+  - "Rien ne m\u2019\xE9chappe, car  tout le monde passe par mon auberge."
+  - "Ou, si tu pr\xE9f\xE8res, toi qui sembles \xEAtre un marin, je guette et vois
+    tout ce qui se passe du haut de ma vigie ..."
+  - Vigie ? Mais pourquoi il me parle de vigie ?
+  - 'Vigie, vigie ... vig ... '
+  - "Qu\u2019est-ce qui m\u2019arrive, je me sens bizarre..."
+  speakers: 00000000010000000000000001000000000000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000010000000000000001000000010000000000000000000000010000000100000001000000000000000100000000000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
+  speakerName: {fileID: 655325357}
+--- !u!4 &1931728270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931728268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932531542
 GameObject:
   m_ObjectHideFlags: 0
@@ -27872,6 +28192,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 19311468}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1225542100}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 549081769}
+    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 695501955}
     - target: {fileID: 2743296353084836916, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27927,31 +28267,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 19311468}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1225542100}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 549081769}
-    - target: {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
-      objectReference: {fileID: 695501955}
-    - target: {fileID: 2743296353084836923, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c5ef5da3965730649b0275d868639f7d, type: 2}
     - target: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_IsActive
@@ -27962,6 +28277,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2743296353084836923, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5ef5da3965730649b0275d868639f7d, type: 2}
     m_RemovedComponents:
     - {fileID: 4952377496763112113, guid: 3696556b79564d54989356eeac9e1ebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3696556b79564d54989356eeac9e1ebe, type: 3}
@@ -29003,6 +29323,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1690092668}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 572146801}
+    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 572146801}
     - target: {fileID: 6551044490337387094, guid: 18717b2b5f6546040b8e94cf8f29f725,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29058,26 +29398,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1690092668}
-    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 572146801}
-    - target: {fileID: 4053723616806442195, guid: 18717b2b5f6546040b8e94cf8f29f725,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 572146801}
     - target: {fileID: 6211402123050359553, guid: 18717b2b5f6546040b8e94cf8f29f725,
         type: 3}
       propertyPath: m_IsActive
@@ -29125,6 +29445,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1461529503}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1646493785}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 182829813}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 655728224}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[4]
+      value: 
+      objectReference: {fileID: 143192516}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1446831089}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 46356732}
     - target: {fileID: 3969082664721925995, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29180,51 +29545,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1461529503}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1646493785}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 182829813}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
-      objectReference: {fileID: 655728224}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: interElementTab.Array.data[4]
-      value: 
-      objectReference: {fileID: 143192516}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1446831089}
-    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 46356732}
     - target: {fileID: 3969082664721925988, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
