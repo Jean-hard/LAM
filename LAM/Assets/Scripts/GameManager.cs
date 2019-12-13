@@ -9,14 +9,21 @@ public class GameManager : MonoBehaviour
     private PlayerManager player;
 
     [SerializeField]
+    private PlaneScript startPlan;
+    [SerializeField]
     private PlaneScript currentPlan;
     [SerializeField]
     private FadeScript fadeScript;
+    [SerializeField]
+    private FadeScript cinematiqueFade;
 
     //Dialogue
     [SerializeField]
     private GameObject dialogueGUI;
     private Dialogue currentDialogue;
+
+    [SerializeField]
+    private GameObject CinematiqueGUI;
 
     private bool isMovingToDoor = false;
     private PlaneScript nextPlan;
@@ -199,6 +206,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //bouton "skip dialogue"
     public void StopDialogue()
     {
         currentDialogue.StopDialogue();
@@ -209,10 +217,35 @@ public class GameManager : MonoBehaviour
     {
         currentDialogue.NextSentence();
     }
+
+    //retour à l'accueil après la cinématique
+    public void BackToAccueil()
+    {
+        scalePlayer.sm = startPlan.minscale;
+        scalePlayer.sp = startPlan.propscale;
+        scalePlayer.sx = startPlan.maxscale;
+
+        startPlan.OnActive();//active new font
+        currentPlan.OnDesactive();//desactive last font
+        currentPlan = startPlan;
+
+        player.targetPosition = currentPlan.GetInitPlayerPos();
+
+        player.gameObject.transform.position = currentPlan.GetInitPlayerPos();//position the player to the position initial in the current plan
+        nextPlan = null;
+    }
+
+
+    public void LaunchCinematique()
+    {
+        cinematiqueFade.FadeIn();
+        CinematiqueGUI.SetActive(true);
+        CinematiqueGUI.GetComponent<CinematiqueScript>().LaunchCinematique();
+    }
+
+    public void EndCinematique()
+    {
+        cinematiqueFade.FadeOut();
+    }
 }
 
-/**
- * TODO : corriger bug de dialogueGUI qui se set active quand elle veut c'est relou
- *  - faire en sorte que le lancement du jeu sur la scène principale se fasse bien par un changeScene
- *  - préparer un système pour alterner entre seiji et interlocuteur.
- */

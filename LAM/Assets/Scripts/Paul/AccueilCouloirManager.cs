@@ -16,7 +16,6 @@ public class AccueilCouloirManager : MonoBehaviour
     public static bool accueilTalk2Ready = false; //DIA_AFTER_CINE_01
 
 
-
     [SerializeField]
     private Dialogue aubergisteTalkDialogue;
 
@@ -31,6 +30,9 @@ public class AccueilCouloirManager : MonoBehaviour
     [SerializeField]
     private Dialogue[] couloirDiaTab;
     private int indexCouloirDia = 0;
+
+    [SerializeField]
+    private Dialogue afterCinematiqueDia01;
 
     private Dialogue currentAubergisteDia;
     private Dialogue currentCouloirDia;
@@ -71,15 +73,11 @@ public class AccueilCouloirManager : MonoBehaviour
         GameManager.Instance.InitDialogue(currentAubergisteDia);
         aubergisteTalkDone = true;
 
-        //apres le premier dialogue on passera dans l'accueil SOLO_SEIJI_HALL_02
+        //apres DIA_AUBER_01 on passera dans l'accueil SOLO_SEIJI_HALL_02
         if (indexAubergisteDia == 0)
             accueilTalk1Ready = true;
 
-        ///reste le dialogue manquant pour cinématique encore a placé mais sans cinématique c'est impossible...
 
-        //en attendant la cinématique on passe à DIA_AUBER_03 juste après DIA_AUBER_02
-        if (indexAubergisteDia == 1)
-            UpdateAubergisteDia();
     }
 
     //button escalier dans l'accueil
@@ -139,5 +137,13 @@ public class AccueilCouloirManager : MonoBehaviour
             GameManager.Instance.InitDialogue(currentCouloirDia);
             soloTalk02Ready = false;
         }
+    }
+
+    //appelé a la fin de la cinématique normalement
+    public void ShowAfterCinematiqueDia()
+    {
+        GameManager.Instance.InitDialogue(afterCinematiqueDia01);
+        //pour passer en AUBER_DIA_03 et plus.
+        UpdateAubergisteDia();
     }
 }

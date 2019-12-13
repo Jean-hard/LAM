@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
 
     public string[] sentences;
     public SPEAKER[] speakers;
-    private int index;
+    protected int index;
     public float typingSpeed;
     public GameObject continueButton;
     public GameObject blockScreen;
@@ -49,7 +49,8 @@ public class Dialogue : MonoBehaviour
         textBox.SetActive(true);
         if (skipTextButton != null)
             skipTextButton.SetActive(true);
-        speakerName.gameObject.SetActive(true);
+        if (speakerName != null)
+            speakerName.gameObject.SetActive(true);
     }
 
     /**
@@ -65,10 +66,11 @@ public class Dialogue : MonoBehaviour
         textBox.SetActive(false);
         if (skipTextButton != null)
             skipTextButton.SetActive(false);
-        speakerName.gameObject.SetActive(false);
+        if (speakerName != null)
+            speakerName.gameObject.SetActive(false);
     }
 
-    public void NextSentence()
+    public virtual void NextSentence()
     {
         index++;
         continueButton.SetActive(false);
@@ -76,6 +78,7 @@ public class Dialogue : MonoBehaviour
 
         if (index < sentences.Length)
             ShowText();
+        //fin du dialogue
         else
         {
             currentTextDisplay.text = "";
@@ -85,21 +88,24 @@ public class Dialogue : MonoBehaviour
             currentTextDisplay.gameObject.SetActive(false);
             blockScreen.SetActive(false);
             textBox.SetActive(false);
-            speakerName.gameObject.SetActive(false);
+            if (speakerName != null)
+                speakerName.gameObject.SetActive(false);
             index = 0;
         }
     }
 
-    private void ShowText()
+    protected void ShowText()
     {
         //on affiche le nom de celui qui parle
-        if (speakers[index] == SPEAKER.PLAYER)
-            speakerName.text = "Seiji";
-        else if (speakers[index] == SPEAKER.INNKEEPER)
-            speakerName.text = "Aubergiste";
-        else
-            speakerName.text = "Chat";
-
+        if (speakerName != null)
+        {
+            if (speakers[index] == SPEAKER.PLAYER)
+                speakerName.text = "Seiji";
+            else if (speakers[index] == SPEAKER.INNKEEPER)
+                speakerName.text = "Aubergiste";
+            else
+                speakerName.text = "Chat";
+        }
         currentTextDisplay.text = "";
             StartCoroutine(TypeSentence());
 

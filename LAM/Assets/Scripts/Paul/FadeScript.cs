@@ -10,6 +10,8 @@ public class FadeScript : MonoBehaviour
     private Image image;
     private float targetAlpha;
 
+    private CinematiqueScript CinematiqueScript;
+
     // Use this for initialization
     void Start()
     {
