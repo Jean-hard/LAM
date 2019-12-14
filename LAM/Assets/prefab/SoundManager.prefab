@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2426488821277716205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2426488821277716207}
+  - component: {fileID: 2426488821277716204}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2426488821277716207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426488821277716205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 892.8259, y: 407.85602, z: -219.93465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2426488821277716204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426488821277716205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99d78970b563d2f4ea949758fc6171f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  doorOpening: {fileID: 8300000, guid: aa89ce045fae9024081775427fcc445b, type: 3}
+  catMeow: {fileID: 8300000, guid: 2f5af51ea8cc1944c9fcba71b9fbfb81, type: 3}
+  catHisses: {fileID: 8300000, guid: 28c24179192b27a45bad8891a9433f8a, type: 3}
+  sea_Sound: {fileID: 8300000, guid: 5a2ceeb44f3c8cc41ae6231576794cfe, type: 3}
+  atticRun: {fileID: 8300000, guid: cf2b8d1fc16ad814fb96fbecf3c2c736, type: 3}
+  scratch: {fileID: 8300000, guid: b39550d7f0b5de5458e08cbaf1255340, type: 3}
+  wind_Sound: {fileID: 8300000, guid: e86dce0892e667249b432edecb31b2dc, type: 3}
+  nightOwl: {fileID: 8300000, guid: 823646bc05b23e448bfdb4dc32669c23, type: 3}
+  openDrawer: {fileID: 8300000, guid: aadc512161a45bb42a3fac5baa6be95f, type: 3}
+  closeDrawer: {fileID: 8300000, guid: 5e9ec6331f9a7014dba17e5f5c0cd006, type: 3}
+  flashBackOpening: {fileID: 8300000, guid: 7f766c15bdbdd15459dad4299b6bc7cc, type: 3}
+  painting: {fileID: 8300000, guid: 256c6b708a2f8c0479878f25b4083d52, type: 3}
+  ringingPhone: {fileID: 8300000, guid: d19544c20b97d184f8bb767a8e08f725, type: 3}
+  searchingDrawer: {fileID: 8300000, guid: 36075b3e63618024d831f7f6a032503e, type: 3}
+  gruntingCall: {fileID: 8300000, guid: 02ad30de551407c4e90737bf20e0876c, type: 3}
+  vynilSpeed: {fileID: 8300000, guid: 4a5b9ee4d547e2c43b63f948912607bf, type: 3}
+  fallingMan: {fileID: 8300000, guid: 47fff99afaa941746b6ca02ea2263e44, type: 3}
+  storm: {fileID: 8300000, guid: 45b02eaae05c2fa498d57c58ebaed79f, type: 3}
+  seaStorm: {fileID: 8300000, guid: 4f5bbd10caf6406478c947db57df98d2, type: 3}

@@ -5,7 +5,11 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField]
-    private AudioSource audioSource;
+    private AudioSource audioSourceSong;
+    [SerializeField]
+    private AudioSource audioSourceEffect;
+    [SerializeField]
+    private AudioSource audioSourcePassif;
 
     [SerializeField]
     private AudioClip doorOpening;
@@ -46,18 +50,139 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioClip seaStorm;
 
+    // SINGLETON ---------------------------------------------
+    private static SoundManager _instance;
+
+    public static SoundManager Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }//--------------------------------------------------------------------
+
     public void Start()
     {
-        PlaySound();
+        PlaySeaSound();
     }
 
-    public void PlaySound()
+    public void PlayOpeningDoor()
     {
-        audioSource.Play();
+        audioSourceEffect.clip = doorOpening;
+        audioSourceEffect.Play();
     }
 
-    public void PlaySoundOnce()
+    public void PlayCatMeowSound()
     {
-        audioSource.Play();
+        audioSourceEffect.clip = catMeow;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayCatHissesSound()
+    {
+        audioSourceEffect.clip = catHisses;
+        audioSourceEffect.Play();
+    }
+
+    public void PlaySeaSound()
+    {
+        audioSourceSong.clip = sea_Sound;
+        audioSourceSong.Play();
+    }
+
+    public void PlayPassifAtticRun()
+    {
+        audioSourcePassif.clip = atticRun;
+        audioSourcePassif.Play();
+    }
+
+    public void PlayPassifScratch()
+    {
+        audioSourcePassif.clip = scratch;
+        audioSourcePassif.Play();
+    }
+
+    public void PlayPassifWind()
+    {
+        audioSourcePassif.clip = wind_Sound;
+        audioSourcePassif.Play();
+    }
+
+    public void PlayPassifNightOwl()
+    {
+        audioSourcePassif.clip = nightOwl;
+        audioSourcePassif.Play();
+    }
+
+    public void PlayOpenDrawer()
+    {
+        audioSourceEffect.clip = openDrawer;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayCloseDrawer()
+    {
+        audioSourceEffect.clip = closeDrawer;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayFlashBackOpening()
+    {
+        audioSourceEffect.clip = flashBackOpening;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayPaintingSound()
+    {
+        audioSourceEffect.clip = painting;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayRingRing()
+    {
+        audioSourceEffect.clip = ringingPhone;
+        audioSourceEffect.Play();
+    }
+
+    public void PlaySearchingDrawer()
+    {
+        audioSourceEffect.clip = searchingDrawer;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayGruntingCall()
+    {
+        audioSourceEffect.clip = gruntingCall;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayVynilSpeed()
+    {
+        audioSourceEffect.clip = vynilSpeed;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayFallingMan()
+    {
+        audioSourceEffect.clip = fallingMan;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayStorm()
+    {
+        audioSourceEffect.clip = storm;
+        audioSourceEffect.Play();
+    }
+
+    public void PlaySeaStorm()
+    {
+        audioSourceEffect.clip = seaStorm;
+        audioSourceEffect.Play();
     }
 }

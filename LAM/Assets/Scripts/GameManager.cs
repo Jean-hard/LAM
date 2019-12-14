@@ -34,7 +34,9 @@ public class GameManager : MonoBehaviour
 
     private bool isPlayerOnNextPlan = true;
 
-    // SINGLETON (provisoire) ---------------------------------------------
+    private bool isDoorSound = false;
+
+    // SINGLETON ---------------------------------------------
     private static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
@@ -102,6 +104,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /**
+     * pour pouvoir lancer le son de porte
+     */
+    public void MoveToDoorSounded(DoorScript targetDoor)
+    {
+        isDoorSound = true;
+        MoveToDoor(targetDoor);
+    }
+
     public void SetPlayerVisible(bool isVisible)
     {
         isPlayerOnNextPlan = isVisible;
@@ -112,6 +123,12 @@ public class GameManager : MonoBehaviour
         nextPlan = theNextPlan;
         //isPlayerOnNextPlan = true;
         ChangeScene();
+    }
+
+    public void ChangePlanSounded(PlaneScript theNextPlan)
+    {
+        isDoorSound = true;
+        ChangePlan(theNextPlan);
     }
 
     /**
@@ -132,6 +149,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("on change scene");
         StartCoroutine(ChangeSceneDelay());
+
         if (currentDialogue)
         {
             currentDialogue.StopDialogue();
@@ -160,6 +178,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         InitNewScene();
         fadeScript.FadeOut();
+        if (isDoorSound)
+        {
+            SoundManager.Instance.PlayOpeningDoor();
+            isDoorSound = false;
+        }
     }
 
     public void InitNewScene()
