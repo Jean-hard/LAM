@@ -262,6 +262,7 @@ public class GameManager : MonoBehaviour
     public void LaunchCinematique()
     {
         cinematiqueFade.FadeIn();
+        SoundManager.Instance.PlayFlashBackOpening();
         CinematiqueGUI.SetActive(true);
         CinematiqueGUI.GetComponent<CinematiqueScript>().LaunchCinematique();
     }

@@ -43,8 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d78970b563d2f4ea949758fc6171f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  doorOpening: {fileID: 8300000, guid: aa89ce045fae9024081775427fcc445b, type: 3}
+  audioSourceSong: {fileID: 0}
+  audioSourceEffect: {fileID: 0}
+  audioSourcePassif: {fileID: 0}
+  doorClosing: {fileID: 8300000, guid: 7827d740625749b4ea3fac7852a1da4e, type: 3}
   catMeow: {fileID: 8300000, guid: 2f5af51ea8cc1944c9fcba71b9fbfb81, type: 3}
   catHisses: {fileID: 8300000, guid: 28c24179192b27a45bad8891a9433f8a, type: 3}
   sea_Sound: {fileID: 8300000, guid: 5a2ceeb44f3c8cc41ae6231576794cfe, type: 3}

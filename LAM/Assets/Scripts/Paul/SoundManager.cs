@@ -12,7 +12,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSourcePassif;
 
     [SerializeField]
-    private AudioClip doorOpening;
+    private AudioClip doorClosing;
     [SerializeField]
     private AudioClip catMeow;
     [SerializeField]
@@ -74,7 +74,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayOpeningDoor()
     {
-        audioSourceEffect.clip = doorOpening;
+        audioSourceEffect.clip = doorClosing;
         audioSourceEffect.Play();
     }
 
