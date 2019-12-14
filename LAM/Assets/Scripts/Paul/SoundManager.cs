@@ -70,6 +70,8 @@ public class SoundManager : MonoBehaviour
     public void Start()
     {
         PlaySeaSound();
+        //pour jouer un son de quelquun marchant dans le couloir à l'étage pendant la discusion avec l'aubergiste
+        PlayPassifAtticRun(5);
     }
 
     public void PlayOpeningDoor()
@@ -96,28 +98,43 @@ public class SoundManager : MonoBehaviour
         audioSourceSong.Play();
     }
 
-    public void PlayPassifAtticRun()
+    public void PlayPassifAtticRun(int secondWait)
     {
         audioSourcePassif.clip = atticRun;
-        audioSourcePassif.Play();
+        StartCoroutine(PlayPassif(secondWait));
     }
 
-    public void PlayPassifScratch()
+    public void PlayPassifScratch(int secondWait)
     {
         audioSourcePassif.clip = scratch;
-        audioSourcePassif.Play();
+        StartCoroutine(PlayPassifScratchReduced(secondWait));
     }
 
-    public void PlayPassifWind()
+    public void PlayPassifWind(int secondWait)
     {
         audioSourcePassif.clip = wind_Sound;
+        StartCoroutine(PlayPassif(secondWait));
+    }
+
+    public void PlayPassifNightOwl(int secondWait)
+    {
+        audioSourcePassif.clip = nightOwl;
+        StartCoroutine(PlayPassif(secondWait));
+    }
+
+    private IEnumerator PlayPassif(int secondWait)
+    {
+        yield return new WaitForSeconds(secondWait);
         audioSourcePassif.Play();
     }
 
-    public void PlayPassifNightOwl()
+    //Scratch est trop long sinon
+    private IEnumerator PlayPassifScratchReduced(int secondWait)
     {
-        audioSourcePassif.clip = nightOwl;
+        yield return new WaitForSeconds(secondWait);
         audioSourcePassif.Play();
+        yield return new WaitForSeconds(5);
+        audioSourcePassif.Stop();
     }
 
     public void PlayOpenDrawer()

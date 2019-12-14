@@ -69,6 +69,7 @@ public class Room1Manager : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(currentRoom1Dia);
             soloTalkRoom11Ready = false;
+            SoundManager.Instance.PlayPassifWind(1);
         }
 
         ///passe a true à la résolution de l'énigme de la chambre 1
