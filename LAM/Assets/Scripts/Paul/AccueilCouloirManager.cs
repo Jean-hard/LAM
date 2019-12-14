@@ -21,6 +21,8 @@ public class AccueilCouloirManager : MonoBehaviour
 
     [SerializeField]
     private Dialogue aubergisteTalkDialogue;
+    [SerializeField]
+    private Dialogue room2CheckDialogue;
 
     [SerializeField]
     private Dialogue[] aubergisteDiaTab;
@@ -87,6 +89,7 @@ public class AccueilCouloirManager : MonoBehaviour
     public void CheckAubergisteTalkDone(DoorScript stairDoor)
     {
         Debug.Log("aubergiste talk : " + aubergisteTalkDone);
+        
         if (aubergisteTalkDone)
         {
             GameManager.Instance.MoveToDoor(stairDoor);
@@ -94,6 +97,22 @@ public class AccueilCouloirManager : MonoBehaviour
         else
         {
             GameManager.Instance.InitDialogue(aubergisteTalkDialogue);
+        }
+    }
+
+    //check la condition requise pour pouvoir entrer dans la chambre 2
+    public void CheckRoom2TalkDone(DoorScript room2Door)
+    {       
+        //si on a passé le dialogue DIA_AUBER_03
+        if (indexAubergisteDia >= 2)
+        {
+            GameManager.Instance.MoveToDoorSounded(room2Door);
+            GameManager.Instance.SetPlayerVisible(false);
+        }
+        else
+        {
+            Debug.Log("on n'a toujours pas passer le dialogue 03 de l'aubergiste");
+            GameManager.Instance.InitDialogue(room2CheckDialogue);
         }
     }
 

@@ -2262,6 +2262,7 @@ Transform:
   - {fileID: 2000680629}
   - {fileID: 842305957}
   - {fileID: 1598948501}
+  - {fileID: 329525756}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2963,6 +2964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aubergisteTalkDialogue: {fileID: 1598948502}
+  room2CheckDialogue: {fileID: 329525757}
   aubergisteDiaTab:
   - {fileID: 492494888}
   - {fileID: 1931728269}
@@ -3752,6 +3754,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325110212}
   m_CullTransparentMesh: 0
+--- !u!1 &329525755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329525756}
+  - component: {fileID: 329525757}
+  m_Layer: 0
+  m_Name: DIA_CHECK_ROOM2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329525756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329525755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164461586}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &329525757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329525755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd97ad3813edbe42918a3d4278247da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTextDisplay: {fileID: 1969325701}
+  sentences:
+  - "L'aubergite m'a dit, premi\xE8re porte \xE0 droite."
+  speakers: 00000000
+  typingSpeed: 0.02
+  continueButton: {fileID: 1463298200}
+  blockScreen: {fileID: 929332794}
+  textBox: {fileID: 2009367186}
+  skipTextButton: {fileID: 1147074952}
+  speakerName: {fileID: 655325357}
 --- !u!1 &335106303
 GameObject:
   m_ObjectHideFlags: 0
@@ -25387,23 +25442,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922936693}
-        m_MethodName: MoveToDoorSounded
+      - m_Target: {fileID: 222556023}
+        m_MethodName: CheckRoom2TalkDone
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1696526267}
           m_ObjectArgumentAssemblyTypeName: DoorScript, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 922936693}
-        m_MethodName: SetPlayerVisible
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
