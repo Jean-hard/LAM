@@ -15,6 +15,9 @@ public class AccueilCouloirManager : MonoBehaviour
     public static bool accueilTalk1Ready = false; //SOLO_SEIJI_HALL_02
     public static bool accueilTalk2Ready = false; //DIA_AFTER_CINE_01
 
+    //pour les cinématique
+    public static bool cinematique1Done = false;
+
 
     [SerializeField]
     private Dialogue aubergisteTalkDialogue;

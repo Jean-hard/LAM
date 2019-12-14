@@ -28,6 +28,7 @@ public class CinematiqueScript : MonoBehaviour
         EndCinematique();
     }
 
+    //pour lancer le dialogue que le fade est finie
     private IEnumerator CinematiqueLaunchDialogueTimer()
     {
         yield return new WaitForSeconds(timeBeforeStartDialogue);

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Script pour le dialogue : DIA_CINE_01
+ */
 public class DialogueCinematique : Dialogue
 {
     [SerializeField]
@@ -32,6 +35,7 @@ public class DialogueCinematique : Dialogue
             cinematiqueScript.EndCinematique();
             GameManager.Instance.BackToAccueil();
             AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
+            AccueilCouloirManager.cinematique1Done = true;
         }
     }
 }
