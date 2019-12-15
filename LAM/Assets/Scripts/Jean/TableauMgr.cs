@@ -53,16 +53,6 @@ public class TableauMgr : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (tableauGameDone && !finalDialogueDisplayed)
-        {
-            GameManager.Instance.InitDialogue(tableauDoneDialogue); // on affiche le dialogue d'énigme réussie
-            finalDialogueDisplayed = true;
-        }
-    }
-
     public void InitImagesPos()
     {
         xPos = xFirstImagePos;
@@ -93,5 +83,6 @@ public class TableauMgr : MonoBehaviour
         }
 
         tableauGameDone = true;  // devient true si tous les booleens sont à true, et donc si toutes les images sont dans leurs slots respectifs
+        Room2Manager.Instance.LaunchDiaEnigmaDone();
     }
 }

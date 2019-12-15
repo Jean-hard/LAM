@@ -14,9 +14,11 @@ public class AccueilCouloirManager : MonoBehaviour
     public static bool introTalkReady = true; //SOLO_SEIJI_HALL_01
     public static bool accueilTalk1Ready = false; //SOLO_SEIJI_HALL_02
     public static bool accueilTalk2Ready = false; //DIA_AFTER_CINE_01
+    public static bool accueilTalk3Ready = false; //DIA_SOLO_04 (après CINE_02)
 
     //pour les cinématique
     public static bool cinematique1Done = false;
+    public static bool cinematique2Done = false;
 
 
     [SerializeField]
@@ -37,7 +39,9 @@ public class AccueilCouloirManager : MonoBehaviour
     private int indexCouloirDia = 0;
 
     [SerializeField]
-    private Dialogue afterCinematiqueDia01;
+    private Dialogue afterCinematiqueDia01; //DIA_AFTER_CINE_01
+    [SerializeField]
+    private Dialogue afterCinematiqueDia02; //DIA_SOLO_04 (après CINE_02)
 
     private Dialogue currentAubergisteDia;
     private Dialogue currentCouloirDia;
@@ -164,8 +168,20 @@ public class AccueilCouloirManager : MonoBehaviour
     //appelé a la fin de la cinématique normalement
     public void ShowAfterCinematiqueDia()
     {
-        GameManager.Instance.InitDialogue(afterCinematiqueDia01);
-        //pour passer en AUBER_DIA_03 et plus.
+        if (cinematique1Done == true)
+        {
+            GameManager.Instance.InitDialogue(afterCinematiqueDia01);
+            cinematique1Done = false;
+        }
+        if (cinematique2Done == true)
+        {
+            GameManager.Instance.InitDialogue(afterCinematiqueDia02);
+            cinematique2Done = false;
+        }
+        /**
+         * pour passer en AUBER_DIA_03 après CINE_01. (rappel il n'y a pas de AUBER_DIA_04)
+         * pour passer en AUBER_DIA_06 après CINE_02.
+         */
         UpdateAubergisteDia();
     }
 }

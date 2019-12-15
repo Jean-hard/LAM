@@ -11,8 +11,15 @@ public class CinematiqueScript : MonoBehaviour
     [SerializeField]
     private int timeBeforeStartDialogue;
 
+    private bool isFirstCinematiquePassed = false;
+
     public void LaunchCinematique()
     {
+        //si on a déjà lancé la 1er cinématique, on lancera la 2eme
+        if (isFirstCinematiquePassed)
+            indexCinematiqueDia++;
+        else
+            isFirstCinematiquePassed = true;
         StartCoroutine(CinematiqueLaunchDialogueTimer());
     }
 
