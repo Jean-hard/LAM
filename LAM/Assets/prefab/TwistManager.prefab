@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4132914549023468978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4132914549023468976}
+  - component: {fileID: 4132914549023468977}
+  m_Layer: 0
+  m_Name: TwistManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4132914549023468976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132914549023468978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1025.1096, y: 501.26035, z: -83.29328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4132914549023468977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132914549023468978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c58392c134b5c4d909481ec66c5cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accueilSprite: {fileID: 0}
+  couloirSprite: {fileID: 0}
+  closeUpSprite: {fileID: 0}
+  accueilTordu1: {fileID: 21300000, guid: adf153c19b57d0247a9501a8316bda31, type: 3}
+  accueilTordu2: {fileID: 21300000, guid: fad9014d239f55c47b23759e5d2fb72b, type: 3}
+  accueilTordu1Mat: {fileID: 2100000, guid: 4487fe2691cb7794fbbd849ab98aff4f, type: 2}
+  accueilTordu2Mat: {fileID: 2100000, guid: 31e3562772f36c940af6f8a6aa48992c, type: 2}
+  couloirTordu1: {fileID: 21300000, guid: 4c1e85a37b8912b43967d43d7e439da7, type: 3}
+  couloirTordu2: {fileID: 21300000, guid: a6b24c9b99f50e547b27534f27d9c727, type: 3}
+  couloirTordu1Mat: {fileID: 2100000, guid: 789448d61eadb234c90cfdce1892f3c7, type: 2}
+  couloirTordu2Mat: {fileID: 2100000, guid: 812247a5fdf13a94caad2fcddae71850, type: 2}
+  closeUpTordu1: {fileID: 21300000, guid: b8c2cd717d7097045b003414ff77df42, type: 3}
+  closeUpTordu2: {fileID: 21300000, guid: a769425bc21d2be4ebaee4e26e9ad9e1, type: 3}
+  closeUpTordu1Mat: {fileID: 2100000, guid: 740fac76f9f9bdd4cb265e668e7f657e, type: 2}
+  closeUpTordu2Mat: {fileID: 2100000, guid: 31e3562772f36c940af6f8a6aa48992c, type: 2}

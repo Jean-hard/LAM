@@ -44,6 +44,6 @@ public class CinematiqueScript : MonoBehaviour
 
     public void EndCinematique()
     {
-        GameManager.Instance.EndCinematique();
+        GameManager.Instance.EndCinematique(0);
     }
 }
