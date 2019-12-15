@@ -83,4 +83,11 @@ public class Room1Manager : MonoBehaviour
             AccueilCouloirManager.Instance.UpdateAubergisteDia();
         }
     }
+
+    public void ValidAllGame()
+    {
+        oeufVisited = true;
+        horlogeDone = true;
+        puzzleDone = true;
+    }
 }

@@ -70,7 +70,7 @@ public class VinyleManager : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(vinyleWinDialogue);
             dialogueDisplayed = true;
-            Debug.Log("VICTOIRE");
+            Room2Manager.vinyleDone = true;
         }
 
         if (!vinyleTourne)

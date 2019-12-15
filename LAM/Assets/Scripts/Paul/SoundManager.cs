@@ -184,6 +184,11 @@ public class SoundManager : MonoBehaviour
         audioSourceEffect.Play();
     }
 
+    public void StopGruntingCall()
+    {
+        audioSourceEffect.Stop();
+    }
+
     public void PlayVynilSpeed()
     {
         audioSourceEffect.clip = vynilSpeed;

@@ -98,4 +98,18 @@ public class Room2Manager : MonoBehaviour
         GameManager.Instance.InitDialogue(enigmaDoneDia);
         AccueilCouloirManager.Instance.UpdateAubergisteDia();
     }
+
+    // EN ATTENDANT QUE THEO NE SOIS PLUS DEFONCE
+    public void ValidVinyleGame()
+    {
+        vinyleDone = true;
+    }
+
+    // EN ATTENDANT QUE THEO NE SOIS PLUS DEFONCE
+    public void ValidAllGame()
+    {
+        telephoneDone = true;
+        vinyleDone = true;
+        deadBodyEnigmaDone = true;
+    }
 }

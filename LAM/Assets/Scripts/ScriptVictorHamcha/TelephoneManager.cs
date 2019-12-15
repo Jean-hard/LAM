@@ -37,8 +37,8 @@ public class TelephoneManager : MonoBehaviour
                 
                 if (!hasRinged)
                 {
-                    Vibration.Vibrate(2000);    //vibrations de 2 secondes codes trouvé sur internet nommé vibration reutilisable pour faire des vibrations sur android
                     SoundManager.Instance.PlayRingRing();
+                    Vibration.Vibrate(2000);    //vibrations de 2 secondes codes trouvé sur internet nommé vibration reutilisable pour faire des vibrations sur android
                     hasRinged = true;
                     originalBackButton.SetActive(false);
                     telephoneButton.SetActive(true);
@@ -58,7 +58,6 @@ public class TelephoneManager : MonoBehaviour
         SoundManager.Instance.PlayGruntingCall();
         telephoneButton.SetActive(false);
         StartCoroutine(WaitForSpeaking());
-        GameManager.Instance.InitDialogue(telephoneDialogue);
         goodnumber = false;
         numtel = new List<int>();
         Room2Manager.telephoneDone = true;
@@ -67,7 +66,8 @@ public class TelephoneManager : MonoBehaviour
 
     public IEnumerator WaitForSpeaking()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
+        GameManager.Instance.InitDialogue(telephoneDialogue);
     }
 
     public IEnumerator WaitForQuit()
