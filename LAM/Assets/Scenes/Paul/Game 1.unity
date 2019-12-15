@@ -1102,7 +1102,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -7099,7 +7099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &590344753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13266,7 +13266,7 @@ PrefabInstance:
     - target: {fileID: 1242427430207778653, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1242427430207778643, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
@@ -27602,6 +27602,7 @@ GameObject:
   - component: {fileID: 1975724649}
   - component: {fileID: 1975724651}
   - component: {fileID: 1975724650}
+  - component: {fileID: 1975724652}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -27697,6 +27698,25 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &1975724652
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975724648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4501856220838084b9ff3dc63edc0c5a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1999921463
 GameObject:
   m_ObjectHideFlags: 0
