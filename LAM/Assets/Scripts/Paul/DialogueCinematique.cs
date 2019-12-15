@@ -28,7 +28,8 @@ public class DialogueCinematique : Dialogue
             currentTextDisplay.gameObject.SetActive(false);
             blockScreen.SetActive(false);
             textBox.SetActive(false);
-            speakerName.gameObject.SetActive(false);
+            if(speakerName != null)
+                speakerName.gameObject.SetActive(false);
             index = 0;
 
             //pour mettre fin à la cinematique
