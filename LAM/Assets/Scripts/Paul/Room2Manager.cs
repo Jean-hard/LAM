@@ -8,6 +8,11 @@ using UnityEngine;
 
 public class Room2Manager : MonoBehaviour
 {
+    public static bool soloTalkRoom21Ready = false;
+
+    [SerializeField]
+    private Dialogue enigmaDoneDia;
+
     [SerializeField]
     private GameObject mirrorButton;
 
@@ -86,5 +91,11 @@ public class Room2Manager : MonoBehaviour
         {
             GameManager.Instance.InitDialogue(boardDialogue);
         }
+    }
+
+    public void LaunchDiaEnigmaDone()
+    {
+        GameManager.Instance.InitDialogue(enigmaDoneDia);
+        AccueilCouloirManager.Instance.UpdateAubergisteDia();
     }
 }

@@ -10,6 +10,13 @@ public class DialogueCinematique : Dialogue
     [SerializeField]
     private CinematiqueScript cinematiqueScript;
 
+    public enum CINEMATIQUE_ID
+    {
+        CINE_01,
+        CINE_02
+    }
+    public CINEMATIQUE_ID currenCinematqueID;
+
     public override void NextSentence()
     {
         index++;
@@ -34,9 +41,13 @@ public class DialogueCinematique : Dialogue
 
             //pour mettre fin à la cinematique
             cinematiqueScript.EndCinematique();
+            if(currenCinematqueID == CINEMATIQUE_ID.CINE_01)
+                AccueilCouloirManager.cinematique1Done = true;
+            if (currenCinematqueID == CINEMATIQUE_ID.CINE_02)
+                AccueilCouloirManager.cinematique2Done = true;
+
             GameManager.Instance.BackToAccueil();
             AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
-            AccueilCouloirManager.cinematique1Done = true;
         }
     }
 }
