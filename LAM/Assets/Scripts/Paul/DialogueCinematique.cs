@@ -40,13 +40,20 @@ public class DialogueCinematique : Dialogue
             index = 0;
 
             //pour mettre fin à la cinematique
-            cinematiqueScript.EndCinematique();
-            if(currenCinematqueID == CINEMATIQUE_ID.CINE_01)
+            
+            if (currenCinematqueID == CINEMATIQUE_ID.CINE_01)
+            {
                 AccueilCouloirManager.cinematique1Done = true;
+                GameManager.Instance.EndCinematique(1);
+            }
             if (currenCinematqueID == CINEMATIQUE_ID.CINE_02)
+            {
                 AccueilCouloirManager.cinematique2Done = true;
+                GameManager.Instance.EndCinematique(2);
+            }
 
             GameManager.Instance.BackToAccueil();
+            AccueilCouloirManager.isStairLock = true;
             AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
         }
     }

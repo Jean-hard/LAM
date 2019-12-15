@@ -7,6 +7,7 @@ public class Chambre1Script : PlaneScript
     public override void OnActive()
     {
         base.OnActive();
-        Room1Manager.Instance.ShowRoom1Dia();
+        //se passe dans peinture manager maintenant
+        //Room1Manager.Instance.ShowRoom1Dia();
     }
 }

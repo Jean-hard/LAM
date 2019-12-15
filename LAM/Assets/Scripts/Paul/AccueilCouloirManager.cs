@@ -20,6 +20,8 @@ public class AccueilCouloirManager : MonoBehaviour
     public static bool cinematique1Done = false;
     public static bool cinematique2Done = false;
 
+    //pour bloquer l'escalier
+    public static bool isStairLock = false;
 
     [SerializeField]
     private Dialogue aubergisteTalkDialogue;
@@ -86,7 +88,7 @@ public class AccueilCouloirManager : MonoBehaviour
         if (indexAubergisteDia == 0)
             accueilTalk1Ready = true;
 
-
+        isStairLock = false;
     }
 
     //button escalier dans l'accueil
@@ -94,7 +96,7 @@ public class AccueilCouloirManager : MonoBehaviour
     {
         Debug.Log("aubergiste talk : " + aubergisteTalkDone);
         
-        if (aubergisteTalkDone)
+        if (aubergisteTalkDone || isStairLock)
         {
             GameManager.Instance.MoveToDoor(stairDoor);
         }

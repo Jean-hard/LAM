@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject CinematiqueGUI;
 
+    [SerializeField]
+    private TwistManager twistManager;
+
     private bool isMovingToDoor = false;
     private PlaneScript nextPlan;
 
@@ -267,8 +270,14 @@ public class GameManager : MonoBehaviour
         CinematiqueGUI.GetComponent<CinematiqueScript>().LaunchCinematique();
     }
 
-    public void EndCinematique()
+    public void EndCinematique(int idCinematique)
     {
+        if (idCinematique == 1)
+            twistManager.TwistEnvironnement1();
+        if (idCinematique == 2)
+            twistManager.TwistEnvironnement2();
+        else
+            Debug.Log("erreur en fin de cinématique");
         cinematiqueFade.FadeOut();
     }
 }

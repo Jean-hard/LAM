@@ -16,7 +16,7 @@ public class CinematiqueScript : MonoBehaviour
     public void LaunchCinematique()
     {
         //si on a déjà lancé la 1er cinématique, on lancera la 2eme
-        if (isFirstCinematiquePassed)
+        if (isFirstCinematiquePassed == true)
             indexCinematiqueDia++;
         else
             isFirstCinematiquePassed = true;
@@ -44,6 +44,6 @@ public class CinematiqueScript : MonoBehaviour
 
     public void EndCinematique()
     {
-        GameManager.Instance.EndCinematique();
+        GameManager.Instance.EndCinematique(0);
     }
 }
