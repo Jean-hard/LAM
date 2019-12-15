@@ -35,7 +35,7 @@ public class MoveImagesTableau : MonoBehaviour
     private void MoveImage()
     {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);    // on set les coordonnées de la souris dans un vecteur
-        transform.position = new Vector2(cursorPos.x, cursorPos.y);     // on donne à l'image les coordonnées de la souris
+        transform.position = new Vector3(cursorPos.x, cursorPos.y, -0.02f);     // on donne à l'image les coordonnées de la souris
         imageSprite.sortingOrder = 2;   // on place l'image sélectionnée devant les autres
         imageInSlot = false;
 
@@ -50,7 +50,8 @@ public class MoveImagesTableau : MonoBehaviour
                     if (distImageSlot <= 1)  // si la pièce est près de l'un des slots 
                     {
                         transform.position = TableauMgr.Instance.imagesSlots[i].position;  // l'image prend la position du slot en question
-                        imageSprite.sortingOrder = 1;   // on remet l'image au bon ording layer
+                        transform.position += new Vector3(0,0,-0.01f);  // on place l'image légèrement au devant pour pas qu'elle se place derrière le font
+                        //imageSprite.sortingOrder = 1;   // on remet l'image au bon ording layer
                         imageInSlot = true;
                         CheckImageInSlot(TableauMgr.Instance.imagesSlots[i].gameObject, i);  // on vérifie si l'image correspond au bon slot en question
                     }
@@ -60,7 +61,7 @@ public class MoveImagesTableau : MonoBehaviour
             if (!imageInSlot)       // si l'image est déposée trop loin d'un slot
             {
                 transform.position = initialPosition;   // l'image reprend sa position initiale
-                imageSprite.sortingOrder = 1;   // on remet l'image au bon ording layer
+                //imageSprite.sortingOrder = 1;   // on remet l'image au bon ording layer
             }
 
             imageSelected = false;

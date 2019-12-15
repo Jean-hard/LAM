@@ -60,7 +60,7 @@ public class TableauMgr : MonoBehaviour
 
         for (int i = 0; i < imagesList.Count; i++)
         {
-            imagesShuffledList[i].transform.position = new Vector2(xPos, yPos);
+            imagesShuffledList[i].transform.position = new Vector3(xPos, yPos, -0.01f);
             xPos += xOffset;
             nbImageLigne++;
             if (nbImageLigne == 5)

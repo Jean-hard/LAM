@@ -167,6 +167,11 @@ public class SoundManager : MonoBehaviour
         audioSourceEffect.Play();
     }
 
+    public void StopRingRing()
+    {
+        audioSourceEffect.Stop();
+    }
+
     public void PlaySearchingDrawer()
     {
         audioSourceEffect.clip = searchingDrawer;
@@ -177,6 +182,11 @@ public class SoundManager : MonoBehaviour
     {
         audioSourceEffect.clip = gruntingCall;
         audioSourceEffect.Play();
+    }
+
+    public void StopGruntingCall()
+    {
+        audioSourceEffect.Stop();
     }
 
     public void PlayVynilSpeed()
