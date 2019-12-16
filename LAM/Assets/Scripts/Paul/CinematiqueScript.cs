@@ -32,7 +32,6 @@ public class CinematiqueScript : MonoBehaviour
     public void StopDialogue()
     {
         cinematiqueDiaTab[indexCinematiqueDia].StopDialogue();
-        EndCinematique();
     }
 
     //pour lancer le dialogue que le fade est finie
@@ -40,10 +39,5 @@ public class CinematiqueScript : MonoBehaviour
     {
         yield return new WaitForSeconds(timeBeforeStartDialogue);
         cinematiqueDiaTab[indexCinematiqueDia].StartDialogue();
-    }
-
-    public void EndCinematique()
-    {
-        GameManager.Instance.EndCinematique(0);
     }
 }

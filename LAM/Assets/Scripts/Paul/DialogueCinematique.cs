@@ -57,4 +57,34 @@ public class DialogueCinematique : Dialogue
             AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
         }
     }
+
+    public override void StopDialogue()
+    {
+        StopAllCoroutines();
+        index = 0;
+        currentTextDisplay.text = "";
+        currentTextDisplay.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
+        blockScreen.gameObject.SetActive(false);
+        textBox.SetActive(false);
+        if (skipTextButton != null)
+            skipTextButton.SetActive(false);
+        if (speakerName != null)
+            speakerName.gameObject.SetActive(false);
+
+        if (currenCinematqueID == CINEMATIQUE_ID.CINE_01)
+        {
+            AccueilCouloirManager.cinematique1Done = true;
+            GameManager.Instance.EndCinematique(1);
+        }
+        if (currenCinematqueID == CINEMATIQUE_ID.CINE_02)
+        {
+            AccueilCouloirManager.cinematique2Done = true;
+            GameManager.Instance.EndCinematique(2);
+        }
+
+        GameManager.Instance.BackToAccueil();
+        AccueilCouloirManager.isStairLock = true;
+        AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
+    }
 }

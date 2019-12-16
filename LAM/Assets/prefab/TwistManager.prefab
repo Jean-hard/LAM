@@ -57,4 +57,4 @@ MonoBehaviour:
   closeUpTordu1: {fileID: 21300000, guid: b8c2cd717d7097045b003414ff77df42, type: 3}
   closeUpTordu2: {fileID: 21300000, guid: a769425bc21d2be4ebaee4e26e9ad9e1, type: 3}
   closeUpTordu1Mat: {fileID: 2100000, guid: 740fac76f9f9bdd4cb265e668e7f657e, type: 2}
-  closeUpTordu2Mat: {fileID: 2100000, guid: 31e3562772f36c940af6f8a6aa48992c, type: 2}
+  closeUpTordu2Mat: {fileID: 2100000, guid: d785a65087ca00d40b8de1ff26f6c364, type: 2}
