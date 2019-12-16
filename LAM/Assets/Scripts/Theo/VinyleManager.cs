@@ -30,12 +30,12 @@ public class VinyleManager : MonoBehaviour
     public Slider slider;
 
     public float[] tabVolumeValeurs = { 0.1f, 0.3f, 0.5f }; // valeurs de volume
-    private float[] tabVolumePositions = { 90, 0, 270 }; // angles des 3 crans
+    private float[] tabVolumePositions = { 180, 90, 0 }; // angles des 3 crans
     private float angleVinyleMin; // les valeurs d'angles (z) du bras de la platine entre lesquelles il est placé sur le vinyle
     private float angleVinyleMax;
 
     // conditions de victoire : bras bien placé, volume activé, fréquence bien placée, vitesse slow
-    private bool conditionRemplie = false;
+    public static bool conditionRemplie = false;
 
     // Dialogue
     [SerializeField]
@@ -47,11 +47,14 @@ public class VinyleManager : MonoBehaviour
     {
         angleVinyleMin = bras.GetComponent<BrasController>().angleVinyleMin;
         angleVinyleMax = bras.GetComponent<BrasController>().angleVinyleMax;
-
-        // animator.enabled = false; // le vinyle tourne disque est éteint à l'arrivée sur le plan
+        
         musique.volume = 0f; // set le volume au début du jeu
         bruitBlanc.Pause();
         bruitBlanc.volume = volumeBruitBlancInitial;
+
+        boutonVolume.transform.rotation = Quaternion.Euler(0, 0, tabVolumePositions[volumePosition]);
+
+        vitesseVinyle = Vitesses.NORMAL;
     }
 
     enum Vitesses { SLOW, NORMAL, FAST };
@@ -64,11 +67,14 @@ public class VinyleManager : MonoBehaviour
         bool freqBienPlace = limitesSlider.x < slider.value && slider.value < limitesSlider.y;
         bool volumeAuMax = musique.volume == tabVolumeValeurs[tabVolumeValeurs.Length - 1];
         conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && vinyleTourne && vitesseVinyle == Vitesses.SLOW;
-        // conditionRemplie = brasBienPlace && freqBienPlace && volumeAuMax && animator.speed == slowSpeed && animator.enabled;
 
         if (conditionRemplie && !dialogueDisplayed)
         {
-            GameManager.Instance.InitDialogue(vinyleWinDialogue);
+            musique.gameObject.SetActive(false);
+            bruitBlanc.gameObject.SetActive(false);
+            craquement.gameObject.SetActive(false);
+            SoundManager.Instance.PlayFallingMan();
+            StartCoroutine(WaitForDialogueDisplay());
             dialogueDisplayed = true;
             Room2Manager.vinyleDone = true;
         }
@@ -109,10 +115,7 @@ public class VinyleManager : MonoBehaviour
 
         // le volume est changé seulement si le bras de la platine est sur le vinyle
         float zAngleBras = bras.transform.eulerAngles.z;
-        if (angleVinyleMin < zAngleBras && zAngleBras < angleVinyleMax)
-        {
-            musique.volume = tabVolumeValeurs[volumePosition];
-        }
+        musique.volume = tabVolumeValeurs[volumePosition];
     }
 
     //----------------START/STOP---------------
@@ -122,18 +125,19 @@ public class VinyleManager : MonoBehaviour
         if (vinyleTourne)
         {
             vinyleTourne = false;
-            // animator.enabled = false;
             musique.Pause();
             bruitBlanc.Pause();
             craquement.Pause();
         }
         else
         {
-            // animator.enabled = true;
             vinyleTourne = true;
-            musique.Play();
-            bruitBlanc.Play();
-            craquement.Play();
+            if (BrasController.isOnDisc)
+            {
+                musique.Play();
+                bruitBlanc.Play();
+                craquement.Play();
+            }
         }
     }
 
@@ -142,21 +146,18 @@ public class VinyleManager : MonoBehaviour
     public void SpeedSlow()
     {
         vitesseVinyle = Vitesses.SLOW;
-        // animator.speed = slowSpeed;
         musique.pitch = slowSpeed;
     }
 
     public void SpeedNormal()
     {
         vitesseVinyle = Vitesses.NORMAL;
-        // animator.speed = normalSpeed;
         musique.pitch = normalSpeed;
     }
 
     public void SpeedFast()
     {
         vitesseVinyle = Vitesses.FAST;
-        // animator.speed = fastSpeed;
         musique.pitch = fastSpeed;
     }
 
@@ -174,5 +175,11 @@ public class VinyleManager : MonoBehaviour
                 vinyle.transform.Rotate(0, 0, -fastSpeed * vitesseBaseVinyle * Time.deltaTime);
                 break;
         }
+    }
+
+    public IEnumerator WaitForDialogueDisplay()
+    {
+        yield return new WaitForSeconds(3f);
+        GameManager.Instance.InitDialogue(vinyleWinDialogue);
     }
 }
