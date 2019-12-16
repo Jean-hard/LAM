@@ -20,15 +20,10 @@ public class RoulletteTel : MonoBehaviour
     private void Start()
     {
         telephonemanager = roulette.GetComponent<TelephoneManager>();
-
-
     }
 
     void Update()
     {
-
-
-
         if (selected == true)// si le numéro  est séléctioné 
         {
             Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - roulette.transform.position; // *position de la souris 
@@ -43,7 +38,6 @@ public class RoulletteTel : MonoBehaviour
                 rotationZ = rotZ + offset;// rotation en Z est égal a la position de la souris rotZ + un offset 
 
             }
-
 
             else if (returntopos)// quand on commence l'action de retourné a la postion d'origine 
             {
@@ -60,36 +54,21 @@ public class RoulletteTel : MonoBehaviour
                     selected = false;// l'elemnet n'est plus séléctioné 
                     returntopos = false;// si l'lement n'est pas séléctioné alors ne vas pas a position d'origine 
                 }
-
-
             }
-
             roulette.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);// rotation de la roulette égal a la valeur de rotationZ 
-
         }
-
-
-
-
-
-
 
         if (Input.GetKeyUp(KeyCode.Mouse0))// si je lache le clic gauche de la souris la pièce est déléctioné 
         {
-
-
             if (selected)// si c'etait le numéro selectioné 
             {
-
                 if (telephonemanager.numtel.Count < telephonemanager.numteltaille && distance <= 0.3)// si le nombre de numéro fait est inferieur au nombre de numéro demandé et que la distance entre l'ancre et le numéro séléctioné est inferieur à 0.2 alor 
                 {
                     telephonemanager.numtel.Add(numéro);// le numéro est ajouté a la liste du numéro à appelé 
 
                 }
-
                 if (telephonemanager.end == false && telephonemanager.goodnumber == true && distance <= 0.3)// si le joueur a bien tous les bon numéro et essaye de refaire un num alors  
                     telephonemanager.end = true;// le jeu est fini  
-
 
                 //.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);// rotation de la roulette égal a l'angle trouvé au dessus + offset 
 
@@ -98,18 +77,9 @@ public class RoulletteTel : MonoBehaviour
             }
 
             Debug.Log(telephonemanager.numtel.Count);//debug pour vérifié le nombre de numéro rentrré par le joueur 
-
-
-
-
+            SoundManager.Instance.PlayNumberGood();
         }
-
-
     }
-
-
-
-
 
     private void OnMouseOver()
     {
