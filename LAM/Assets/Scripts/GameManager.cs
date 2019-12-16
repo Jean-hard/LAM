@@ -273,9 +273,15 @@ public class GameManager : MonoBehaviour
     public void EndCinematique(int idCinematique)
     {
         if (idCinematique == 1)
+        {
+            Debug.Log("Twist 1 launch");
             twistManager.TwistEnvironnement1();
+        }
         if (idCinematique == 2)
+        {
+            Debug.Log("Twist 2 launch");
             twistManager.TwistEnvironnement2();
+        }
         else
             Debug.Log("erreur en fin de cinématique");
         cinematiqueFade.FadeOut();

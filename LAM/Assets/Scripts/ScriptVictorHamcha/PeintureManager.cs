@@ -112,7 +112,7 @@ public class PeintureManager : MonoBehaviour
             toileButton.SetActive(false);
             // pour DIA_ROOM_01_SOLO_02 (flow)
             Room1Manager.soloTalkRoom12Ready = true;
-            Room1Manager.Instance.ShowRoom1Dia();
+            Room1Manager.Instance.ShowRoom1EnigmaDoneDia();
         }
 
         // Loose

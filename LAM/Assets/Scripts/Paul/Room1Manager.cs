@@ -71,7 +71,10 @@ public class Room1Manager : MonoBehaviour
             soloTalkRoom11Ready = false;
             SoundManager.Instance.PlayPassifWind(1);
         }
+    }
 
+    public void ShowRoom1EnigmaDoneDia()
+    {
         ///passe a true à la résolution de l'énigme de la chambre 1
         if (soloTalkRoom12Ready == true)
         {

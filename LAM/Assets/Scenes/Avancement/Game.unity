@@ -26166,6 +26166,25 @@ MonoBehaviour:
   planeLightTab:
   - {fileID: 1975724648}
   - {fileID: 538785677}
+--- !u!95 &1732962604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732962602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b5841d11ad9e5c4cac8302e78895959, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1742024961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31246,7 +31265,7 @@ PrefabInstance:
     - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: interElementTab.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
@@ -31277,7 +31296,7 @@ PrefabInstance:
         type: 3}
       propertyPath: interElementTab.Array.data[4]
       value: 
-      objectReference: {fileID: 1751309771}
+      objectReference: {fileID: 143192516}
     - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: planeLightTab.Array.data[0]
@@ -31288,6 +31307,11 @@ PrefabInstance:
       propertyPath: planeLightTab.Array.data[1]
       value: 
       objectReference: {fileID: 46356732}
+    - target: {fileID: 6178173154417070574, guid: 05a70401bea1686429e511be88d9f453,
+        type: 3}
+      propertyPath: interElementTab.Array.data[5]
+      value: 
+      objectReference: {fileID: 1751309771}
     - target: {fileID: 3969082664721925988, guid: 05a70401bea1686429e511be88d9f453,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

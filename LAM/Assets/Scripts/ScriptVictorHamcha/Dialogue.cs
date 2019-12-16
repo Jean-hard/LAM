@@ -59,6 +59,7 @@ public class Dialogue : MonoBehaviour
      */
     public void StopDialogue()
     {
+        StopAllCoroutines();
         index = 0;
         currentTextDisplay.text = "";
         currentTextDisplay.gameObject.SetActive(false);
