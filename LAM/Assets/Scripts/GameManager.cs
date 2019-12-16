@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
             player.targetPosition = targetDoor.doorPosition;
             isMovingToDoor = true;
             animManager.lancerAnim = true;//on lance l'anim
+            animManager.AnimationSeiji("animSeijiDeDos");
         }
         else
         {
