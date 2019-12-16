@@ -52,18 +52,7 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if ((angleVinyleMin < zAngle && zAngle < 360f) || (0f < zAngle && zAngle < angleVinyleMax)) // si le bras est sur le vinyle
         {
             Debug.Log("placé");
-            float setTime; // le timer auquel la musique se lance dépend de la position du bras
-            if (angleVinyleMax - 5f < zAngle && zAngle < angleVinyleMax)
-            {
-                setTime = 0f; // pour pouvoir facilement lancer le début de la chanson en placant la tête sur le bord du vinyle.
-            }
-            else
-            {
-                // le timer est proportionnel à la surface parcourue par le bras avant d'avoir laché ; 
-                // plus le bras est loin du bord du vinyle plus la chanson se lance tard
-                setTime = ((angleVinyleMax - zAngle)) * musique.clip.length / (angleVinyleMax - angleVinyleMin);
-            }
-            musique.time = setTime;
+            musique.time = 0f;
             musique.volume = manager.tabVolumeValeurs[manager.volumePosition]; // on remet le volume car le bras est désormais sur le vinyle
         }
     }
