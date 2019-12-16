@@ -57,7 +57,7 @@ public class Dialogue : MonoBehaviour
     /**
      * Reset le dialogue et desactive la UI de texte
      */
-    public void StopDialogue()
+    public virtual void StopDialogue()
     {
         StopAllCoroutines();
         index = 0;

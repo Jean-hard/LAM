@@ -29,4 +29,23 @@ public class DialoguePreCinematique : Dialogue
             GameManager.Instance.LaunchCinematique();
         }
     }
+
+    public override void StopDialogue()
+    {
+        StopAllCoroutines();
+        index = 0;
+        currentTextDisplay.text = "";
+        currentTextDisplay.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
+        blockScreen.gameObject.SetActive(false);
+        textBox.SetActive(false);
+        if (skipTextButton != null)
+            skipTextButton.SetActive(false);
+        if (speakerName != null)
+            speakerName.gameObject.SetActive(false);
+
+        //lance la cinematique
+        GameManager.Instance.LaunchCinematique();
+
+    }
 }
