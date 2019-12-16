@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 3904348603474592551, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743581911564957442, guid: 1801d822c4fb80f44b4c2a3f9d14482a,
         type: 3}
@@ -2053,7 +2053,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 143192520}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -5169,7 +5169,7 @@ PrefabInstance:
     - target: {fileID: 4657017699261999651, guid: e83d07060efee1f41a661e2807af2b47,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4657017699261999654, guid: e83d07060efee1f41a661e2807af2b47,
         type: 3}
@@ -11701,7 +11701,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 2.100006, y: 1.1450014}
   m_SizeDelta: {x: 74.6, y: -27.329998}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14177,7 +14177,7 @@ PrefabInstance:
     - target: {fileID: 6360794519567939089, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6360794519567939103, guid: cecea79cb5d6bc340a6ed5b1343e33ba,
         type: 3}
@@ -14942,7 +14942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1050949505
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21667,7 +21667,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -26232,7 +26232,7 @@ PrefabInstance:
     - target: {fileID: 3518903162636655663, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
         type: 3}
@@ -27598,8 +27598,8 @@ MonoBehaviour:
   musique: {fileID: 949847807}
   bruit: {fileID: 1895897548}
   manager: {fileID: 1050949506}
-  angleVinyleMin: 0
-  angleVinyleMax: 100
+  angleVinyleMin: 290
+  angleVinyleMax: 10
 --- !u!114 &1898785943
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,8 +9,8 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public AudioSource musique;
     public AudioSource bruit;
     public VinyleManager manager;
-    public float angleVinyleMin = 272f;
-    public float angleVinyleMax = 348f;
+    public float angleVinyleMin = 290f;
+    public float angleVinyleMax = 6f;
 
     private bool selected = false;
 
@@ -23,8 +23,18 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             Vector2 offset = new Vector2(mouse.x - transform.position.x, mouse.y - transform.position.y);
             float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle + diffAngle);
-            // Debug.Log(transform.eulerAngles.z);
+            Debug.Log(transform.eulerAngles.z);
         }
+
+        if (transform.eulerAngles.z < 294f && transform.eulerAngles.z > 146f)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 295f);
+        }
+        else if (transform.eulerAngles.z > 30f && transform.eulerAngles.z < 145f)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 29f);
+        }
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -39,7 +49,7 @@ public class BrasController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         float zAngle = transform.eulerAngles.z; // l'angle auquel le bras est lâché
 
-        if (angleVinyleMin < zAngle && zAngle < angleVinyleMax) // si le bras est sur le vinyle
+        if ((angleVinyleMin < zAngle && zAngle < 360f) || (0f < zAngle && zAngle < angleVinyleMax)) // si le bras est sur le vinyle
         {
             Debug.Log("placé");
             float setTime; // le timer auquel la musique se lance dépend de la position du bras
