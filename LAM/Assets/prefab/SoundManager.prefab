@@ -46,6 +46,7 @@ MonoBehaviour:
   audioSourceSong: {fileID: 0}
   audioSourceEffect: {fileID: 0}
   audioSourcePassif: {fileID: 0}
+  audioSourceBO: {fileID: 0}
   doorClosing: {fileID: 8300000, guid: 7827d740625749b4ea3fac7852a1da4e, type: 3}
   catMeow: {fileID: 8300000, guid: 2f5af51ea8cc1944c9fcba71b9fbfb81, type: 3}
   catHisses: {fileID: 8300000, guid: 28c24179192b27a45bad8891a9433f8a, type: 3}
@@ -65,3 +66,5 @@ MonoBehaviour:
   fallingMan: {fileID: 8300000, guid: 47fff99afaa941746b6ca02ea2263e44, type: 3}
   storm: {fileID: 8300000, guid: 45b02eaae05c2fa498d57c58ebaed79f, type: 3}
   seaStorm: {fileID: 8300000, guid: 4f5bbd10caf6406478c947db57df98d2, type: 3}
+  BO: {fileID: 8300000, guid: c87020db7421b7b48bd9c47aea82e0e2, type: 3}
+  numberGood: {fileID: 8300000, guid: 971241ad72b28cc449f2c18d25361744, type: 3}

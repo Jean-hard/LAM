@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,6 +37,15 @@ public class GameManager : MonoBehaviour
     private bool isPlayerOnNextPlan = true;
 
     private bool isDoorSound = false;
+
+    /**
+     * for final Scene
+     */
+    private bool isMovingToFinalScene = false;
+    [SerializeField]
+    private Vector3 finalDoorPosition;
+    [SerializeField]
+    private VideoPlayer videoLauncher;
 
     // SINGLETON ---------------------------------------------
     private static GameManager _instance;
@@ -81,6 +89,14 @@ public class GameManager : MonoBehaviour
         {
             ChangeScene();
             isMovingToDoor = false;
+            currentDestination = new Vector3(0f, 0f, 0f);
+        }
+
+        //final scene
+        if (player.transform.position == currentDestination && isMovingToFinalScene)
+        {
+            ShowVideo();
+            isMovingToFinalScene = false;
             currentDestination = new Vector3(0f, 0f, 0f);
         }
     }
@@ -288,6 +304,20 @@ public class GameManager : MonoBehaviour
         else
             Debug.Log("erreur en fin de cinématique");
         cinematiqueFade.FadeOut();
+    }
+
+    public void MoveToFinalScene()
+    {
+        currentDestination = finalDoorPosition;
+        player.targetPosition = finalDoorPosition;
+        isMovingToFinalScene = true;
+        animManager.lancerAnim = true;//on lance l'anim
+        animManager.AnimationSeiji("animSeijiDeDos");
+    }
+
+    public void ShowVideo()
+    {
+        videoLauncher.Play();
     }
 }
 

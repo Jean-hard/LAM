@@ -9,6 +9,7 @@ public class AccueilCouloirManager : MonoBehaviour
     //dans le couloirs
     public static bool soloTalk01Ready = true; //pour SOLO DIA 01
     public static bool soloTalk02Ready = false; //pour SOLO DIA 02
+    public static bool finalTalkReady = false; //pour SOLO_FINAL
 
     //dans l'accueil
     public static bool introTalkReady = true; //SOLO_SEIJI_HALL_01
@@ -44,6 +45,11 @@ public class AccueilCouloirManager : MonoBehaviour
     private Dialogue afterCinematiqueDia01; //DIA_AFTER_CINE_01
     [SerializeField]
     private Dialogue afterCinematiqueDia02; //DIA_SOLO_04 (après CINE_02)
+
+    [SerializeField]
+    private Dialogue finalDiaCouloir;
+    [SerializeField]
+    private GameObject finalButton;
 
     private Dialogue currentAubergisteDia;
     private Dialogue currentCouloirDia;
@@ -87,6 +93,10 @@ public class AccueilCouloirManager : MonoBehaviour
         //apres DIA_AUBER_01 on passera dans l'accueil SOLO_SEIJI_HALL_02
         if (indexAubergisteDia == 0)
             accueilTalk1Ready = true;
+
+        //après le dernier dialogue de l'aubergiste.
+        if (indexAubergisteDia == 4)
+            finalTalkReady = true;
 
         isStairLock = false;
     }
@@ -164,6 +174,12 @@ public class AccueilCouloirManager : MonoBehaviour
             currentCouloirDia = couloirDiaTab[indexCouloirDia];
             GameManager.Instance.InitDialogue(currentCouloirDia);
             soloTalk02Ready = false;
+        }
+        //scene final
+        if(finalTalkReady == true)
+        {
+            GameManager.Instance.InitDialogue(finalDiaCouloir);
+            finalButton.SetActive(true);
         }
     }
 

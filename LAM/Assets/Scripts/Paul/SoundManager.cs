@@ -10,6 +10,8 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSourceEffect;
     [SerializeField]
     private AudioSource audioSourcePassif;
+    [SerializeField]
+    private AudioSource audioSourceBO;
 
     [SerializeField]
     private AudioClip doorClosing;
@@ -49,6 +51,10 @@ public class SoundManager : MonoBehaviour
     private AudioClip storm;
     [SerializeField]
     private AudioClip seaStorm;
+    [SerializeField]
+    private AudioClip BO;
+    [SerializeField]
+    private AudioClip numberGood;
 
     // SINGLETON ---------------------------------------------
     private static SoundManager _instance;
@@ -70,6 +76,7 @@ public class SoundManager : MonoBehaviour
     public void Start()
     {
         PlaySeaSound();
+        PlayBO();
         //pour jouer un son de quelquun marchant dans le couloir à l'étage pendant la discusion avec l'aubergiste
         PlayPassifAtticRun(5);
     }
@@ -210,6 +217,18 @@ public class SoundManager : MonoBehaviour
     public void PlaySeaStorm()
     {
         audioSourceEffect.clip = seaStorm;
+        audioSourceEffect.Play();
+    }
+
+    public void PlayBO()
+    {
+        audioSourceBO.clip = BO;
+        audioSourceBO.Play();
+    }
+
+    public void PlayNumberGood()
+    {
+        audioSourceEffect.clip = numberGood;
         audioSourceEffect.Play();
     }
 }

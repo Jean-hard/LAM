@@ -75,4 +75,9 @@ public class TelephoneManager : MonoBehaviour
         yield return new WaitForSeconds(20f);
         originalBackButton.SetActive(true);
     }
+
+    public void ClearNumTel()
+    {
+        numtel.Clear();
+    }
 }
