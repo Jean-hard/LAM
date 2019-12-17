@@ -17,6 +17,7 @@ public class Chambre1Script : PlaneScript
     {
         base.OnDesactive();
         WeatherManager.Instance.inRoom1View1 = false;
+        WeatherManager.Instance.thunderRoom1View1.SetActive(false);
         for (int i = 0; i < WeatherManager.Instance.rainRoom1View1List.Count; i++)
         {
             WeatherManager.Instance.rainRoom1View1List[i].gameObject.SetActive(false);
