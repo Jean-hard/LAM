@@ -8,5 +8,40 @@ public class AccueilScript : PlaneScript
     {
         base.OnActive();
         AccueilCouloirManager.Instance.ShowAccueilDia();
+        Debug.Log("in onactive");
+
+        // on check sur quelle version de l'accueil on est pour lancer la bonne anim de meteo
+        if (this.gameObject.GetComponent<SpriteRenderer>().sprite.name == "AccueilNormal")
+        {
+            Debug.Log("Accueil normal is active");
+            WeatherManager.Instance.inAccueilNormal = true;
+            StartCoroutine(WeatherManager.Instance.SetRainAccueilNormal());
+            StartCoroutine(WeatherManager.Instance.SetThunderAccueilNormal());
+        }
+        else if (this.gameObject.GetComponent<SpriteRenderer>().sprite.name == "AccueiltorduV1")
+        {
+            Debug.Log("Accueil tordu 1 is active");
+            WeatherManager.Instance.inAccueilTordu1 = true;
+            StartCoroutine(WeatherManager.Instance.SetWeatherAccueilTordu1());
+            StartCoroutine(WeatherManager.Instance.SetThunderTordu1());
+        }
+        else if (this.gameObject.GetComponent<SpriteRenderer>().sprite.name == "AccueiltorduV2")
+        {
+            Debug.Log("Accueil tordu 2 is active");
+            WeatherManager.Instance.inAccueilTordu2 = true;
+            StartCoroutine(WeatherManager.Instance.SetWeatherAccueilTordu2());
+            StartCoroutine(WeatherManager.Instance.SetThunderTordu2());
+        } else
+        {
+            Debug.Log("Tu t'es chié dans le if avec le nom de sprite");
+        }
+    }
+
+    public override void OnDesactive()
+    {
+        base.OnDesactive();
+        WeatherManager.Instance.inAccueilNormal = false;
+        WeatherManager.Instance.inAccueilTordu1 = false;
+        WeatherManager.Instance.inAccueilTordu2 = false;
     }
 }

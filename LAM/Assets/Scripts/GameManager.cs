@@ -70,6 +70,8 @@ public class GameManager : MonoBehaviour
         scalePlayer.sx = currentPlan.maxscale;
 
         StartCoroutine(StartSceneDelay());
+
+        currentPlan.OnActive();
     }
 
     // Update is called once per frame

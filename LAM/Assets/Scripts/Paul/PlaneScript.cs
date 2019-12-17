@@ -37,7 +37,7 @@ public class PlaneScript : MonoBehaviour
      * Quand on désactive ce plan, on désactive tout les éléments interactifs qui y sont lié
      * et on désactive toutes les lumières
      */
-    public void OnDesactive()
+    public virtual void OnDesactive()
     {
         this.gameObject.SetActive(false);
         for (int i = 0; i < interElementTab.Length; i++)

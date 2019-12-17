@@ -70,6 +70,7 @@ public class VinyleManager : MonoBehaviour
 
         if (conditionRemplie && !dialogueDisplayed)
         {
+            // on désactive tous les sons pour afin que le joueur ne puisse plus les lancer une fois le jeu terminé
             musique.gameObject.SetActive(false);
             bruitBlanc.gameObject.SetActive(false);
             craquement.gameObject.SetActive(false);
