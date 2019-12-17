@@ -11,6 +11,7 @@ public class ScalePlayer : MonoBehaviour
     public float needScale;
     private PlayerManager playerManager;
     private float delaie = 0.8f;
+    public bool canScale;
     private void Awake()
     {
         playerManager = FindObjectOfType<PlayerManager>();
@@ -71,7 +72,14 @@ public class ScalePlayer : MonoBehaviour
     public void newScale(float newNeedScale)
     {
         delaie = 0.8f;
+        if (canScale)
         needScale = newNeedScale;
+    }
+
+    public void newSpeedScale(float newSpeedScale)
+    { 
+        if (canScale)
+        speedScale = newSpeedScale;
     }
 
     public void DirectScale (float scale)

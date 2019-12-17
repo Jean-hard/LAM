@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour
             player.targetPosition = targetDoor.doorPosition;
             isMovingToDoor = true;
             animManager.lancerAnim = true;//on lance l'anim
+            scalePlayer.canScale = true;
             animManager.AnimationSeiji("animSeijiDeDos");
         }
         else
@@ -121,6 +122,7 @@ public class GameManager : MonoBehaviour
             * ça va changer avec le remaniement de quand j'aurais le time
             */
             animManager.lancerAnim = false;//on ne lance pas d'anim
+            scalePlayer.canScale = false;
             isPlayerOnNextPlan = true;
             ChangeScene();
         }
