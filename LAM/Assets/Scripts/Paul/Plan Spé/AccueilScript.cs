@@ -43,5 +43,11 @@ public class AccueilScript : PlaneScript
         WeatherManager.Instance.inAccueilNormal = false;
         WeatherManager.Instance.inAccueilTordu1 = false;
         WeatherManager.Instance.inAccueilTordu2 = false;
+        for (int i = 0; i < WeatherManager.Instance.rainAccueilNormalList.Count; i++)
+        {
+            WeatherManager.Instance.rainAccueilNormalList[i].gameObject.SetActive(false);
+            WeatherManager.Instance.rainAccueilTordu1List[i].gameObject.SetActive(false);
+            WeatherManager.Instance.rainAccueilTordu2List[i].gameObject.SetActive(false);
+        }
     }
 }
