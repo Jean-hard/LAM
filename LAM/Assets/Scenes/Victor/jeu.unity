@@ -10884,8 +10884,8 @@ MonoBehaviour:
   interElementTab:
   - {fileID: 1308116102}
   - {fileID: 1855321547}
-  needScale: 1.2
-  speedScale: 0.011
+  needScale: 1
+  speedScale: 0.005
   planeLightTab:
   - {fileID: 1283765553}
   - {fileID: 695886082}
@@ -20418,7 +20418,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.4
+          m_FloatArgument: 0.6
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -31153,7 +31153,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1.2
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -31781,12 +31781,12 @@ PrefabInstance:
     - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
         type: 3}
       propertyPath: needScale
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2653347563098017667, guid: 4f894ed1ad2e7c745b550760497bf796,
         type: 3}
       propertyPath: speedScale
-      value: 0.001
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f894ed1ad2e7c745b550760497bf796, type: 3}

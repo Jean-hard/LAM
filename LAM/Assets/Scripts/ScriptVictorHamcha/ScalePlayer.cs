@@ -9,9 +9,11 @@ public class ScalePlayer : MonoBehaviour
     public float _scale;
     public float speedScale;
     public float needScale;
+    private PlayerManager playerManager;
+    private float delaie = 0.8f;
     private void Awake()
     {
-
+        playerManager = FindObjectOfType<PlayerManager>();
     }
     // Start is called before the first frame update
     void Start()
@@ -22,14 +24,30 @@ public class ScalePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_scale > needScale)
+        if (playerManager.targetPosition == playerManager.playerBasePose)
         {
-            _scale -= speedScale;
+            if (delaie > 0)
+                delaie -= Time.deltaTime;
+            else
+            {
+                delaie = 0;
+                _scale = needScale;
+            }
+            
         }
         else
         {
-            _scale = needScale;
+
+            if (_scale > needScale)
+            {
+                _scale -= speedScale;
+            }
+            else
+            {
+                _scale = needScale;
+            }
         }
+        
 
 
         gameObject.transform.localScale = new Vector2(_scale, _scale); // taille du personnage
@@ -52,6 +70,14 @@ public class ScalePlayer : MonoBehaviour
 
     public void newScale(float newNeedScale)
     {
+        delaie = 0.8f;
         needScale = newNeedScale;
+    }
+
+    public void DirectScale (float scale)
+    {
+        delaie = 0.8f;
+        needScale = scale;
+        _scale = scale;
     }
 }
