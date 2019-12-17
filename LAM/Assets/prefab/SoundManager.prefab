@@ -67,3 +67,4 @@ MonoBehaviour:
   storm: {fileID: 8300000, guid: 45b02eaae05c2fa498d57c58ebaed79f, type: 3}
   seaStorm: {fileID: 8300000, guid: 4f5bbd10caf6406478c947db57df98d2, type: 3}
   BO: {fileID: 8300000, guid: c87020db7421b7b48bd9c47aea82e0e2, type: 3}
+  numberGood: {fileID: 8300000, guid: 971241ad72b28cc449f2c18d25361744, type: 3}
