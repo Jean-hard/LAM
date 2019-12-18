@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28680432
@@ -1830,14 +1830,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Oh... Je comprends ce qu\u2019il voulait dire par admirateurs. Le client \xE9tait
+  - "Oh ... Je comprends ce qu\u2019il voulait dire par admirateurs. Le client \xE9tait
     un peintre."
   - "Incroyable, il y en a partout ! Je n\u2019ai jamais autant d\u2019\u0153uvres
     de toute ma vie."
-  - "voyons voir de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
+  - "Voyons voir de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
   - "Mince, il devait \xEAtre d\xE9rang\xE9 pour repr\xE9senter de telles horreurs."
   - "Je n\u2019aimerais pas \xEAtre dans sa t\xEAte."
-  - "Je ne sais pas quels souvenirs l\u2019Aubergiste  pense que je peux retrouver
+  - "Je ne sais pas quels souvenirs l\u2019Aubergiste pense que je peux retrouver
     ici, mais ils risquent d\u2019\xEAtre tortur\xE9s."
   speakers: 000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
@@ -2086,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &143192516
@@ -5528,7 +5528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419658839
@@ -6150,7 +6150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445639727
@@ -7013,14 +7013,14 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - Tiens, tiens, mais que nous rapporte le vent du large ?
-  - "Bonsoir, mon gar\xE7on.  Attends..."
+  - "Bonsoir, mon gar\xE7on. Attends ..."
   - "Tu es tremp\xE9 et crott\xE9 ! Tu t\u2019es roul\xE9 dans le sable\u2009?"
   - "Non, j\u2019\xE9tais comme \xE7a quand je me suis r\xE9veill\xE9."
-  - "Je\u2026 je ne me rappelle plus rien."
-  - "Vraiment ? Int\xE9ressant..."
+  - "Je \u2026 je ne me rappelle plus rien."
+  - "Vraiment ? Int\xE9ressant ..."
   - "O\xF9 suis-je\u2009?"
   - "\xC7a ne se voit pas\u2009?"
-  - "Les tables derri\xE8re toi, les trousseaux de cl\xE9s  dans mon dos, et mon costume
+  - "Les tables derri\xE8re toi, les trousseaux de cl\xE9s dans mon dos, et mon costume
     ..."
   - "Je vais t\u2019aider : g\xE9n\xE9ralement, on vient chez moi pour se restaurer
     ou dormir, voire les deux."
@@ -7031,7 +7031,7 @@ MonoBehaviour:
   - "Mmm\u2026"
   - "Un enfant sans m\xE9moire, frigorifi\xE9 et affam\xE9, pourrais-je me regarder
     dans un miroir si je le laissais repartir ?"
-  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a\u2026"
+  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a \u2026"
   - "Vraiment\u2009? Merci\u2009!"
   - "J\u2019en ai une qui vient justement de se lib\xE9rer."
   - "Le dernier client est parti il y a peu. Tr\xE8s peu \u2026"
@@ -7040,15 +7040,15 @@ MonoBehaviour:
   - "Tant pis. Par contre, elle n\u2019est pas encore pr\xEAte."
   - "C\u2019est pas grave, je vais attendre \xE0 une table."
   - "J\u2019ai une meilleure id\xE9e. Il y a un tableau dans une chambre, l\xE0-haut."
-  - "Je voudrais que tu me la ram\xE8nes."
+  - "Je voudrais que tu me le ram\xE8nes."
   - "Tu le reconna\xEEtras, c\u2019est celui qui n\u2019est pas termin\xE9."
   - "D\u2019accord !"
   - "Tiens, voil\xE0 la cl\xE9. C\u2019est la premi\xE8re porte \xE0 droite en haut
     de l\u2019escalier."
   - "Qui sait, peut-\xEAtre y retrouveras-tu la m\xE9moire."
-  - "Son occupant n\u2019avait pas son  pareil pour faire remonter les souvenirs chez
+  - "Son occupant n\u2019avait pas son pareil pour faire remonter les souvenirs chez
     ses admirateurs."
-  - Si vous le dites...
+  - Si vous le dites ...
   speakers: 0100000001000000010000000000000000000000010000000000000001000000010000000100000000000000010000000100000000000000010000000100000001000000000000000100000001000000010000000000000001000000000000000100000001000000010000000000000001000000010000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -7335,8 +7335,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Il est gentil, quoiqu\u2019un peu \xE9trange."
-  - "C\u2019est comme si ses  paroles avaient un double sens."
-  - "Et cet endroit, on dirait que\u2026 c\u2019est comme si je..."
+  - "C\u2019est comme si ses paroles avaient un double sens."
+  - "Et cet endroit, on dirait que \u2026 c\u2019est comme si je ..."
   - "Rhaa, pourquoi je ne me souviens de rien\u2009?"
   - "Arr\xEAte de te torturer, l\u2019aubergiste a raison, plus on cherche, moins
     \xE7a vient \u2026"
@@ -8848,7 +8848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605799906
@@ -9088,7 +9088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &612513945
@@ -10328,7 +10328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - Je comprends enfin... C'est atroce.
+  - Je comprends enfin ... C'est atroce.
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -10876,7 +10876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &697139019
@@ -11213,7 +11213,7 @@ MonoBehaviour:
   sentences:
   - Je me souviens de tout !
   - "O\xF9 suis-je tomb\xE9, quelle est cette \xEEle ?"
-  - Ils me veulent du  mal.
+  - Ils me veulent du mal.
   - "Je dois me m\xE9fier, surtout de lui, l\u2019aubergiste."
   - "Depuis le d\xE9but, il me m\xE8ne en bateau."
   speakers: 0000000000000000000000000000000000000000
@@ -11640,7 +11640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &738983368
@@ -11974,7 +11974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - Mais, qui c'est ? On dirait la voix d'un homme...
+  - Mais, qui c'est ? On dirait la voix d'un homme ...
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -12897,7 +12897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &792026211
@@ -13518,25 +13518,26 @@ MonoBehaviour:
   - Mort !
   - "C\u2019est donc pour \xE7a qu\u2019il est parti sans me payer."
   - "Vous ne comprenez pas, on l\u2019a tu\xE9 !"
-  - "Calme-toi, crier ne le ram\xE8nera pas \xE0 la vie. "
+  - "Calme-toi, crier ne le ram\xE8nera pas \xE0 la vie."
   - "C\u2019est tout ce que \xE7a vous fait ?"
   - "Des morts, j\u2019en ai vu mon lot."
-  - Mais comment pouvez-vous...
+  - Mais comment pouvez-vous ...
   - Un instant ...
   - "C\u2019est \xE7a que vous vouliez que je d\xE9couvre, qu\u2019il est mort ?"
   - "Pourquoi aurais-je voulu \xE7a ?"
-  - Je ne sais pas... Pardon.
+  - Je ne sais pas ... Pardon.
   - "Mais alors, qui l\u2019a tu\xE9 ?"
   - "Je crois que tu as une id\xE9e."
-  - "Je ne sais pas, je suis tellement fatigu\xE9  que je n\u2019arrive plus \xE0
-    r\xE9fl\xE9chir."
+  - "Je ne sais pas, je suis tellement fatigu\xE9 que je n\u2019arrive plus \xE0 r\xE9fl\xE9chir."
   - Calme-toi, tu trembles comme une feuille.
   - "Il te faut un remontant. Que dirais-tu d\u2019un grog ?"
   - Un grog ?
   - Mais pourquoi il me propose un... grog ?
   - "Attends, \xE7a me dit quelque chose."
-  - Un grog... un gro... un...
-  speakers: 0100000000000000010000000000000001000000000000000100000000000000010000000000000000000000000000000100000000000000000000000100000000000000010000000100000000000000000000000000000001000000
+  - 'Un grog... '
+  - Un gro...
+  - Un ...
+  speakers: 01000000000000000100000000000000010000000000000001000000000000000100000000000000000000000000000001000000000000000000000001000000000000000100000001000000000000000000000000000000010000000100000001000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -13866,7 +13867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860522848
@@ -14551,7 +14552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910452362
@@ -15998,7 +15999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &979269021
@@ -17661,13 +17662,13 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Par tous les kamis de l\u2019oc\xE9an, o\xF9 va-t-il trouver tout \xE7a\u2009?"
-  - "On dirait que ce  tableau est tout droit sorti d\u2019un cauchemar."
-  - "Il me rend mal \xE0 l\u2019aise. Quelque chose en \xE9mane de\u2026 terrible."
+  - "On dirait que ce tableau est tout droit sorti d\u2019un cauchemar."
+  - "Il me rend mal \xE0 l\u2019aise. Quelque chose en \xE9mane de \u2026 terrible."
   - "Et pourtant, je dois admettre qu\u2019il a quelque chose d\u2019intrigant."
   - "C\u2019est peut-\xEAtre ce qu\u2019on nomme la vision de l\u2019artiste ?"
   - "Ne tra\xEEnons pas ici et rapportons le tableau \xE0 l\u2019aubergiste."
-  - Je me demande bien  pourquoi il le veut.
-  - "\xC0 moins que le peintre ait pay\xE9 la chambre avec..."
+  - Je me demande bien pourquoi il le veut.
+  - "\xC0 moins que le peintre ait pay\xE9 la chambre avec ..."
   speakers: 0000000000000000000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -18830,7 +18831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159886545
@@ -19351,7 +19352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179070677
@@ -19847,7 +19848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - On dirait lE cri d'un homme tombant dans le vide...
+  - On dirait le cri d'un homme tombant dans le vide ...
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -19901,8 +19902,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Tout para\xEEt si \xE9trange."
-  - "Qu\u2019est-ce que je fais l\xE0 ? Comment suis-je arriv\xE9 ?"
-  - "Tout est confus. C\u2019est comme si\u2026 non, rien."
+  - "Qu\u2019est-ce que je fais l\xE0 ? Comment suis-je arriv\xE9 ici ?"
+  - "Tout est confus. C\u2019est comme si \u2026 non, rien."
   - "Et si je lui demandais\u2009? Il doit savoir quelque chose."
   speakers: 00000000000000000000000000000000
   typingSpeed: 0.02
@@ -20984,7 +20985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278383682
@@ -22074,7 +22075,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "\xC9trange, comme d\xE9co. Pas tr\xE8s accueillant pour une auberge."
-  - "Dans quelle chambre, il a dit \u2009? Ah oui, la premi\xE8re porte \xE0 droite\u2026"
+  - "Dans quelle chambre, il a dit \u2009? Ah oui, la premi\xE8re porte \xE0 droite
+    \u2026"
   speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -22594,10 +22596,10 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Je comprends pourquoi j\u2019ai perdu la m\xE9moire !"
-  - "Comment ai-je pu survivre ?  C\u2019est un miracle."
+  - "Comment ai-je pu survivre ? C\u2019est un miracle."
   - Attends ...
   - "Et les autres, les membres de l\u2019\xE9quipage ?"
-  - "Ils sont... Non, ce n\u2019est pas possible."
+  - "Ils sont ... Non, ce n\u2019est pas possible."
   - Il doit y avoir des survivants. Je dois les retrouver !
   speakers: 000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
@@ -22911,7 +22913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - J'ai un mauvais pressentiment. Je ... ne veut pas y aller !
+  - J'ai un mauvais pressentiment. Je ... ne veux pas y aller !
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -23074,7 +23076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418187294
@@ -23225,7 +23227,7 @@ MonoBehaviour:
   sentences:
   - C'est donc dans cette direction qu'il pointait ?
   - "Le dossier indique que l'homme avait la r\xE9tine brul\xE9e par une lumi\xE8re
-    vive..."
+    vive ..."
   speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -23388,7 +23390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439177735
@@ -24478,7 +24480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461529506
@@ -24884,7 +24886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Il me manque encore des indices pour pouvoir compl\xE9ter le tableau..."
+  - "Il me manque encore des indices pour pouvoir compl\xE9ter le tableau ..."
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -26239,8 +26241,8 @@ MonoBehaviour:
   - Il est gentil, mais comment je fais pour le lui trouver ?
   - "Plus le temps passe, moins je l\u2019appr\xE9cie."
   - "On dirait qu\u2019il ne veut pas que je quitte l\u2019auberge."
-  - "Les miens ont peut-\xEAtre besoin de moi, et plus le temps passe, plus..."
-  - "Attends... Et si l\u2019aubergiste avait raison ?"
+  - "Les miens ont peut-\xEAtre besoin de moi, et plus le temps passe, plus ..."
+  - "Attends ... Et si l\u2019aubergiste avait raison ?"
   - "Si c\u2019\xE9tait ma faute, s\u2019ils m\u2019en voulaient ?"
   - "J\u2019aurais d\xFB \xE9viter la vague ..."
   - "N\u2019y pense plus, Seiji."
@@ -28046,7 +28048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690092671
@@ -28458,7 +28460,7 @@ MonoBehaviour:
   - "Tu en fais une dr\xF4le de t\xEAte."
   - "Je me souviens ! J\u2019\xE9tais sur un bateau, on a \xE9t\xE9 pris dans une
     temp\xEAte."
-  - "Le  bateau a sombr\xE9..."
+  - "Le bateau a sombr\xE9 ..."
   - "Il faut que j\u2019aille chercher les autres, les survivants."
   - Maintenant ? Mais il fait nuit noire !
   - "Et la c\xF4te est dangereuse surtout quand on ne la conna\xEEt pas."
@@ -28466,12 +28468,12 @@ MonoBehaviour:
     pu \xE9viter la vague."
   - "C\u2019est de ma faute si le bateau a chavir\xE9 !"
   - "Si c\u2019est vrai, tu crois qu\u2019ils seront ravis de te voir ?"
-  - "Mais... Je n\u2019ai pas le choix, je dois r\xE9parer mon erreur."
+  - "Maisv... Je n\u2019ai pas le choix, je dois r\xE9parer mon erreur."
   - "Tu ne peux pas r\xE9parer le pass\xE9. Ce qui est fait est fait."
   - "Mais je ne peux pas rester les bras crois\xE9s !"
   - "J\u2019ai leur sort sur ma conscience ..."
   - "La conscience, en voil\xE0 une plume qui p\xE8se une tonne."
-  - "Ton cerveau  est embrouill\xE9 par la fatigue."
+  - "Ton cerveau est embrouill\xE9 par la fatigue."
   - "Attends demain, tu y verras clair apr\xE8s une nuit de sommeil."
   - "Peut-\xEAtre ... Vous avez raison."
   - "Toujours. D\u2019autant que j\u2019ai encore besoin de toi."
@@ -28479,8 +28481,8 @@ MonoBehaviour:
   - Un homme assez curieux, tout comme toi.
   - Comme moi ?
   - "Oui, il passait tout son temps \xE0 se poser des questions, toujours en qu\xEAte
-    de  r\xE9ponses."
-  - "Avant de nous quitter, cet homme \xE9tait \xE0 la recherche de quelque  chose,
+    de r\xE9ponses."
+  - "Avant de nous quitter, cet homme \xE9tait \xE0 la recherche de quelque chose,
     quelque chose de tr\xE8s important."
   - "Cette chose, je voudrais que tu me le ram\xE8nes."
   - "D\u2019accord, qu\u2019est ce que c\u2019est ?"
@@ -31373,7 +31375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Tenez, c\u2019est bien le tableau que vous vouliez ?"
+  - "Tenez, c\u2019est bien la toile que vous vouliez ?"
   - Parfait. Elle est belle, pas vrai ?
   - "Euh \u2026"
   - "C\u2019est court comme analyse artistique, d\xE9veloppe un peu."
@@ -31382,8 +31384,8 @@ MonoBehaviour:
   - "Au d\xE9but, j\u2019ai senti comme une sensation de rejet."
   - "Une hostilit\xE9 qui se d\xE9gageait et me mettait mal \xE0 l\u2019aise."
   - Continue.
-  - "Mais apr\xE8s, la peinture a eu comme un effet... hypnotisant."
-  - "C\u2019est \xE7a. Plus je  la regardais, plus je me sentais comme attir\xE9 \xE0
+  - "Mais apr\xE8s, la peinture a eu comme un effet ... hypnotisant."
+  - "C\u2019est \xE7a. Plus je la regardais, plus je me sentais comme attir\xE9 \xE0
     l\u2019int\xE9rieur."
   - Plus je la regardais, plus je me sentais prisonnier.
   - "C\u2019est comme si le peintre voulait nous dire quelque chose ... quelque chose
@@ -31395,19 +31397,21 @@ MonoBehaviour:
   - "Voil\xE0 qui est mieux\u2009! Tu pourrais faire critique d\u2019art."
   - Quoi ?
   - Peu importe, tu as vu juste.
-  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si...
+  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si ...
     puissante."
-  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes."
+  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes ?"
   - "Je veux dire l\u2019endroit, pas votre auberge. Je me souviens plus comment je
     suis arriv\xE9 ici."
   - "Bien s\xFBr. Je suis en quelque sorte le gardien de l\u2019\xEEle."
-  - "Rien ne m\u2019\xE9chappe, car  tout le monde passe par mon auberge."
+  - "Rien ne m\u2019\xE9chappe, car tout le monde passe par mon auberge."
   - "Ou, si tu pr\xE9f\xE8res, toi qui sembles \xEAtre un marin, je guette et vois
     tout ce qui se passe du haut de ma vigie ..."
   - Vigie ? Mais pourquoi il me parle de vigie ?
-  - 'Vigie, vigie ... vig ... '
+  - Vigie, ...
+  - Vigie ...
+  - Vig ...
   - "Qu\u2019est-ce qui m\u2019arrive, je me sens bizarre..."
-  speakers: 00000000010000000000000001000000000000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000010000000000000001000000010000000000000000000000010000000100000001000000000000000100000000000000
+  speakers: 000000000100000000000000010000000000000001000000000000000000000001000000000000000000000000000000000000000100000000000000000000000100000000000000010000000100000000000000000000000100000001000000010000000000000001000000010000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -32660,7 +32664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Il me manque encore des indices pour r\xE9soudre l'enqu\xEAte..."
+  - "Il me manque encore des indices pour r\xE9soudre l'enqu\xEAte ..."
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -33446,7 +33450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046276388
@@ -33785,7 +33789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067105221
