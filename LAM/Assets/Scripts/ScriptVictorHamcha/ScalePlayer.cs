@@ -34,6 +34,8 @@ public class ScalePlayer : MonoBehaviour
                 delaie = 0;
                 _scale = needScale;
             }
+
+            
             
         }
         else
@@ -48,6 +50,9 @@ public class ScalePlayer : MonoBehaviour
                 _scale = needScale;
                 canScale = false;
             }
+
+
+
         }
         
 
@@ -92,5 +97,6 @@ public class ScalePlayer : MonoBehaviour
         delaie = 0.75f;
         needScale = scale;
         _scale = scale;
+        speedScale = 0.011f;
     }
 }
