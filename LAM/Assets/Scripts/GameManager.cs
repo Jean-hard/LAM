@@ -73,9 +73,9 @@ public class GameManager : MonoBehaviour
         currentDestination = new Vector3(0f, 0f, 0f);
         scalePlayer = player.gameObject.GetComponent<ScalePlayer>();
         animManager = FindObjectOfType<AnimScript>();
-        scalePlayer.sm = currentPlan.minscale;
-        scalePlayer.sp = currentPlan.propscale;
-        scalePlayer.sx = currentPlan.maxscale;
+        scalePlayer.speedScale = currentPlan.speedScale;
+        scalePlayer.needScale = currentPlan.needScale;
+        
 
         StartCoroutine(StartSceneDelay());
 
@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour
             player.targetPosition = targetDoor.doorPosition;
             isMovingToDoor = true;
             animManager.lancerAnim = true;//on lance l'anim
+            scalePlayer.canScale = true;
             animManager.AnimationSeiji("animSeijiDeDos");
         }
         else
@@ -121,6 +122,7 @@ public class GameManager : MonoBehaviour
             * ça va changer avec le remaniement de quand j'aurais le time
             */
             animManager.lancerAnim = false;//on ne lance pas d'anim
+            scalePlayer.canScale = false;
             isPlayerOnNextPlan = true;
             ChangeScene();
         }
@@ -217,9 +219,8 @@ public class GameManager : MonoBehaviour
         currentPlan = nextPlan;
 
         //Set player in the new scene
-        scalePlayer.sm=currentPlan.minscale;
-        scalePlayer.sp = currentPlan.propscale;
-        scalePlayer.sx = currentPlan.maxscale;
+        scalePlayer.speedScale = currentPlan.speedScale;
+        scalePlayer.needScale = currentPlan.needScale;
         player.targetPosition = currentPlan.GetInitPlayerPos();
 
         player.gameObject.transform.position = currentPlan.GetInitPlayerPos();//position the player to the position initial in the current plan
@@ -266,9 +267,8 @@ public class GameManager : MonoBehaviour
     //retour à l'accueil après la cinématique
     public void BackToAccueil()
     {
-        scalePlayer.sm = startPlan.minscale;
-        scalePlayer.sp = startPlan.propscale;
-        scalePlayer.sx = startPlan.maxscale;
+        scalePlayer.speedScale = currentPlan.speedScale;
+        scalePlayer.needScale = currentPlan.needScale;
 
         startPlan.OnActive();//active new font
         currentPlan.OnDesactive();//desactive last font

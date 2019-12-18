@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,9 +14,14 @@ public class PlaneScript : MonoBehaviour
     /**
      * ----TODO : à commenter
      */
-    public float minscale;
-    public float maxscale;
-    public float propscale;
+    public float needScale;
+    public float speedScale;
+
+
+
+
+
+
 
     [SerializeField]
     private GameObject[] planeLightTab;
@@ -30,7 +35,7 @@ public class PlaneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /**
