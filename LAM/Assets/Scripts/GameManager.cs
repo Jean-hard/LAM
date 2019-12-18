@@ -296,7 +296,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Twist 1 launch");
             twistManager.TwistEnvironnement1();
         }
-        if (idCinematique == 2)
+        else if (idCinematique == 2)
         {
             Debug.Log("Twist 2 launch");
             twistManager.TwistEnvironnement2();
@@ -319,6 +319,12 @@ public class GameManager : MonoBehaviour
     public void ShowVideo()
     {
         videoLauncher.Play();
+    }
+
+    public IEnumerator DesactiveCineGUI()
+    {
+        yield return new WaitForSeconds(4f);
+        CinematiqueGUI.SetActive(false);
     }
 }
 

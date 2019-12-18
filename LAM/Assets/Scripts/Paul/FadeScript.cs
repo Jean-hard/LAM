@@ -50,7 +50,7 @@ public class FadeScript : MonoBehaviour
             float alphaDiff = Mathf.Abs(curColor.a - this.targetAlpha);
             if (alphaDiff > 0.0001f)
             {
-                curColor.a = Mathf.Lerp(curColor.a, targetAlpha, this.FadeRate * Time.deltaTime/2);
+                curColor.a = Mathf.Lerp(curColor.a, targetAlpha, this.FadeRate * Time.deltaTime);
                 this.texte.color = curColor;
             }
         }

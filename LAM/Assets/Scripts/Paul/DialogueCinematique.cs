@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * Script pour le dialogue : DIA_CINE_01
@@ -39,7 +40,7 @@ public class DialogueCinematique : MonoBehaviour
 
         if (indexCinematique == 0)
             cine1Dialogues[indexParagraphe].FadeIn();
-        else if (indexCinematique == 0)
+        else if (indexCinematique == 1)
             cine2Dialogues[indexParagraphe].FadeIn();
         else
             Debug.Log("Error : il n'y a plus de cinematique à lancer");
@@ -91,6 +92,7 @@ public class DialogueCinematique : MonoBehaviour
                 return;
         }
 
+        ResetDialogues();
         GameManager.Instance.BackToAccueil();
         AccueilCouloirManager.isStairLock = true;
         AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
@@ -112,9 +114,42 @@ public class DialogueCinematique : MonoBehaviour
             GameManager.Instance.EndCinematique(2);
         }
 
+        ResetDialogues();
         GameManager.Instance.BackToAccueil();
         AccueilCouloirManager.isStairLock = true;
         AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
+    }
+
+    public void ResetDialogues()
+    {
+        if (indexCinematique == 0)
+        {
+            for (int i = 0; i < cine1Dialogues.Length; i++)
+            {
+                //cine1Dialogues[i].gameObject.GetComponent<Text>().raycastTarget = false;
+                cine1Dialogues[i].gameObject.SetActive(false);
+                // on set tous les textes des dialogues à transparent complet
+                cine1Dialogues[i].gameObject.GetComponent<Text>().color = new Color(
+                    cine1Dialogues[i].gameObject.GetComponent<Text>().color.r,
+                    cine1Dialogues[i].gameObject.GetComponent<Text>().color.g,
+                    cine1Dialogues[i].gameObject.GetComponent<Text>().color.b,
+                    0);
+            }
+        }
+        if (indexCinematique == 1)
+        { 
+            for (int i = 0; i < cine2Dialogues.Length; i++)
+            {
+                //cine2Dialogues[i].gameObject.GetComponent<Text>().raycastTarget = false;
+                cine2Dialogues[i].gameObject.SetActive(false);
+                // on set tous les textes des dialogues à transparent complet
+                cine2Dialogues[i].gameObject.GetComponent<Text>().color = new Color(
+                    cine2Dialogues[i].gameObject.GetComponent<Text>().color.r,
+                    cine2Dialogues[i].gameObject.GetComponent<Text>().color.g,
+                    cine2Dialogues[i].gameObject.GetComponent<Text>().color.b,
+                    0);
+            }
+        }
     }
 
     //pour lancer le dialogue quand le fade du lancement de la cinematique est finie
