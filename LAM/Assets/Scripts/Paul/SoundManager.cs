@@ -72,6 +72,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioClip boatCrash;
 
+    public float fadeTime = 1; // fade time in seconds
+
     // SINGLETON ---------------------------------------------
     private static SoundManager _instance;
 
@@ -242,6 +244,11 @@ public class SoundManager : MonoBehaviour
         audioSourceBO.Play();
     }
 
+    public void StopBO()
+    {
+        audioSourceBO.Pause();
+    }
+
     public void PlayNumberGood()
     {
         audioSourceEffect.clip = numberGood;
@@ -272,5 +279,34 @@ public class SoundManager : MonoBehaviour
     {
         audioSourceCineEffects.clip = boatCrash;
         audioSourceCineEffects.Play();
+    }
+
+    public void StopCineSounds()
+    {
+        if (fadeTime == 0)
+        {
+            audioSourceCineLoop1.volume = 0;
+            audioSourceCineLoop2.volume = 0;
+            return;
+        }
+        StartCoroutine(_FadeSound());
+
+        audioSourceCineLoop1.Pause();
+        audioSourceCineLoop2.Pause();
+        audioSourceCineEffects.Pause();
+    }
+
+    //copié de l'internet pour réduire le son progressivement
+    IEnumerator _FadeSound()
+    {
+        float t = fadeTime;
+        while (t > 0)
+        {
+            yield return null;
+            t -= Time.deltaTime;
+            audioSourceCineLoop1.volume = t / fadeTime;
+            audioSourceCineLoop2.volume = t / fadeTime;
+        }
+        yield break;
     }
 }

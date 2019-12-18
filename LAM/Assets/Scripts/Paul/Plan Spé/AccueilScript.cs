@@ -33,7 +33,7 @@ public class AccueilScript : PlaneScript
             StartCoroutine(WeatherManager.Instance.SetThunderTordu2());
         } else
         {
-            Debug.Log("Tu t'es chié dans le if avec le nom de sprite");
+            Debug.Log("mauvais nom de sprite");
         }
     }
 

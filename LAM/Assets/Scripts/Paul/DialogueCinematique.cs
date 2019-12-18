@@ -61,6 +61,7 @@ public class DialogueCinematique : MonoBehaviour
         indexParagraphe = 0;
 
         PlayCine1LoopSounds();
+        SoundManager.Instance.StopBO();
 
         if (indexCinematique == 0)
             cine1Dialogues[indexParagraphe].FadeIn();
@@ -117,9 +118,16 @@ public class DialogueCinematique : MonoBehaviour
         }
 
         ResetDialogues();
+
+        //on eteind les sons de la cinematique
+        SoundManager.Instance.StopCineSounds();
+        SoundManager.Instance.PlayBO();
         GameManager.Instance.BackToAccueil();
         AccueilCouloirManager.isStairLock = true;
         AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
+
+        //on eteind les sons de la cinematique
+        SoundManager.Instance.StopCineSounds();
     }
 
     //appelé par le bouton skip dialogue
