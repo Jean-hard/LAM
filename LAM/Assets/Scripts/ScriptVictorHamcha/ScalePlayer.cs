@@ -10,7 +10,7 @@ public class ScalePlayer : MonoBehaviour
     public float speedScale;
     public float needScale;
     private PlayerManager playerManager;
-    private float delaie = 0.8f;
+    private float delaie = 0.75f;
     public bool canScale;
     private void Awake()
     {
@@ -46,6 +46,7 @@ public class ScalePlayer : MonoBehaviour
             else
             {
                 _scale = needScale;
+                canScale = false;
             }
         }
         
@@ -71,20 +72,24 @@ public class ScalePlayer : MonoBehaviour
 
     public void newScale(float newNeedScale)
     {
-        delaie = 0.8f;
+        delaie = 0.75f;
         if (canScale)
         needScale = newNeedScale;
+
+        
     }
 
     public void newSpeedScale(float newSpeedScale)
     { 
         if (canScale)
         speedScale = newSpeedScale;
+
+        
     }
 
     public void DirectScale (float scale)
     {
-        delaie = 0.8f;
+        delaie = 0.75f;
         needScale = scale;
         _scale = scale;
     }
