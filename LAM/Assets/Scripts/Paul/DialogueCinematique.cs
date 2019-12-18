@@ -22,6 +22,28 @@ public class DialogueCinematique : MonoBehaviour
     private int timeBeforeNextDialogue;
 
     private bool isFirstCinematiquePassed = false;
+    private bool soundHasBeenPlayed;
+
+    void Update()
+    {
+        if (indexCinematique == 0 && indexParagraphe == 1 && !soundHasBeenPlayed)
+        {
+            SoundManager.Instance.PlayThunderP1();
+            soundHasBeenPlayed = true;
+        }
+
+        if (indexCinematique == 0 && indexParagraphe == 2 && !soundHasBeenPlayed)
+        {
+            SoundManager.Instance.PlayThunderP2();
+            soundHasBeenPlayed = true;
+        }
+
+        if (indexCinematique == 0 && indexParagraphe == 5 && !soundHasBeenPlayed)
+        {
+            SoundManager.Instance.PlayBoatCrash();
+            soundHasBeenPlayed = true;
+        }
+    }
 
     public void LaunchCinematique()
     {
@@ -37,6 +59,8 @@ public class DialogueCinematique : MonoBehaviour
     public void StartDialogue()
     {
         indexParagraphe = 0;
+
+        PlayCine1LoopSounds();
 
         if (indexCinematique == 0)
             cine1Dialogues[indexParagraphe].FadeIn();
@@ -126,7 +150,6 @@ public class DialogueCinematique : MonoBehaviour
         {
             for (int i = 0; i < cine1Dialogues.Length; i++)
             {
-                //cine1Dialogues[i].gameObject.GetComponent<Text>().raycastTarget = false;
                 cine1Dialogues[i].gameObject.SetActive(false);
                 // on set tous les textes des dialogues à transparent complet
                 cine1Dialogues[i].gameObject.GetComponent<Text>().color = new Color(
@@ -140,7 +163,6 @@ public class DialogueCinematique : MonoBehaviour
         { 
             for (int i = 0; i < cine2Dialogues.Length; i++)
             {
-                //cine2Dialogues[i].gameObject.GetComponent<Text>().raycastTarget = false;
                 cine2Dialogues[i].gameObject.SetActive(false);
                 // on set tous les textes des dialogues à transparent complet
                 cine2Dialogues[i].gameObject.GetComponent<Text>().color = new Color(
@@ -174,5 +196,11 @@ public class DialogueCinematique : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         continueButton.SetActive(true);
         skipTextButton.SetActive(true);
+    }
+
+    public void PlayCine1LoopSounds()
+    {
+        SoundManager.Instance.PlayOceanLoop();
+        SoundManager.Instance.PlayStormLoop();
     }
 }

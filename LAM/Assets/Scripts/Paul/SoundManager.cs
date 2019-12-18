@@ -12,6 +12,12 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSourcePassif;
     [SerializeField]
     private AudioSource audioSourceBO;
+    [SerializeField]
+    private AudioSource audioSourceCineEffects;
+    [SerializeField]
+    private AudioSource audioSourceCineLoop1;
+    [SerializeField]
+    private AudioSource audioSourceCineLoop2;
 
     [SerializeField]
     private AudioClip doorClosing;
@@ -55,6 +61,16 @@ public class SoundManager : MonoBehaviour
     private AudioClip BO;
     [SerializeField]
     private AudioClip numberGood;
+    [SerializeField]
+    private AudioClip oceanLoop;
+    [SerializeField]
+    private AudioClip stormLoop;
+    [SerializeField]
+    private AudioClip thunderP1;
+    [SerializeField]
+    private AudioClip thunderP2;
+    [SerializeField]
+    private AudioClip boatCrash;
 
     // SINGLETON ---------------------------------------------
     private static SoundManager _instance;
@@ -230,5 +246,31 @@ public class SoundManager : MonoBehaviour
     {
         audioSourceEffect.clip = numberGood;
         audioSourceEffect.Play();
+    }
+
+    public void PlayOceanLoop()
+    {
+        audioSourceCineLoop1.clip = oceanLoop;
+        audioSourceCineLoop1.Play();
+    }
+    public void PlayStormLoop()
+    {
+        audioSourceCineLoop2.clip = stormLoop;
+        audioSourceCineLoop2.Play();
+    }
+    public void PlayThunderP1()
+    {
+        audioSourceCineEffects.clip = thunderP1;
+        audioSourceCineEffects.Play();
+    }
+    public void PlayThunderP2()
+    {
+        audioSourceCineEffects.clip = thunderP2;
+        audioSourceCineEffects.Play();
+    }
+    public void PlayBoatCrash()
+    {
+        audioSourceCineEffects.clip = boatCrash;
+        audioSourceCineEffects.Play();
     }
 }
