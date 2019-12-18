@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28680432
@@ -1957,14 +1957,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Oh... Je comprends ce qu\u2019il voulait dire par admirateurs. Le client \xE9tait
+  - "Oh ... Je comprends ce qu\u2019il voulait dire par admirateurs. Le client \xE9tait
     un peintre."
   - "Incroyable, il y en a partout ! Je n\u2019ai jamais autant d\u2019\u0153uvres
     de toute ma vie."
-  - "voyons voir de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
+  - "Voyons voir de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
   - "Mince, il devait \xEAtre d\xE9rang\xE9 pour repr\xE9senter de telles horreurs."
   - "Je n\u2019aimerais pas \xEAtre dans sa t\xEAte."
-  - "Je ne sais pas quels souvenirs l\u2019Aubergiste  pense que je peux retrouver
+  - "Je ne sais pas quels souvenirs l\u2019Aubergiste pense que je peux retrouver
     ici, mais ils risquent d\u2019\xEAtre tortur\xE9s."
   speakers: 000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
@@ -2213,7 +2213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &143192516
@@ -3268,6 +3268,56 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 445639724}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1481901405}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1445821154}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[3]
+      value: 
+      objectReference: {fileID: 95893193}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[4]
+      value: 
+      objectReference: {fileID: 104545400}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: interElementTab.Array.data[5]
+      value: 
+      objectReference: {fileID: 2073725698}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1862234042}
+    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1652938626}
     - target: {fileID: 8566674085408274042, guid: 9214206bba530184ea0c3b6ce11d7d8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3323,56 +3373,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 445639724}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1481901405}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 1445821154}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[3]
-      value: 
-      objectReference: {fileID: 95893193}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[4]
-      value: 
-      objectReference: {fileID: 104545400}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: interElementTab.Array.data[5]
-      value: 
-      objectReference: {fileID: 2073725698}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1862234042}
-    - target: {fileID: 1462179864148107519, guid: 9214206bba530184ea0c3b6ce11d7d8a,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1652938626}
     - target: {fileID: 8566674085408274037, guid: 9214206bba530184ea0c3b6ce11d7d8a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3950,6 +3950,99 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
+--- !u!1 &313998864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313998868}
+  - component: {fileID: 313998867}
+  - component: {fileID: 313998866}
+  - component: {fileID: 313998865}
+  m_Layer: 5
+  m_Name: DIA_CINE2_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313998865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313998864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
+--- !u!114 &313998866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313998864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Soudain, la lumi\xE8re du phare qui passe par la fen\xEAtre fait scintiller
+    un de ses yeux. Scintiller ? Non, ce n\u2019est pas un \u0153il, mais un verre
+    de lunette... Un monocle ! Je le connais, c\u2019est lui... \nJe m\u2019endors.\r\n"
+--- !u!222 &313998867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313998864}
+  m_CullTransparentMesh: 0
+--- !u!224 &313998868
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313998864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &316589123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,12 +4527,12 @@ GameObject:
   - component: {fileID: 350486585}
   - component: {fileID: 350486584}
   m_Layer: 5
-  m_Name: DIA_CINE1_10
+  m_Name: DIA_CINE1_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &350486584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4452,7 +4545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!114 &350486585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4466,7 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4505,7 +4598,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 772725521}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4548,104 +4641,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &369368724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 369368725}
-  - component: {fileID: 369368727}
-  - component: {fileID: 369368726}
-  - component: {fileID: 369368728}
-  m_Layer: 5
-  m_Name: DIA_CINE1_7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &369368725
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369368724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 772725521}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1587, y: 788}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &369368726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369368724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
-    m_FontSize: 65
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 6
-    m_MaxSize: 80
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
-  m_Text: "Je ferme les yeux et la bouche alors que l\u2019eau noie le pont. Quand
-    je les rouvre , le capitaine n\u2019est plus l\xE0. Il a \xE9t\xE9 emport\xE9.
-    Quelqu\u2019un hurle dans mon dos. C\u2019est le second. Il pointe la cabine.
-    Je me tourne, et comprends pourquoi : la barre de gouvernail roule de b\xE2bord
-    \xE0 tribord, hors de contr\xF4le. Le second tente de se lever, en vain. Sa jambe
-    est bris\xE9e. Je lui fais signe et me rel\xE8ve.J\u2019avance en me tenant \xE0
-    tout ce que je peux, concentr\xE9 sur la barre de gouvernail. Je lutte contre
-    le tangage, et progresse lentement. Enfin, j\u2019atteins la cabine."
---- !u!222 &369368727
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369368724}
-  m_CullTransparentMesh: 0
---- !u!114 &369368728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369368724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeRate: 3
 --- !u!1 &377969076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4905,61 +4900,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 638.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9038167464492230498, guid: a4cf437cb51b51445b629217837842c0,
         type: 3}
       propertyPath: planeLightTab.Array.size
@@ -5020,6 +4960,61 @@ PrefabInstance:
       propertyPath: interElementTab.Array.data[7]
       value: 
       objectReference: {fileID: 605799903}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 638.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289588978657423847, guid: a4cf437cb51b51445b629217837842c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2289588978657423848, guid: a4cf437cb51b51445b629217837842c0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5660,7 +5655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419658839
@@ -6285,7 +6280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445639727
@@ -6715,7 +6710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &483329162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6748,7 +6743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6792,7 +6787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &489707535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,14 +7143,14 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - Tiens, tiens, mais que nous rapporte le vent du large ?
-  - "Bonsoir, mon gar\xE7on.  Attends..."
+  - "Bonsoir, mon gar\xE7on. Attends ..."
   - "Tu es tremp\xE9 et crott\xE9 ! Tu t\u2019es roul\xE9 dans le sable\u2009?"
   - "Non, j\u2019\xE9tais comme \xE7a quand je me suis r\xE9veill\xE9."
-  - "Je\u2026 je ne me rappelle plus rien."
-  - "Vraiment ? Int\xE9ressant..."
+  - "Je \u2026 je ne me rappelle plus rien."
+  - "Vraiment ? Int\xE9ressant ..."
   - "O\xF9 suis-je\u2009?"
   - "\xC7a ne se voit pas\u2009?"
-  - "Les tables derri\xE8re toi, les trousseaux de cl\xE9s  dans mon dos, et mon costume
+  - "Les tables derri\xE8re toi, les trousseaux de cl\xE9s dans mon dos, et mon costume
     ..."
   - "Je vais t\u2019aider : g\xE9n\xE9ralement, on vient chez moi pour se restaurer
     ou dormir, voire les deux."
@@ -7166,7 +7161,7 @@ MonoBehaviour:
   - "Mmm\u2026"
   - "Un enfant sans m\xE9moire, frigorifi\xE9 et affam\xE9, pourrais-je me regarder
     dans un miroir si je le laissais repartir ?"
-  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a\u2026"
+  - "Tu me paieras plus tard, ne t\u2019inqui\xE8te pas pour \xE7a \u2026"
   - "Vraiment\u2009? Merci\u2009!"
   - "J\u2019en ai une qui vient justement de se lib\xE9rer."
   - "Le dernier client est parti il y a peu. Tr\xE8s peu \u2026"
@@ -7175,15 +7170,15 @@ MonoBehaviour:
   - "Tant pis. Par contre, elle n\u2019est pas encore pr\xEAte."
   - "C\u2019est pas grave, je vais attendre \xE0 une table."
   - "J\u2019ai une meilleure id\xE9e. Il y a un tableau dans une chambre, l\xE0-haut."
-  - "Je voudrais que tu me la ram\xE8nes."
+  - "Je voudrais que tu me le ram\xE8nes."
   - "Tu le reconna\xEEtras, c\u2019est celui qui n\u2019est pas termin\xE9."
   - "D\u2019accord !"
   - "Tiens, voil\xE0 la cl\xE9. C\u2019est la premi\xE8re porte \xE0 droite en haut
     de l\u2019escalier."
   - "Qui sait, peut-\xEAtre y retrouveras-tu la m\xE9moire."
-  - "Son occupant n\u2019avait pas son  pareil pour faire remonter les souvenirs chez
+  - "Son occupant n\u2019avait pas son pareil pour faire remonter les souvenirs chez
     ses admirateurs."
-  - Si vous le dites...
+  - Si vous le dites ...
   speakers: 0100000001000000010000000000000000000000010000000000000001000000010000000100000000000000010000000100000000000000010000000100000001000000000000000100000001000000010000000000000001000000000000000100000001000000010000000000000001000000010000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -7470,8 +7465,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Il est gentil, quoiqu\u2019un peu \xE9trange."
-  - "C\u2019est comme si ses  paroles avaient un double sens."
-  - "Et cet endroit, on dirait que\u2026 c\u2019est comme si je..."
+  - "C\u2019est comme si ses paroles avaient un double sens."
+  - "Et cet endroit, on dirait que \u2026 c\u2019est comme si je ..."
   - "Rhaa, pourquoi je ne me souviens de rien\u2009?"
   - "Arr\xEAte de te torturer, l\u2019aubergiste a raison, plus on cherche, moins
     \xE7a vient \u2026"
@@ -7707,6 +7702,101 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &525102214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525102215}
+  - component: {fileID: 525102217}
+  - component: {fileID: 525102216}
+  - component: {fileID: 525102218}
+  m_Layer: 5
+  m_Name: DIA_CINE2_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &525102215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525102214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &525102216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525102214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Je cours en direction de la lumi\xE8re. \xC0 chaque foul\xE9e, le faisceau
+    gagne en intensit\xE9. Je distingue une masse noire au bout de la plage. Soudain,
+    je le vois. Le phare se dresse au sommet d\u2019une falaise, majestueux. Je prends
+    un chemin qui sinue le long du promontoire rocheux. Je suis devant. Il y a une
+    porte. Je tambourine dessus."
+--- !u!222 &525102217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525102214}
+  m_CullTransparentMesh: 0
+--- !u!114 &525102218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525102214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &538785677
 GameObject:
   m_ObjectHideFlags: 0
@@ -8195,7 +8285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &571757223
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8228,7 +8318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8267,7 +8357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &572146801
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,7 +8978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605799906
@@ -9128,7 +9218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &612513945
@@ -9263,7 +9353,7 @@ Transform:
   m_Father: {fileID: 872294016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &637858022
+--- !u!1 &616317911
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9271,125 +9361,95 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 637858023}
-  - component: {fileID: 637858024}
-  m_Layer: 0
-  m_Name: Audio Source Cine Loop 2
+  - component: {fileID: 616317912}
+  - component: {fileID: 616317914}
+  - component: {fileID: 616317913}
+  - component: {fileID: 616317915}
+  m_Layer: 5
+  m_Name: DIA_CINE2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &637858023
-Transform:
+--- !u!224 &616317912
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637858022}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 616317911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 423483961}
-  m_RootOrder: 6
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &637858024
-AudioSource:
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &616317913
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637858022}
+  m_GameObject: {fileID: 616317911}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "J\u2019attends un long moment. Enfin, la porte s\u2019ouvre sur un vieil
+    homme. Je devine que c\u2019est \rle gardien. Il se tient dans l\u2019ombre, derri\xE8re
+    la porte, \xE0 me fixer en silence. \rSoudain, l\u2019homme se retourne et dispara\xEEt.
+    J\u2019entends ses pas dans des escaliers. J\u2019entre et je monte des marches
+    \xE0 sa suite.Je p\xE9n\xE8tre dans une salle de garde illumin\xE9e par une lanterne
+    de cuivre au plafond. Le gardien allumeune bougie puis va la poser sur le rebord
+    d\u2019une fen\xEAtre. Je n\u2019ose pas lui parler. "
+--- !u!222 &616317914
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616317911}
+  m_CullTransparentMesh: 0
+--- !u!114 &616317915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616317911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &638406732
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,7 +9468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &638406733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9441,7 +9501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9488,7 +9548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &638724970
 GameObject:
   m_ObjectHideFlags: 0
@@ -9539,12 +9599,12 @@ GameObject:
   - component: {fileID: 638904420}
   - component: {fileID: 638904422}
   m_Layer: 5
-  m_Name: DIA_CINE1_9
+  m_Name: DIA_CINE1_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &638904419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9557,7 +9617,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 772725521}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9577,7 +9637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9617,7 +9677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!224 &647650965 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3518903162636655660, guid: 3c3929ae3355a1c4fb62dd7250eb73d0,
@@ -10398,7 +10458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - Je comprends enfin... C'est atroce.
+  - Je comprends enfin ... C'est atroce.
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -10424,7 +10484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &675677214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10457,7 +10517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10503,7 +10563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &684485854
 GameObject:
   m_ObjectHideFlags: 0
@@ -10946,7 +11006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &697139019
@@ -11283,7 +11343,7 @@ MonoBehaviour:
   sentences:
   - Je me souviens de tout !
   - "O\xF9 suis-je tomb\xE9, quelle est cette \xEEle ?"
-  - Ils me veulent du  mal.
+  - Ils me veulent du mal.
   - "Je dois me m\xE9fier, surtout de lui, l\u2019aubergiste."
   - "Depuis le d\xE9but, il me m\xE8ne en bateau."
   speakers: 0000000000000000000000000000000000000000
@@ -11710,7 +11770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &738983368
@@ -12044,7 +12104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - Mais, qui c'est ? On dirait la voix d'un homme...
+  - Mais, qui c'est ? On dirait la voix d'un homme ...
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -12081,7 +12141,7 @@ PrefabInstance:
     - target: {fileID: 7856224139017991258, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
@@ -12346,7 +12406,7 @@ PrefabInstance:
     - target: {fileID: 6120460061717066174, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6120460061717066174, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
@@ -12408,7 +12468,7 @@ PrefabInstance:
     - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707, type: 3}
@@ -12443,7 +12503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &772725525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7856224137133207519, guid: 39a9c30995a2ac44e9168c31a9d7f707,
@@ -12475,15 +12535,18 @@ MonoBehaviour:
   - {fileID: 571757226}
   - {fileID: 483329165}
   - {fileID: 675677217}
-  - {fileID: 369368728}
   - {fileID: 1964156206}
   - {fileID: 638904422}
   - {fileID: 350486584}
   cine2Dialogues:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1886865199}
+  - {fileID: 1056913718}
+  - {fileID: 525102218}
+  - {fileID: 616317915}
+  - {fileID: 1745979415}
+  - {fileID: 1809264998}
+  - {fileID: 998359222}
+  - {fileID: 313998865}
   continueButton: {fileID: 772725525}
   skipTextButton: {fileID: 772725522}
   indexParagraphe: 0
@@ -12964,7 +13027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &792026211
@@ -13585,25 +13648,26 @@ MonoBehaviour:
   - Mort !
   - "C\u2019est donc pour \xE7a qu\u2019il est parti sans me payer."
   - "Vous ne comprenez pas, on l\u2019a tu\xE9 !"
-  - "Calme-toi, crier ne le ram\xE8nera pas \xE0 la vie. "
+  - "Calme-toi, crier ne le ram\xE8nera pas \xE0 la vie."
   - "C\u2019est tout ce que \xE7a vous fait ?"
   - "Des morts, j\u2019en ai vu mon lot."
-  - Mais comment pouvez-vous...
+  - Mais comment pouvez-vous ...
   - Un instant ...
   - "C\u2019est \xE7a que vous vouliez que je d\xE9couvre, qu\u2019il est mort ?"
   - "Pourquoi aurais-je voulu \xE7a ?"
-  - Je ne sais pas... Pardon.
+  - Je ne sais pas ... Pardon.
   - "Mais alors, qui l\u2019a tu\xE9 ?"
   - "Je crois que tu as une id\xE9e."
-  - "Je ne sais pas, je suis tellement fatigu\xE9  que je n\u2019arrive plus \xE0
-    r\xE9fl\xE9chir."
+  - "Je ne sais pas, je suis tellement fatigu\xE9 que je n\u2019arrive plus \xE0 r\xE9fl\xE9chir."
   - Calme-toi, tu trembles comme une feuille.
   - "Il te faut un remontant. Que dirais-tu d\u2019un grog ?"
   - Un grog ?
   - Mais pourquoi il me propose un... grog ?
   - "Attends, \xE7a me dit quelque chose."
-  - Un grog... un gro... un...
-  speakers: 0100000000000000010000000000000001000000000000000100000000000000010000000000000000000000000000000100000000000000000000000100000000000000010000000100000000000000000000000000000001000000
+  - 'Un grog... '
+  - Un gro...
+  - Un ...
+  speakers: 01000000000000000100000000000000010000000000000001000000000000000100000000000000000000000000000001000000000000000000000001000000000000000100000001000000000000000000000000000000010000000100000001000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -13933,7 +13997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860522848
@@ -14618,7 +14682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910452362
@@ -14739,6 +14803,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 415406018}
+    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 288051084}
     - target: {fileID: 212292214950922590, guid: be2c5e264f7f4b044933031cafa73de0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14799,26 +14883,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d2643f280fd808a44b18c0b10f17622f, type: 2}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 415406018}
-    - target: {fileID: 6942987955840491483, guid: be2c5e264f7f4b044933031cafa73de0,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 288051084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2c5e264f7f4b044933031cafa73de0, type: 3}
 --- !u!4 &913303958 stripped
@@ -16065,7 +16129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &979269021
@@ -16434,6 +16498,102 @@ Transform:
   m_Father: {fileID: 406677777}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &998359218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998359219}
+  - component: {fileID: 998359221}
+  - component: {fileID: 998359220}
+  - component: {fileID: 998359222}
+  m_Layer: 5
+  m_Name: DIA_CINE2_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &998359219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998359218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &998359220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998359218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Le gardien n\u2019est plus l\xE0. J\u2019entends la porte du phare qui
+    grince, puis des pas dans les escaliers. Le gardien r\xE9appara\xEEt, accompagn\xE9.
+    Mes paupi\xE8res sont si lourdes que j\u2019ai du mal \xE0 garder les yeux ouverts.
+    L\u2019autre homme s\u2019approche. Je me concentre, mais je n\u2019arrive pas
+    \xE0 voir son visage. C\u2019est comme je fixais l\u2019ombre \rd\u2019un homme
+    sur le sol. Il m\u2019observe, \xE0 c\xF4t\xE9 de moi."
+--- !u!222 &998359221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998359218}
+  m_CullTransparentMesh: 0
+--- !u!114 &998359222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998359218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1001 &1001305190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16628,6 +16788,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8328766830209890774, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: interElementTab.Array.data[0]
@@ -16713,11 +16878,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa3760ac9ee0e294bbb6af9718ca6774, type: 2}
-    - target: {fileID: 8328766829311563190, guid: 11afd41527115ad4ba0f50ce9b717665,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8328766829543993705, guid: 11afd41527115ad4ba0f50ce9b717665,
         type: 3}
       propertyPath: m_IsActive
@@ -17490,6 +17650,102 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1056913714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056913715}
+  - component: {fileID: 1056913717}
+  - component: {fileID: 1056913716}
+  - component: {fileID: 1056913718}
+  m_Layer: 5
+  m_Name: DIA_CINE2_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1056913715
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056913714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1056913716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056913714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Les larmes me montent aux yeux. Non, ne pleure pas. Je me calme. Je tremble
+    de froid. Je dois s\xE9cher mes v\xEAtements, me r\xE9chauffer.\r\nJe choisis
+    un c\xF4t\xE9 et me mets en route. Je marche des kilom\xE8tres sur la plage immacul\xE9e.
+    Je perds espoir lorsqu\u2019une lumi\xE8re d\xE9chire la nuit. Qu\u2019est-ce
+    que c\u2019\xE9tait ? Une \xE9toile filante ? La lumi\xE8re r\xE9appara\xEEt.
+    C\u2019est un faisceau qui  d\xE9crit une parabole. Un phare, bien s\xFBr !"
+--- !u!222 &1056913717
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056913714}
+  m_CullTransparentMesh: 0
+--- !u!114 &1056913718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056913714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &1061324136
 GameObject:
   m_ObjectHideFlags: 0
@@ -17536,13 +17792,13 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Par tous les kamis de l\u2019oc\xE9an, o\xF9 va-t-il trouver tout \xE7a\u2009?"
-  - "On dirait que ce  tableau est tout droit sorti d\u2019un cauchemar."
-  - "Il me rend mal \xE0 l\u2019aise. Quelque chose en \xE9mane de\u2026 terrible."
+  - "On dirait que ce tableau est tout droit sorti d\u2019un cauchemar."
+  - "Il me rend mal \xE0 l\u2019aise. Quelque chose en \xE9mane de \u2026 terrible."
   - "Et pourtant, je dois admettre qu\u2019il a quelque chose d\u2019intrigant."
   - "C\u2019est peut-\xEAtre ce qu\u2019on nomme la vision de l\u2019artiste ?"
   - "Ne tra\xEEnons pas ici et rapportons le tableau \xE0 l\u2019aubergiste."
-  - Je me demande bien  pourquoi il le veut.
-  - "\xC0 moins que le peintre ait pay\xE9 la chambre avec..."
+  - Je me demande bien pourquoi il le veut.
+  - "\xC0 moins que le peintre ait pay\xE9 la chambre avec ..."
   speakers: 0000000000000000000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -18705,7 +18961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159886545
@@ -19226,7 +19482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179070677
@@ -19722,7 +19978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - On dirait lE cri d'un homme tombant dans le vide...
+  - On dirait le cri d'un homme tombant dans le vide ...
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -19776,8 +20032,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Tout para\xEEt si \xE9trange."
-  - "Qu\u2019est-ce que je fais l\xE0 ? Comment suis-je arriv\xE9 ?"
-  - "Tout est confus. C\u2019est comme si\u2026 non, rien."
+  - "Qu\u2019est-ce que je fais l\xE0 ? Comment suis-je arriv\xE9 ici ?"
+  - "Tout est confus. C\u2019est comme si \u2026 non, rien."
   - "Et si je lui demandais\u2009? Il doit savoir quelque chose."
   speakers: 00000000000000000000000000000000
   typingSpeed: 0.02
@@ -20631,7 +20887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1249026835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20664,7 +20920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20709,7 +20965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &1258549544
 GameObject:
   m_ObjectHideFlags: 0
@@ -20859,7 +21115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278383682
@@ -21606,6 +21862,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1439177732}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 872294015}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 553037974}
+    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1751309771}
     - target: {fileID: 6628122068245902268, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21661,36 +21947,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1439177732}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 872294015}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 553037974}
-    - target: {fileID: 4130809664289006905, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 1751309771}
     - target: {fileID: 6628122068245902259, guid: ef9d1a9ca29a3a446a365a6e0640d1fe,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21803,6 +22059,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 730449125}
+    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1048848087}
     - target: {fileID: 9062648554905411482, guid: a32528bb7371b674a8086f9b9709104b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21863,26 +22139,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b67cb5ec555df144496fed3f14f0c33e, type: 2}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 730449125}
-    - target: {fileID: 2264390044583397663, guid: a32528bb7371b674a8086f9b9709104b,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1048848087}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a32528bb7371b674a8086f9b9709104b, type: 3}
 --- !u!4 &1325819362 stripped
@@ -22076,7 +22332,8 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "\xC9trange, comme d\xE9co. Pas tr\xE8s accueillant pour une auberge."
-  - "Dans quelle chambre, il a dit \u2009? Ah oui, la premi\xE8re porte \xE0 droite\u2026"
+  - "Dans quelle chambre, il a dit \u2009? Ah oui, la premi\xE8re porte \xE0 droite
+    \u2026"
   speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -22596,10 +22853,10 @@ MonoBehaviour:
   currentTextDisplay: {fileID: 1969325701}
   sentences:
   - "Je comprends pourquoi j\u2019ai perdu la m\xE9moire !"
-  - "Comment ai-je pu survivre ?  C\u2019est un miracle."
+  - "Comment ai-je pu survivre ? C\u2019est un miracle."
   - Attends ...
   - "Et les autres, les membres de l\u2019\xE9quipage ?"
-  - "Ils sont... Non, ce n\u2019est pas possible."
+  - "Ils sont ... Non, ce n\u2019est pas possible."
   - Il doit y avoir des survivants. Je dois les retrouver !
   speakers: 000000000000000000000000000000000000000000000000
   typingSpeed: 0.02
@@ -22913,7 +23170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - J'ai un mauvais pressentiment. Je ... ne veut pas y aller !
+  - J'ai un mauvais pressentiment. Je ... ne veux pas y aller !
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -23076,7 +23333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418187294
@@ -23227,7 +23484,7 @@ MonoBehaviour:
   sentences:
   - C'est donc dans cette direction qu'il pointait ?
   - "Le dossier indique que l'homme avait la r\xE9tine brul\xE9e par une lumi\xE8re
-    vive..."
+    vive ..."
   speakers: 0000000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -23390,7 +23647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439177735
@@ -24480,7 +24737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461529506
@@ -24886,7 +25143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Il me manque encore des indices pour pouvoir compl\xE9ter le tableau..."
+  - "Il me manque encore des indices pour pouvoir compl\xE9ter le tableau ..."
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -26241,8 +26498,8 @@ MonoBehaviour:
   - Il est gentil, mais comment je fais pour le lui trouver ?
   - "Plus le temps passe, moins je l\u2019appr\xE9cie."
   - "On dirait qu\u2019il ne veut pas que je quitte l\u2019auberge."
-  - "Les miens ont peut-\xEAtre besoin de moi, et plus le temps passe, plus..."
-  - "Attends... Et si l\u2019aubergiste avait raison ?"
+  - "Les miens ont peut-\xEAtre besoin de moi, et plus le temps passe, plus ..."
+  - "Attends ... Et si l\u2019aubergiste avait raison ?"
   - "Si c\u2019\xE9tait ma faute, s\u2019ils m\u2019en voulaient ?"
   - "J\u2019aurais d\xFB \xE9viter la vague ..."
   - "N\u2019y pense plus, Seiji."
@@ -26762,6 +27019,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 28680430}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1176417519}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 325110212}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1098848848}
+    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 238372442}
     - target: {fileID: 8182740224798173849, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26817,41 +27109,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 28680430}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1176417519}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 325110212}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1098848848}
-    - target: {fileID: 1379977831750974492, guid: 1616f8f78c81da84bbfd2c966c1a5280,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 238372442}
     - target: {fileID: 8182740224798173846, guid: 1616f8f78c81da84bbfd2c966c1a5280,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28048,7 +28305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690092671
@@ -28169,6 +28426,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 612285268}
+    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 2135817500}
     - target: {fileID: 3905255526248652333, guid: 8f3ba22f025b4c447802ab317a90a305,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28229,26 +28506,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3efe8781dddb5124c955a16930d253a2, type: 2}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 612285268}
-    - target: {fileID: 6096190896957917352, guid: 8f3ba22f025b4c447802ab317a90a305,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 2135817500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3ba22f025b4c447802ab317a90a305, type: 3}
 --- !u!4 &1691770307 stripped
@@ -28460,7 +28717,7 @@ MonoBehaviour:
   - "Tu en fais une dr\xF4le de t\xEAte."
   - "Je me souviens ! J\u2019\xE9tais sur un bateau, on a \xE9t\xE9 pris dans une
     temp\xEAte."
-  - "Le  bateau a sombr\xE9..."
+  - "Le bateau a sombr\xE9 ..."
   - "Il faut que j\u2019aille chercher les autres, les survivants."
   - Maintenant ? Mais il fait nuit noire !
   - "Et la c\xF4te est dangereuse surtout quand on ne la conna\xEEt pas."
@@ -28468,12 +28725,12 @@ MonoBehaviour:
     pu \xE9viter la vague."
   - "C\u2019est de ma faute si le bateau a chavir\xE9 !"
   - "Si c\u2019est vrai, tu crois qu\u2019ils seront ravis de te voir ?"
-  - "Mais... Je n\u2019ai pas le choix, je dois r\xE9parer mon erreur."
+  - "Maisv... Je n\u2019ai pas le choix, je dois r\xE9parer mon erreur."
   - "Tu ne peux pas r\xE9parer le pass\xE9. Ce qui est fait est fait."
   - "Mais je ne peux pas rester les bras crois\xE9s !"
   - "J\u2019ai leur sort sur ma conscience ..."
   - "La conscience, en voil\xE0 une plume qui p\xE8se une tonne."
-  - "Ton cerveau  est embrouill\xE9 par la fatigue."
+  - "Ton cerveau est embrouill\xE9 par la fatigue."
   - "Attends demain, tu y verras clair apr\xE8s une nuit de sommeil."
   - "Peut-\xEAtre ... Vous avez raison."
   - "Toujours. D\u2019autant que j\u2019ai encore besoin de toi."
@@ -28481,8 +28738,8 @@ MonoBehaviour:
   - Un homme assez curieux, tout comme toi.
   - Comme moi ?
   - "Oui, il passait tout son temps \xE0 se poser des questions, toujours en qu\xEAte
-    de  r\xE9ponses."
-  - "Avant de nous quitter, cet homme \xE9tait \xE0 la recherche de quelque  chose,
+    de r\xE9ponses."
+  - "Avant de nous quitter, cet homme \xE9tait \xE0 la recherche de quelque chose,
     quelque chose de tr\xE8s important."
   - "Cette chose, je voudrais que tu me le ram\xE8nes."
   - "D\u2019accord, qu\u2019est ce que c\u2019est ?"
@@ -29142,6 +29399,102 @@ Transform:
   m_Father: {fileID: 406677777}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745979411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745979412}
+  - component: {fileID: 1745979414}
+  - component: {fileID: 1745979413}
+  - component: {fileID: 1745979415}
+  m_Layer: 5
+  m_Name: DIA_CINE2_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1745979412
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745979411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1745979413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745979411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Une quinte de toux me secoue. Le gardien me d\xE9signe une chaise. Je me
+    laisse tomber, \xE0 bout de force. Le gardien emprunte une porte qui m\xE8ne \xE0
+    une autre salle. J\u2019entends des raclements, puis le gardien revient. Il me
+    tend une tasse fumante. Je la prends. \xC7a sent le lait et... le rhum. Un grog
+    ! Le liquide me br\xFBle le palais, tant pis. Aussit\xF4t, une vague de chaleur
+    se propage en moi. Le gardien me fixe. "
+--- !u!222 &1745979414
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745979411}
+  m_CullTransparentMesh: 0
+--- !u!114 &1745979415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745979411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &1746426517
 GameObject:
   m_ObjectHideFlags: 0
@@ -29746,6 +30099,101 @@ Transform:
   m_Father: {fileID: 406677777}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1809264994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809264995}
+  - component: {fileID: 1809264997}
+  - component: {fileID: 1809264996}
+  - component: {fileID: 1809264998}
+  m_Layer: 5
+  m_Name: DIA_CINE2_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1809264995
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809264994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1809264996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809264994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Je lui souris en retour. \nPourquoi j\u2019ai l\u2019impression qu\u2019il
+    n\u2019a pas de bouche ? Je ne distingue que ses yeux qui brillent. Je veux le
+    remercier, mais ma bouche est p\xE2teuse. Mes paupi\xE8res sont lourdes. Le grog
+    me plonge dans une douce \rtorpeur. Des coups me r\xE9veillent en sursaut. Quelqu\u2019un
+    tambourine en bas. "
+--- !u!222 &1809264997
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809264994}
+  m_CullTransparentMesh: 0
+--- !u!114 &1809264998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809264994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &1852059023
 GameObject:
   m_ObjectHideFlags: 0
@@ -30048,6 +30496,103 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1886865195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1886865196}
+  - component: {fileID: 1886865198}
+  - component: {fileID: 1886865197}
+  - component: {fileID: 1886865199}
+  m_Layer: 5
+  m_Name: DIA_CINE2_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1886865196
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886865195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1587, y: 788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1886865197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886865195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.5
+  m_Text: "Quel est ce bruit, calme et r\xE9gulier ? Je me sens lourd. Une brise me
+    caresse le visage.J\u2019ouvre les yeux. Une nu\xE9e d\u2019\xE9toiles constellent
+    le ciel. La lune brille tellement que je voie distinctement autour de moi. Je
+    suis allong\xE9 sur du sable. Face \xE0 moi, la mer s\u2019\xE9tend jusqu\u2019\xE0
+    l\u2019horizon. Sa surface r\xE9fl\xE9chit la nuit tel un miroir. Qu\u2019est-ce
+    que je fais l\xE0 ? Depuis combien de temps ? Je me rel\xE8ve et hurle : \"Eh,
+    oh ! Y\u2019a quelqu\u2019un ?\" Le silence. Je suis seul sur la plage."
+--- !u!222 &1886865198
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886865195}
+  m_CullTransparentMesh: 0
+--- !u!114 &1886865199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886865195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 5
 --- !u!1 &1888133748
 GameObject:
   m_ObjectHideFlags: 0
@@ -30945,6 +31490,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: planeLightTab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 2046276385}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1277021063}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: planeLightTab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1688898592}
+    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
+        type: 3}
+      propertyPath: interElementTab.Array.data[2]
+      value: 
+      objectReference: {fileID: 323217246}
     - target: {fileID: 7146851431278495602, guid: a21b010f42e6ddc4a87ab266766853c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31000,36 +31575,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: planeLightTab.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: interElementTab.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: interElementTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 2046276385}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: interElementTab.Array.data[1]
-      value: 
-      objectReference: {fileID: 1277021063}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: planeLightTab.Array.data[0]
-      value: 
-      objectReference: {fileID: 1688898592}
-    - target: {fileID: 110043407817363959, guid: a21b010f42e6ddc4a87ab266766853c8,
-        type: 3}
-      propertyPath: interElementTab.Array.data[2]
-      value: 
-      objectReference: {fileID: 323217246}
     - target: {fileID: 7146851431278495613, guid: a21b010f42e6ddc4a87ab266766853c8,
         type: 3}
       propertyPath: m_Sprite
@@ -31087,7 +31632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Tenez, c\u2019est bien le tableau que vous vouliez ?"
+  - "Tenez, c\u2019est bien la toile que vous vouliez ?"
   - Parfait. Elle est belle, pas vrai ?
   - "Euh \u2026"
   - "C\u2019est court comme analyse artistique, d\xE9veloppe un peu."
@@ -31096,8 +31641,8 @@ MonoBehaviour:
   - "Au d\xE9but, j\u2019ai senti comme une sensation de rejet."
   - "Une hostilit\xE9 qui se d\xE9gageait et me mettait mal \xE0 l\u2019aise."
   - Continue.
-  - "Mais apr\xE8s, la peinture a eu comme un effet... hypnotisant."
-  - "C\u2019est \xE7a. Plus je  la regardais, plus je me sentais comme attir\xE9 \xE0
+  - "Mais apr\xE8s, la peinture a eu comme un effet ... hypnotisant."
+  - "C\u2019est \xE7a. Plus je la regardais, plus je me sentais comme attir\xE9 \xE0
     l\u2019int\xE9rieur."
   - Plus je la regardais, plus je me sentais prisonnier.
   - "C\u2019est comme si le peintre voulait nous dire quelque chose ... quelque chose
@@ -31109,19 +31654,21 @@ MonoBehaviour:
   - "Voil\xE0 qui est mieux\u2009! Tu pourrais faire critique d\u2019art."
   - Quoi ?
   - Peu importe, tu as vu juste.
-  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si...
+  - "C\u2019est pour \xE7a que je tiens tant \xE0 cette \u0153uvre. Elle est si ...
     puissante."
-  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes."
+  - "Euh, certainement. Au fait, je peux vous demander o\xF9 nous sommes ?"
   - "Je veux dire l\u2019endroit, pas votre auberge. Je me souviens plus comment je
     suis arriv\xE9 ici."
   - "Bien s\xFBr. Je suis en quelque sorte le gardien de l\u2019\xEEle."
-  - "Rien ne m\u2019\xE9chappe, car  tout le monde passe par mon auberge."
+  - "Rien ne m\u2019\xE9chappe, car tout le monde passe par mon auberge."
   - "Ou, si tu pr\xE9f\xE8res, toi qui sembles \xEAtre un marin, je guette et vois
     tout ce qui se passe du haut de ma vigie ..."
   - Vigie ? Mais pourquoi il me parle de vigie ?
-  - 'Vigie, vigie ... vig ... '
+  - Vigie, ...
+  - Vigie ...
+  - Vig ...
   - "Qu\u2019est-ce qui m\u2019arrive, je me sens bizarre..."
-  speakers: 00000000010000000000000001000000000000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000010000000000000001000000010000000000000000000000010000000100000001000000000000000100000000000000
+  speakers: 000000000100000000000000010000000000000001000000000000000000000001000000000000000000000000000000000000000100000000000000000000000100000000000000010000000100000000000000000000000100000001000000010000000000000001000000010000000100000000000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
   blockScreen: {fileID: 929332794}
@@ -31575,12 +32122,12 @@ GameObject:
   - component: {fileID: 1964156204}
   - component: {fileID: 1964156206}
   m_Layer: 5
-  m_Name: DIA_CINE1_8
+  m_Name: DIA_CINE1_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1964156203
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31593,7 +32140,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 772725521}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31613,7 +32160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -31659,7 +32206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeRate: 3
+  FadeRate: 5
 --- !u!1 &1967463380
 GameObject:
   m_ObjectHideFlags: 0
@@ -32374,7 +32921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTextDisplay: {fileID: 1969325701}
   sentences:
-  - "Il me manque encore des indices pour r\xE9soudre l'enqu\xEAte..."
+  - "Il me manque encore des indices pour r\xE9soudre l'enqu\xEAte ..."
   speakers: 00000000
   typingSpeed: 0.02
   continueButton: {fileID: 1463298200}
@@ -32542,6 +33089,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4952377497877467514, guid: 3696556b79564d54989356eeac9e1ebe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2743296353084836916, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32623,11 +33175,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: c5ef5da3965730649b0275d868639f7d, type: 2}
     - target: {fileID: 4952377496327316187, guid: 3696556b79564d54989356eeac9e1ebe,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4952377497877467514, guid: 3696556b79564d54989356eeac9e1ebe,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -33160,7 +33707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046276388
@@ -33499,7 +34046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0348125, y: 0}
   m_AnchorMax: {x: 0.156, y: 0}
-  m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
+  m_AnchoredPosition: {x: 1.6999512, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067105221
