@@ -286,7 +286,7 @@ public class GameManager : MonoBehaviour
         cinematiqueFade.FadeIn();
         SoundManager.Instance.PlayFlashBackOpening();
         CinematiqueGUI.SetActive(true);
-        CinematiqueGUI.GetComponent<CinematiqueScript>().LaunchCinematique();
+        CinematiqueGUI.GetComponent<DialogueCinematique>().LaunchCinematique();
     }
 
     public void EndCinematique(int idCinematique)
@@ -304,6 +304,7 @@ public class GameManager : MonoBehaviour
         else
             Debug.Log("erreur en fin de cinématique");
         cinematiqueFade.FadeOut();
+        CinematiqueGUI.SetActive(false);
     }
 
     public void MoveToFinalScene()

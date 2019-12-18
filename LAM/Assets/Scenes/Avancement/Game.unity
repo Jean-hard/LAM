@@ -259,6 +259,97 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: -0.15499878}
   m_SizeDelta: {x: 1, y: -1.3999996}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &23959702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23959703}
+  - component: {fileID: 23959706}
+  - component: {fileID: 23959705}
+  - component: {fileID: 23959704}
+  m_Layer: 5
+  m_Name: DIA_CINE2_1_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &23959703
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23959702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &23959704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23959702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
+--- !u!114 &23959705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23959702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la tierce"
+--- !u!222 &23959706
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23959702}
+  m_CullTransparentMesh: 0
 --- !u!1 &28680430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,7 +2532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164461585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 163.10336, y: 58.96456, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1222373737}
@@ -2458,8 +2549,6 @@ Transform:
   - {fileID: 111247737}
   - {fileID: 1061324137}
   - {fileID: 1358758268}
-  - {fileID: 1210756715}
-  - {fileID: 218830440}
   - {fileID: 1421762421}
   - {fileID: 769658979}
   - {fileID: 1206570648}
@@ -2900,7 +2989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Continuer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d17241a8e3e8b3b4d833d12f0063374a, type: 2}
   m_sharedMaterial: {fileID: -7210695240279436049, guid: d17241a8e3e8b3b4d833d12f0063374a,
@@ -3035,114 +3124,6 @@ Transform:
   m_Father: {fileID: 1009658652}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &218830439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 218830440}
-  - component: {fileID: 218830441}
-  m_Layer: 0
-  m_Name: DIA_CINE_02
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &218830440
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218830439}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &218830441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218830439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 830971d49e6b15649b018640add52cac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTextDisplay: {fileID: 772725526}
-  sentences:
-  - "Quel est ce bruit calme et r\xE9gulier ? Ou-suis-je ? Je me sens lourd."
-  - "Je peux \xE0 peine remuer les bras, comme si mes v\xEAtements \xE9taient coul\xE9s
-    dans la pierre."
-  - "Je suis allong\xE9. Une brise chuchotte \xE0 mes oreilles et caresse d\xE9licatement
-    mon visage."
-  - "J\u2019ouvre les yeux. Une multitude d'\xE9toiles constelle une nuit noire."
-  - "Un ciel est si \xE9toil\xE9 que je peux voir distinctement autour de moi."
-  - "Je tourne la t\xEAte. Du sable \xE0 perte de vue. Une plage."
-  - "Je m'asseois. Devant moi, la mer s'\xE9tend sans obstacles jusqu'\xE0 l'horizon."
-  - "La surface de l'eau refl\xE8te le ciel tel un miroir."
-  - "Mon esprit est embrouill\xE9. Comment suis-je arriv\xE9 l\xE0 ? Depuis combien
-    de temps suis-je ici ?"
-  - "Je panique, regarde \xE0 droite, \xE0 gauche en qu\xEAte d'un indice. Je me rel\xE8ve,
-    les jambes tremblantes."
-  - 'Je crie : "He oh ! Y''a quelqu''un?" Personne.'
-  - Les larmes me montent aux yeux.
-  - Non, ne pleure pas, calme toi. Concentre toi sur maintenant.
-  - "Le calme revient. Je dois trouver un refuge, me s\xE9cher. Me r\xE9chauffer."
-  - Allez, en route !
-  - Je me mets en route. Je marche et longe la plage un long moment sans croiser de
-    trace humaine.
-  - "Je perds espoir quand tout \xE0 coup, je vois un rayon de lumi\xE8re transpercer
-    fugacement la nuit."
-  - "Qu'est-ce que c'\xE9tait, une \xE9toile filante ?"
-  - "Je continue quand le faisceau r\xE9apparait. Il d\xE9crit une parabole, avant
-    de disparaitre \xE0 nouveau."
-  - "Bien s\xFBr, un phare !"
-  - "Je souffle de soulagement. L'\xEEle est habit\xE9e !"
-  - "J'acc\xE9l\xE8re et cours en direction de la lumi\xE8re. Plus je me rapproche,
-    plus le rayon se fait puissant."
-  - "Le phare ne doit plus \xEAtre loin."
-  - "Soudain, un b\xE2timent apparait au sommet d'une falaise. Le phare se dresse
-    dans la nuit, majestueux."
-  - "J'acc\xE9l\xE8re, tombe et me rel\xE8ve. Enfin, je l'atteins."
-  - 'Il y a une porte. Je la rejoins et tambourine dessus. '
-  - "J'attends longtemps sans r\xE9ponse, quand la porte s'ouvre sur un homme."
-  - "Ag\xE9, il porte un caban d'officier, un pantalon marron et de grandes bottes
-    noires."
-  - "Une \xE9paisse barbe blanche lui mange le visage tandis qu'une casquette lui
-    masque son cr\xE2ne chauve."
-  - "Sans un mot, il m'invite \xE0 entrer. Il a l'air triste."
-  - "A l'int\xE9rieur, le vieil homme ouvre une fen\xEAtre et pose une bougie sur
-    le rebord."
-  - "Il y reste un moment, immobile, puis quitte la pi\xE8ce. J'en profite pour examiner
-    les lieux."
-  - "La pi\xE8ce est fonctionnelle et les murs nus,  si ce n'est quelques masques."
-  - "Le mobilier est constitu\xE9 de meuble et d\u2019ustensile pour cuisiner. Il
-    descend et retourne \xE0 la fen\xEAtre."
-  - "Mes yeux se ferment, je sens quelque chose gliss\xE9 dans ma poche."
-  - "Soudain, quelqu\u2019un frappe \xE0 la porte. Le gardien ouvre \xE0 un homme
-    et me pointe du doigt en souriant."
-  - "Il va m\u2019aider. J\u2019attrape sa main et regarde le gardien du phare agiter
-    la main doucement."
-  - "Dans ma poche, un mot : \u201CPartir\u201D."
-  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 772725525}
-  blockScreen: {fileID: 772725524}
-  textBox: {fileID: 772725523}
-  skipTextButton: {fileID: 772725522}
-  speakerName: {fileID: 0}
-  cinematiqueScript: {fileID: 772725521}
-  currenCinematqueID: 1
 --- !u!1 &222556022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,7 +4170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &329525757
 MonoBehaviour:
@@ -8912,6 +8893,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &647696631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647696632}
+  - component: {fileID: 647696634}
+  - component: {fileID: 647696633}
+  - component: {fileID: 647696635}
+  m_Layer: 5
+  m_Name: DIA_CINE1_2_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &647696632
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647696631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &647696633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647696631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la ta gueule"
+--- !u!222 &647696634
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647696631}
+  m_CullTransparentMesh: 0
+--- !u!114 &647696635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647696631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
 --- !u!1 &649985034
 GameObject:
   m_ObjectHideFlags: 0
@@ -9104,7 +9176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.99862665, b: 0.7877358, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.8537736, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9658,7 +9730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &674823544
 MonoBehaviour:
@@ -10127,6 +10199,97 @@ RectTransform:
   m_AnchoredPosition: {x: 1.7000122, y: 106.600006}
   m_SizeDelta: {x: -0.19999695, y: 213.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &696596089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696596090}
+  - component: {fileID: 696596092}
+  - component: {fileID: 696596091}
+  - component: {fileID: 696596093}
+  m_Layer: 5
+  m_Name: DIA_CINE1_4_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &696596090
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696596089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &696596091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696596089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est "
+--- !u!222 &696596092
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696596089}
+  m_CullTransparentMesh: 0
+--- !u!114 &696596093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696596089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
 --- !u!1001 &697139019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11242,7 +11405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &772725520
 PrefabInstance:
@@ -11255,6 +11418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CINEMATIQUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139017991258, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856224139017991262, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
@@ -11370,26 +11538,216 @@ PrefabInstance:
         type: 3}
       propertyPath: cinematiqueDiaTab.Array.data[0]
       value: 
-      objectReference: {fileID: 1210756716}
+      objectReference: {fileID: 0}
     - target: {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707,
         type: 3}
       propertyPath: cinematiqueDiaTab.Array.data[1]
       value: 
-      objectReference: {fileID: 218830441}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242557, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207519, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.4500122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.9000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.105000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6999512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207518, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.80087507
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.5400085
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -2.600006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.012562501
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2.9000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.123518534
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242556, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.21100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137133207517, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772725528}
+    - target: {fileID: 7856224137133207517, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224137621242531, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772725528}
+    - target: {fileID: 7856224137621242531, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224139110448038, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_text
+      value: Continuer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856224138834447848, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_text
+      value: "Passer la cin\xE9matique"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555889180755320185, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351955924505892811, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351955924505892811, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351955924505892811, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4351955924505892811, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120460061717066174, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Text
+      value: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la tierce"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024902263282928622, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39a9c30995a2ac44e9168c31a9d7f707, type: 3}
---- !u!114 &772725521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7856224139017991261, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+--- !u!224 &772725521 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8555889180755320185, guid: 39a9c30995a2ac44e9168c31a9d7f707,
     type: 3}
   m_PrefabInstance: {fileID: 772725520}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772725527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 794ef5bae663356458caa475ea1f2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &772725522 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7856224137621242557, guid: 39a9c30995a2ac44e9168c31a9d7f707,
@@ -11398,40 +11756,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &772725523 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7856224137332381162, guid: 39a9c30995a2ac44e9168c31a9d7f707,
+  m_CorrespondingSourceObject: {fileID: 6120460061717066174, guid: 39a9c30995a2ac44e9168c31a9d7f707,
     type: 3}
   m_PrefabInstance: {fileID: 772725520}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &772725524 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7856224138047187105, guid: 39a9c30995a2ac44e9168c31a9d7f707,
-    type: 3}
-  m_PrefabInstance: {fileID: 772725520}
+--- !u!114 &772725524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772725523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
 --- !u!1 &772725525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7856224137133207519, guid: 39a9c30995a2ac44e9168c31a9d7f707,
     type: 3}
   m_PrefabInstance: {fileID: 772725520}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &772725526 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7856224138460807379, guid: 39a9c30995a2ac44e9168c31a9d7f707,
-    type: 3}
-  m_PrefabInstance: {fileID: 772725520}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &772725527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7856224139017991258, guid: 39a9c30995a2ac44e9168c31a9d7f707,
     type: 3}
   m_PrefabInstance: {fileID: 772725520}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &772725528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772725527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830971d49e6b15649b018640add52cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cine1Dialogues:
+  - {fileID: 772725524}
+  - {fileID: 647696635}
+  - {fileID: 1339356371}
+  - {fileID: 696596093}
+  cine2Dialogues:
+  - {fileID: 23959704}
+  - {fileID: 2140135271}
+  - {fileID: 1783670911}
+  - {fileID: 989875095}
+  continueButton: {fileID: 772725525}
+  skipTextButton: {fileID: 772725522}
+  indexParagraphe: 0
+  timeBeforeStartDialogue: 4
+  timeBeforeNextDialogue: 2
 --- !u!1001 &776457170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12582,7 +12962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &842305958
 MonoBehaviour:
@@ -15131,6 +15511,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &989875093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989875094}
+  - component: {fileID: 989875097}
+  - component: {fileID: 989875096}
+  - component: {fileID: 989875095}
+  m_Layer: 5
+  m_Name: DIA_CINE2_4_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &989875094
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989875093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &989875095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989875093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
+--- !u!114 &989875096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989875093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est "
+--- !u!222 &989875097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989875093}
+  m_CullTransparentMesh: 0
 --- !u!1 &992392975
 GameObject:
   m_ObjectHideFlags: 0
@@ -18649,7 +19120,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1206570649
 MonoBehaviour:
@@ -18673,140 +19144,6 @@ MonoBehaviour:
   textBox: {fileID: 2009367186}
   skipTextButton: {fileID: 1147074952}
   speakerName: {fileID: 655325357}
---- !u!1 &1210756714
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1210756715}
-  - component: {fileID: 1210756716}
-  m_Layer: 0
-  m_Name: DIA_CINE_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1210756715
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210756714}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 164461586}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1210756716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210756714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 830971d49e6b15649b018640add52cac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTextDisplay: {fileID: 772725526}
-  sentences:
-  - "J\u2019entends le tonnerre r\xE9sonner. La temp\xEAte approche."
-  - Pour le moment, c'est une simple averse... les gouttelettes ruissellent sur mon
-    visage.
-  - "C\u2019est agr\xE9able."
-  - "L\u2019\xE9quipage se pr\xE9pare, nous avons l\u2019habitude. Les changements
-    m\xE9t\xE9o sont fr\xE9quentes dans cette mer."
-  - "Depuis sa cabine, le capitaine veut les pr\xE9visions m\xE9t\xE9o. Pour une raison
-    inconnue, l\u2019appel radio ne passe pas."
-  - "\xC7a n\u2019a pas l\u2019air de l\u2019inqui\xE9ter et semble confiant quant
-    \xE0 sa capacit\xE9 de manoeuvrer."
-  - Il me regarde, me dit de faire de mon mieux pour aider les autres.
-  - Je veux me rendre utile !
-  - "Je cours sur le  pont, je demande au ma\xEEtre d\u2019\xE9quipage comment participer
-    aux t\xE2ches."
-  - "C\u2019est ce qu\u2019aurait fait mon p\xE8re."
-  - "La temp\xEAte commence \xE0 se faire sentir. Le bateau tangue de plus en plus."
-  - "Les vagues puissantes cognent la coque. L\u2019orage gronde au-dessus de nos
-    t\xEAtes."
-  - "Des \xE9clairs aveuglants d\xE9chirent les nuages."
-  - "En un rien de temps, le ciel passe d\u2019un gris paisible \xE0 un noir de t\xE9n\xE8bres.
-    On dirait que les \xE9l\xE9ments s'unissent contre nous."
-  - "Malgr\xE9 la violence de la houle, l\u2019\xE9quipage reste calme. Seul le rythme
-    de leur manoeuvre trahit la mise en alerte."
-  - "Le cambusier m\u2019a donn\xE9 pour t\xE2che de faire l'inventaire des vivres,
-    dans les soutes."
-  - "Je ne veux pas ... Je veux aider l'\xE9quipage, pas \xEAtre prot\xE9g\xE9."
-  - "Je d\xE9cide de retourner sur le pont."
-  - "Je n\u2019ai jamais vu \xE7a. La mer se d\xE9chaine autour de nous."
-  - "Des murs d'eau bondissent vers le ciel, comme pour prendre leur \xE9lan avant
-    de se jeter sur le bateau."
-  - "La pluie me gifle le visage. Le n\u2019entends plus rien, tout n\u2019est que
-    vacarme."
-  - Le tonnerre claque, les vagues rugissent avant de frapper la coque avec fureur.
-  - "Le bateau tangue trop, beaucoup trop. Je me cogne contre tout, comme une bille
-    sur une pente savonn\xE9e."
-  - "M\xEAme les marins les plus agu\xE9rris peinent \xE0 garder l\u2019\xE9quilibre."
-  - "L'un d'eux crie \xE0 son compagnon que \xE7a y est, c'est elle, la temp\xEAte
-    du si\xE8cle. Il n'a pas le temps de terminer."
-  - "Tout \xE0 coup, je me sens l\xE9viter. Je flotte ?"
-  - "Non, c'est le bateau qui vole au dessus des flots, jet\xE9 comme un f\xE9tu de
-    paille."
-  - "On flotte en apesanteur des secondes qui durent une \xE9ternit\xE9. Puis d'un
-    coup, on r\xE9att\xE9rit."
-  - "Le choc est violent. Je tombe et roule jusqu'au bastinguage, \xE0 deux doigts
-    de basculer par dessus bord."
-  - Je m'accorche comme je peux. Enfin, le bateau retrouve son assiette.
-  - "Je vois le capitaine sortir de la cabine, effar\xE9. Je lis dans ses yeux la
-    peur."
-  - "Soudain, une vague nous percute de plein fouet. J'ai \xE0 peine le temps de m'accrocher
-    \xE0 une corde qu'elle noie le pont."
-  - "Quand l'eau s'\xE9coule en ressac, le capitaine a disparu, emport\xE9. Je l\xE8ve
-    les yeux vers la cabine."
-  - "Personne n\u2019est aux commandes!  Nous sommes perdus."
-  - "Je me rel\xE8ve p\xE9niblement et me dirige vers la cabine."
-  - "J'avance en me tenant \xE0 tout ce que je peux. Enfin, je l'atteins."
-  - "La barre de gouvernail tourne \xE0 toute vitesse, folle. Je la saisis, et m'y
-    suspends de tout mon poids."
-  - Elle se cabre, comme un cheval sauvage. Enfin, la barre se calme.
-  - Je la maintiens droite, dans l'axe. J'exulte. Je me sens puissant. Je dirige le
-    navire !
-  - "Je souris presque quand soudain une ombre recouvre l'avant du navire. Je l\xE8ve
-    les yeux."
-  - Elle se dresse devant nous, immense. Une vague haute comme une falaise.
-  - "Je veux barrer pour l\u2019\xE9viter, et pourtant, je suis paralys\xE9. Le choc,
-    violent, assourdissant."
-  - L'eau recouvre tout et percute la cabine. Un voile noir m'enveloppe.
-  - "De longues secondes s'\xE9gr\xE8nent. Un brouhaha diffus."
-  - J'ouvre les yeux, je suis dans l'eau.
-  - "Je remonte \xE0 la surface comme une bouteille dans un nuage de bulles."
-  - "J'\xE9merge \xE0 la surface et aspire l'air \xE0 pleins poumons. Le bateau sombre,
-    renvers\xE9 sur le c\xF4t\xE9."
-  - "Sur la mer d\xE9chain\xE9e, les marins l\xE8vent leur bras, impuissants."
-  - La houle est trop forte. Je vais me noyer.
-  - Je sombre ...
-  - "Des cris d'oiseau. Le caqu\xEAtement des mouettes d\xE9chirent le voile noir."
-  - "J\u2019ouvre p\xE9niblement les yeux. Ou suis-je ?"
-  - Du sable, partout, sous moi, dans ma bouche. Je tousse, je crache de l'eau.
-  - "L'air frais m'apaise. Je rel\xE8ve la t\xEAte."
-  - "Des d\xE9bris de bois, vestiges de notre navire, jonchent la plage de sable noir."
-  - Je suis vivant ... Vivant et seul.
-  speakers: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  typingSpeed: 0.02
-  continueButton: {fileID: 772725525}
-  blockScreen: {fileID: 772725524}
-  textBox: {fileID: 772725523}
-  skipTextButton: {fileID: 772725522}
-  speakerName: {fileID: 0}
-  cinematiqueScript: {fileID: 772725521}
-  currenCinematqueID: 0
 --- !u!1 &1222373736
 GameObject:
   m_ObjectHideFlags: 0
@@ -20883,6 +21220,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073e5756deb4022449bc470290f1003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1339356367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339356368}
+  - component: {fileID: 1339356370}
+  - component: {fileID: 1339356369}
+  - component: {fileID: 1339356371}
+  m_Layer: 5
+  m_Name: DIA_CINE1_3_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1339356368
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339356367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1339356369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339356367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la "
+--- !u!222 &1339356370
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339356367}
+  m_CullTransparentMesh: 0
+--- !u!114 &1339356371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339356367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
 --- !u!1 &1344748006
 GameObject:
   m_ObjectHideFlags: 0
@@ -21750,7 +22178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1404185414
 MonoBehaviour:
@@ -22062,7 +22490,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1421762422
 MonoBehaviour:
@@ -23718,7 +24146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1466007975
 MonoBehaviour:
@@ -25305,7 +25733,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1598948502
 MonoBehaviour:
@@ -28543,6 +28971,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1783670909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783670910}
+  - component: {fileID: 1783670913}
+  - component: {fileID: 1783670912}
+  - component: {fileID: 1783670911}
+  m_Layer: 5
+  m_Name: DIA_CINE2_3_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1783670910
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783670909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1783670911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783670909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
+--- !u!114 &1783670912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783670909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la "
+--- !u!222 &1783670913
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783670909}
+  m_CullTransparentMesh: 0
 --- !u!1 &1805505400
 GameObject:
   m_ObjectHideFlags: 0
@@ -31088,7 +31607,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 164461586}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2000680630
 MonoBehaviour:
@@ -33110,6 +33629,97 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2140135269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140135270}
+  - component: {fileID: 2140135273}
+  - component: {fileID: 2140135272}
+  - component: {fileID: 2140135271}
+  m_Layer: 5
+  m_Name: DIA_CINE2_2_TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2140135270
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140135269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 772725521}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2140135271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140135269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ff0eec7859db246b4216e0105c65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 3
+--- !u!114 &2140135272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140135269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4b175a2dfaf8ed149bab5d5efdf28450, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: "Ceci est la premi\xE8re phrase\nCeci est la seconde\nCeci est la ta gueule"
+--- !u!222 &2140135273
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140135269}
+  m_CullTransparentMesh: 0
 --- !u!1 &2146706009
 GameObject:
   m_ObjectHideFlags: 0

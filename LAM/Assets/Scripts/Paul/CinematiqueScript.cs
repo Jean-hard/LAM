@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CinematiqueScript : MonoBehaviour
 {
-    [SerializeField]
-    private DialogueCinematique[] cinematiqueDiaTab;
     private int indexCinematiqueDia;
 
     [SerializeField]
@@ -23,21 +21,10 @@ public class CinematiqueScript : MonoBehaviour
         StartCoroutine(CinematiqueLaunchDialogueTimer());
     }
 
-    public void DisplayDialogueNextSentence()
-    {
-        cinematiqueDiaTab[indexCinematiqueDia].NextSentence();
-    }
-
-    //bouton "skip dialogue"
-    public void StopDialogue()
-    {
-        cinematiqueDiaTab[indexCinematiqueDia].StopDialogue();
-    }
-
     //pour lancer le dialogue que le fade est finie
     private IEnumerator CinematiqueLaunchDialogueTimer()
     {
         yield return new WaitForSeconds(timeBeforeStartDialogue);
-        cinematiqueDiaTab[indexCinematiqueDia].StartDialogue();
+        //cinematiqueDiaTab[indexCinematiqueDia].StartDialogue();
     }
 }
