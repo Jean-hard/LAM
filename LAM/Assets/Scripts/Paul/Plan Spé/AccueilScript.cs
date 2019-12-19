@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class AccueilScript : PlaneScript
 {
+    private bool hasPassedFirstDialogue;
+
     public override void OnActive()
     {
         base.OnActive();
-        AccueilCouloirManager.Instance.ShowAccueilDia();
-        Debug.Log("in onactive");
 
+        //si ce n'est pas la premiere fois qu'on est dans l'accueil on lance le dialogue direct
+        if (hasPassedFirstDialogue)
+            AccueilCouloirManager.Instance.ShowAccueilDia();
+        else
+        {
+            StartCoroutine(WaitForFirstDialogue());     // si c'est la premiere fois qu'on est dans l'accueil, on met un délai avant d'afficher le dialogue
+            hasPassedFirstDialogue = true;
+        }
         // on check sur quelle version de l'accueil on est pour lancer la bonne anim de meteo
         if (this.gameObject.GetComponent<SpriteRenderer>().sprite.name == "AccueilNormal")
         {
@@ -53,4 +61,11 @@ public class AccueilScript : PlaneScript
             WeatherManager.Instance.rainAccueilTordu2List[i].gameObject.SetActive(false);
         }
     }
+
+    public IEnumerator WaitForFirstDialogue()
+    {
+        yield return new WaitForSeconds(3f);
+        AccueilCouloirManager.Instance.ShowAccueilDia();
+    }
+    
 }

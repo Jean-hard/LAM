@@ -77,11 +77,7 @@ public class AccueilCouloirManager : MonoBehaviour
     {
         currentAubergisteDia = aubergisteDiaTab[0];
         currentCouloirDia = couloirDiaTab[0];
-        currentAccueilDia = accueilDiaTab[0];
-
-        ////////////si on peut faire un systeme plus propre ce serait mieux
-        Debug.Log("lancement du dialogue d'intro de seiji");
-        ShowAccueilDia();
+        currentAccueilDia = accueilDiaTab[0];  
     }
 
     //button aubergiste
@@ -152,6 +148,7 @@ public class AccueilCouloirManager : MonoBehaviour
 
         if (accueilTalk1Ready == true)
         {
+            Debug.Log("in là ou li faut pas qui fait bugger le couloir");
             indexAccueilDia++;
             currentAccueilDia = accueilDiaTab[indexAccueilDia];
             GameManager.Instance.InitDialogue(currentAccueilDia);

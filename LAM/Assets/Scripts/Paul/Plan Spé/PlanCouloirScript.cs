@@ -8,6 +8,12 @@ public class PlanCouloirScript : PlaneScript
     public override void OnActive()
     {
         base.OnActive();
+        StartCoroutine(WaitForCouloirDialogue());
+    }
+
+    public IEnumerator WaitForCouloirDialogue()
+    {
+        yield return new WaitForSeconds(3f);
         AccueilCouloirManager.Instance.ShowCouloirDia();
     }
 }

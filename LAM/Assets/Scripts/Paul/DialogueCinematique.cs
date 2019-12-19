@@ -77,6 +77,7 @@ public class DialogueCinematique : MonoBehaviour
     //appelé quand on appuie sur le bouton continuer
     public void NextSentence()
     {
+        soundHasBeenPlayed = false;
         continueButton.SetActive(false);
         skipTextButton.SetActive(false);
 

@@ -38,7 +38,7 @@ public class TelephoneManager : MonoBehaviour
                 if (!hasRinged)
                 {
                     SoundManager.Instance.PlayRingRing();
-                    Vibration.Vibrate(2000);    //vibrations de 2 secondes codes trouvé sur internet nommé vibration reutilisable pour faire des vibrations sur android
+                    //Vibration.Vibrate(2000);    //vibrations de 2 secondes codes trouvé sur internet nommé vibration reutilisable pour faire des vibrations sur android
                     hasRinged = true;
                     originalBackButton.SetActive(false);
                     telephoneButton.SetActive(true);
