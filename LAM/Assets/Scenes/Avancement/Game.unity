@@ -1959,7 +1959,7 @@ MonoBehaviour:
   sentences:
   - "Oh ... Je comprends ce qu\u2019il voulait dire par admirateurs. Le client \xE9tait
     un peintre."
-  - "Incroyable, il y en a partout ! Je n\u2019ai jamais autant d\u2019\u0153uvres
+  - "Incroyable, il y en a partout ! Je n\u2019ai jamais vu autant d\u2019\u0153uvres
     de toute ma vie."
   - "Voyons voir de plus pr\xE8s. Mais ... qu\u2019est-ce que c\u2019est que ..."
   - "Mince, il devait \xEAtre d\xE9rang\xE9 pour repr\xE9senter de telles horreurs."
@@ -26904,10 +26904,10 @@ RectTransform:
   m_Father: {fileID: 316589124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -146.70001, y: 0}
-  m_SizeDelta: {x: 293.40002, y: 0}
+  m_AnchorMin: {x: 0.76779175, y: 0}
+  m_AnchorMax: {x: 0.95150006, y: 1}
+  m_AnchoredPosition: {x: -0.5, y: 0}
+  m_SizeDelta: {x: -3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628532515
 MonoBehaviour:
@@ -28777,10 +28777,10 @@ RectTransform:
   m_Father: {fileID: 316589124}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.65002, y: 0}
-  m_SizeDelta: {x: 263.30005, y: 0}
+  m_AnchorMin: {x: 0.05929167, y: 0}
+  m_AnchorMax: {x: 0.242875, y: 1}
+  m_AnchoredPosition: {x: 0.5, y: 0}
+  m_SizeDelta: {x: -3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1699445509
 GameObject:
