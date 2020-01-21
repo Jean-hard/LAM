@@ -42,6 +42,15 @@ public class VinyleManager : MonoBehaviour
     private Dialogue vinyleWinDialogue;
     private bool dialogueDisplayed;
 
+    public Dialogue brasOkDialogue;
+    private bool brasDialogueDisplayed;
+    public Dialogue volumeOkDialogue;
+    private bool volumeDialogueDisplayed;
+    public Dialogue freqOkDialogue;
+    private bool freqDialogueDisplayed;
+    public Dialogue vitesseOkDialogue;
+    private bool vitesseDialogueDisplayed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +99,9 @@ public class VinyleManager : MonoBehaviour
         {
             DonneVitesse();
         }
+
+        // affiche un dialogue si une partie du vinyle est bien positionné
+        DisplayValidStepDialogue(brasBienPlace, freqBienPlace, volumeAuMax, vitesseVinyle, vinyleTourne);
     }
 
     //-----------------SLIDER------------------
@@ -180,7 +192,36 @@ public class VinyleManager : MonoBehaviour
 
     public IEnumerator WaitForDialogueDisplay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         GameManager.Instance.InitDialogue(vinyleWinDialogue);
     }
+
+    // affiche un dialogue dès qu'une partie du vinyle est bien placée
+    private void DisplayValidStepDialogue(bool brasBienPlace, bool freqBienPlace, bool volumeAuMax, Vitesses vitesseVinyle, bool vinyleTourne)
+    {
+        if (vinyleTourne)
+        {
+            if (brasBienPlace && !brasDialogueDisplayed)
+            {
+                GameManager.Instance.InitDialogue(brasOkDialogue);
+                brasDialogueDisplayed = true;
+            }
+            if (freqBienPlace && !freqDialogueDisplayed)
+            {
+                GameManager.Instance.InitDialogue(freqOkDialogue);
+                freqDialogueDisplayed = true;
+            }
+            if (volumeAuMax && !volumeDialogueDisplayed)
+            {
+                GameManager.Instance.InitDialogue(volumeOkDialogue);
+                volumeDialogueDisplayed = true;
+            }
+            if (vitesseVinyle == Vitesses.SLOW && !vitesseDialogueDisplayed)
+            {
+                GameManager.Instance.InitDialogue(vitesseOkDialogue);
+                vitesseDialogueDisplayed = true;
+            }
+        }
+    }
 }
+

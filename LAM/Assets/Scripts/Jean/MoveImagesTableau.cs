@@ -14,7 +14,7 @@ public class MoveImagesTableau : MonoBehaviour
 
     private SpriteRenderer imageSprite;
     private float distImageSlot;    // distance entre l'image sélectionnée et un slot
-    private Vector2 initialPosition;    // position initiale de l'image
+    private Vector3 initialPosition;    // position initiale de l'image
 
     // Start is called before the first frame update
     void Start()
