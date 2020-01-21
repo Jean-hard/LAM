@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TelephoneManager : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class TelephoneManager : MonoBehaviour
 
     private bool firstTextDone;
     private bool hasRinged;
+
+    public Text papierText;
+    public int numberToWriteIndex = 0;
 
     // Start is called before the first frame update 
     void Start()
@@ -66,18 +70,21 @@ public class TelephoneManager : MonoBehaviour
 
     public IEnumerator WaitForSpeaking()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
         GameManager.Instance.InitDialogue(telephoneDialogue);
     }
 
     public IEnumerator WaitForQuit()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
         originalBackButton.SetActive(true);
     }
 
     public void ClearNumTel()
     {
         numtel.Clear();
+        papierText.text = "";
+        numberToWriteIndex = 0;
+        Debug.Log("Clear Numtel");
     }
 }

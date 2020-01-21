@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoulletteTel : MonoBehaviour
 {
@@ -10,13 +11,16 @@ public class RoulletteTel : MonoBehaviour
     public float rotZ;//angle de rotation de la toulette 
     public float roatmax;// float servant a limité l'angle de rotation de la roulette 
     public GameObject roulette;//roulette avec tous les numéros 
-    public int numéro;//numéro associé a la touche du téléphone 
+    public int numero;//numéro associé a la touche du téléphone 
     private TelephoneManager telephonemanager;// code téléphone manager 
     public GameObject ancre;// position de l'enroit ou il faut aller pour valider un numéro 
     public float distance = 10;//distance entre le bouton du numéro et l'ancre 
     public float smooth;//vitesse de retour a point d'origine 
     public float rotationZ;// valeur rotation en Z 
     public bool returntopos;// est ce que la roulette retourn a sa position de départ 
+
+    private bool hasEnteredNewNumber;
+
     private void Start()
     {
         telephonemanager = roulette.GetComponent<TelephoneManager>();
@@ -44,15 +48,15 @@ public class RoulletteTel : MonoBehaviour
                 if (rotationZ < 0)// si rotation est inferieur a zéro car on tourne la roullette dans le sans négatif de rotation 
                 {
 
-                    rotationZ += smooth;// l'élément retourn a sa position d'origine a la vitesse smooth 
+                    rotationZ += smooth;// l'élément retourne a sa position d'origine a la vitesse smooth 
 
                 }
                 else
                 {
                     rotationZ = 0;// l'élément est retourné a sa posision d'origine 
 
-                    selected = false;// l'elemnet n'est plus séléctioné 
-                    returntopos = false;// si l'lement n'est pas séléctioné alors ne vas pas a position d'origine 
+                    selected = false;// l'element n'est plus séléctionné 
+                    returntopos = false;// si l'element n'est pas séléctionné alors ne va pas a sa position d'origine 
                 }
             }
             roulette.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);// rotation de la roulette égal a la valeur de rotationZ 
@@ -64,8 +68,15 @@ public class RoulletteTel : MonoBehaviour
             {
                 if (telephonemanager.numtel.Count < telephonemanager.numteltaille && distance <= 0.3)// si le nombre de numéro fait est inferieur au nombre de numéro demandé et que la distance entre l'ancre et le numéro séléctioné est inferieur à 0.2 alor 
                 {
-                    telephonemanager.numtel.Add(numéro);// le numéro est ajouté a la liste du numéro à appelé 
+                    telephonemanager.numtel.Add(numero);// le numéro est ajouté a la liste du numéro à appelé 
 
+                    // comme ce if est appelé plusieurs fois, on écrit une seule fois le nouveau nombre entré
+                    if (!hasEnteredNewNumber)
+                    {
+                        telephonemanager.papierText.text += telephonemanager.numtel[telephonemanager.numberToWriteIndex];
+                        telephonemanager.numberToWriteIndex += 1;
+                        hasEnteredNewNumber = true;
+                    }
                 }
                 if (telephonemanager.end == false && telephonemanager.goodnumber == true && distance <= 0.3)// si le joueur a bien tous les bon numéro et essaye de refaire un num alors  
                     telephonemanager.end = true;// le jeu est fini  
@@ -79,6 +90,8 @@ public class RoulletteTel : MonoBehaviour
             Debug.Log(telephonemanager.numtel.Count);//debug pour vérifié le nombre de numéro rentrré par le joueur 
             SoundManager.Instance.PlayNumberGood();
         }
+
+        
     }
 
     private void OnMouseOver()
