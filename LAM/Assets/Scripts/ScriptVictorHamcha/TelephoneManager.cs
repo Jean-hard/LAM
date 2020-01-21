@@ -17,6 +17,8 @@ public class TelephoneManager : MonoBehaviour
    
     [SerializeField]
     private Dialogue telephoneDialogue;
+    [SerializeField]
+    private Dialogue resetNumberDialogue;
 
     private bool firstTextDone;
     private bool hasRinged;
@@ -50,7 +52,7 @@ public class TelephoneManager : MonoBehaviour
             }
             else
             {
-                numtel.Clear();
+                ClearNumTel();
             }
         }
     }
@@ -70,7 +72,7 @@ public class TelephoneManager : MonoBehaviour
 
     public IEnumerator WaitForSpeaking()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         GameManager.Instance.InitDialogue(telephoneDialogue);
     }
 
@@ -82,9 +84,16 @@ public class TelephoneManager : MonoBehaviour
 
     public void ClearNumTel()
     {
+        GameManager.Instance.InitDialogue(resetNumberDialogue);
         numtel.Clear();
         papierText.text = "";
         numberToWriteIndex = 0;
-        Debug.Log("Clear Numtel");
+    }
+
+    public void ClearTelWhenQuit()
+    {
+        numtel.Clear();
+        papierText.text = "";
+        numberToWriteIndex = 0;
     }
 }

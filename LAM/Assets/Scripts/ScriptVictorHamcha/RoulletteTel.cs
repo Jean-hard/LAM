@@ -69,13 +69,14 @@ public class RoulletteTel : MonoBehaviour
                 if (telephonemanager.numtel.Count < telephonemanager.numteltaille && distance <= 0.3)// si le nombre de numéro fait est inferieur au nombre de numéro demandé et que la distance entre l'ancre et le numéro séléctioné est inferieur à 0.2 alor 
                 {
                     telephonemanager.numtel.Add(numero);// le numéro est ajouté a la liste du numéro à appelé 
-
+                    
                     // comme ce if est appelé plusieurs fois, on écrit une seule fois le nouveau nombre entré
                     if (!hasEnteredNewNumber)
                     {
                         telephonemanager.papierText.text += telephonemanager.numtel[telephonemanager.numberToWriteIndex];
                         telephonemanager.numberToWriteIndex += 1;
                         hasEnteredNewNumber = true;
+                        StartCoroutine(ResetBoolHasEnteredNewNb());
                     }
                 }
                 if (telephonemanager.end == false && telephonemanager.goodnumber == true && distance <= 0.3)// si le joueur a bien tous les bon numéro et essaye de refaire un num alors  
@@ -90,13 +91,18 @@ public class RoulletteTel : MonoBehaviour
             Debug.Log(telephonemanager.numtel.Count);//debug pour vérifié le nombre de numéro rentrré par le joueur 
             SoundManager.Instance.PlayNumberGood();
         }
+    }
 
-        
+    // coroutine qui reset le booleen hasEnteredNewNumber, car on doit pouvoir appeler plusieurs fois le même numero
+    private IEnumerator ResetBoolHasEnteredNewNb()
+    {
+        yield return new WaitForSeconds(1f);
+        hasEnteredNewNumber = false;
     }
 
     private void OnMouseOver()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))//si ma souris est sur la pièce et que j'appui sur clic gauche alors la pièce est séléctioné 
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !telephonemanager.end)//si ma souris est sur la pièce et que j'appui sur clic gauche alors la pièce est séléctionnée 
         {
             selected = true;
         }

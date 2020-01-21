@@ -151,6 +151,10 @@ public class DialogueCinematique : MonoBehaviour
         GameManager.Instance.BackToAccueil();
         AccueilCouloirManager.isStairLock = true;
         AccueilCouloirManager.Instance.ShowAfterCinematiqueDia();
+
+        //on eteind les sons de la cinematique
+        SoundManager.Instance.StopCineSounds();
+        SoundManager.Instance.PlayBO();
     }
 
     public void ResetDialogues()
