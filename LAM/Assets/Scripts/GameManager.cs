@@ -4,38 +4,57 @@ using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
+    //player in the scene
     [SerializeField]
     private PlayerManager player;
 
+    //the first plan showed at the beginning
     [SerializeField]
     private PlaneScript startPlan;
+
+    //the actual active plan in game
     [SerializeField]
     private PlaneScript currentPlan;
+
+    //Fade screen use between each change of plan
     [SerializeField]
     private FadeScript fadeScript;
+
+    //Fade screen use for each cinematique
     [SerializeField]
     private FadeScript cinematiqueFade;
 
     //Dialogue
     [SerializeField]
     private GameObject dialogueGUI;
+
+    //actual dialogue active in game
     private Dialogue currentDialogue;
 
+    //gameobject Canvas for dialogue
     [SerializeField]
     private GameObject CinematiqueGUI;
 
+    //to manage the change of sprite after the cinematique.
     [SerializeField]
     private TwistManager twistManager;
 
+    //to know if the player is still moving
     private bool isMovingToDoor = false;
+
+    //the next plan to activate when the player reach his destination
     private PlaneScript nextPlan;
 
+    //current destination for the player in the scene
     private Vector3 currentDestination;
 
+    //actual scale for the Player, different in each room 
     private ScalePlayer scalePlayer;
 
+    //check if the player is visible on the next plan
     private bool isPlayerOnNextPlan = true;
 
+    //check if the door will make a sound when the player reach it
     private bool isDoorSound = false;
 
     /**
@@ -65,7 +84,7 @@ public class GameManager : MonoBehaviour
         {
             _instance = this;
         }
-    }//--------------------------------------------------------------------
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -118,9 +137,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            /**
-            * ça va changer avec le remaniement de quand j'aurais le time
-            */
             animManager.lancerAnim = false;//on ne lance pas d'anim
             scalePlayer.canScale = false;
             isPlayerOnNextPlan = true;
@@ -137,18 +153,20 @@ public class GameManager : MonoBehaviour
         MoveToDoor(targetDoor);
     }
 
+    //set player visible for the next plan
     public void SetPlayerVisible(bool isVisible)
     {
         isPlayerOnNextPlan = isVisible;
     }
 
+    //to change plan without the player going at a location
     public void ChangePlan(PlaneScript theNextPlan)
     {
         nextPlan = theNextPlan;
-        //isPlayerOnNextPlan = true;
         ChangeScene();
     }
 
+    //like "ChangePlan" with sound
     public void ChangePlanSounded(PlaneScript theNextPlan)
     {
         isDoorSound = true;
@@ -167,7 +185,6 @@ public class GameManager : MonoBehaviour
 
     /**
      * a chaque changement de plan on placera le personnage à une position de base et on préparera un fade dans une coroutine
-     * TODO : et on stop le dialogue
      */
     public void ChangeScene()
     {
@@ -188,11 +205,6 @@ public class GameManager : MonoBehaviour
         //fadeScript.FadeIn();
         yield return new WaitForSeconds(1.5f);
         fadeScript.FadeOut();
-
-        ////on récupère le dialogue initiale de la scène si il y en a un ET si il n'a jamais été lancé
-        //currentDialogue = currentPlan.GetInitialDialogue();
-        //if (currentDialogue)
-        //    DisplayDialogue();
     }
 
     //ce délai sert à limiter les interactions juste après un changement de plan et à faire un changement stylé aussi (je le fais en anglais la prochaine fois)
@@ -307,6 +319,7 @@ public class GameManager : MonoBehaviour
         CinematiqueGUI.SetActive(false);
     }
 
+    //move the player to a special location and indiquate that the next plan is the final one
     public void MoveToFinalScene()
     {
         currentDestination = finalDoorPosition;
